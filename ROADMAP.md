@@ -58,7 +58,18 @@ A fundação foi **congelada por decisão do Arquiteto-Chefe**: nenhuma RFC nova
 
 **Barreira transposta em 2026-08-02 (Fase V0 concluída):** PROOF rodada 2 com 0 alvos derrubados; 19/20 casos conformes; invariantes validados. RFCs da Camada 2 podem agora atingir `Versão Candidata`. Ficam registradas como recomendações abertas para a Camada 2: inferência estatística como evidência (ECP-008), decisões coletivas e governança de hierarquia (Governance), interface contrato comercial (ECP-001/ECP-004).
 
-## CAMADA 2 — Engenharia
+## FASE B — Runtime (em andamento, feature freeze)
+
+**Decisão AD-001 (2026-08-02):** o ECP-SPEC entra em **feature freeze** para iniciar a Fase B — provar a especificação construindo o **ECP Reference Runtime (ERR)**, a implementação canônica. Nenhum módulo grande novo (ECP-500 Quality, ECP-600 Learning, ECP-700 Certification) será iniciado enquanto a Fase B não produzir evidência. A evolução da especificação volta a ser orientada pelos resultados da implementação.
+
+- [ ] Repositório `ecp-runtime` criado em paralelo a `ecp-spec`
+- [ ] **ECP Kernel** implementado com cinco responsabilidades: `Problem`, `Goal`, `Decision`, `Contract`, `Graph` (sem IA, sem API, sem banco)
+- [ ] Cadeia executável: `Problem → Goal → Knowledge → Assumption → Evidence → Decision` (íntegra, rastreável e reproduzível)
+- [ ] Primeiro caso real conduzido integralmente pelo runtime
+- [ ] Comparação com processo tradicional (tempo, rastreabilidade, facilidade de revisão)
+- [ ] Retomada de Quality/Learning/Certification orientada por evidência
+
+## CAMADA 2 — Engenharia (congelada)
 
 ### 02-core — State Machine (ECP-100..199)
 
@@ -87,18 +98,18 @@ A fundação foi **congelada por decisão do Arquiteto-Chefe**: nenhuma RFC nova
 - [ ] Deprecação e remoção de documentos
 - [ ] Critérios de `Aprovado`
 
-### 05 — Quality (ECP-500..599)
+### 05 — Quality (ECP-500..599) — adiado pelo AD-001 (feature freeze)
 
 - [ ] Métricas de qualidade da engenharia executada sob ECP
 - [ ] Padrões de evidência e auditoria de conformidade (lê Decision/Evidence/Goal Records)
 
-### 06 — Learning (ECP-600..699)
+### 06 — Learning (ECP-600..699) — adiado pelo AD-001 (feature freeze)
 
 - [ ] Calibração contínua de confiança (curvas por entidade)
 - [ ] Retroalimentação de resultados observados para decisões futuras
 - [ ] Reutilização de conhecimento entre projetos
 
-### 07 — Certification (ECP-700..799)
+### 07 — Certification (ECP-700..799) — adiado pelo AD-001 (feature freeze)
 
 - [ ] Certificação de conformidade de uma entidade ao ECP
 - [ ] Auditoria independente de projetos executados sob ECP

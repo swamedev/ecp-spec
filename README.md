@@ -148,7 +148,9 @@ Cada documento declara seu `Status` no front matter. Nada em `Rascunho` é norma
 
 ## 8. Estado atual
 
-**Camada 1 — Cognição (em rascunho).** **Fase V0 — Validação (concluída):** a fundação foi congelada, falsificada (PROOF), exercitada (CASES) e corrigida; a barreira de avanço da Camada 2 foi transposta. **Camada 2 — Engenharia (em andamento):** `ECP-100` (máquina de estados formal), `ECP-200` (Capability Engine), `ECP-300` (Runtime — motor sobre o grafo) e a gramática validável por máquina em `schemas/` (incluindo tipos de runtime e simulador). Ver [ROADMAP.md](ROADMAP.md) e [CHANGELOG.md](CHANGELOG.md).
+**Camada 1 — Cognição (em rascunho).** **Fase V0 — Validação (concluída):** a fundação foi congelada, falsificada (PROOF), exercitada (CASES) e corrigida; a barreira de avanço da Camada 2 foi transposta. **Camada 2 — Engenharia (congelada por [AD-001](04-governance/AD-001.md)):** `ECP-100` (máquina de estados formal), `ECP-200` (Capability Engine), `ECP-300` (Runtime — motor sobre o grafo), `ECP-400` (Governance) e a gramática validável por máquina em `schemas/`.
+
+**Fase B — Runtime (em andamento):** por decisão [AD-001](04-governance/AD-001.md), o ECP-SPEC entrou em **feature freeze** e o programa passou a **provar a especificação** construindo o **ECP Reference Runtime (ERR)** — a implementação canônica, à maneira de CPython para Python. O lema do programa é: **a especificação governa; a implementação demonstra.** Ver [ROADMAP.md](ROADMAP.md) e [CHANGELOG.md](CHANGELOG.md).
 
 | Documento | Título | Tipo | Status |
 |---|---|---|---|

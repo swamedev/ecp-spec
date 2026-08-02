@@ -2,6 +2,36 @@
 
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) com versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.13.0] — 2026-08-02
+
+### Adicionado
+
+- **`04-governance/AD-001.md` — Decisão de Arquitetura Nº 001** (Aprovado): **feature freeze** do ECP-SPEC e início do programa **Fase B — Runtime**. Nenhum módulo grande novo (Quality/Learning/Certification) é iniciado enquanto a Fase B não produzir evidência. Define o **ECP Reference Runtime (ERR)** como implementação canônica (CPython para Python), **agnóstico de implementador** (Execution Unit / Execution Provider em vez de Capability), o **ECP Kernel** com cinco responsabilidades (`Problem`, `Goal`, `Decision`, `Contract`, `Graph`) e a missão da primeira versão: executar com integridade, rastreabilidade e reprodutibilidade a cadeia `Problem → Goal → Knowledge → Assumption → Evidence → Decision`.
+
+### Alterado
+
+- `ROADMAP.md`: seção **Fase B — Runtime** adicionada; Camada 2 marcada como congelada; Quality/Learning/Certification marcados como adiados pelo AD-001.
+- `README.md`: estado atual atualizado — Camada 2 congelada, Fase B em andamento, lema do programa.
+
+## [0.12.0] — 2026-08-02
+
+### Adicionado
+
+- **`04-governance/ECP-500.md` — Quality (Rascunho)**: esboço das métricas de qualidade da engenharia sob ECP — completude de evidência (E-1/E-2), rastreabilidade de decisão (D-1/D-2), tempestividade (T-1/T-2), robustez a suposições (R-1/R-2); padrões de evidência; regras ECP-500.1..500.3; interface com Runtime e Governance; índice de qualidade. *Nota: módulo adiado pelo AD-001 (feature freeze), documento mantido como esboço.*
+
+## [0.11.0] — 2026-08-02
+
+### Adicionado
+
+- **`04-governance/ECP-400.md` — Governance (Rascunho)**: modelo de autoridade (actor/scope/role/source/constraint), herança e delegação, decisão coletiva com consenso pré-registrado; processo de mudança (proposta → revisão → aprovação → deprecação) que declara e preserva invariantes; regras ECP-400.1..400.4; gramática em `schemas/` (`governance`, `change_proposal`, `change_review`, `change_approval`).
+- **Gramática do Governance** em `schemas/`: `governance.schema.json`, `change_proposal.schema.json`, `change_review.schema.json`, `change_approval.schema.json`.
+- **Exemplos do ciclo de mudança**: proposta válida (ECP-003-CHG-001, autoridade coletiva + preservação de INV-1), revisão, aprovação e falsificação (proposta que quebra invariante sem preservação).
+
+### Alterado
+
+- `scripts/validate_contracts.py`: suporte aos kinds `governance`/`change_proposal`/`change_review`/`change_approval`; checagens semânticas ECP-400.1..400.4 (authority.source papel/delegação, invariantes com `preserved_by`, delegação com ref/escopo/prazo).
+- `schemas/README.md`: documenta os schemas de governance e o linter.
+
 ## [0.10.0] — 2026-08-02
 
 ### Adicionado
