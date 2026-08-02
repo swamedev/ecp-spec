@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/change_approval.schema.json",
+  "title": "Aprovação de proposta de mudança",
+  "description": "Decisão final do processo de mudança (ECP-400 §3, passo 3). Exige autoridade comprovada suficiente para o escopo da proposta (ECP-400.1).",
+  "type": "object",
+  "required": ["kind", "proposal_id", "approved", "authority"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "change_approval" },
+    "proposal_id": { "type": "string" },
+    "approved": { "type": "boolean" },
+    "authority": {
+      "$ref": "#/$defs/authority"
+    }
+  },
+  "$defs": {
+    "authority": {
+      "type": "object",
+      "required": ["actor", "role", "scope", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "actor": { "type": "string" },
+        "role": { "type": "string" },
+        "scope": { "type": "string" },
+        "source": {
+          "enum": ["papel", "delegacao"]
+        },
+        "delegation_ref": { "type": "string" },
+        "co_authors": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "consensus": { "type": "string" }
+      }
+    }
+  }
+}

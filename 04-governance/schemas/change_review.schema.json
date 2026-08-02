@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/change_review.schema.json",
+  "title": "Revisão de proposta de mudança",
+  "description": "Análise de impacto de uma proposta (ECP-400 §3, passo 2). Emite recomendação; o impacto declarado deve cobrir os invariantes tocados pela proposta.",
+  "type": "object",
+  "required": ["kind", "proposal_id", "reviewer", "impact_analysis", "recommendation"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "change_review" },
+    "proposal_id": { "type": "string" },
+    "reviewer": { "type": "string" },
+    "impact_analysis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["invariant", "analysis"],
+        "additionalProperties": false,
+        "properties": {
+          "invariant": { "type": "string" },
+          "analysis": { "type": "string" }
+        }
+      }
+    },
+    "recommendation": {
+      "enum": ["aprovar", "ajustar", "rejeitar"]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/change_proposal.schema.json",
+  "title": "Proposta de mudança governada",
+  "description": "Entrada no processo de mudança (ECP-400 §3). Declara o que muda, por quê, e quais invariantes toca com estratégia de preservação (ECP-400.4 / INVARIANTS §2.2).",
+  "type": "object",
+  "required": ["kind", "id", "target", "summary", "authority", "invariantes_tocados"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "change_proposal" },
+    "id": { "type": "string" },
+    "target": { "type": "string" },
+    "summary": { "type": "string" },
+    "authority": {
+      "$ref": "#/$defs/authority"
+    },
+    "invariantes_tocados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "impact", "preserved_by"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "enum": ["INV-1", "INV-2", "INV-3", "INV-4", "INV-5", "INV-6", "INV-7", "L-0", "L-1"]
+          },
+          "impact": { "type": "string" },
+          "preserved_by": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "authority": {
+      "type": "object",
+      "required": ["actor", "role", "scope", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "actor": { "type": "string" },
+        "role": { "type": "string" },
+        "scope": { "type": "string" },
+        "source": {
+          "enum": ["papel", "delegacao"]
+        },
+        "delegation_ref": { "type": "string" },
+        "co_authors": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "consensus": { "type": "string" }
+      }
+    }
+  }
+}
