@@ -1,0 +1,53 @@
+{
+  "kind": "runtime_scenario",
+  "scenario_id": "sc-erp-01",
+  "case": "erp",
+  "title": "ERP (CASO 1): evento regulatório + invalidação de suposição reabre Planning",
+  "session": "ss-erp",
+  "steps": [
+    {
+      "step": "transition",
+      "from": "Discovery",
+      "to": "Research",
+      "decision": "D-ERP-001",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "transition",
+      "from": "Research",
+      "to": "Planning",
+      "decision": "D-ERP-003",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "transition",
+      "from": "Planning",
+      "to": "Execution",
+      "decision": "D-ERP-010",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "event",
+      "event": "ev-erp-reg"
+    },
+    {
+      "step": "invalidate",
+      "assumption": "A-1",
+      "affects": ["C-ERP-EXEC"]
+    },
+    {
+      "step": "reaval",
+      "task_id": "re-erp-reg",
+      "suspects": ["C-ERP-EXEC", "C-ERP-PLAN"],
+      "result": "reavaliado",
+      "decision": "D-ERP-012"
+    },
+    {
+      "step": "transition",
+      "from": "Execution",
+      "to": "Planning",
+      "decision": "D-ERP-013",
+      "authority": { "actor": "humano_engenheiro" }
+    }
+  ]
+}

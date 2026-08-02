@@ -1,0 +1,24 @@
+{
+  "kind": "negotiation",
+  "contract": "execution",
+  "candidates": [
+    {
+      "entity": "humano_engenheiro",
+      "match": true
+    },
+    {
+      "entity": "sistema_legado",
+      "match": false,
+      "partial": true,
+      "missing": ["verify"]
+    },
+    {
+      "entity": "llm_assistente",
+      "match": false,
+      "missing": ["execute"]
+    }
+  ],
+  "chosen": "sistema_legado",
+  "fallback": "parcial_com_supervisao",
+  "decision": "D-HOSP-031"
+}

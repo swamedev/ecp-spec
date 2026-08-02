@@ -1,0 +1,24 @@
+{
+  "contract": "planning",
+  "state": "Planning",
+  "inputs": {
+    "problem_model": "ProblemModel",
+    "goal": "Goal",
+    "constraints": "Constraint[]",
+    "alternatives": "Alternative[]"
+  },
+  "outputs": {
+    "decision_records": "DecisionRecord[]",
+    "plan": "Plan",
+    "risks": "Risk[]"
+  },
+  "required": ["every_decision_has_authority"],
+  "exit": "plan_authorized",
+  "failure": { "action": "go_to", "target": "Research" },
+  "evidence": ["decision_records", "plan"],
+  "authority": {
+    "actor": "entidade_ecp",
+    "role": "decisor",
+    "co_authors": []
+  }
+}

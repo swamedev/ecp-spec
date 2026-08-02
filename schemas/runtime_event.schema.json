@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/runtime_event.schema.json",
+  "title": "Evento de runtime",
+  "description": "Evento que entra na fila de reavaliação Q (ECP-300 §2.1). Evento de mundo real nunca transiciona o motor (ECP-300.3 / RNF-3): o campo 'transition' não existe neste schema de propósito.",
+  "type": "object",
+  "required": ["kind", "event_id", "type", "source", "affects", "priority"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "runtime_event" },
+    "event_id": { "type": "string" },
+    "type": { "enum": ["external", "assumption_invalidated", "failure"] },
+    "source": { "type": "string" },
+    "affects": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "priority": { "enum": ["low", "medium", "high"] }
+  }
+}

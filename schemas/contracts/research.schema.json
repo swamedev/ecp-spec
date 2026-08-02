@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/contracts/research.schema.json",
+  "title": "Contrato research",
+  "description": "Estado Research (ECP-100 §7.2): aquisição de conhecimento e evidência suficiente para decidir (pode ser probabilístico — ECP-100.3).",
+  "allOf": [
+    { "$ref": "https://ecp.dev/schemas/contract.base.schema.json" },
+    {
+      "properties": {
+        "contract": { "const": "research" },
+        "state": { "const": "Research" },
+        "inputs": {
+          "type": "object",
+          "required": ["knowledge_map", "gaps"]
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["evidence", "updated_knowledge"]
+        },
+        "required": {
+          "type": "array",
+          "contains": { "const": "gaps_reduced_or_reasoned" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "contract": "validation",
+  "state": "Validation",
+  "inputs": {
+    "goal": "Goal",
+    "success_criteria": "Criterion[]",
+    "results": "Result[]"
+  },
+  "outputs": {
+    "verdict": "Verdict",
+    "learning": "Learning[]"
+  },
+  "required": ["verdict_evidenced"],
+  "exit": {
+    "condition": "goal_met or gap_identified",
+    "probabilistic": false
+  },
+  "failure": { "action": "go_to", "target": "Planning" },
+  "evidence": ["verdict"]
+}

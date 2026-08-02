@@ -1,0 +1,9 @@
+{
+  "kind": "runtime_reaval",
+  "task_id": "re-hosp-sla",
+  "triggered_by": "ev-hosp-sla",
+  "suspects": ["C-HOSP-EXEC"],
+  "priority": "high",
+  "result": "reavaliado",
+  "decision": "D-HOSP-032"
+}

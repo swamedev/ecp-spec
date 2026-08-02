@@ -1,0 +1,8 @@
+{
+  "kind": "runtime_event",
+  "event_id": "ev-game-trend",
+  "type": "external",
+  "source": "Tendência de retenção de jogadores abaixo do limiar pré-registrado (CASO 3)",
+  "affects": ["C-GAME-VAL"],
+  "priority": "low"
+}

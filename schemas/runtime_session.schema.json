@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/runtime_session.schema.json",
+  "title": "Sessão e memória persistente do runtime",
+  "description": "Contexto de sessão e memória persistente entre contratos (ECP-300 §5). Projeta o estado observável da máquina (ECP-100 §2.3) e referencia artefatos de memória rastreáveis (L-1).",
+  "type": "object",
+  "required": [
+    "kind",
+    "session_id",
+    "case",
+    "state",
+    "since",
+    "decision_entrada",
+    "authority",
+    "active_contracts",
+    "memory"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "runtime_session" },
+    "session_id": { "type": "string" },
+    "case": { "type": "string" },
+    "state": { "type": "string" },
+    "since": { "type": "string" },
+    "decision_entrada": { "type": "string" },
+    "authority": {
+      "type": "object",
+      "required": ["actor"],
+      "additionalProperties": false,
+      "properties": {
+        "actor": { "type": "string" },
+        "role": { "type": "string" },
+        "co_authors": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "consensus": { "type": "string" }
+      }
+    },
+    "active_contracts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "memory": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

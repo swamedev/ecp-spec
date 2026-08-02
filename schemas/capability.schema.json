@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/capability.schema.json",
+  "title": "Perfil de capacidades de uma entidade",
+  "description": "Declaração verificável do que uma entidade pode fazer (ECP-200 §2.2). A capacidade mínima de registro (write) é precondição de conformidade (ECP-200.3).",
+  "type": "object",
+  "required": ["kind", "entity", "atomic", "can_sign", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "entity_capability" },
+    "entity": { "type": "string" },
+    "atomic": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "read": { "type": "boolean" },
+        "write": { "type": "boolean" },
+        "execute": { "type": "boolean" },
+        "verify": { "type": "boolean" },
+        "research": { "type": "boolean" },
+        "remember": { "type": "boolean" }
+      }
+    },
+    "can_sign": {
+      "type": "array",
+      "items": {
+        "enum": ["discovery", "research", "planning", "execution", "validation"]
+      },
+      "minItems": 1
+    },
+    "evidence": { "type": "string" }
+  }
+}

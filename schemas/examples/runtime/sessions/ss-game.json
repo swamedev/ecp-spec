@@ -1,0 +1,14 @@
+{
+  "kind": "runtime_session",
+  "session_id": "ss-game",
+  "case": "game",
+  "state": "Validation",
+  "since": "2026-08-02T14:30:00Z",
+  "decision_entrada": "D-GAME-022",
+  "authority": {
+    "actor": "llm_assistente",
+    "role": "verificador"
+  },
+  "active_contracts": ["C-GAME-VAL"],
+  "memory": ["EV-PLAYTEST-02"]
+}

@@ -1,0 +1,56 @@
+(* ============================================================
+   Gramática formal da linguagem de contratos ECP
+   ============================================================
+   Fontes: ECP-001 §7 (sintaxe canônica) e ECP-100 §7 (estados).
+   Forma canônica validável por máquina: JSON Schema em
+   contract.base.schema.json e contracts/*.schema.json. Esta EBNF
+   descreve a DSL textual equivalente, usada nos exemplos.
+
+   Convenções (ECP-001 §7.4):
+     - contrato em snake_case; estado em PascalCase;
+     - FAILURE obrigatório (P-7);
+     - EXIT avaliado por decisão, nunca por sequência (L-0).
+   ============================================================ *)
+
+contract        ::= "CONTRACT" ws name ws "STATE" ws state
+                    (preconditions | inputs | outputs | required)*
+                    exit failure evidence;
+
+preconditions   ::= "PRECONDITIONS:" nl indented condition (nl indented condition)*;
+inputs          ::= "INPUTS:" nl indented field (nl indented field)*;
+outputs         ::= "OUTPUTS:" nl indented field (nl indented field)*;
+required        ::= "REQUIRED:" nl indented name (nl indented name)*;
+exit            ::= "EXIT:" ws condition;
+failure         ::= "FAILURE:" ws failaction;
+evidence        ::= "EVIDENCE:" nl indented name (nl indented name)*;
+
+field           ::= name ":" type;
+failaction      ::= ("go_to" ws state) | ("retry" ws integer) | "escalate";
+
+condition       ::= expression;
+expression      ::= term (comparison term)?;
+comparison      ::= ">=" | ">" | "<=" | "<" | "==" | "!=" | "or" | "and";
+term            ::= identifier | boolean | number;
+
+(* EXIT probabilístico (ECP-100.3 / ECP-010.1): *)
+probexit        ::= "P(" expression ")" comparison number ws
+                    "|" ws method ws "|" ws threshold;
+
+state           ::= "Discovery" | "Research" | "Planning"
+                  | "Execution" | "Validation" | "Learning";
+
+name            ::= snake;
+type            ::= identifier ( "[]" )? ;
+method          ::= identifier;
+threshold       ::= "threshold:" ws expression;
+
+identifier      ::= letter (letter | digit | "_" | ".")*;
+snake           ::= letter (letter | digit | "_")*;
+boolean         ::= "true" | "false";
+number          ::= digit+ ("." digit+)? ;
+integer         ::= digit+;
+letter          ::= "A".."Z" | "a".."z";
+digit           ::= "0".."9";
+ws              ::= (" " | "\t")+;
+nl              ::= "\n";
+indented        ::= ("    " | "\t")+;

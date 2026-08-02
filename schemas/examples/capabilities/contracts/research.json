@@ -1,0 +1,14 @@
+{
+  "kind": "contract_capability",
+  "contract": "research",
+  "required": {
+    "read": true,
+    "research": true,
+    "write": true
+  },
+  "optional": {
+    "execute": false,
+    "verify": true,
+    "remember": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "negotiation",
+  "contract": "validation",
+  "candidates": [
+    {
+      "entity": "llm_assistente",
+      "match": true
+    },
+    {
+      "entity": "humano_engenheiro",
+      "match": true
+    },
+    {
+      "entity": "sistema_legado",
+      "match": false,
+      "missing": ["verify"]
+    }
+  ],
+  "chosen": "llm_assistente",
+  "decision": "D-GAME-021"
+}

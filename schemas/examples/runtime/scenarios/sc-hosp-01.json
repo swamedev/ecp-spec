@@ -1,0 +1,58 @@
+{
+  "kind": "runtime_scenario",
+  "scenario_id": "sc-hosp-01",
+  "case": "hospital",
+  "title": "Hospital (CASO 12): violação de SLA escalada; execução com supervisão segue",
+  "session": "ss-hosp",
+  "steps": [
+    {
+      "step": "transition",
+      "from": "Discovery",
+      "to": "Research",
+      "decision": "D-HOSP-001",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "transition",
+      "from": "Research",
+      "to": "Planning",
+      "decision": "D-HOSP-002",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "transition",
+      "from": "Planning",
+      "to": "Execution",
+      "decision": "D-HOSP-031",
+      "authority": {
+        "actor": "sistema_legado",
+        "co_authors": ["humano_engenheiro"],
+        "consensus": "supervisao"
+      }
+    },
+    {
+      "step": "event",
+      "event": "ev-hosp-sla"
+    },
+    {
+      "step": "reaval",
+      "task_id": "re-hosp-sla",
+      "suspects": ["C-HOSP-EXEC"],
+      "result": "reavaliado",
+      "decision": "D-HOSP-032"
+    },
+    {
+      "step": "failure",
+      "contract": "C-HOSP-EXEC",
+      "declared": "escalate",
+      "handled": true
+    },
+    {
+      "step": "transition",
+      "from": "Execution",
+      "to": "Validation",
+      "decision": "D-HOSP-033",
+      "authority": { "actor": "humano_engenheiro" }
+    }
+  ]
+}

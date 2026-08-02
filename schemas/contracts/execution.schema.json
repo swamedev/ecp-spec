@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/contracts/execution.schema.json",
+  "title": "Contrato execution",
+  "description": "Estado Execution (ECP-100 §7.4): produção de artefatos rastreáveis (Lei L-1 / INV-7).",
+  "allOf": [
+    { "$ref": "https://ecp.dev/schemas/contract.base.schema.json" },
+    {
+      "properties": {
+        "contract": { "const": "execution" },
+        "state": { "const": "Execution" },
+        "inputs": {
+          "type": "object",
+          "required": ["plan", "decisions"]
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["artifacts", "results"]
+        },
+        "required": {
+          "type": "array",
+          "contains": { "const": "artifacts_traceable" }
+        }
+      }
+    }
+  ]
+}

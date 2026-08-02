@@ -1,0 +1,14 @@
+{
+  "kind": "entity_capability",
+  "entity": "llm_assistente",
+  "atomic": {
+    "read": true,
+    "write": true,
+    "execute": false,
+    "verify": true,
+    "research": true,
+    "remember": true
+  },
+  "can_sign": ["discovery", "research", "planning", "validation"],
+  "evidence": "avaliacao_benchmark_pre_registrado"
+}

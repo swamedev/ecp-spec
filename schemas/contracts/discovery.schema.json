@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/contracts/discovery.schema.json",
+  "title": "Contrato discovery",
+  "description": "Estado Discovery (ECP-100 §7.1): entendimento do problema e do objetivo.",
+  "allOf": [
+    { "$ref": "https://ecp.dev/schemas/contract.base.schema.json" },
+    {
+      "properties": {
+        "contract": { "const": "discovery" },
+        "state": { "const": "Discovery" },
+        "inputs": {
+          "type": "object",
+          "required": ["problem", "goal"]
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["problem_model"]
+        },
+        "required": {
+          "type": "array",
+          "contains": { "const": "goal_understood" }
+        }
+      }
+    }
+  ]
+}

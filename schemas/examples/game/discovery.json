@@ -1,0 +1,20 @@
+{
+  "contract": "discovery",
+  "state": "Discovery",
+  "preconditions": ["problem_provided", "goal_provided"],
+  "inputs": {
+    "problem": "Problem",
+    "goal": "Goal"
+  },
+  "outputs": {
+    "problem_model": "ProblemModel",
+    "constraints": "Constraint[]"
+  },
+  "required": ["goal_understood"],
+  "exit": {
+    "condition": "confidence >= 0.85",
+    "probabilistic": false
+  },
+  "failure": { "action": "go_to", "target": "Research" },
+  "evidence": ["problem_model", "constraints"]
+}

@@ -148,7 +148,7 @@ Cada documento declara seu `Status` no front matter. Nada em `Rascunho` é norma
 
 ## 8. Estado atual
 
-**Camada 1 — Cognição (em rascunho).** **Fase V0 — Validação (concluída):** a fundação foi congelada, falsificada (PROOF), exercitada (CASES) e corrigida; a barreira de avanço da Camada 2 foi transposta. **Camada 2 — Engenharia (iniciada):** `ECP-100` rascunha a máquina de estados formal que implementa o `ECP-010`. Ver [ROADMAP.md](ROADMAP.md) e [CHANGELOG.md](CHANGELOG.md).
+**Camada 1 — Cognição (em rascunho).** **Fase V0 — Validação (concluída):** a fundação foi congelada, falsificada (PROOF), exercitada (CASES) e corrigida; a barreira de avanço da Camada 2 foi transposta. **Camada 2 — Engenharia (em andamento):** `ECP-100` (máquina de estados formal), `ECP-200` (Capability Engine), `ECP-300` (Runtime — motor sobre o grafo) e a gramática validável por máquina em `schemas/` (incluindo tipos de runtime e simulador). Ver [ROADMAP.md](ROADMAP.md) e [CHANGELOG.md](CHANGELOG.md).
 
 | Documento | Título | Tipo | Status |
 |---|---|---|---|
@@ -169,6 +169,8 @@ Cada documento declara seu `Status` no front matter. Nada em `Rascunho` é norma
 | Documento | Título | Tipo | Status |
 |---|---|---|---|
 | [ECP-100](02-core/ECP-100.md) | Máquina de Estados Formal (contratos discovery/research/planning/execution/validation) | Protocolo | Rascunho |
+| [ECP-200](02-core/ECP-200.md) | Capability Engine (capacidades atômicas, negociação, mapeamento → contrato) | Protocolo | Rascunho |
+| [ECP-300](03-runtime/ECP-300.md) | Runtime (motor sobre o grafo: invalidação, falhas, sessão, memória) | Protocolo | Rascunho |
 
 **Fase V0 — Validação** (documentos de trabalho, sem força normativa):
 
@@ -176,7 +178,7 @@ Cada documento declara seu `Status` no front matter. Nada em `Rascunho` é norma
 |---|---|---|
 | [ECP-PROOF](01-validation/ECP-PROOF.md) | Tentativa de falsificação de L-0, L-1, P-1..P-12 (rodada 2: 11/11 pendências resolvidas, 0 derrubadas) | Rascunho |
 | [ECP-CASES](01-validation/ECP-CASES.md) | 20 projetos-testes de domínios diversos (rodada 2: 19 PASSA, 1 PARCIAL, 0 NÃO PASSA) | Rascunho |
-| [ECP-GLOSSARY](01-validation/ECP-GLOSSARY.md) | Semântica formal congelada das entidades (16 termos) | Rascunho |
+| [ECP-GLOSSARY](01-validation/ECP-GLOSSARY.md) | Semântica formal congelada das entidades (18 termos) | Rascunho |
 | [ECP-INVARIANTS](01-validation/ECP-INVARIANTS.md) | Leis imutáveis do protocolo | Rascunho |
 
 ## 9. Licença

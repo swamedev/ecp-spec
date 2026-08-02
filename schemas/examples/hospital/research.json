@@ -1,0 +1,16 @@
+{
+  "contract": "research",
+  "state": "Research",
+  "inputs": {
+    "knowledge_map": "KnowledgeMap",
+    "gaps": "KnowledgeGap[]"
+  },
+  "outputs": {
+    "evidence": "Evidence[]",
+    "updated_knowledge": "KnowledgeMap"
+  },
+  "required": ["gaps_reduced_or_reasoned"],
+  "exit": "sufficient_for_goal",
+  "failure": { "action": "go_to", "target": "Discovery" },
+  "evidence": ["evidence", "updated_knowledge"]
+}

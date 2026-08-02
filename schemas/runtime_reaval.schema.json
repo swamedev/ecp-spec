@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/runtime_reaval.schema.json",
+  "title": "Registro de reavaliação",
+  "description": "Resultado de uma reavaliação disparada por invalidação/evento (ECP-300 §3). Reavaliação é decisão registrada (ECP-300.4): 'reavaliado' exige Decision Record; 'sem_reacao' exige justificativa registrada (ECP-100.2).",
+  "type": "object",
+  "required": ["kind", "task_id", "triggered_by", "suspects", "priority", "result"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "runtime_reaval" },
+    "task_id": { "type": "string" },
+    "triggered_by": { "type": "string" },
+    "suspects": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "priority": { "enum": ["low", "medium", "high"] },
+    "result": { "enum": ["reavaliado", "sem_reacao"] },
+    "decision": { "type": "string" },
+    "justification": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "result": { "const": "reavaliado" } }, "required": ["result"] },
+      "then": { "required": ["decision"] },
+      "else": { "required": ["justification"] }
+    }
+  ]
+}

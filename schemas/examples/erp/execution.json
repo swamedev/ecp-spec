@@ -1,0 +1,16 @@
+{
+  "contract": "execution",
+  "state": "Execution",
+  "inputs": {
+    "plan": "Plan",
+    "decisions": "DecisionRecord[]"
+  },
+  "outputs": {
+    "artifacts": "Artifact[]",
+    "results": "Result[]"
+  },
+  "required": ["artifacts_traceable"],
+  "exit": "plan_completed",
+  "failure": { "action": "retry", "retries": 3 },
+  "evidence": ["artifacts", "results"]
+}

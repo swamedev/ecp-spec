@@ -1,0 +1,8 @@
+{
+  "kind": "runtime_event",
+  "event_id": "ev-erp-reg",
+  "type": "external",
+  "source": "Prazo regulatório de migração antecipado pelo órgão (CASO 1)",
+  "affects": ["C-ERP-PLAN", "C-ERP-EXEC"],
+  "priority": "high"
+}

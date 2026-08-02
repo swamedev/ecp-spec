@@ -1,0 +1,16 @@
+{
+  "kind": "runtime_session",
+  "session_id": "ss-hosp",
+  "case": "hospital",
+  "state": "Execution",
+  "since": "2026-08-02T08:15:00Z",
+  "decision_entrada": "D-HOSP-031",
+  "authority": {
+    "actor": "sistema_legado",
+    "role": "executor",
+    "co_authors": ["humano_engenheiro"],
+    "consensus": "supervisao"
+  },
+  "active_contracts": ["C-HOSP-EXEC"],
+  "memory": ["D-HOSP-002"]
+}

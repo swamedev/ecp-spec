@@ -2,6 +2,75 @@
 
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) com versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.10.0] — 2026-08-02
+
+### Adicionado
+
+- **`03-runtime/ECP-300.md` — Motor de Execução sobre o Grafo (Runtime)** (Rascunho): tupla do motor `R=(G,Q,M,P)` — grafo (fonte da verdade), fila de reavaliação, máquina de estados e memória persistente; contratos assinados viram nós conectados a goals/suposições/evidência; **propagação de invalidação** (marcar suspeitos → priorizar → enfileirar → acordar, sem transicionar — RNF-3); tratamento de falhas (`FAILURE` → `go_to`/`retry`/`escalate`, falha sem tratamento **bloqueia**); sessão e memória persistente entre contratos; interface com a máquina de estados (ECP-100); regras ECP-300.1..300.4; NFRs RNF-1..RNF-3 no cabeçalho.
+- **Tipos de runtime na gramática** em `schemas/`:
+  - `runtime_event.schema.json` — evento que entra na fila de reavaliação; **não possui** campo `transition` de propósito (RNF-3).
+  - `runtime_reaval.schema.json` — reavaliação: `reavaliado` exige Decision Record; `sem_reacao` exige justificativa (ECP-100.2).
+  - `runtime_session.schema.json` — contexto de sessão e memória persistente (estado observável, autoridade, contratos ativos).
+  - `runtime_scenario.schema.json` — roteiro de execução simulada (event, invalidate, reaval, transition, failure).
+- **Simulador `scripts/simulate_runtime.py`**: verifica os invariantes do motor passo a passo (evento não transiciona; reavaliação é decisão; falha sem tratamento bloqueia; invalidação sem dependentes é erro; transição exige autoridade e Decision Record).
+- **Exemplos sintéticos**: 3 eventos, 3 reavaliações, 3 sessões e 3 cenários (ERP: evento regulatório + invalidação A-1 reabre Planning; Game: evento de mercado com não-reação justificada por limiar; Hospital: violação de SLA escalada com supervisão).
+
+### Alterado
+
+- `scripts/validate_contracts.py`: suporte aos tipos `runtime_event`/`runtime_reaval`/`runtime_session`/`runtime_scenario` (dispatcher por `kind`); checagens semânticas ECP-300 (evento não reavaliado antes de transição; invalidação sem dependentes; falha sem `FAILURE` resolvida).
+- `schemas/README.md`: documenta os schemas de runtime e o simulador.
+- `ECP-GLOSSARY`: novos termos SESSÃO e REAVALIAÇÃO (origem ECP-300).
+- `ROADMAP`: seção 03 — Runtime marcada com ECP-300 e tipos de runtime concluídos.
+
+### Validação
+
+- Linter: **38/38 documentos conformes** (15 contratos + 3 perfis + 5 mapeamentos + 3 negociações + 12 documentos de runtime).
+- Simulador: **12 documentos positivos conformes; 5 falsificações detectadas** — evento que transiciona (schema: campo `transition` + cenário: transição sem reavaliação), decisões suspeitas sem reavaliação (ECP-300.4), falha sem `FAILURE` resolvida (ECP-300.2), invalidação sem dependentes (ECP-300 §3).
+
+## [0.9.0] — 2026-08-02
+
+### Adicionado
+
+- **`02-core/ECP-200.md` — Capability Engine** (Rascunho): capacidades atômicas (`read`, `write`, `execute`, `verify`, `research`, `remember`); mapeamento capacidade → contrato; protocolo de negociação (descoberta → declaração → matching → fallback → assinatura), cada ato uma decisão registrada (Lei L-0); regras ECP-200.1..200.4; perfis heterogêneos (humano, LLM, sistema legado).
+- **Gramática do Capability Engine** em `schemas/`:
+  - `capability.schema.json` — perfil de capacidades de uma entidade.
+  - `contract_capability.schema.json` — mapeamento contrato → capacidades mínimas.
+  - `negotiation.schema.json` — registro de negociação (candidates, chosen, fallback, decision).
+- **Exemplos sintéticos**: perfis `humano_engenheiro` / `llm_assistente` / `sistema_legado`, mapeamentos dos 5 contratos e 3 negociações por CASE (ERP → sistema legado executa; Game → LLM valida; Hospital → legado parcial com supervisão, exercitando fallback + autoridade).
+
+### Alterado
+
+- `scripts/validate_contracts.py`: suporte aos tipos `entity_capability`/`contract_capability`/`negotiation` (dispatcher por `kind`); checagens semânticas ECP-200 (write mínimo, can_sign × atômicas, negociação sem fallback).
+- `schemas/README.md`: documenta os novos schemas e o linter de capacidades.
+- `ECP-GLOSSARY` CAPABILITY: origem estendida para ECP-200; declaração verificável pela gramática.
+
+### Validação
+
+- Linter: **26/26 documentos conformes** (15 contratos + 3 perfis + 5 mapeamentos + 3 negociações).
+- Falsificação: perfil sem `write` + `can_sign` inconsistente (2 erros ECP-200.1/200.3) e negociação escolhendo candidato parcial sem fallback (ECP-200.2) são detectados.
+
+## [0.8.0] — 2026-08-02
+
+### Adicionado
+
+- **Gramática formal dos contratos** (`schemas/`, ciclo construção → falsificação → consolidação):
+  - `schemas/contract.base.schema.json` — estrutura comum (contract, state, exit, failure obrigatório — P-7 —, evidence mín. 1, authority opcional).
+  - `schemas/contracts/*.schema.json` — refino por tipo: `discovery`, `research`, `planning`, `execution`, `validation` (inputs/outputs/required de cada estado do ECP-100 §7).
+  - `schemas/grammar.ebnf` — gramática da DSL textual (ECP-001 §7).
+  - `schemas/examples/` — 15 contratos sintéticos dos CASES ERP (1), Game (3) e Hospital (12); `game/research` exercita EXIT probabilístico (RNF-1), `hospital/planning` exercita autoridade coletiva (RNF-2).
+  - `scripts/validate_contracts.py` — linter mínimo (JSON Schema draft 2020-12 + checagens semânticas: evidence ∈ outputs, EXIT probabilístico completo, authority válida).
+
+### Alterado
+
+- `schemas/README.md`: documenta estrutura, garantias e uso do linter.
+- `ECP-001` §7.4: gramática formal passa a existir em `schemas/` (antes "será definida").
+- `ECP-100` §7: referência à forma validável por máquina em `schemas/`.
+- `ROADMAP`: item "Gramática formal de contratos" concluído.
+
+### Validação
+
+- Linter: **15/15 contratos conformes**; teste de falsificação com contrato inválido detecta 9 violações (nome de arquivo, inputs ausentes, evidence órfã, EXIT probabilístico incompleto, authority sem actor/consenso).
+
 ## [0.7.0] — 2026-08-02
 
 ### Adicionado

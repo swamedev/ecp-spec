@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/contracts/validation.schema.json",
+  "title": "Contrato validation",
+  "description": "Estado Validation (ECP-100 §7.4): veredito sobre o objetivo com critérios de sucesso.",
+  "allOf": [
+    { "$ref": "https://ecp.dev/schemas/contract.base.schema.json" },
+    {
+      "properties": {
+        "contract": { "const": "validation" },
+        "state": { "const": "Validation" },
+        "inputs": {
+          "type": "object",
+          "required": ["goal", "success_criteria", "results"]
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["verdict", "learning"]
+        },
+        "required": {
+          "type": "array",
+          "contains": { "const": "verdict_evidenced" }
+        }
+      }
+    }
+  ]
+}

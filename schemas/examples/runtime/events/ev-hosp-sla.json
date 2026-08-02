@@ -1,0 +1,8 @@
+{
+  "kind": "runtime_event",
+  "event_id": "ev-hosp-sla",
+  "type": "external",
+  "source": "Violação de SLA de resposta do sistema legado (CASO 12)",
+  "affects": ["C-HOSP-EXEC"],
+  "priority": "high"
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "runtime_event",
+  "event_id": "neg-evt-trans",
+  "type": "external",
+  "source": "Falsificação: evento que tenta transicionar o motor (violaria RNF-3)",
+  "affects": ["C-X-EXEC"],
+  "priority": "medium",
+  "transition": "Planning"
+}

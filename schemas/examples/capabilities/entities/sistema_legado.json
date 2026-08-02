@@ -1,0 +1,14 @@
+{
+  "kind": "entity_capability",
+  "entity": "sistema_legado",
+  "atomic": {
+    "read": true,
+    "write": true,
+    "execute": true,
+    "verify": false,
+    "research": false,
+    "remember": false
+  },
+  "can_sign": ["execution"],
+  "evidence": "certificacao_erp_legado"
+}

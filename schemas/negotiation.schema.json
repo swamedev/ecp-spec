@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/negotiation.schema.json",
+  "title": "Registro de negociação de contrato",
+  "description": "Resultado dos quatro atos de negociação (ECP-200 §4): descoberta, declaração, matching, fallback/assinatura. Toda negociação é decisão registrada (ECP-200.2 / Lei L-0).",
+  "type": "object",
+  "required": ["kind", "contract", "candidates", "chosen", "decision"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "negotiation" },
+    "contract": {
+      "enum": ["discovery", "research", "planning", "execution", "validation"]
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["entity", "match"],
+        "additionalProperties": false,
+        "properties": {
+          "entity": { "type": "string" },
+          "match": { "type": "boolean" },
+          "partial": { "type": "boolean" },
+          "missing": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "chosen": { "type": "string" },
+    "fallback": {
+      "enum": ["parcial_com_supervisao", "escalar", "reduzir_requisito"]
+    },
+    "decision": { "type": "string" }
+  }
+}

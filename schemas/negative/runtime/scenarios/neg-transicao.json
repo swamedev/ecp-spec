@@ -1,0 +1,19 @@
+{
+  "kind": "runtime_scenario",
+  "scenario_id": "neg-transicao",
+  "case": "erp",
+  "title": "Falsificação: evento externo causa transição sem reavaliação (RNF-3 / ECP-300.3)",
+  "steps": [
+    {
+      "step": "event",
+      "event": "ev-erp-reg"
+    },
+    {
+      "step": "transition",
+      "from": "Execution",
+      "to": "Planning",
+      "decision": "D-NEG-001",
+      "authority": { "actor": "humano_engenheiro" }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "runtime_session",
+  "session_id": "ss-erp",
+  "case": "erp",
+  "state": "Execution",
+  "since": "2026-08-02T10:00:00Z",
+  "decision_entrada": "D-ERP-010",
+  "authority": {
+    "actor": "humano_engenheiro",
+    "role": "decisor"
+  },
+  "active_contracts": ["C-ERP-EXEC"],
+  "memory": ["D-ERP-003", "ART-MIG-01"]
+}

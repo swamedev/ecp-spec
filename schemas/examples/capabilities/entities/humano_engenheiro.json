@@ -1,0 +1,14 @@
+{
+  "kind": "entity_capability",
+  "entity": "humano_engenheiro",
+  "atomic": {
+    "read": true,
+    "write": true,
+    "execute": true,
+    "verify": true,
+    "research": true,
+    "remember": true
+  },
+  "can_sign": ["discovery", "research", "planning", "execution", "validation"],
+  "evidence": "certificacao_v0_2026"
+}

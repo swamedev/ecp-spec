@@ -5,7 +5,7 @@
 | **Tipo** | Documento de Validação (`VALID`) |
 | **Fase** | V0 — Validation |
 | **Status** | Rascunho |
-| **Versão** | 0.2.0 |
+| **Versão** | 0.4.0 |
 | **Data** | 2026-08-02 |
 | **Autores** | ECP Contributors |
 | **Objetivo** | Congelar o significado formal de cada entidade do ECP |
@@ -271,11 +271,12 @@ VERSÃO:       0.1.0
 NÃO É:        Um atributo de pessoa ou modelo de IA. Não é
               afirmação de qualidade ("bom em X").
 RELACIONAMENTOS: Capability mapeia para Contract executável;
-              entidade assume capacidades declaradas.
+              entidade assume capacidades declaradas; declaração é
+              verificável pela gramática (schemas/).
 EXEMPLOS:     "Executar testes", "acessar a API", "registrar decisões".
 CONTRAEXEMPLOS: "Raciocina bem", "entende o negócio" (não verificável).
-RFC DE ORIGEM:  ECP-001 (Camada 2, 02-core)
-VERSÃO:       0.1.0
+RFC DE ORIGEM:  ECP-001 (Camada 2, 02-core) / ECP-200 (declaração e negociação)
+VERSÃO:       0.2.0
 ```
 
 ### CONTRACT
@@ -340,6 +341,50 @@ RFC DE ORIGEM:  ECP-000 (Seção 5.1, nota de escopo L-1) / ECP-003.1
 VERSÃO:       0.1.0
 ```
 
+### SESSÃO
+
+```
+É:            Contexto de execução persistente do runtime entre
+              contratos: projeção do estado observável da máquina,
+              decisão de entrada, autoridade ativa e artefatos de
+              memória. Um contrato retomado sabe de onde veio e o que
+              já foi registrado (ECP-300 §5).
+NÃO É:        Um log de conversa. Não é o grafo (a sessão é contexto
+              derivado; o grafo é o modelo). Não é estado sem origem
+              (toda sessão referencia a decisão que a abriu).
+RELACIONAMENTOS: Sessão PROJETA State; referencia Decision de entrada
+              (L-0); mantém memória rastreável (L-1); suporta retry e
+              go_to sem perder o rastro.
+EXEMPLOS:     "Retomar o contrato de execution a partir da sessão que
+              registrou D-ERP-010."
+CONTRAEXEMPLOS: "Continuar de onde paramos" sem registro do ponto de
+              entrada.
+RFC DE ORIGEM:  ECP-300 (Seção 5)
+VERSÃO:       0.1.0
+```
+
+### REAVALIAÇÃO
+
+```
+É:            Devolução de uma decisão suspeita ao radar da entidade,
+              disparada por invalidação de suposição, falha ou gatilho
+              externo. É DECISÃO registrada (reavaliado) ou não-reação
+              justificada — nunca recálculo automático (ECP-300.4).
+NÃO É:        Transição (a reavaliação não move o estado). Não é
+              recálculo mecânico de critério. Não é resposta automática
+              a evento (RNF-3).
+RELACIONAMENTOS: Reavaliação é disparada por evento/invalidação;
+              marca decisões como suspeitas; produz Decision Record
+              (ou justificativa de não-reação); precede qualquer
+              transição subsequente.
+EXEMPLOS:     "Suposição A-1 invalidada → decisões que dela dependem
+              marcadas suspeitas → reavaliadas com Decision Record."
+CONTRAEXEMPLOS: "Evento externo fez o sistema pular para Planning
+              sozinho" (viola RNF-3).
+RFC DE ORIGEM:  ECP-300 (Seções 3 e 7)
+VERSÃO:       0.1.0
+```
+
 ---
 
 ## Tabela de consistência
@@ -362,6 +407,8 @@ VERSÃO:       0.1.0
 | Contract | prompt | Instrução de estilo |
 | Processamento | decisão | Reflexo (autorizado por decisão) |
 | Exploração | projeto | Pesquisa (com goal formalizado) |
+| Sessão | log de conversa | Grafo (modelo) |
+| Reavaliação | transição | Recálculo automático (mecânico) |
 
 ---
 
@@ -369,5 +416,7 @@ VERSÃO:       0.1.0
 
 | Versão | Data | Mudança |
 |---|---|---|
+| 0.4.0 | 2026-08-02 | Novos termos SESSÃO e REAVALIAÇÃO (origem ECP-300); tabela de consistência atualizada. |
+| 0.3.0 | 2026-08-02 | CAPABILITY: origem estendida para ECP-200 (declaração e negociação); declaração verificável pela gramática. |
 | 0.2.0 | 2026-08-02 | Novos termos PROCESSAMENTO (nota L-0) e EXPLORAÇÃO (nota L-1); tabela de consistência atualizada. |
 | 0.1.0 | 2026-08-02 | Congelamento da semântica: 14 termos (cadeia congelada + apoio); regra anti-sinônimo; tabela de consistência. |

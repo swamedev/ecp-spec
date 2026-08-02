@@ -1,0 +1,20 @@
+{
+  "kind": "runtime_scenario",
+  "scenario_id": "neg-sem-reaval",
+  "case": "erp",
+  "title": "Falsificação: decisões suspeitas sem reavaliação (ECP-300.4)",
+  "steps": [
+    {
+      "step": "transition",
+      "from": "Discovery",
+      "to": "Research",
+      "decision": "D-NEG-002",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "invalidate",
+      "assumption": "A-2",
+      "affects": ["C-ERP-EXEC"]
+    }
+  ]
+}

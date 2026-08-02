@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/contract.base.schema.json",
+  "title": "Contrato ECP — estrutura base",
+  "description": "Estrutura comum a todo contrato ECP (ECP-001 §7 e ECP-100 §7). Cada tipo refina este schema em contracts/<tipo>.schema.json.",
+  "type": "object",
+  "required": ["contract", "state", "exit", "failure", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "contract": {
+      "type": "string",
+      "enum": ["discovery", "research", "planning", "execution", "validation"]
+    },
+    "state": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Za-z]+$"
+    },
+    "preconditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "outputs": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "required": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exit": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "required": ["condition"],
+          "additionalProperties": false,
+          "properties": {
+            "condition": { "type": "string" },
+            "probabilistic": { "type": "boolean" },
+            "threshold": { "type": "string" },
+            "method": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "failure": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^(go_to [A-Z][A-Za-z]+|retry [0-9]+|escalate)$"
+        },
+        {
+          "type": "object",
+          "required": ["action"],
+          "additionalProperties": false,
+          "properties": {
+            "action": { "type": "string", "enum": ["go_to", "retry", "escalate"] },
+            "target": { "type": "string", "pattern": "^[A-Z][A-Za-z]+$" },
+            "retries": { "type": "integer", "minimum": 0 }
+          }
+        }
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "actor": { "type": "string" },
+        "role": { "type": "string" },
+        "co_authors": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "consensus": { "type": "string" }
+      }
+    }
+  }
+}

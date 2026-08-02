@@ -1,0 +1,9 @@
+{
+  "kind": "runtime_reaval",
+  "task_id": "re-erp-reg",
+  "triggered_by": "ev-erp-reg",
+  "suspects": ["C-ERP-EXEC", "C-ERP-PLAN"],
+  "priority": "high",
+  "result": "reavaliado",
+  "decision": "D-ERP-012"
+}

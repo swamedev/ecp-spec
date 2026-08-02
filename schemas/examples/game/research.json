@@ -1,0 +1,21 @@
+{
+  "contract": "research",
+  "state": "Research",
+  "inputs": {
+    "knowledge_map": "KnowledgeMap",
+    "gaps": "KnowledgeGap[]"
+  },
+  "outputs": {
+    "evidence": "Evidence[]",
+    "updated_knowledge": "KnowledgeMap"
+  },
+  "required": ["gaps_reduced_or_reasoned"],
+  "exit": {
+    "condition": "P(retencao_D1 >= 0.30) >= 0.70",
+    "probabilistic": true,
+    "threshold": "P >= 0.70",
+    "method": "playtest_telemetria_pre_registrado"
+  },
+  "failure": { "action": "go_to", "target": "Discovery" },
+  "evidence": ["evidence", "updated_knowledge"]
+}

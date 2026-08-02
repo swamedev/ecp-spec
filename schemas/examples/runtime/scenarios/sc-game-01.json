@@ -1,0 +1,48 @@
+{
+  "kind": "runtime_scenario",
+  "scenario_id": "sc-game-01",
+  "case": "game",
+  "title": "Game (CASO 3): evento de mercado não reage (limiar pré-registrado) e execução segue",
+  "session": "ss-game",
+  "steps": [
+    {
+      "step": "transition",
+      "from": "Discovery",
+      "to": "Research",
+      "decision": "D-GAME-001",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "transition",
+      "from": "Research",
+      "to": "Planning",
+      "decision": "D-GAME-020",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "transition",
+      "from": "Planning",
+      "to": "Execution",
+      "decision": "D-GAME-021",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "event",
+      "event": "ev-game-trend"
+    },
+    {
+      "step": "reaval",
+      "task_id": "re-game-trend",
+      "suspects": ["C-GAME-VAL"],
+      "result": "sem_reacao",
+      "justification": "Tendência abaixo do limiar pré-registrado; EXIT continua válido."
+    },
+    {
+      "step": "transition",
+      "from": "Execution",
+      "to": "Validation",
+      "decision": "D-GAME-022",
+      "authority": { "actor": "llm_assistente" }
+    }
+  ]
+}

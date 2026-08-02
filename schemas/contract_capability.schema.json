@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/contract_capability.schema.json",
+  "title": "Mapeamento contrato → capacidades mínimas",
+  "description": "Capacidades atômicas que um contrato exige para ser assinado (ECP-200 §3).",
+  "type": "object",
+  "required": ["kind", "contract", "required", "optional"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "contract_capability" },
+    "contract": {
+      "enum": ["discovery", "research", "planning", "execution", "validation"]
+    },
+    "required": { "$ref": "#/definitions/capset" },
+    "optional": { "$ref": "#/definitions/capset" }
+  },
+  "definitions": {
+    "capset": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "read": { "type": "boolean" },
+        "write": { "type": "boolean" },
+        "execute": { "type": "boolean" },
+        "verify": { "type": "boolean" },
+        "research": { "type": "boolean" },
+        "remember": { "type": "boolean" }
+      }
+    }
+  }
+}

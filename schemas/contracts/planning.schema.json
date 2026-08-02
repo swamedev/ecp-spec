@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/contracts/planning.schema.json",
+  "title": "Contrato planning",
+  "description": "Estado Planning (ECP-100 §7.3): hipóteses, decisões e plano. Exige autoridade declarada (ECP-100.1 / RNF-2).",
+  "allOf": [
+    { "$ref": "https://ecp.dev/schemas/contract.base.schema.json" },
+    {
+      "properties": {
+        "contract": { "const": "planning" },
+        "state": { "const": "Planning" },
+        "inputs": {
+          "type": "object",
+          "required": ["problem_model", "goal", "constraints", "alternatives"]
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["decision_records", "plan", "risks"]
+        },
+        "required": {
+          "type": "array",
+          "contains": { "const": "every_decision_has_authority" }
+        }
+      }
+    }
+  ]
+}

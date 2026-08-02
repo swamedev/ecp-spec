@@ -67,20 +67,19 @@ A fundação foi **congelada por decisão do Arquiteto-Chefe**: nenhuma RFC nova
 - [ ] `ECP-102` — Refinamento do contrato `Research` (aquisição de conhecimento)
 - [ ] `ECP-103` — Refinamento do contrato `Planning` (hipóteses, decisões e plano)
 - [ ] `ECP-104` — Refinamento dos contratos `Execution` / `Validation`
-- [ ] Gramática formal de contratos em `schemas/`
+- [x] Gramática formal de contratos em `schemas/` (JSON Schema por tipo + EBNF + linter; validada contra os CASES ERP, Game, Hospital)
 
 ### 02-core — Capability Engine (ECP-200..299)
 
-- [ ] Declaração de capacidades de uma entidade (leitura, escrita, execução, verificação, pesquisa, memória)
-- [ ] Negociação de capacidades entre entidades
-- [ ] Mapeamento capacidade → contrato executável
+- [x] `ECP-200` — Declaração de capacidades de uma entidade (leitura, escrita, execução, verificação, pesquisa, memória); mapeamento capacidade → contrato; protocolo de negociação (descoberta, declaração, matching, fallback, assinatura); gramática em `schemas/` como interface (rascunho)
+- [ ] Negociação de capacidades entre entidades (detalhamento das regras de composição e hierarquia)
+- [ ] Mapeamento capacidade → contrato executável (extensões da tabela para contratos futuros)
 
 ### 03 — Runtime (ECP-300..399)
 
-- [ ] Execução sobre o **grafo de conhecimento** (não sobre uma fila de estados)
-- [ ] Motor de reavaliação de dependências (invalidação de suposições → decisões suspeitas)
-- [ ] Contexto de sessão e memória persistente entre contratos
-- [ ] Tratamento de falhas e transições (`FAILURE`, `go_to`, retry, escalonamento)
+- [x] `ECP-300` — Motor de Execução sobre o Grafo: tupla `R=(G,Q,M,P)` (grafo, fila de reavaliação, máquina de estados, memória); contratos assinados como nós; propagação de invalidação (marcar suspeitos → priorizar → enfileirar → acordar, sem transicionar); tratamento de falhas (`FAILURE` → `go_to`/`retry`/`escalate`, bloqueio sem tratamento); sessão e memória persistente; regras ECP-300.1..300.4 (rascunho)
+- [x] Tipos de runtime na gramática em `schemas/` (`runtime_event`, `runtime_reaval`, `runtime_session`, `runtime_scenario`) + simulador `scripts/simulate_runtime.py` (12 documentos positivos conformes; 5 falsificações detectadas)
+- [ ] Implementação de referência do motor (comportamento vivo sobre o grafo)
 
 ### 04 — Governance (ECP-400..499)
 

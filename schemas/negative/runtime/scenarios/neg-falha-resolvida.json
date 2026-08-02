@@ -1,0 +1,21 @@
+{
+  "kind": "runtime_scenario",
+  "scenario_id": "neg-falha-resolvida",
+  "case": "hospital",
+  "title": "Falsificação: falha sem FAILURE declarado resolvida pelo motor (ECP-300.2)",
+  "steps": [
+    {
+      "step": "transition",
+      "from": "Discovery",
+      "to": "Research",
+      "decision": "D-NEG-003",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "failure",
+      "contract": "C-HOSP-EXEC",
+      "declared": null,
+      "handled": true
+    }
+  ]
+}

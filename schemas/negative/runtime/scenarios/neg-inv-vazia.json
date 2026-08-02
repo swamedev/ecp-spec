@@ -1,0 +1,20 @@
+{
+  "kind": "runtime_scenario",
+  "scenario_id": "neg-inv-vazia",
+  "case": "game",
+  "title": "Falsificação: invalidação sem dependentes no grafo (ECP-300 §3)",
+  "steps": [
+    {
+      "step": "transition",
+      "from": "Discovery",
+      "to": "Research",
+      "decision": "D-NEG-004",
+      "authority": { "actor": "humano_engenheiro" }
+    },
+    {
+      "step": "invalidate",
+      "assumption": "A-3",
+      "affects": []
+    }
+  ]
+}

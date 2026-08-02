@@ -1,0 +1,21 @@
+{
+  "kind": "negotiation",
+  "contract": "execution",
+  "candidates": [
+    {
+      "entity": "humano_engenheiro",
+      "match": true
+    },
+    {
+      "entity": "sistema_legado",
+      "match": true
+    },
+    {
+      "entity": "llm_assistente",
+      "match": false,
+      "missing": ["execute"]
+    }
+  ],
+  "chosen": "sistema_legado",
+  "decision": "D-ERP-011"
+}

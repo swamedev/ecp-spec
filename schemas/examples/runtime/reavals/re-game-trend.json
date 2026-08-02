@@ -1,0 +1,9 @@
+{
+  "kind": "runtime_reaval",
+  "task_id": "re-game-trend",
+  "triggered_by": "ev-game-trend",
+  "suspects": ["C-GAME-VAL"],
+  "priority": "low",
+  "result": "sem_reacao",
+  "justification": "Tendência observada permanece abaixo do limiar pré-registrado (ECP-100.3); o EXIT do contrato de validação continua válido — reação ausente registrada."
+}

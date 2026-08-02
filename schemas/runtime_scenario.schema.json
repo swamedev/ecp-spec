@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecp.dev/schemas/runtime_scenario.schema.json",
+  "title": "Cenário de execução do runtime",
+  "description": "Roteiro de execução simulada sobre o grafo (ECP-300 §3–§4): eventos, invalidação, reavaliação, falha e transição. O simulador (scripts/simulate_runtime.py) verifica os invariantes do motor em cada passo.",
+  "type": "object",
+  "required": ["kind", "scenario_id", "case", "title", "steps"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "runtime_scenario" },
+    "scenario_id": { "type": "string" },
+    "case": { "enum": ["erp", "game", "hospital"] },
+    "title": { "type": "string" },
+    "session": { "type": "string" },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": ["step", "event"],
+            "additionalProperties": false,
+            "properties": {
+              "step": { "const": "event" },
+              "event": { "type": "string" }
+            }
+          },
+          {
+            "type": "object",
+            "required": ["step", "assumption", "affects"],
+            "additionalProperties": false,
+            "properties": {
+              "step": { "const": "invalidate" },
+              "assumption": { "type": "string" },
+              "affects": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": ["step", "task_id", "suspects", "result"],
+            "additionalProperties": false,
+            "properties": {
+              "step": { "const": "reaval" },
+              "task_id": { "type": "string" },
+              "suspects": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "result": { "enum": ["reavaliado", "sem_reacao"] },
+              "decision": { "type": "string" },
+              "justification": { "type": "string" }
+            }
+          },
+          {
+            "type": "object",
+            "required": ["step", "from", "to", "decision", "authority"],
+            "additionalProperties": false,
+            "properties": {
+              "step": { "const": "transition" },
+              "from": { "type": "string" },
+              "to": { "type": "string" },
+              "decision": { "type": "string" },
+              "authority": {
+                "type": "object",
+                "required": ["actor"],
+                "additionalProperties": false,
+                "properties": {
+                  "actor": { "type": "string" },
+                  "role": { "type": "string" },
+                  "co_authors": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "consensus": { "type": "string" }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": ["step", "contract", "declared", "handled"],
+            "additionalProperties": false,
+            "properties": {
+              "step": { "const": "failure" },
+              "contract": { "type": "string" },
+              "declared": {
+                "oneOf": [
+                  { "enum": ["go_to", "retry", "escalate"] },
+                  { "type": "null" }
+                ]
+              },
+              "handled": { "type": "boolean" },
+              "target": { "type": "string" },
+              "retries": { "type": "integer", "minimum": 0 }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
