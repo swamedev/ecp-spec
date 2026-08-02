@@ -76,7 +76,7 @@ canônica, usando o próprio ECP (Bootstrap — `EXP-001`).
 - [x] Repositório `ecp-runtime` criado em paralelo a `ecp-spec`
 - [x] **ECP Kernel** implementado com cinco responsabilidades: `Problem`, `Goal`, `Decision`, `Contract`, `Graph` (sem IA, sem API, sem banco)
 - [x] Cadeia executável: `Problem → Goal → Knowledge → Assumption → Evidence → Decision` (íntegra, rastreável e reproduzível)
-- [ ] **EXP-001** — primeiro caso real conduzido pelo runtime: modelar `P-0001`/`G-0001` do próprio Bootstrap e gerar o **Decision Graph**
+- [x] **EXP-001** — primeiro caso real conduzido pelo runtime: modelar `P-0001`/`G-0001` do próprio Bootstrap e gerar o **Decision Graph**
 - [ ] Comparação com processo tradicional (tempo, rastreabilidade, facilidade de revisão)
 
 ### Seqüência de experimentos (Validation Program)
