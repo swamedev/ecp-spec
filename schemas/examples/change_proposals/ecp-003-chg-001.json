@@ -1,0 +1,21 @@
+{
+  "kind": "change_proposal",
+  "id": "ECP-003-CHG-001",
+  "target": "ECP-003.md",
+  "summary": "Adicionar restrição de contexto a Problem Record (probabilidade mínima 0.85)",
+  "authority": {
+    "actor": "presidente_do_prior",
+    "role": "mantenedor_ecp",
+    "scope": "ECP-003.md",
+    "source": "papel",
+    "co_authors": ["mantenedor_a", "mantenedor_b"],
+    "consensus": "consenso 2/3"
+  },
+  "invariantes_tocados": [
+    {
+      "id": "INV-1",
+      "impact": "Adiciona uma nova verificação probabilística pré-registrada para Problem Record",
+      "preserved_by": "INV-1: todas as evidências mantêm o limiar de confiança >= 0.85"
+    }
+  ]
+}

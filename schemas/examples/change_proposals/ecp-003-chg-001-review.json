@@ -1,0 +1,12 @@
+{
+  "kind": "change_review",
+  "proposal_id": "ECP-003-CHG-001",
+  "reviewer": "mantenedor_a",
+  "impact_analysis": [
+    {
+      "invariant": "INV-1",
+      "analysis": "O limiar de 0.85 está dentro dos limites permitidos (0.80-0.95); a restrição melhora a verificabilidade; não há conflito com outras invariantes"
+    }
+  ],
+  "recommendation": "aprovar"
+}

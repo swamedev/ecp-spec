@@ -16,6 +16,10 @@ schemas/
 ├── runtime_reaval.schema.json     ← reavaliação (ECP-300 §3 e §7.4)
 ├── runtime_session.schema.json    ← sessão e memória persistente (ECP-300 §5)
 ├── runtime_scenario.schema.json   ← roteiro de execução simulada (ECP-300 §3–§4)
+├── governance.schema.json         ← registro de autoridade (ECP-400 §2)
+├── change_proposal.schema.json    ← proposta de mudança governada (ECP-400 §3)
+├── change_review.schema.json      ← revisão de proposta de mudança (ECP-400 §3)
+├── change_approval.schema.json    ← aprovação de proposta de mudança (ECP-400 §3)
 ├── contracts/                     ← refino por tipo de contrato
 │   ├── discovery.schema.json      ← Discovery: problem + goal (ECP-100 §7.1)
 │   ├── research.schema.json       ← Research: conhecimento/evidência (ECP-100 §7.2)

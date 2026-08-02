@@ -1,0 +1,13 @@
+{
+  "kind": "change_approval",
+  "proposal_id": "ECP-003-CHG-001",
+  "approved": true,
+  "authority": {
+    "actor": "presidente_do_prior",
+    "role": "mantenedor_ecp",
+    "scope": "ECP-003.md",
+    "source": "papel",
+    "co_authors": ["mantenedor_a", "mantenedor_b"],
+    "consensus": "consenso 2/3"
+  }
+}

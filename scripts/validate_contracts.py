@@ -34,6 +34,10 @@ KIND_FILES = {
     "runtime_reaval": "runtime_reaval.schema.json",
     "runtime_session": "runtime_session.schema.json",
     "runtime_scenario": "runtime_scenario.schema.json",
+    "governance": "governance.schema.json",
+    "change_proposal": "change_proposal.schema.json",
+    "change_review": "change_review.schema.json",
+    "change_approval": "change_approval.schema.json",
 }
 CONTRACT_MAPPINGS_DIR = SCHEMAS / "examples" / "capabilities" / "contracts"
 
@@ -135,7 +139,7 @@ def contract_semantic_checks(path: Path, doc: dict) -> list[str]:
 
 
 def kind_semantic_checks(path: Path, doc: dict) -> list[str]:
-    """Checagens semânticas de capacidade/negociação (ECP-200)."""
+    """Checagens semânticas de capacidade/negociação (ECP-200) e governança (ECP-400)."""
     errors: list[str] = []
     kind = doc["kind"]
 
@@ -198,6 +202,52 @@ def kind_semantic_checks(path: Path, doc: dict) -> list[str]:
                     errors.append(
                         f"{path}: falha sem FAILURE declarado resolvida pelo motor (ECP-300.2)"
                     )
+
+    elif kind == "governance":
+        authorities = doc.get("authorities", [])
+        for idx, auth in enumerate(authorities):
+            if not auth.get("actor"):
+                errors.append(f"{path}: autoridade {idx} sem actor (ECP-400.1)")
+            if not auth.get("role"):
+                errors.append(f"{path}: autoridade {idx} sem role (ECP-400.1)")
+            if not auth.get("scope"):
+                errors.append(f"{path}: autoridade {idx} sem scope (ECP-400.1)")
+            if auth.get("source") not in ["papel", "delegacao"]:
+                errors.append(f"{path}: autoridade {idx} com source inválido (ECP-400.1)")
+            if auth.get("source") == "delegacao" and not auth.get("delegation_ref"):
+                errors.append(f"{path}: autoridade {idx} com source='delegacao' deve ter delegation_ref (ECP-400.1)")
+            if auth.get("source") == "delegacao" and (not auth.get("from") or not auth.get("until")):
+                errors.append(f"{path}: autoridade {idx} com source='delegacao' deve ter from e until (ECP-400.1)")
+
+    elif kind == "change_proposal":
+        authority = doc.get("authority", {})
+        if not authority.get("actor"):
+            errors.append(f"{path}: proposta sem actor em authority (ECP-400.1)")
+        if not authority.get("role"):
+            errors.append(f"{path}: proposta sem role em authority (ECP-400.1)")
+        if not authority.get("scope"):
+            errors.append(f"{path}: proposta sem scope em authority (ECP-400.1)")
+        if authority.get("source") not in ["papel", "delegacao"]:
+            errors.append(f"{path}: proposta com source inválido em authority (ECP-400.1)")
+        
+        for idx, invariant in enumerate(doc.get("invariantes_tocados", [])):
+            inv_id = invariant.get("id")
+            if not inv_id:
+                errors.append(f"{path}: proposta invariante {idx} sem id")
+            if not invariant.get("impact"):
+                errors.append(f"{path}: proposta invariante {idx} ({inv_id}) sem impact")
+            if not invariant.get("preserved_by"):
+                errors.append(f"{path}: proposta invariante {idx} ({inv_id}) sem preserved_by (ECP-400.4)")
+
+    elif kind == "change_review":
+        recommendation = doc.get("recommendation")
+        if recommendation not in ["aprovar", "ajustar", "rejeitar"]:
+            errors.append(f"{path}: recomendação de review inválida (ECP-400)")
+
+    elif kind == "change_approval":
+        approved = doc.get("approved")
+        if approved is None:
+            errors.append(f"{path}: aprovação sem campo 'approved' (ECP-400)")
 
     return errors
 
