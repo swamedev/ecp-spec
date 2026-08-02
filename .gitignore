@@ -1,0 +1,8 @@
+# Arquivos temporários
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Configuração de sistema do Windows
+desktop.ini
