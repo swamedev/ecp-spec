@@ -58,16 +58,42 @@ A fundação foi **congelada por decisão do Arquiteto-Chefe**: nenhuma RFC nova
 
 **Barreira transposta em 2026-08-02 (Fase V0 concluída):** PROOF rodada 2 com 0 alvos derrubados; 19/20 casos conformes; invariantes validados. RFCs da Camada 2 podem agora atingir `Versão Candidata`. Ficam registradas como recomendações abertas para a Camada 2: inferência estatística como evidência (ECP-008), decisões coletivas e governança de hierarquia (Governance), interface contrato comercial (ECP-001/ECP-004).
 
-## FASE B — Runtime (em andamento, feature freeze)
+## VALIDATION PROGRAM (em andamento, feature freeze)
 
-**Decisão AD-001 (2026-08-02):** o ECP-SPEC entra em **feature freeze** para iniciar a Fase B — provar a especificação construindo o **ECP Reference Runtime (ERR)**, a implementação canônica. Nenhum módulo grande novo (ECP-500 Quality, ECP-600 Learning, ECP-700 Certification) será iniciado enquanto a Fase B não produzir evidência. A evolução da especificação volta a ser orientada pelos resultados da implementação.
+**Decisão AD-001 (2026-08-02):** o ECP-SPEC entra em **feature freeze**.
+**Decisão AD-002 (2026-08-02):** a Fase B evolui para um programa **permanente**
+de evidência — o **Validation Program**. Em vez de seguir direto a Certification,
+conduzimos **experimentos numerados** sobre projetos reais (`experiments/EXP-*.md`).
+Cada experimento responde objetivamente: **o ECP ajudou? ou não?** A evolução de
+`Quality`/`Learning`/`Certification` é destravada por acumulo transversal de
+evidência de múltiplos experimentos — nunca de um único.
 
-- [ ] Repositório `ecp-runtime` criado em paralelo a `ecp-spec`
-- [ ] **ECP Kernel** implementado com cinco responsabilidades: `Problem`, `Goal`, `Decision`, `Contract`, `Graph` (sem IA, sem API, sem banco)
-- [ ] Cadeia executável: `Problem → Goal → Knowledge → Assumption → Evidence → Decision` (íntegra, rastreável e reproduzível)
-- [ ] Primeiro caso real conduzido integralmente pelo runtime
+### Runtime (fundação do programa)
+
+**AD-001/AD-002:** construir o **ECP Reference Runtime (ERR)**, a implementação
+canônica, usando o próprio ECP (Bootstrap — `EXP-001`).
+
+- [x] Repositório `ecp-runtime` criado em paralelo a `ecp-spec`
+- [x] **ECP Kernel** implementado com cinco responsabilidades: `Problem`, `Goal`, `Decision`, `Contract`, `Graph` (sem IA, sem API, sem banco)
+- [x] Cadeia executável: `Problem → Goal → Knowledge → Assumption → Evidence → Decision` (íntegra, rastreável e reproduzível)
+- [ ] **EXP-001** — primeiro caso real conduzido pelo runtime: modelar `P-0001`/`G-0001` do próprio Bootstrap e gerar o **Decision Graph**
 - [ ] Comparação com processo tradicional (tempo, rastreabilidade, facilidade de revisão)
-- [ ] Retomada de Quality/Learning/Certification orientada por evidência
+
+### Seqüência de experimentos (Validation Program)
+
+| EXP | Projeto | Pergunta | Status |
+|---|---|---|---|
+| [EXP-001](experiments/EXP-001.md) | Bootstrap Runtime | O ECP conduz sua própria referência do início ao fim? | Em execução |
+| EXP-002 | ERP | O ECP escala para um sistema grande com muitas entidades? | Planejado |
+| EXP-003 | API | O ECP orienta decisões de interface/contrato? | Planejado |
+| EXP-004 | Game | O ECP lida com produto de intenção aberta/iterativa? | Planejado |
+| EXP-005 | Agente | O ECP guia um artefato com múltiplas capacidades? | Planejado |
+| EXP-006 | Aplicativo | O ECP abrange app mobile/web de ponta a ponta? | Planejado |
+| EXP-007 | Projeto externo | O ECP funciona fora do controle dos autores? | Planejado |
+
+**Critério de saída do programa:** evidência transversal de múltiplos
+experimentos, incluindo ao menos um domínio não controlado (EXP-007), antes de
+destravar plenamente `Quality`/`Learning`/`Certification`.
 
 ## CAMADA 2 — Engenharia (congelada)
 
