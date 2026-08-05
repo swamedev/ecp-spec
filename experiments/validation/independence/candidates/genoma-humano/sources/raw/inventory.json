@@ -1,0 +1,32 @@
+{
+  "tipo": "inventario_operacional_candidato",
+  "status_ecp": "NAO_PARTE_DO_ECP — ferramenta operacional descartável",
+  "producao_evidencia": "nenhuma — apenas metadados de organização",
+  "candidato": "D:\\ecp-spec\\experiments\\validation\\independence\\candidates\\genoma-humano",
+  "estrutura_valida": true,
+  "erros_organizacao": [
+    "raw/ está vazio — nenhum documento baixado ainda."
+  ],
+  "tempo_preparacao_s": {
+    "hashing_s": 0.0,
+    "total_cli_s": 0.0006
+  },
+  "total_arquivos": 0,
+  "extensoes_suportadas": [
+    ".doc",
+    ".docx",
+    ".epub",
+    ".htm",
+    ".html",
+    ".json",
+    ".md",
+    ".pdf",
+    ".rtf",
+    ".txt"
+  ],
+  "duplicatas": {},
+  "arquivos": {
+    "ok": [],
+    "unsupported": []
+  }
+}

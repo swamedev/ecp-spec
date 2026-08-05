@@ -6,3 +6,7 @@ Thumbs.db
 
 # Configuração de sistema do Windows
 desktop.ini
+
+# Bytecode Python
+__pycache__/
+*.pyc
