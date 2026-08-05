@@ -1,0 +1,228 @@
+audit:
+  id: AUDIT-2026-08-03-EXP001-PILOT
+  etapa: P-0005A.2b (Piloto)
+  protocolo: ECP-AUDIT-001
+  protocolo_versao: 0.1 (draft na execucao; ajustado e congelado como v1.0)
+  data: '2026-08-03'
+  status: nao_certifica_corpus — certifica o protocolo
+escopo:
+  experiments:
+  - EXP-001
+  corpus: CORPUS-EXPERIMENTAL-v1.yaml
+  observations: 16
+avaliadores:
+- id: A
+  papel: reconstrucao automatica (auditor.py)
+  tipo: ferramenta
+  status: executado
+- id: B
+  papel: classificacao ontologica independente (critérios ECP-AUDIT-001 §5.2)
+  tipo: agente de referencia
+  status: executado
+- id: C
+  papel: avaliador humano independente (concordancia inter-humana / kappa)
+  tipo: humano
+  status: pendente
+resultados:
+  reconstrucao:
+    total: 16
+    reconstruiveis: 16
+    falhas: []
+    obs_nao_reconstruiveis: []
+  classificacao:
+    total: 16
+    concordantes_com_corpus: 16
+    concordancia: 1.0
+    discordantes: []
+    kappa: null
+    kappa_nota: 'Nao computavel no piloto: exige dois avaliadores humanos independentes.'
+  observation_profile_conferido: true
+  detalhe_reconstrucao:
+  - id: OBS-0001
+    reconstruido: true
+    trace: exp001_graph.json:A-0001
+    kind_corpus: operational
+    verificacao:
+    - node A-0001 OK
+  - id: OBS-0002
+    reconstruido: true
+    trace: exp001_graph.json:A-0002
+    kind_corpus: operational
+    verificacao:
+    - node A-0002 OK
+  - id: OBS-0003
+    reconstruido: true
+    trace: exp001_graph.json:D-0001
+    kind_corpus: operational
+    verificacao:
+    - node D-0001 OK
+  - id: OBS-0004
+    reconstruido: true
+    trace: exp001_graph.json:E-0001
+    kind_corpus: operational
+    verificacao:
+    - node E-0001 OK
+  - id: OBS-0005
+    reconstruido: true
+    trace: exp001_graph.json:G-0001
+    kind_corpus: operational
+    verificacao:
+    - node G-0001 OK
+  - id: OBS-0006
+    reconstruido: true
+    trace: exp001_graph.json:K-0001
+    kind_corpus: operational
+    verificacao:
+    - node K-0001 OK
+  - id: OBS-0007
+    reconstruido: true
+    trace: exp001_graph.json:P-0001
+    kind_corpus: operational
+    verificacao:
+    - node P-0001 OK
+  - id: OBS-0008
+    reconstruido: true
+    trace: exp001_graph.json:G-0001-resolves-P-0001
+    kind_corpus: structural
+    verificacao:
+    - edge resolves G-0001-resolves-P-0001 OK
+  - id: OBS-0009
+    reconstruido: true
+    trace: exp001_graph.json:D-0001-serves-G-0001
+    kind_corpus: structural
+    verificacao:
+    - edge serves D-0001-serves-G-0001 OK
+  - id: OBS-0010
+    reconstruido: true
+    trace: exp001_identity.json:snapshot
+    kind_corpus: operational
+    verificacao:
+    - snapshot.decision_id=D-0002 OK
+  - id: OBS-0011
+    reconstruido: true
+    trace: exp001_identity.json:D-0002
+    kind_corpus: structural
+    verificacao:
+    - decision=D-0002 + evidencias OK
+  - id: OBS-0012
+    reconstruido: true
+    trace: exp001_execution.json:XI-0001
+    kind_corpus: operational
+    verificacao:
+    - intent.id=XI-0001 OK
+  - id: OBS-0013
+    reconstruido: true
+    trace: exp001_execution.json:provider_selection
+    kind_corpus: operational
+    verificacao:
+    - provider_escolhido=python OK
+  - id: OBS-0014
+    reconstruido: true
+    trace: exp001_model.json:OBS-0001
+    kind_corpus: operational
+    verificacao:
+    - observation.id=OBS-0001 OK
+  - id: OBS-0015
+    reconstruido: true
+    trace: exp001_model.json:E-00042
+    kind_corpus: operational
+    verificacao:
+    - evidence.id=E-00042 OK
+  - id: OBS-0016
+    reconstruido: true
+    trace: exp001_model.json:model_validation
+    kind_corpus: derived
+    verificacao:
+    - model counts 32/13 OK
+  detalhe_classificacao:
+  - id: OBS-0001
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0002
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0003
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0004
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0005
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0006
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0007
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0008
+    kind_corpus: structural
+    kind_independente: structural
+    concorda: true
+  - id: OBS-0009
+    kind_corpus: structural
+    kind_independente: structural
+    concorda: true
+  - id: OBS-0010
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0011
+    kind_corpus: structural
+    kind_independente: structural
+    concorda: true
+  - id: OBS-0012
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0013
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0014
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0015
+    kind_corpus: operational
+    kind_independente: operational
+    concorda: true
+  - id: OBS-0016
+    kind_corpus: derived
+    kind_independente: derived
+    concorda: true
+verificacao_ra_obs:
+  RA-OBS-001: 16/16 fatos verificaveis; OBS-0016 identificada como caso canonico de violacao (derived) — nao admissivel no
+    corpus primario.
+  RA-OBS-002: 16/16 com evidence + trace presentes.
+  RA-OBS-003: 16/16 reconstruiveis pelos artefatos do experimento.
+  RA-OBS-004: 16/16 com confidence_source presente.
+  RA-OBS-005: 13 OBS preservam informacao essencial (10 essenciais + 3 parciais).
+  RA-OBS-006: 16/16 com kind classificado.
+  RA-OBS-007: observation_profile presente (0.75 / 0.1875 / 0.0625).
+ambiguidades_encontradas:
+- Chaves compostas em trace (source-label-target) com IDs contendo hifen (G-0001) quebraram o parsing inicial do instrumento
+  — fragilidade da ferramenta, corrigida.
+- 'OBS-0016 (derived) e um "falso positivo": aparenta observacao, viola RA-OBS-001. O instrumento precisa trata-la explicitamente
+  como caso canonico.'
+- Concordancia inter-humana nao mensuravel no piloto (falta segundo avaliador humano).
+ajustes_protocolo:
+- 'auditor.py: reconstrucao de arestas por chave composta exata, nao por parsing de IDs com hifen.'
+- 'ECP-AUDIT-001 §5.2: criterios objetivos explicitos para kind (necessidade relacional, independencia de implementacao, impacto
+  causal).'
+- 'ECP-AUDIT-001 §9: veredito PASS_COM_RESSALVAS para corpus com OBS derived identificada.'
+- 'ECP-AUDIT-001 §7: limiares de concordancia declarados ajustaveis ate medicao com avaliadores humanos.'
+conclusao:
+  veredito_piloto: PASS (protocolo reproduzivel e objetivo dentro do escopo avaliado)
+  corpus_certificado: false
+  protocolo_certificado: true
+  proximo_passo: Medir concordancia inter-humana (kappa) na auditoria oficial com dois avaliadores independentes; entao aplicar
+    o gate ao corpus.

@@ -1,0 +1,374 @@
+version: 1.0.0
+status: congelado
+frozen_by: 'P-0005A.2a — Revisão Ontológica do Corpus'
+frozen_at: '2026-08-03'
+generated_from:
+  experiments:
+  - EXP-001
+miner_version: 0.1.0
+schema_version: '1.2'
+observation_count: 16
+observation_profile:
+  operational: 0.75
+  structural: 0.1875
+  derived: 0.0625
+revisao_ontologica:
+  relatorio: reports/REVISAO-ONTOLOGICA-P0005A-2a.md
+  descoberta: >-
+    Existem dois níveis de observação: operational (fatos/eventos da execução)
+    e structural (fatos que revelam relações da ontologia). OBS-0016 é derivada
+    e viola RA-OBS-001 (interpretação/agregação).
+  summary:
+    operational: 12
+    structural: 3
+    derived: 1
+    redundantes:
+    - OBS-0002
+    - OBS-0015
+    derivaveis:
+    - OBS-0016
+    essenciais:
+    - OBS-0001
+    - OBS-0003
+    - OBS-0004
+    - OBS-0005
+    - OBS-0006
+    - OBS-0007
+    - OBS-0008
+    - OBS-0009
+    - OBS-0011
+    - OBS-0012
+    parciais:
+    - OBS-0010
+    - OBS-0013
+    - OBS-0014
+observations:
+- id: OBS-0001
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Primeiro do tipo; evidência da existência da entidade Assumption.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Assumption A-0001 criada com status validada
+  entidades:
+  - Assumption
+  evidence: '{"author":"runtime","created_at":"2026-08-02T21:56:41+00:00","id":"A-0001","physical_id":"23f1d641-4419-46b2-8071-fa9d4bbb0b50","status":"validada","tipo":"assumption"}'
+  trace: exp001_graph.json:A-0001
+  confidence_source: EXP-001 runtime 2026-08-02T21:56:41+00:00
+- id: OBS-0002
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: true
+    derivavel: false
+    essencialidade: nao_essencial
+    motivo: 'Segundo evento de instanciação do mesmo tipo (Assumption); repete o fato estrutural já coberto por OBS-0001.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Assumption A-0002 criada com status proposto
+  entidades:
+  - Assumption
+  evidence: '{"author":"runtime","created_at":"2026-08-02T21:56:41+00:00","id":"A-0002","physical_id":"90a06dd4-2bac-4a6f-89bc-9b80185df653","status":"proposto","tipo":"assumption"}'
+  trace: exp001_graph.json:A-0002
+  confidence_source: EXP-001 runtime 2026-08-02T21:56:41+00:00
+- id: OBS-0003
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Primeiro do tipo; evidência da existência da entidade Decision.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Decision D-0001 criada com status proposto
+  entidades:
+  - Decision
+  evidence: '{"author":"runtime","created_at":"2026-08-02T21:56:41+00:00","id":"D-0001","physical_id":"3fc1cc16-237f-4241-af82-ab8b40ef37d1","status":"proposto","tipo":"decision"}'
+  trace: exp001_graph.json:D-0001
+  confidence_source: EXP-001 runtime 2026-08-02T21:56:41+00:00
+- id: OBS-0004
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Primeiro do tipo; evidência da existência da entidade Evidence.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Evidence E-0001 criada com status proposto
+  entidades:
+  - Evidence
+  evidence: '{"author":"runtime","created_at":"2026-08-02T21:56:41+00:00","id":"E-0001","physical_id":"eae50a18-d3b7-4b8d-8b42-5e8174e62a45","status":"proposto","tipo":"evidence"}'
+  trace: exp001_graph.json:E-0001
+  confidence_source: EXP-001 runtime 2026-08-02T21:56:41+00:00
+- id: OBS-0005
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Primeiro do tipo; evidência da existência da entidade Goal.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Goal G-0001 criada com status aprovado
+  entidades:
+  - Goal
+  evidence: '{"author":"runtime","created_at":"2026-08-02T21:56:41+00:00","id":"G-0001","physical_id":"19f10893-70a6-4ec1-9809-2f308147b241","status":"aprovado","tipo":"goal"}'
+  trace: exp001_graph.json:G-0001
+  confidence_source: EXP-001 runtime 2026-08-02T21:56:41+00:00
+- id: OBS-0006
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Primeiro do tipo; evidência da existência da entidade Knowledge.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Knowledge K-0001 criada com status proposto
+  entidades:
+  - Knowledge
+  evidence: '{"author":"runtime","created_at":"2026-08-02T21:56:41+00:00","id":"K-0001","physical_id":"bc37a885-b685-41e6-94bb-10bf002a40de","status":"proposto","tipo":"knowledge"}'
+  trace: exp001_graph.json:K-0001
+  confidence_source: EXP-001 runtime 2026-08-02T21:56:41+00:00
+- id: OBS-0007
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Primeiro do tipo; evidência da existência da entidade Problem.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Problem P-0001 criada com status aceito
+  entidades:
+  - Problem
+  evidence: '{"author":"Arquiteto-Chefe","created_at":"2026-08-02T21:56:41+00:00","id":"P-0001","physical_id":"8b47080e-0220-40a1-8956-79b804ceced3","status":"aceito","tipo":"problem"}'
+  trace: exp001_graph.json:P-0001
+  confidence_source: EXP-001 Arquiteto-Chefe 2026-08-02T21:56:41+00:00
+- id: OBS-0008
+  kind: structural
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Seed estrutural; sustenta o fato de tipo Goal resolve Problem.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Relação resolves entre G-0001 e P-0001
+  entidades:
+  - G-0001
+  - P-0001
+  evidence: '{"label":"resolves","source":"G-0001","target":"P-0001"}'
+  trace: exp001_graph.json:G-0001-resolves-P-0001
+  confidence_source: EXP-001 edge extraction
+- id: OBS-0009
+  kind: structural
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Seed estrutural; sustenta o fato de tipo Decision serve Goal.'
+  experiment: EXP-001
+  artifact:
+    source: data/exp001_graph.json
+    type: json
+    reference_id: exp-001_snapshot
+  event: Relação serves entre D-0001 e G-0001
+  entidades:
+  - D-0001
+  - G-0001
+  evidence: '{"label":"serves","source":"D-0001","target":"G-0001"}'
+  trace: exp001_graph.json:D-0001-serves-G-0001
+  confidence_source: EXP-001 edge extraction
+- id: OBS-0010
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: parcial
+    motivo: 'Contexto operacional (persistência de snapshot); não altera a ontologia.'
+  experiment: EXP-001 / incremento 2
+  artifact:
+    source: data/exp001_identity.json
+    type: json
+    reference_id: exp-001 / incremento 2_snapshot
+  event: 'Snapshot D-0002 criado com mensagem ''incremento 2: identidade dupla + persistencia'''
+  entidades:
+  - Decision
+  - Snapshot
+  evidence: '{"decision_id":"D-0002","message":"incremento 2: identidade dupla + persistencia","sha":"50c966c7e58e96ecd0da04262959563c5de952b8155716b5aff6a77332e066ed","created_at":"2026-08-02T21:56:42+00:00","parent_sha":null,"nodes":16,"edges":4}'
+  trace: exp001_identity.json:snapshot
+  confidence_source: EXP-001 / incremento 2 snapshot 50c966c7e58e96ec
+- id: OBS-0011
+  kind: structural
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Seed estrutural; sustenta o fato de tipo Decision utiliza Evidence.'
+  experiment: EXP-001 / incremento 2
+  artifact:
+    source: data/exp001_identity.json
+    type: json
+    reference_id: exp-001 / incremento 2_snapshot
+  event: Decision D-0002 autorizada com 3 alternativas e confiança 0.85
+  entidades:
+  - Decision
+  - Evidence
+  evidence: '{"decision_id":"D-0002","alternatives":3,"evidences":["E-0021","E-0022"],"confidence":0.85,"audit_conforme":true}'
+  trace: exp001_identity.json:D-0002
+  confidence_source: EXP-001 / incremento 2 decision record
+- id: OBS-0012
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: essencial
+    motivo: 'Primeiro do tipo; evidência da existência da entidade ExecutionIntent.'
+  experiment: EXP-001 / incremento 3
+  artifact:
+    source: data/exp001_execution.json
+    type: json
+    reference_id: exp-001 / incremento 3_snapshot
+  event: ExecutionIntent XI-0001 criado com status proposto
+  entidades:
+  - ExecutionIntent
+  evidence: '{"id":"XI-0001","physical_id":"d1426665-4dd8-471a-85f6-23562a7449fb","author":"runtime","created_at":"2026-08-02T22:06:42+00:00","status":"proposto"}'
+  trace: exp001_execution.json:XI-0001
+  confidence_source: EXP-001 / incremento 3 intent record
+- id: OBS-0013
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: false
+    derivavel: false
+    essencialidade: parcial
+    motivo: 'Contexto operacional (seleção de provider por negociação); não altera a ontologia.'
+  experiment: EXP-001 / incremento 3
+  artifact:
+    source: data/exp001_execution.json
+    type: json
+    reference_id: exp-001 / incremento 3_snapshot
+  event: Provider python selecionado para intent
+  entidades:
+  - Provider
+  - ExecutionIntent
+  evidence: '{"provider":"python","reasons":["match por capacidade","custo 1"]}'
+  trace: exp001_execution.json:provider_selection
+  confidence_source: EXP-001 negotiation log
+- id: OBS-0014
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: true
+    derivavel: false
+    essencialidade: parcial
+    motivo: 'Meta-redundante; auto-referência do próprio corpus (a Observation OBS-0001 é o próprio registro).'
+  experiment: EXP-001 / incremento 4
+  artifact:
+    source: data/exp001_model.json
+    type: json
+    reference_id: exp-001 / incremento 4_snapshot
+  event: Observation OBS-0001 criada com status coletada
+  entidades:
+  - Observation
+  evidence: '{"id":"OBS-0001","physical_id":"fec8c7d2-3308-4632-8e4a-7b4ac7c449d5","author":"runtime","created_at":"2026-08-02T22:33:49+00:00","status":"coletada"}'
+  trace: exp001_model.json:OBS-0001
+  confidence_source: EXP-001 / incremento 4 observation record
+- id: OBS-0015
+  kind: operational
+  revisao:
+    fato: true
+    interpretacao: false
+    redundante: true
+    derivavel: false
+    essencialidade: nao_essencial
+    motivo: 'Segundo evento de instanciação do mesmo tipo (Evidence); repete o fato estrutural já coberto por OBS-0004.'
+  experiment: EXP-001 / incremento 4
+  artifact:
+    source: data/exp001_model.json
+    type: json
+    reference_id: exp-001 / incremento 4_snapshot
+  event: Evidence E-00042 criada com status proposto
+  entidades:
+  - Evidence
+  evidence: '{"id":"E-00042","physical_id":"354394b9-8030-4284-8b2f-b603dc02320c","author":"runtime","created_at":"2026-08-02T22:33:49+00:00","status":"proposto"}'
+  trace: exp001_model.json:E-00042
+  confidence_source: EXP-001 / incremento 4 evidence record
+- id: OBS-0016
+  kind: derived
+  caso_canonico_violacao: RA-OBS-001
+  revisao:
+    fato: false
+    interpretacao: true
+    redundante: false
+    derivavel: true
+    essencialidade: nao_essencial
+    motivo: >-
+      Agregação + julgamento ("validado", classificação cognitivas/operacionais);
+      viola RA-OBS-001 e é derivável do grafo.
+  experiment: EXP-001 / incremento 4
+  artifact:
+    source: data/exp001_model.json
+    type: json
+    reference_id: exp-001 / incremento 4_snapshot
+  event: 'Modelo estrutural validado: 32 cognitivas, 13 operacionais'
+  entidades:
+  - Decision
+  - Model
+  evidence: '{"cognitive_count":32,"operational_count":13,"cognitive":["A-0001","A-0002","A-001","A-002","A-003","A-010","A-011","A-020","A-021","D-0001","D-0002","D-0004","D-0005","E-0001","E-00042","E-0021","E-0022","E-0031","E-0032","E-0041","G-0001","G-0002","G-0003","G-0004","K-0001","K-0002","K-0003","K-0004","P-0001","P-0002","P-0003","P-0004"],"operational":["D-0001","D-0002","D-0004","D-0005","E-0001","E-00042","E-0021","E-0022","E-0031","E-0032","E-0041","OBS-0001","XI-0002"]}'
+  trace: exp001_model.json:model_validation
+  confidence_source: EXP-001 model audit

@@ -1,0 +1,89 @@
+experimento_hostil:
+  id: H-001
+  pergunta_alvo: 'LB-001 — Toda decisão justificável depende de conhecimento?'
+  hipotese_a_destruir: 'Existe decisão justificável sem nenhum conhecimento.'
+  vetor_de_ataque: 'Construir um projeto onde uma decisão é registrada como justificável com ZERO conhecimento (intuição/taste puro).'
+  cenario: 'Projeto mínimo — uma única página HTML, um problema, um objetivo, poucas entidades.'
+  criterios_congelados_antes: true
+  criterios_referencia: 'LAW-CRITERIA v1.0 (congelado antes da execução)'
+
+cenario:
+  problema: 'P-H1 — onde colocar o botão de ação na página.'
+  objetivo: 'G-H1 — maximizar cliques no botão.'
+  decisao_ataque: 'D-H1 — escolher posição por gosto pessoal ("parece certo").'
+  conhecimento: 0
+  evidencia: 0
+  critérios: 0
+  alternativas:
+  - 'canto superior direito'
+  - 'centro da página'
+
+execucao:
+  protocolo_aplicado:
+  - 'ECP-009 (5 componentes da decisão: objetivo, alternativas, critérios, evidência, registro)'
+  - 'ECP-008 (confiança calculada, nunca assumida)'
+  - 'RA-OBS-001/003 (fato verificável e reconstruível)'
+  passos:
+  - '1. Tentar registrar D-H1 como decisão justificável no Decision Record.'
+  - '2. Verificar cada componente obrigatório de ECP-009.'
+  - '3. Calcular confiança conforme ECP-008.'
+  - '4. Verificar a cadeia Goal→Knowledge→Assumption→Evidence→Decision.'
+
+resultado_ataque:
+  sucesso: false
+  detalhe: |
+    D-H1 falha nos componentes obrigatórios de ECP-009:
+    - SEM critérios avaliáveis → é "preferência", não decisão (ECP-009 §3).
+    - SEM evidência → inválida (P-5; ECP-009 §3).
+    - SEM confiança calculada → viola o princípio "evidência, nunca intuição" (ECP-009 §5.1).
+    Para tornar D-H1 justificável, o agente é OBRIGADO a adquirir conhecimento
+    mínimo (ex.: convenção de interface, dado de uso, teste A/B) — a decisão
+    deixa de ser justificável justamente quando o conhecimento é removido.
+  negative_evidence: 'Nenhum caso de decisão justificável sem conhecimento encontrado no cenário H-001.'
+
+ri:
+  criterios_testados:
+  - 'ECP-009 componentes obrigatórios'
+  - 'ECP-008 confiança calculada'
+  - 'RA-OBS-001/003'
+  - 'Integridade da cadeia Knowledge→Evidence→Decision'
+  permaneceram_validos:
+  - 'ECP-009 componentes obrigatórios'
+  - 'ECP-008 confiança calculada'
+  - 'RA-OBS-001/003'
+  - 'Integridade da cadeia Knowledge→Evidence→Decision'
+  ri: 1.0
+
+veredito_h:
+  sobreviveu: true
+  promovida_a_candidate_law: false
+  motivo: |
+    LB-001 sobreviveu ao H-001 (RI 1.0; negative evidence registrada).
+    NÃO é promovida: exige LC-1 (sobrevivência em muitos domínios distintos),
+    LC-6 (avaliadores independentes) e o mínimo de experimentos independentes
+    (ECP-012). Uma sobrevivência não é uma lei.
+  criterios_avaliados:
+    LC-3: 'apoiado — sem conhecimento a decisão deixa de ser justificável (deixa de existir como decisão)'
+    LC-4: 'previsível — projeto sem conhecimento suficiente tende a falhar (a testar)'
+    LC-5: 'refutável — procurar caso de decisão justificável sem conhecimento'
+    LC-7: 'a confirmar — pode derivar de O-1 (toda evidência deriva de observação)'
+    LC-1: 'NÃO satisfeito ainda — apenas Software até aqui'
+    LC-6: 'NÃO satisfeito ainda — sem avaliadores independentes'
+    LC-2: 'provável — independe de tecnologia (a confirmar)'
+    LC-8: 'ALERTA — risco de circularidade (ver observação crítica)'
+
+observacao_critica:
+  - 'LC-8 — O ECP DEFINE "decisão justificável" como dependente de evidência (ECP-009 §3, P-5). Portanto LB-001 pode ser verdadeira POR DEFINIÇÃO dentro do ECP — verdade analítica, não descoberta sintética. A universalidade real só se prova fora do modelo: em projetos que NUNCA usaram o ECP, com avaliadores independentes. Este é o alvo do próximo ataque — agora formalizado como Pergunta 2 do Independence Program (P-0007): Shadow Experiment 001 (evidência exógena, LC-9).'
+
+signals_emergentes:
+  - id: SIG-001
+    afirmacao: 'Decisão justificável depende de conhecimento (evidência/informação).'
+    ocorrencias:
+    - EXP-001
+    - H-001
+    confianca: 0.6
+    dominios:
+    - Software
+    contraexemplos: 0
+    independente: false
+    status: 'signal (preliminar — independência limitada)'

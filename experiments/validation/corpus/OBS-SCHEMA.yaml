@@ -1,0 +1,209 @@
+# OBS Schema — Definition of an Observation
+
+## Objetivo
+
+Define um **Observation** (OBS) para o Corpus Experimental do ECP.
+Um OBS registra **exclusivamente fatos verificáveis** de um experimento, sem interpretações, hipóteses ou inferências.
+
+## Campos obrigatórios
+
+| Campo | Tipo | Obrigatório | Descrição |
+|-------|------|-------------|------------|
+| `id` | string | ✅ | Identificador único, formato OBS-#### (ex.: OBS-0001). |
+| `experiment` | string | ✅ | Identificador do experimento (EXP-001, EXP-002, ...). |
+| `artifact` | dict | ✅ | Referência ao artefato que contém a evidência. |
+| `event` | string | ✅ | Descrição neutra do evento concreto que ocorreu. |
+| `entidades` | array[string] | ✅ | Nomes das entidades envolvidas (sem atributos). |
+| `evidence` | string | ✅ | Trecho exato do artefato que comprova o evento. |
+| `trace` | string | ✅ | Referência rastreável ao trecho (ex.: arquivo:linha). |
+| `confidence_source` | string | ✅ | Fonte da confiança (ex.: "EXP-001 visual inspection"). |
+| `kind` | enum | ✅ (corpus congelado) | Classificação ontológica: `operational` \| `structural` \| `derived`. |
+
+## Classificação ontológica (campo `kind`)
+
+Introduzida pela **P-0005A.2a — Revisão Ontológica do Corpus**. Todo corpus
+**congelado** (v1+) deve classificar cada OBS:
+
+- **`operational`** — Registra um fato/evento da execução: instanciação de
+  entidade, seleção, snapshot, persistência. Singular, datado, amarrado a
+  instâncias. Ex.: "Snapshot criado", "Provider python".
+- **`structural`** — Registra uma **relação entre entidades** que compõe a
+  ontologia: dependência, resolução, serviço, uso de evidência. É o candidato
+  mais próximo de futuras leis (LAW-H). Ex.: "Decision utiliza Evidence",
+  "Goal resolve Problem".
+- **`derived`** — Observação agregada/interpretativa, derivável de outras
+  observações. **Não pertence ao corpus primário** (viola RA-OBS-001). Deve ser
+  movida para a camada de derivados ou reescrita como fato primário.
+
+Uma Observation estrutural **não é** uma entidade nova de primeira classe: é a
+mesma entidade com `kind: structural`.
+
+### Critérios objetivos de classificação
+
+A classificação **não deve depender da opinião do autor**. Para ser
+reproduzível por avaliadores independentes, um OBS é **`structural`** se, e
+somente se, satisfaz **todos** os critérios abaixo:
+
+1. **Necessidade relacional** — descreve uma relação **necessária entre
+   entidades**, e não um evento específico da execução.
+2. **Independência de implementação** — permanece válida independentemente da
+   implementação concreta (linguagem, framework, ferramenta).
+3. **Impacto causal** — sua remoção **altera a compreensão da causalidade** do
+   experimento.
+
+Um OBS é **`operational`** quando **falha em pelo menos um** dos critérios acima
+e registra um evento concreto, datado e amarrado a instâncias.
+
+Um OBS é **`derived`** quando é **derivável** de outras observações do mesmo
+experimento (agregação, contagem, julgamento) — ou seja, falha no teste de
+"fato primário" da RA-OBS-001.
+
+**Confiabilidade:** a concordância entre avaliadores independentes na aplicação
+destes critérios é medida na auditoria (P-0005A.2b). Concordância baixa exige
+refinamento dos critérios antes de avançar para P-0005A.3.
+
+### Caso canônico de não-observação — OBS-0016
+
+> **Isto parece uma observação, mas não é.**
+
+`OBS-0016` — *"Modelo estrutural validado: 32 cognitivas, 13 operacionais"* —
+é registrado no corpus como **exemplo permanente de violação de RA-OBS-001**:
+
+- contém **julgamento** ("validado");
+- contém **classificação** (nós "cognitivas" × "operacionais");
+- é **derivável** do mesmo grafo que originou as demais observações.
+
+**Por que é um presente:** o próprio processo de revisão detectou o falso
+positivo. Em vez de ser silenciosamente removido, OBS-0016 permanece como
+referência negativa canônica para treinamento de novos avaliadores e calibração
+de futuras auditorias.
+
+**Como reescrever como fato primário:** separar o fato (contagens existem) do
+julgamento (foi "validado"):
+`event: "Model contém 32 nós no domínio cognitivo e 13 no operacional"`.
+
+## Especificação do campo artifact
+
+```yaml
+artifact:
+  source: "data/exp001_graph.json"  # caminho relativo a partir da raiz do experimento
+  type: "json"                        # opcoes: "json", "python", "markdown", "log"
+  reference_id: "graph_snapshot"       # identificador unico dentro do artefato (opcional)
+```
+
+## Exemplo mínimo válido de OBS
+
+```yaml
+---
+id: OBS-0001
+experiment: EXP-001
+artifact:
+  source: "data/exp001_graph.json"
+  type: "json"
+  reference_id: "graph_snapshot"
+event: Decision D-0001 criada após Knowledge K-0001
+entidades:
+  - Goal
+  - Knowledge
+  - Decision
+evidence: "{\"nodes\": [{\"id\": \"D-0001\"}]}"
+trace: "graph.json:214"
+confidence_source: "Inspecao visual do graph.json"
+```
+
+## Regras de admissibilidade (RA-OBS)
+
+### RA-OBS-001
+Um OBS deve descrever exclusivamente **fatos verificáveis** ocorridos durante um experimento.
+
+### RA-OBS-002
+Um OBS não pode conter:
+- interpretação;
+- inferência;
+- hipótese;
+- julgamento;
+- recomendação;
+- classificação.
+
+### RA-OBS-003
+Todo OBS deve possuir pelo menos **uma evidência rastreadável** (`evidence` + `trace`).
+
+### RA-OBS-004
+Todo OBS deve poder ser **reconstruído** por outro avaliador utilizando apenas os artefatos do experimento.
+
+### RA-OBS-005
+Informação essencial: se ausente, altera causalidade, justificativa, estado final, rastreabilidade, auditoria.
+
+### RA-OBS-006
+Todo corpus **congelado** deve classificar cada OBS com `kind`
+(`operational` | `structural` | `derived`). Observações `derived` não são
+admissíveis no corpus primário.
+
+### RA-OBS-007
+Todo corpus **congelado** deve declarar a métrica `observation_profile`
+(proporção `operational` / `structural` / `derived`). A métrica permite
+observar tendências entre experimentos (ex.: raridade relativa de observações
+estruturais).
+
+## Tipos de equivalência para auditoria
+
+- **Equivalência estrutural** — Mesmo conjunto de entidades e relações.
+- **Equivalência causal** — Mesmo motivo para cada transição de estado.
+- **Equivalência temporal** — Mesma ordem causal (timestamps não necessários).
+
+## Campos opcionais para extensão futura
+
+```yaml
+fields_optional:
+  # Pode ser adicionado conforme necessário
+  essencialidade: string # 'essencial' | 'parcial' | 'nao_essencial' (revisão P-0005A.2a)
+  confidence: float        # Nível de confiança na observação (0.0-1.0)
+  source:                   # Metadados sobre a fonte da informação
+    experiment: string
+    entities: array[string]
+    relations: array[string]
+    state_before: dict
+    state_after: dict
+```
+
+## Metadados de cobertura e perfil (corpus)
+
+Todo corpus congelado deve acompanhar, no nível raiz:
+
+```yaml
+observation_count: 16
+schema_version: '1.1'
+observation_profile:        # RA-OBS-007 — proporções por kind
+  operational: 0.75         # 12/16
+  structural: 0.1875        # 3/16  (~19%)
+  derived: 0.0625           # 1/16  (~6%)
+```
+
+> **Leitura:** apenas ~19% das observações foram estruturais em EXP-001. Se a
+> raridade relativa das observações estruturais se repetir, o conhecimento útil
+> para descoberta de leis é mais raro do que os eventos registrados — e a
+> proporção vira um sinal a monitorar entre experimentos.
+
+## Histórico de revisão
+
+| Versão | Data | Mudança |
+|---|---|---|
+| 1.2 | 2026-08-03 | Critérios objetivos de classificação (kind); caso canônico de violação RA-OBS-001 (OBS-0016); métrica `observation_profile` e RA-OBS-007. |
+| 1.1 | 2026-08-03 | Adicionado campo `kind` (operational/structural/derived) e RA-OBS-006 pela P-0005A.2a (Revisão Ontológica do Corpus). |
+| 1.0 | 2026-08-02 | Versão inicial (Aprovado). Formaliza a estrutura e as regras de admissibilidade de OBS para o Corpus Experimental. Adicionadas RA-OBS-004 (confidence_source obrigatório) e RA-OBS-005 (essencialidade). |
+
+## Observações adicionais
+
+- **Sem campos extras:** O schema deve conter **APENAS** os campos listados acima.
+- **Identificadores estáveis:** Use o mesmo identificador OBS em todo o corpus (ex.: OBS-0001 nunca muda).
+- **Garantia de reprodutibilidade:** `trace` deve ser uma referência concreta (linha de arquivo, hash, URL) que permita a outro avaliador localizar a evidência exata.
+
+**Nota:** Campos opcionais são listados para documentação futura; não são atualmente obrigatórios para um OBS válido.
+
+## Princípio da Conservação da Informação (Princípio central do Validation Program)
+
+> Cada transformação realizada pelo Validation Program deve preservar toda a informação essencial da etapa anterior.
+
+**Observação:** Este princípio pode ser expandido em um **LAW-H** futuro: "Toda abstração produzida pelo ECP deve ser auditável contra sua fonte."
+
+---

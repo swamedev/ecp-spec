@@ -1,0 +1,131 @@
+# SX-001 / signals — Etapa 5: Signals suportados pelo Alignment
+
+| Campo | Valor |
+|---|---|
+| **Experimento** | EXP-SX001 |
+| **Etapa** | 5 — Extração de Signals |
+| **Regra** | Somente signals **suportados pelo Alignment** ([04-alignment-analysis.md](../comparison/04-alignment-analysis.md)) |
+| **Schema** | [SIGNAL-SCHEMA](../../signals/SIGNAL-SCHEMA.yaml) |
+| **Data** | 2026-08-03 |
+
+> **Regra de admissibilidade (RA-SIG-001):** um Signal exige **≥ 2 ocorrências** em
+> experimentos causalmente independentes. O Challenger (EXP-SX001) é **uma única
+> origem causal**. Portanto: nenhum signal abaixo satisfaz **sozinho** a
+> RA-SIG-001. Eles são **ocorrências** que, somadas a outras de origens
+> independentes, podem tornar um Signal admissível. `independente: false` por ora
+> (o experimento é uma ocorrência; falta a segunda).
+>
+> **Importante (anti-endogeneidade):** o Challenger é uma origem **externa e
+> independente** do ECP (um projeto que nunca usou o protocolo). Sua contribuição
+> é a mais valiosa até agora para a rede de Inferência Científica. Mas ainda é uma
+> **ocorrência**, não um padrão.
+
+## Signals suportados pelo alignment
+
+### SIG-001 — Decisão justificável depende de conhecimento (ocorrência SX-001)
+
+```yaml
+id: SIG-001
+afirmacao: Decisão justificável depende de conhecimento (evidência/informação).
+kind_base: structural
+ocorrencias:
+  - EXP-001
+  - H-001
+  - EXP-SX001   # NOVA: ocorrência Causalmente independente (Challenger)
+confianca: 0.75      # subiu de 0.6 → 0.75 com a 1ª ocorrência externa real
+dominios:
+  - Software
+  - Aeroespacial     # novo domínio coberto pela ocorrência externa
+contraexemplos: 0
+evidencia_base:
+  - OBS-0011
+  - H-001 (negative evidence — nenhuma decisão justificável sem conhecimento)
+  - SX001-ALIGN-NI-001 (decisão de lançamento autorizada sem evidência suficiente; elo Evidence→Decision quebrado)
+independente: true       # corretor: agora há ocorrência de origem independente
+status: signal
+admissivel_ra_sig_001: false
+  nota: |
+    O Challenger forneceu a PRIMEIRA ocorrência causalmente independente da tese
+    "decisão justificável depende de conhecimento". No caso, as decisões de
+    lançamento foram autorizadas com base em suposições (A-1/A-2/A-3) e sem
+    evidência suficiente (AF-018), e a falha ocorreu exatamente nesse elo
+    (NEW_INSIGHT NI-001). Ainda assim, RA-SIG-001 exige ≥2 ocorrências
+    independentes; a consolidação final (confiança, promoção a pattern) é
+    adiada até haver segunda ocorrência externa de outra origem.
+```
+
+> **Nota de transparência (RA-SIG-003):** as ocorrências EXP-001 e H-001 do
+> SIG-001 **não são independentes** entre si (mesmo programa/autor), restando o
+> Challenger como a primeira ocorrência verdadeiramente independente **até o
+> momento**. A derivação completa da confiança fica, portanto, para a v1.1, fora
+> do escopo congelado do experimento.
+
+### SIG-2 — Ausência de infraestrutura cognitiva é observável (candidato novo)
+
+```yaml
+id: SIG-002
+afirmacao: Em projetos com falha, a AUSENCIA de entidades designadas pelo Kernel
+  (Problem formal, Risk calculado, Registro de decisão) é observável no traço,
+  não apenas inferível.
+kind_base: structural
+ocorrencias:
+  - EXP-SX001
+confianca: 0.35          # 1 ocorrência; baixa
+dominios:
+  - Espacial
+contraexemplos: 0
+evidencia_base:
+  - SX001-Ausencia (§3 — Problem, Risk, validação, registro não emergem)
+independente: false      # apenas 1 ocorrência
+status: signal
+admissivel_ra_sig_001: false
+  nota: |
+    VEREDICTO do alignment: o ECP explicou também o que estava FALTANDO no caso
+    Challenger (ausências). Candidato promissor; exige ao menos MAIS UMA
+    ocorrência externa de outra origem para ser admissível.
+```
+
+### SIG-3 — Cadeia cognitiva emerge sem o vocabulário ECP (candidato)
+
+```yaml
+id: SIG-003
+afirmacao: Em um projeto sem qualquer exposição ao ECP, a cadeia
+  Goal → Knowledge → Lacuna → Assumption → Evidence → Decision → Execution →
+  Validation → Learning emerge a partir apenas dos fatos observados.
+kind_base: structural
+ocorrencias:
+  - EXP-SX001
+confianca: 0.5           # 1 ocorrência, porém forte (emergência espontânea)
+dominios:
+  - Espacial
+contraexemplos: 0
+evidencia_base:
+  - SX001-Emersência (Goal/Knowledge/Assumption/Evidence/Decision emergiram; §5 da reconstrução)
+independente: false
+status: signal
+admissivel_ra_sig_001: false
+  nota: |
+    Este é o sinal mais relevante conceitualmente: a emergência espontânea das
+    entidades do Kernel em um caso que nunca viu o ECP. Reforça a resposta
+    afirmativa do SX-001. Ainda assim, é 1 ocorrência; não promove a pattern.
+```
+
+---
+
+## Resumo da Etapa 5
+
+| Signal | Afirmação | Ocorrências | independente | status |
+|---|---|---|---|---|
+| SIG-001 | Decisão justificável depende de conhecimento | 3 (1 externa real) | true | signal (admissível pendente v1.1) |
+| SIG-002 | Ausência de estruturas do Kernel é observável | 1 | false | candidato |
+| SIG-003 | Cadeia emerge sem vocabulário ECP | 1 | false | candidato |
+
+> Nenhum signal foi promovido a pattern (RA-SIG-005). O Challenger é **1
+> ocorrência independente**. A consolidação (confiança final, promoção) é adiada
+> para a calibração v1.1 — **fora** do escopo congelado do experimento.
+
+## Histórico de revisão
+
+| Versão | Data | Mudança |
+|---|---|---|
+| 1.0 | 2026-08-03 | Etapa 5: 3 signals suportados pelo alignment (1 reforço de SIG-001 com 1ª ocorrência externa; 2 candidatos novos). Nenhum promovido; calibração v1.1. |

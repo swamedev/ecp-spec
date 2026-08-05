@@ -1,0 +1,94 @@
+# SIGNAL Schema — Definition of a Signal (Inferência Científica)
+
+| Campo | Valor |
+|---|---|
+| **Versão** | 0.1 (rascunho — a calibrar com dados) |
+| **Status** | Draft |
+| **Data** | 2026-08-03 |
+| **Autor** | Arquiteto-Chefe |
+| **Referências** | [README da frente](./README.md), [ECP-AUDIT-001](../audit/ECP-AUDIT-001.md) |
+
+## Objetivo
+
+Um **SIGNAL (SIG)** formaliza uma **evidência recorrente**: a mesma afirmação
+observada em experimentos **independentes**. É a camada entre `OBS` e `PATTERN`
+— ainda **não** é um padrão, é a matéria-prima medida para a promoção.
+
+## Campos obrigatórios
+
+| Campo | Tipo | Obrigatório | Descrição |
+|-------|------|-------------|------------|
+| `id` | string | ✅ | Identificador único, formato SIG-####. |
+| `afirmacao` | string | ✅ | A afirmação recorrente (tese de nível sinal). |
+| `kind_base` | enum | ✅ | `operational` \| `structural` (base das OBS que o geram). |
+| `ocorrencias` | array[string] | ✅ | Experimentos independentes onde a afirmação foi observada. |
+| `confianca` | float | ✅ | 0.0–1.0 — peso da recorrência (independentes contam mais). |
+| `dominios` | array[string] | ✅ | Domínios cobertos (Software, ERP, App, IA, ...). |
+| `contraexemplos` | int | ✅ | Número de ocorrências que contradizem a afirmação. |
+| `evidencia_base` | array[string] | ✅ | OBS (ou traces) que sustentam cada ocorrência. |
+| `independente` | bool | ✅ | Ocorrências vêm de origens/autores independentes (anti-endogeneidade). |
+| `status` | enum | ✅ | `signal` \| `pattern` \| `law_h`. |
+
+## Regras de admissibilidade (RA-SIG)
+
+- **RA-SIG-001** — Requer **≥ 2 ocorrências** em experimentos independentes.
+  Menos que isso é observação isolada, não Signal.
+  > **Interpretação consolidada (P-0007.1 — EI, LC-10):** "experimentos
+  > independentes" passa a significar **origens causalmente independentes**
+  > (RA-EI-003). Fontes derivadas do mesmo evento documental contam como **uma
+  > única origem** — não inflam a contagem.
+- **RA-SIG-002** — Cada ocorrência deve ser **reconstruível** (corpus auditado,
+  RA-OBS-003).
+- **RA-SIG-003** — Ocorrências de origem não independente **não contam** como
+  ocorrências independentes (registrar separadamente).
+- **RA-SIG-004** — **Contraexemplos nunca ocultos:** todo Signal registra
+  explicitamente seus contraexemplos.
+- **RA-SIG-005** — Um Signal não pode ser promovido a `pattern` sem satisfazer
+  os critérios objetivos ([README](./README.md) — Critérios de promoção).
+
+## Exemplo ilustrativo (aguarda dados de EXP-002+)
+
+> **Atenção:** com apenas EXP-001, nenhum Signal real existe ainda. O exemplo
+> abaixo é o candidato **S-001**, aguardando as ocorrências independentes.
+
+```yaml
+id: SIG-001
+afirmacao: Decision aparece após Evidence
+kind_base: structural
+ocorrencias:
+- EXP-001
+- EXP-003
+- EXP-008
+- EXP-021
+confianca: 0.82
+dominios:
+- Software
+- ERP
+- App
+- IA
+contraexemplos: 1
+evidencia_base:
+- OBS-0011
+- SIG-001-exp003
+- SIG-001-exp008
+- SIG-001-exp021
+independente: true
+status: signal
+```
+
+## Relação com o pipeline
+
+```
+OBS → SIGNAL → PATTERN → LAW-H → (Fase C hostil) → LAW-C → External → LAW → LAW-F
+```
+
+O Signal é registrado quando a mesma afirmação é observada em experimentos
+independentes; o padrão só nasce depois que **diversos sinais independentes**
+convergem; a hipótese de lei só depois que o padrão **sobrevive aos experimentos
+hostis**.
+
+## Histórico de revisão
+
+| Versão | Data | Mudança |
+|---|---|---|
+| 0.1 | 2026-08-03 | Versão inicial (Draft). Formalização da camada SIGNAL da frente Inferência Científica. |

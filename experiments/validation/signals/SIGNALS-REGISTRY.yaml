@@ -1,0 +1,60 @@
+# SIGNALS-REGISTRY — Registro de Signals
+
+| Campo | Valor |
+|---|---|
+| **Tipo** | Registro de evidências recorrentes |
+| **Status** | Ativo |
+| **Data** | 2026-08-03 |
+| **Autor** | Arquiteto-Chefe |
+| **Referências** | [SIGNAL-SCHEMA](./SIGNAL-SCHEMA.yaml), [LAW-BACKLOG](../laws/LAW-BACKLOG.md) |
+
+## Admissibilidade
+
+Conforme [RA-SIG](../signals/SIGNAL-SCHEMA.yaml):
+
+- **RA-SIG-001** — requer ≥ 2 ocorrências em experimentos **independentes**.
+- **RA-SIG-003** — ocorrências de origem não independente **não contam** como
+  independentes (registradas separadamente).
+
+Portanto: EXP-001 e H-001 compartilham autores/programa → **não são
+independentes** → nenhum Signal abaixo satisfaz RA-SIG-001 plenamente ainda.
+São registrados como **candidatos preliminares**, aguardando ocorrência em
+experimento independente (ex.: EXP-002/ERP com avaliador externo).
+
+## Signals
+
+### SIG-001 — Decisão justificável depende de conhecimento (preliminar)
+
+```yaml
+id: SIG-001
+afirmacao: Decisão justificável depende de conhecimento (evidência/informação).
+kind_base: structural
+ocorrencias:
+- EXP-001
+- H-001
+confianca: 0.6
+dominios:
+- Software
+contraexemplos: 0
+evidencia_base:
+- OBS-0011
+- H-001 (negative evidence — nenhuma decisão justificável sem conhecimento)
+independente: false
+status: signal
+admissivel_ra_sig_001: false
+  nota: |
+    Origem: H-001 (vetor: decisão justificável com ZERO conhecimento).
+    Resultado hostil: ao remover conhecimento, D-H1 deixa de ser decisão
+    (vira preferência sem critérios) ou deixa de ser justificável (sem
+    evidência → inválida, P-5). Dependência confirmada no cenário.
+    Próximo passo: ocorrência INDEPENDENTE via Shadow Experiment 001
+    (P-0007) — observar projeto que nunca usou o ECP e reconstruir se a
+    justificativa de decisões depende de conhecimento (LC-9). Só então
+    confiança final e possível promoção a Pattern.
+```
+
+## Histórico de revisão
+
+| Versão | Data | Mudança |
+|---|---|---|
+| 1.0 | 2026-08-03 | Versão inicial. SIG-001 (preliminar, de EXP-001 + H-001). RA-SIG-001 ainda não satisfeita. |

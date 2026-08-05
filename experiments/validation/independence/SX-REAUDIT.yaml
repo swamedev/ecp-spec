@@ -1,0 +1,232 @@
+# SX-REAUDIT — Candidate Re-Audit (aplicação do P-0007.2)
+# Framework congelado aplicado: P-0007.1 (OI, EI, DI) + SX-SELECTION (SC-1..SC-6, EC-1..EC-7)
+# Verdict rules congeladas em P-0007.2 (2026-08-03) ANTES desta aplicação.
+# Status: VERIFICADO — acessibilidade de fontes confirmada (SX-SELECTION etapa 5, 2026-08-03).
+# A seleção do SX-001 foi decidida pelo protocolo (etapas 7-8) — ver SHADOW-REPORT-001.
+
+verdict_rules:
+  rejected: "falha EI (origem causal única/entrelaçada) OU OI OU exclusão EC"
+  selectable: "EI ≥2 origens causais distintas; OI satisfeita; domínio classificado; sem pendência"
+  eligible: "passa em princípio, mas com pendência (multiplicidade fraca, profundidade, verificação)"
+
+dominios_taxonomia:
+  Espacial: [Apollo 13, Challenger]
+  Civil: [Tacoma Narrows, I-35W, Hyatt Regency]
+  Industrial: [Deepwater Horizon, Chernobyl]
+  Saude: [Ebola, Operation Warp Speed]
+  PequenosNegocios: [Dominos]
+  Logistica: [Suez, Eyjafjallajokull, RFID Walmart]
+  PesquisaCientifica: [Genoma Humano]
+
+candidatos:
+  - candidate: Apollo 13 (1970)
+    dominio: Espacial/Aeroespacial
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "≥2 origens causais distintas: registros primários de voo (transcrições/telemetria), Apollo 13 Review Board, imprensa contemporânea. Fontes derivadas não inflam."
+    dds: "1 domínio (aeroespacial — agrupado com Challenger)"
+    motivo: "Decisões sob incerteza documentadas; origens independentes; reproduzível."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+  - candidate: Challenger STS-51-L (1986)
+    dominio: Espacial/Aeroespacial
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "≥3 origens causais distintas: Rogers Commission Report (investigação independente), registros NASA, cobertura de imprensa ao vivo."
+    dds: "1 domínio (aeroespacial — agrupado com Apollo 13)"
+    motivo: "Decisão de lançamento e pressões documentadas em audiências públicas."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+  - candidate: Tacoma Narrows (1940)
+    dominio: Construção Civil
+    status: ELIGIBLE
+    eixos:
+      oi: PASS
+      ei: "PASS (filme é registro primário independente)"
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PARCIAL, sc5: PARCIAL, sc6: PASS}
+    lc_10_ei: "Origens: filme (registro primário independente) + investigação técnica (Farquharson/FWA). Porém reconstrução das DECISÕES de projeto é limitada."
+    dds: "1 domínio (civil — agrupado com I-35W, Hyatt)"
+    motivo: "Registro visual excepcional, mas profundidade de decisão técnica limitada."
+    pendencias: ["profundidade de decisões", "verificação de fontes"]
+    veredito: "Aprovado em princípio; pendência de profundidade — aguarda verificação."
+
+  - candidate: I-35W Mississippi River (2007)
+    dominio: Construção Civil
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "≥3 origens causais distintas: relatório NTSB, registros internos MnDOT, imprensa."
+    dds: "1 domínio (civil — agrupado com Tacoma Narrows, Hyatt)"
+    motivo: "Relatório NTSB oficial + registros internos; decisões identificáveis."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+  - candidate: Deepwater Horizon / Macondo (2010)
+    dominio: Industrial/Energia/Offshore
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "≥3 origens causais distintas: relatório JIT, relatório CSB, investigação BP, audiências do Congresso."
+    dds: "1 domínio (industrial)"
+    motivo: "Múltiplas investigações independentes; decisões de projeto do poço documentadas."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+  - candidate: Hyatt Regency walkway (1981)
+    dominio: Construção Civil
+    status: ELIGIBLE
+    eixos:
+      oi: PASS
+      ei: "PARCIAL (fortemente centrado em NBS)"
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PARCIAL, sc6: PASS}
+    lc_10_ei: "Origem primária dominante: relatório NBS/NIST. Segunda origem (litígio/registros de tribunal) parcial."
+    dds: "1 domínio (civil)"
+    motivo: "Caso claro de decisão de mudança de projeto, mas origens independentes fracas."
+    pendencias: ["confirmação de segunda origem causal (litígio)", "verificação de fontes"]
+    veredito: "Aprovado em princípio; pendência de multiplicidade de origens."
+
+  - candidate: Chernobyl Unidade 4 (1986)
+    dominio: Industrial/Energia (nuclear)
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "Origem primária dominante (relatório soviético; volume de artigos deriva dele), MAS existem origens causais distintas: relatório soviético, INSAG (IAEA), UNSCEAR. O volume não infla; conta a ORIGEM."
+    dds: "1 domínio (industrial — agrupado com Deepwater)"
+    motivo: "Demonstra exatamente o EI: muitos artigos, poucas origens — mas ≥2 origens causais reais."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+  - candidate: Resposta ao Ebola, África Ocidental (2014-2016)
+    dominio: Medicina/Saúde
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "≥3 origens causais distintas: relatórios WHO, relatos de campo MSF (organização independente), múltiplas equipes acadêmicas independentes."
+    dds: "1 domínio (saúde — agrupado com Operation Warp Speed)"
+    motivo: "Decisões de resposta documentadas por organizações independentes."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+  - candidate: Operation Warp Speed (2020-2021)
+    dominio: Medicina/Saúde
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "≥3 origens causais distintas: relatórios GAO (independente), documentos HHS/BARDA, documentos das empresas, imprensa."
+    dds: "1 domínio (saúde)"
+    motivo: "Decisões de risco/financiamento documentadas por múltiplas origens."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+  - candidate: Turnaround da Domino's (2009-2010)
+    dominio: Pequenos Negócios/Serviços
+    status: ELIGIBLE
+    eixos:
+      oi: PASS
+      ei: "PARCIAL (narrativa corporativa dominante)"
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PARCIAL, sc6: PARCIAL}
+    lc_10_ei: "Origem dominante: a própria empresa (declarações, relatórios anuais). Origens independentes secundárias: documentário 'Pizza Turnaround', estudos de caso (HBS). Risco EC-4."
+    dds: "1 domínio (pequenos negócios)"
+    motivo: "Boa narrativa, mas origens independentes fracas; narrativa em parte corporativa."
+    pendencias: ["confirmação de origens independentes do relato corporativo", "verificação"]
+    veredito: "Aprovado em princípio; pendência de multiplicidade de origens."
+
+  - candidate: Bloqueio do Canal de Suez — Ever Given (2021)
+    dominio: Logística/Transporte
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "≥3 origens causais distintas: autoridade do Canal de Suez, investigações de salvado/seguros (P&I Club), análise de imagens de satélite independente."
+    dds: "1 domínio (logística — agrupado com Eyjafjallajokull, RFID)"
+    motivo: "Decisões operacionais de salvado documentadas por origens independentes."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+  - candidate: Eyjafjallajökull (2010)
+    dominio: Logística/Transporte (aviação)
+    status: ELIGIBLE
+    eixos:
+      oi: PASS
+      ei: "PARCIAL (cadeia regulatória única)"
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PARCIAL, sc4: PARCIAL, sc5: PARCIAL, sc6: PARCIAL}
+    lc_10_ei: "Origem dominante: cadeia regulatória (Eurocontrol/EASA/ICAO). Análises acadêmicas (vulcanologia) independentes, porém decisões operacionais concentradas."
+    dds: "1 domínio (logística)"
+    motivo: "Decisões operacionais concentradas em um único elo regulatório."
+    pendencias: ["multiplicidade de origens", "profundidade de decisões", "verificação"]
+    veredito: "Aprovado em princípio; pendência de multiplicidade de origens."
+
+  - candidate: RFID na Walmart (2003-2005)
+    dominio: Logística/Transporte (cadeia de suprimentos)
+    status: REJECTED
+    eixos:
+      oi: PASS
+      ei: "FAIL (origens entrelaçadas)"
+      di: PASS
+    sc: {sc1: PASS, sc2: PARCIAL, sc3: PARCIAL, sc4: PARCIAL, sc5: FAIL, sc6: PARCIAL}
+    lc_10_ei: "Origens ENTRALHAÇADAS: Walmart (narrativa corporativa) + Accenture (implementador do programa) publica análises 'independentes'. Estudos acadêmicos parcialmente financiados pela cadeia. Não há ≥2 origens causais independentes claras."
+    dds: "1 domínio (logística)"
+    motivo: "Falha EI: as 'fontes múltiplas' derivam da mesma origem causal (programa Walmart/Accenture)."
+    pendencias: ["(inelegível)"]
+    veredito: "REJEITADO — falha Evidence Independence (SC-5)."
+
+  - candidate: Projeto Genoma Humano (1990-2003)
+    dominio: Pesquisa Científica
+    status: SELECTABLE
+    eixos:
+      oi: PASS
+      ei: PASS
+      di: PASS
+    sc: {sc1: PASS, sc2: PASS, sc3: PASS, sc4: PASS, sc5: PASS, sc6: PASS}
+    lc_10_ei: "≥3 origens causais distintas: documentos NHGRI/DOE, publicações revisadas por pares (Nature/Science), documentos Celera (lado privado), imprensa."
+    dds: "1 domínio (pesquisa científica)"
+    motivo: "Decisões (público vs. privado) documentadas por origens independentes."
+    pendencias: ["verificação de acessibilidade das fontes"]
+    veredito: "Aprovado na reauditoria; pronto para seleção pelo protocolo."
+
+resumo:
+  selectable: 9
+  eligible: 4
+  rejected: 1
+  total: 14
+  dominios_distintos: 7
+  verificacao_fontes: COMPLETA (etapa 5, 2026-08-03) — todos os 9 SELECTABLE
+    com fontes primárias públicas acessíveis confirmadas; nenhum eliminado por
+    acessibilidade (EC-3).
+  observacao: |
+    O framework decidiu. EI removeu 1 (RFID Walmart — origens entrelaçadas) e
+    rebaixou 4 (Tacoma Narrows, Hyatt, Domino's, Eyjafjallajokull) para ELIGIBLE
+    por multiplicidade fraca. A seleção final do SX-001 NÃO é feita aqui: virá
+    após verificação de fontes (SX-SELECTION etapa 4) + prioridades pré-registradas
+    (etapa 6), decidida pelo protocolo — nunca pelo autor.
