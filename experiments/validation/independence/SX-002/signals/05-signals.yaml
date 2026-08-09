@@ -1,0 +1,186 @@
+# SX-002 / signals — Etapa 5: Signals suportados pelo Alignment
+
+| Campo | Valor |
+|---|---|
+| **Experimento** | EXP-SX002 |
+| **Etapa** | 5 — Extração de Signals |
+| **Regra** | Somente signals **suportados pelo Alignment** ([04-alignment-analysis.md](../comparison/04-alignment-analysis.md)) |
+| **Schema** | [SIGNAL-SCHEMA](../../../signals/SIGNAL-SCHEMA.yaml) |
+| **Data** | 2026-08-04 |
+
+> **Regra de admissibilidade (RA-SIG-001):** um Signal exige **≥ 2 ocorrências**
+> em origens causalmente independentes (RA-EI-003). Com o SX-002, **dois
+> experimentos de origens independentes existem**: Challenger (EXP-SX001,
+> Aeroespacial) e Epidemia de Ebola na África Ocidental (EXP-SX002, Saúde
+> Pública). **Pela primeira vez, ocorrências de dois experimentos distintos
+> estão disponíveis.**
+>
+> **Posto isso, alegação de honesty:** a Etapa 4 registrou que o padrão
+> **diverge** entre os dois casos (Challenger: decisão sem evidência; Ebola:
+> decisão com evidência já disponível, porém tardia). Não se busca convergência
+> forçada: a divergência também é dado. Cada Signal distingue explicitamente o
+> que é apoiado em ambos os casos do que é apoiado em apenas um.
+>
+> **Nenhum signal promovido a `pattern`** (RA-SIG-005 e critérios de promoção
+> do [README da frente](../../README.md)); consolidação deixada para a v1.1,
+> fora do escopo congelado do experimento.
+
+## Signals suportados pelo Alignment
+
+### SIG-001 — Decisão justificável depende de conhecimento
+
+> **Ocorrência adicionada pelo SX-002 — Epidemia de Ebola.** Apoio **parcial**.
+
+```yaml
+id: SIG-001
+afirmacao: Decisão justificável depende de conhecimento
+  (evidência/informação) suficiente sobre o objeto, desde que usada a tempo.
+kind_base: structural
+ocorrencias:
+  - EXP-001
+  - H-001
+  - EXP-SX001     # Challenger (decisão de lançar SEM evidência suficiente)
+  - EXP-SX002     # Ebola WA (coordenação tardia apesar de evidência disponível)
+confianca: 0.80      # subiu: 2ª ocorrência externa real; com ressalvas (ver nota)
+dominios:
+  - Software
+  - Aeroespacial
+  - Saúde Pública          # novo domínio
+contraexemplos: 0
+evidencia_base:
+  - OBS-0011
+  - SX001-ALIGN-NI-001     # Challenger: decisão sem evidência -> falha no elo
+  - SX002-ALIGN-25         # Ebola: decisão (coordenação) tardia com evidência existente
+independente: true
+status: signal
+admissivel_ra_sig_001: true    # agora >=2 origens causalmente independentes
+nota: |
+  No Challenger a falha foi DECISÃO SEM evidência (elo Evidence->Decision
+  quebrado). No Ebola, a evidência existia (notificação, identificação, alertas
+  da MSF) e a decisão ainda assim veio tarde demais (lag alerta->coordenação,
+  SX002 NI-002). A afirmação precisa ser refinada: não basta depender de
+  conhecimento; o conhecimento deve estar casado à decisão no tempo. O SX-002
+  expande a tese: uma decisão tardia com conhecimento disponível também não é
+  justificável.
+```
+
+> **Ajuste de redação registrado (coordenação SX-002):** o campo `afirmacao`
+> evoluiu para incluir "desde o tempo da decisão". Isto refina o vocabulário de
+> um Signal **já existente** (+1 ocorrência), não cria schema novo.
+
+### SIG-002 — Ausência de infraestrutura cognitiva é observável (agora com 2 ocorrências)
+
+```yaml
+id: SIG-002
+afirmacao: Em casos de resposta problemática/incidente, a AUSENCIA de entidades
+  designadas pelo Kernel (Problem formal, Risk calculado, Projeção de
+  escala/capacidade, Metas pré-definidas) é observável no traço, não apenas
+  inferível.
+kind_base: structural
+ocorrencias:
+  - EXP-SX001   # Challenger: Problem/Risk ausentes
+  - EXP-SX002   # Ebola: Problem formal, Risk formal, projeção, metas ausentes
+confianca: 0.60     # 2ª ocorrência independente; ressalva amostral (ambas crises)
+dominios:
+  - Aeroespacial
+  - Saúde Pública
+contraexemplos: 0
+evidencia_base:
+  - SX001-Auses (§3 seção ausências)
+  - SX002-Auses (§3 seção ausências)
+independente: true
+status: signal
+admissivel_ra_sig_001: true
+nota: |
+  Em DOIS casos, a ausência das entidades do Kernel foi observável como dado.
+  A amostra é de casos em crise; para verificar a predição inversa (presença em
+  casos bem-sucedidos) seria preciso um caso de sucesso -- não disponível aqui.
+  Isso será testado nos próximos candidatos (SX-003...).
+```
+
+### SIG-003 — Cadeia cognitiva emerge sem o vocabulário ECP (agora com 2 ocorrências)
+
+```yaml
+id: SIG-003
+afirmacao: Em um projeto sem qualquer exposição ao ECP, a cadeia
+  Goal -> Knowledge -> Lacuna -> Assumption -> Evidence -> Decision ->
+  Execution -> Validation -> Learning emerge a partir apenas dos fatos
+  observados.
+kind_base: structural
+ocorrencias:
+  - EXP-SX001   # Challenger: cadeia emergente com elo quebrado Evidence->Decision
+  - EXP-SX002   # Ebola: cadeia emergente com defasagem (lag) alerta->coordenação
+confianca: 0.60    # 2ª ocorrência, domínios distintos (Aeroespacial vs Saúde)
+dominios:
+  - Aeroespacial
+  - Saúde Pública
+contraexemplos: 0
+evidencia_base:
+  - SX001-Em — emergência espontânea (§5)
+  - SX002-Em — emergência espontânea (§5)
+independente: true
+status: signal
+admissivel_ra_sig_001: true
+nota: |
+  A cadeia emergiu em DOIS domínios radicalmente distintos, sem uso do
+  vocabulário ECP na coleta. A manifestação diverge entre os dois (Challenger:
+  elo quebrado Evidence->Decision; Ebola: lag temporal alerta->coordenação).
+  Sugere-se que a cadeia é ESTRUTURA (o esqueleto emerge), mas a manifestação
+  varia (onde ela se rompe difere).
+```
+
+### SIG-004 — Defasagem (lag) entre alerta/evidência e coordenação (candidato novo)
+
+```yaml
+id: SIG-004
+afirmacao: Em respostas a emergências de escala, a defasagem temporal entre a
+  evidência/alerta já registrado e a coordenação formal da decisão é observável
+  a partir dos fatos, sem consultar o relatório final.
+kind_base: structural
+ocorrencias:
+  - EXP-SX002     # apenas 1 ocorrência (Ebola)
+confianca: 0.30    # 1 ocorrência; baixa
+dominios:
+  - Saúde Pública
+contraexemplos: 0
+evidencia_base:
+  - SX002-NI-002 (lag alerta->coordenação presente na reconstrução)
+independente: false
+status: signal
+admissivel_ra_sig_001: false
+nota: |
+  Candidato específico do SX-002. O lag detectado na reconstrução cega (pico
+  antes da consolidação da coordenação; declínio só após expansão) tem apenas
+  UMA origem. Requer MAIS UMA origem independente para ser admissível
+  (RA-SIG-001). Permanece candidato, sem promoção.
+```
+
+---
+
+## Resumo da Etapa 5
+
+| Signal | Afirmação | Ocorrências independentes | independente | status |
+|---|---|---|---|---|
+| SIG-001 | Decisão justificável requer conhecimento (no tempo) | 2 (Challenger, Ebola) | true | signal — admissível (RA-SIG-001 satisfeita) |
+| SIG-002 | Ausência de infraestrutura cognitiva observável | 2 (Challenger, Ebola) | true | signal — admissível, ressalva amostral |
+| SIG-003 | Cadeia emerge sem vocabulário ECP | 2 (Challenger, Ebola) | true | signal — admissível |
+| SIG-004 | Lag alerta→coordenação observável (candidato) | 1 (Ebola) | false | candidato (não admissível) |
+
+> **IMPORTANTE — estado da RA-SIG-001:** com o SX-002, **3 Signals preenchem o
+> requisito mínimo de ≥2 origens causalmente independentes.** Ainda assim,
+> **nenhum é promovido a `pattern`** (RA-SIG-005): a promoção depende dos
+> critérios objetivos do [README da frente](../../README.md) (corpus, requesitos,
+> OBS reconstruíveis) e da consolidação formal da v1.1 — **fora** do escopo
+> congelado deste experimento.
+>
+> **Divergência registrada como DADO (não buscada):** entre SX-001 e SX-002 o
+> padrão de manifestação difere (elo quebrado × lag temporal). Convergência da
+> cadeia não é convergência de exito. Isso indica: o ECP prevê a estrutura;
+> a forma da falha varia com contexto. A distinção fica na análise, não dentro
+> do Kernel.
+
+## Histórico de revisão
+
+| Versão | Data | Mudança |
+|---|---|---|
+| 1.0 | 2026-08-04 | Etapa 5: SIG-001/002/003 admissíveis com 2 ocorrências independentes (Challenger + Ebola); SIG-004 candidato novo (lag). Nada promovido a `pattern`. Divergência de manifestação registrada como dado. |
