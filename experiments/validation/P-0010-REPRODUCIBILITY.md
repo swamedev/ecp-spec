@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Tipo** | Programa científico (pesquisa) — **NÃO é** AD, RFC, LAW, schema, entidade nem critério |
-| **Status** | Aberto — **FASE D — Reproducibilidade Científica** (prioridade atual do programa) |
-| **Data** | 2026-08-03 |
+| **Status** | **Concluído — Gate SATISFEITO** (FASE D — Reproducibilidade Científica) |
+| **Data de conclusão** | 2026-08-04 |
 | **Autor** | Arquiteto-Chefe (coordenação 2026-08-03) |
 | **Governado por** | [RESEARCH-CHARTER](./RESEARCH-CHARTER.md), [P-0008](./P-0008-CROSS-DOMAIN-VALIDATION.md), [DISCOVERY-LOG](./DISCOVERY-LOG.md) |
 
@@ -27,8 +27,8 @@ O pipeline atual ainda tem um componente muito humano:
 
 ```
 Caso → Narrativa → Atomic Facts → Reconstrução Cega → Alignment → EAR → Signals
-                                    ▲
-                            componente humano: o executor
+                                     ▲
+                             componente humano: o executor
 ```
 
 Perguntas sem resposta:
@@ -107,9 +107,15 @@ instrumento de pesquisa.
 
 ```
 1. SX-001 (Challenger) — concluído (EAR(Challenger) = 0.775, observação)
-2. ESTUDO DE REPRODUTIBILIDADE — validar a estabilidade da etapa
-   Narrativa → Atomic Facts → Reconstrução entre avaliadores independentes
-   (humanos e/ou LLMs diferentes). (ESTE PROGRAMA)
+2. ESTUDO DE REPRODUTIBILIDADE — **CONCLUÍDO** (Gate SATISFEITO)
+   Avaliadores A (46 AFs), B (75 AFs), C (73 AFs) — matriz tríplice completa
+   Comparações: A×B ✅, A×C ✅, B×C ✅
+   Contabilidade fechada: partição exaustiva sem ambiguidade (Eixo 1 relação,
+   Eixo 2 propriedades intra-avaliador)
+   Resultado: **0 divergências factuais em todos os 3 pares**
+   Variabilidade concentrada em granularidade (decomp_1_N / group_N_1)
+   Redundâncias intra-avaliador separadas: B=7 pares (14 AFs), C=1 par
+   Exclusivos de C = 2, ambos rastreáveis à narrativa
 3. Somente após evidências satisfatórias de reprodutibilidade:
    executar SX-002 em domínio biomédico/saúde suficientemente documentado e
    metodologicamente distinto do Challenger (P-0008).
@@ -154,8 +160,26 @@ discriminante do protocolo.
 | DISCOVERY-LOG | Cada rodada de reprodutibilidade vira observação DL-### (AFR como observação, não métrica). |
 | RESEARCH-CHARTER | RC-1 (Evidence First) e RC-2 (Experimental Diversity) ganham um requisito operacional: evidência reprodutível. |
 
+## Resultado Final (Gate P-0010 = SATISFEITO)
+
+| Item | Status |
+|---|---|
+| Avaliador A (referência Oficial) | ✅ Concluído (46 AFs) |
+| Avaliador B (independente) | ✅ Concluído (75 AFs) |
+| Avaliador C (independente) | ✅ Concluído (73 AFs) |
+| Comparação A×B | ✅ Concluída — 0 divergências factuais |
+| Comparação A×C | ✅ Concluída — 0 divergências factuais |
+| Comparação B×C | ✅ Concluída — 0 divergências factuais |
+| Contabilidade fechada (partição exaustiva) | ✅ 75 + 73 AFs contabilizados sem ambiguidade |
+| Variabilidade principal | Granularidade (decomp_1_N / group_N_1) |
+| Redundâncias intra-avaliador | B: 7 pares (14 AFs); C: 1 par (óbito) — padrão independente |
+| Exclusivos C | 2 (função O-rings; "53°F menor temp") — rastreáveis |
+| Divergências factuais (A×B, A×C, B×C) | **0** |
+| Generalização | **Proibida** — limitado a este caso/avaliadores |
+
 ## Histórico de revisão
 
 | Versão | Data | Mudança |
 |---|---|---|
 | 1.0 | 2026-08-03 | Abertura do Reproducibility Program (coordenação pós-SX-001). FASE D — Reproducibilidade Científica definida como prioridade. Pergunta científica (10 pesquisadores → mesmo Atomic Facts?), experimento (Narrativa → 3+ avaliadores → cobertura/divergência/concordância/conflitos), AFR como observação (não métrica). Gate: reprodutibilidade antes da expansão. Regra SX-002: evitar o caso mais famoso (anti memória coletiva). Nenhum AD/RFC/entidade criado. |
+| 2.0 | 2026-08-04 | **Gate SATISFEITO**. Estudo completo de reprodutibilidade concluído sobre SX-001 (Challenger). Três avaliadores independentes (A/B/C), matriz tríplice A×B/A×C/B×C concluída. Zero divergências factuais em todos os pares. Contabilidade fechada via Eixo 1 (relação) + Eixo 2 (intra-avaliador). Variabilidade = granularidade. Gate liberado → seleção formal SX-002 via SX-SELECTION congelado. Nenhuma alteração em artefatos congelados (A/B/C, análises, protocolo). Nenhuma nova métrica/infraestrutura criada. |

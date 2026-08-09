@@ -954,60 +954,125 @@ contraexemplos:      Nenhum até agora.
 ```
 DL-023
 origem:              P-0010 (Reproducibility Program) — rodada parcial sobre o
-                     SX-001 (Challenger STS-51-L); comparação Avaliador Oficial
-                     (A) × Avaliador C.
+                      SX-001 (Challenger STS-51-L); comparação Avaliador Oficial
+                      (A) × Avaliador C.
 domínio:             Aeroespacial / Aeronáutica (SX-001)
 observação:          Resultado do estudo de reprodutibilidade — INCOMPLETO (não é
-                     resultado do ECP). Na comparação A×C observou-se:
-                     - Cobertura: 100% dos Atomic Facts oficiais presentes em C.
-                     - Concordância de granularidade: 95,7%.
-                     - Conflitos factuais: 0.
-                     - Divergências observadas correspondem apenas a decomposição
-                       mais fina de determinados fatos (C decompõe contexto de
-                       engenharia do veículo em mais fatos: 56 vs. 46).
-                     - Fatos exclusivos de C: construção do veículo (2 SRBs,
-                       juntas de campo, 2 O-rings, função de vedação),
-                       preocupação dos engenheiros com a elasticidade da borracha,
-                       concordância Mulloy/Aldrich em prosseguir.
+                      resultado do ECP). Na comparação A×C observou-se:
+                      - Cobertura: 100% dos Atomic Facts oficiais presentes em C.
+                      - Concordância de granularidade: 95,7%.
+                      - Conflitos factuais: 0.
+                      - Divergências observadas correspondem apenas a decomposição
+                        mais fina de determinados fatos (C decompõe contexto de
+                        engenharia do veículo em mais fatos: 56 vs. 46).
+                      - Fatos exclusivos de C: construção do veículo (2 SRBs,
+                        juntas de campo, 2 O-rings, função de vedação),
+                        preocupação dos engenheiros com a elasticidade da borracha,
+                        concordância Mulloy/Aldrich em prosseguir.
 explicações concorrentes:
-                     - A elevada convergência pode reflectir apenas que o caso
-                       (Challenger) tem granularidade estável e documentação
-                       rica — não uma propriedade geral do protocolo.
-                     - A variação de granularidade pode ser inerente à linguagem
-                       (leitores legítimos do mesmo texto granularizam diferente).
+                      - A elevada convergência pode reflectir apenas que o caso
+                        (Challenger) tem granularidade estável e documentação
+                        rica — não uma propriedade geral do protocolo.
+                      - A variação de granularidade pode ser inerente à linguagem
+                        (leitores legítimos do mesmo texto granularizam diferente).
 hipóteses concorrentes:
-                     - H-A (hipótese de trabalho, NÃO confirmada): a maior fonte
-                       de variabilidade entre avaliadores independentes pode ser
-                       a granularidade da decomposição dos Atomic Facts, e não a
-                       identificação dos acontecimentos.
-                     - H-B: em outro domínio (hospital, agricultura, negócios)
-                       podem surgir divergências de seleção, causalidade ou
-                       temporalidade — o comportamento pode não ser geral.
-                     - H-C: sem um Avaliador B verdadeiramente independente, a
-                       convergência A×C pode ser coincidência ou efeito de
-                       exposição prévia aos resultados.
+                      - H-A (hipótese de trabalho, NÃO confirmada): a maior fonte
+                        de variabilidade entre avaliadores independentes pode ser
+                        a granularidade da decomposição dos Atomic Facts, e não a
+                        identificação dos acontecimentos.
+                      - H-B: em outro domínio (hospital, agricultura, negócios)
+                        podem surgir divergências de seleção, causalidade ou
+                        temporalidade — o comportamento pode não ser geral.
+                      - H-C: sem um Avaliador B verdadeiramente independente, a
+                        convergência A×C pode ser coincidência ou efeito de
+                        exposição prévia aos resultados.
 conclusão proibida:
-                     - NÃO afirmar que o protocolo é reproduzível a partir
-                       desta rodada parcial.
-                     - Apenas registrar: A e C apresentaram elevada convergência
-                       neste caso (A×C).
-                     - NÃO tratar H-A como confirmada; depende de B e de novos
-                       SX (matriz de comparação A×B, B×C pendente).
+                      - NÃO afirmar que o protocolo é reproduzível a partir
+                        desta rodada parcial.
+                      - Apenas registrar: A e C apresentaram elevada convergência
+                        neste caso (A×C).
+                      - NÃO tratar H-A como confirmada; depende de B e de novos
+                        SX (matriz de comparação A×B, B×C pendente).
 evidência:           experiments/validation/independence/SX-001/narrative/
-                     01-narrativa-original.md;
-                     experiments/validation/independence/SX-001/reconstruction/
-                     02-atomic-facts.md (referência — 46 AFs);
-                     rodada P-0010 (Avaliador C, 56 AFs — ver contexto da
-                     coordenação 2026-08-04)
+                      01-narrativa-original.md;
+                      experiments/validation/independence/SX-001/reconstruction/
+                      02-atomic-facts.md (referência — 46 AFs);
+                      rodada P-0010 (Avaliador C, 56 AFs — ver contexto da
+                      coordenação 2026-08-04)
 status:              Observação (rodada parcial, PROVISÓRIO)
 exigência:           - Obter um Avaliador B genuinamente independente (novo
-                       chat, contexto cego) e calcular AFR(A,B), AFR(B,C).
-                     - Completar a matriz de comparação e responder: "quais
-                       diferenças surgem naturalmente entre avaliadores
-                       independentes?" (ruído esperado × variação de
-                       granularidade × inconsistência do protocolo × divergência
-                       real de interpretação).
-                     - Repetir o procedimento nos próximos SX para testar H-B.
+                        chat, contexto cego) e calcular AFR(A,B), AFR(B,C).
+                      - Completar a matriz de comparação e responder: "quais
+                        diferenças surgem naturalmente entre avaliadores
+                        independentes?" (ruído esperado × variação de
+                        granularidade × inconsistência do protocolo × divergência
+                        real de interpretação).
+                      - Repetir o procedimento nos próximos SX para testar H-B.
+contraexemplos:      Nenhum até agora.
+```
+
+### DL-024 — Estudo de reprodutibilidade completo (P-0010), matriz A×B×C — Gate SATISFEITO
+
+```
+DL-024
+origem:              P-0010 (Reproducibility Program) — estudo completo sobre o
+                      SX-001 (Challenger STS-51-L); três avaliadores independentes
+                      (A, B, C), mesma Narrativa Original, mesmas fontes, protocolo
+                      congelado.
+domínio:             Aeroespacial / Aeronáutica (SX-001)
+observação:          Matriz de comparação tríplice concluída com contabilidade
+                      fechada (partição exaustiva, sem ambiguidade). Resultados:
+                      - A×B: 34 match_1_1, 10 decomp_1_N, 2 group_N_1, 0 diverg,
+                        0 excl_A, 16 excl_B
+                      - A×C: 33 match_1_1, 11 decomp_1_N, 2 group_N_1, 0 diverg,
+                        0 excl_A, ~15 excl_C
+                      - B×C: 52 match_1_1, 7 decomp_1_N (lado B), 2 group_N_1
+                        (lado B), 0 diverg, 0 excl_B, 2 excl_C
+                      Eixo 1 (relação entre avaliadores): **zero divergências
+                      factuais em todos os três pares**.
+                      Eixo 2 (propriedades intra-avaliador): redundâncias
+                      intra-avaliador identificadas separadamente — B: 7 pares/grupos
+                      (14 AFs); C: 1 par (C-008/061 — óbito). A redundância do
+                      óbito (desintegração+morte) aparece **independentemente** em
+                      B e em C — padrão de extração, não coincidência.
+                      Exclusivos de C limitados a 2 fatos, ambos rastreáveis à
+                      narrativa (função dos O-rings; "53°F menor temperatura de
+                      lançamento já realizada").
+explicações concorrentes:
+                      - A convergência pode reflectir granularidade estável deste
+                        caso específico + documentação rica, não propriedade geral
+                        do protocolo.
+                      - A variabilidade de granularidade pode ser inerente à
+                        linguagem (leitores legítimos granularizam diferente).
+hipóteses concorrentes:
+                      - H-A: a principal fonte de variabilidade entre avaliadores
+                        independentes é a granularidade da decomposição, não a
+                        identificação dos acontecimentos (sustentada por 3 pares).
+                      - H-B: em outros domínios podem surgir divergências de
+                        seleção, causalidade ou temporalidade — o padrão pode não
+                        ser geral.
+                      - H-C: o desenho do estudo (mesmo executor para narrativa e
+                        reconstrução em algumas rodadas) pode subestimar a
+                        variabilidade real.
+conclusão proibida:
+                      - NÃO generalizar para outros domínios. A afirmação é
+                        limitada a: **neste caso (Challenger), entre estes três
+                        avaliadores, a variabilidade observada concentrou-se na
+                        granularidade da decomposição dos Atomic Facts, e não
+                        foram observadas divergências factuais.**
+                      - NÃO promover AFR a métrica oficial — permanece observação
+                        do programa (DL-008).
+evidência:           experiments/validation/p0010/input/evaluator-A.md (46 AFs);
+                      experiments/validation/p0010/input/evaluator-B.md (75 AFs);
+                      experiments/validation/p0010/input/evaluator-C.md (73 AFs);
+                      experiments/validation/p0010/comparison/analysis-AxB.md;
+                      experiments/validation/p0010/comparison/analysis-AxC.md;
+                      auditoria contábil B×C (partição exaustiva 75+73 AFs)
+status:              Confirmado (≥3 comparações independentes, mesmo caso)
+exigência:           Gate P-0010 = SATISFEITO. Próximo: seleção formal do SX-002
+                      via protocolo SX-SELECTION congelado (domínio
+                      biomédico/saúde, não caso mais famoso). Repetir estudo de
+                      reprodutibilidade no SX-002 antes de SX-003.
 contraexemplos:      Nenhum até agora.
 ```
 
