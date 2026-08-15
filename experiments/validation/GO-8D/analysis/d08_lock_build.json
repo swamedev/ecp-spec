@@ -1,0 +1,23 @@
+{
+  "manifest_sha256": "b25dabcf4abe03906f0c477aaee8831147d07d482edc9f5e02860c59fb9f946f",
+  "total_files": 95,
+  "counts": {
+    "opening_decision": 1,
+    "preregistration": 1,
+    "decision_record": 8,
+    "reproducibility_script": 6,
+    "validation_script": 2,
+    "reproducibility_output": 6,
+    "corrected_taxonomy": 1,
+    "operational_config": 2,
+    "engine_pilot": 1,
+    "engine_kernel": 1,
+    "engine_parser": 1,
+    "engine_embeddings": 1,
+    "engine_config": 1,
+    "engine_runtime_dependency": 1,
+    "reproducibility_dependency": 1,
+    "study_material": 61
+  },
+  "generated_at": "2026-08-14T23:14:09"
+}

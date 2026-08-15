@@ -1,0 +1,27 @@
+[
+  [
+    "T-D-04-01 table format rejected",
+    "PASS",
+    "FAIL"
+  ],
+  [
+    "T-D-04-02 standard format accepted",
+    "PASS",
+    "PASS"
+  ],
+  [
+    "T-D-04-03 missing '## Fatos' header rejected",
+    "PASS",
+    "FAIL"
+  ],
+  [
+    "T-D-04-04 <15 facts rejected",
+    "PASS",
+    "FAIL"
+  ],
+  [
+    "T-D-04-05 all 12 BIPs parseable",
+    "PASS",
+    true
+  ]
+]

@@ -1,0 +1,92 @@
+{
+  "result": "PASS",
+  "rows": 108,
+  "checks": {
+    "row_count": {
+      "expect": 108,
+      "actual": 108,
+      "pass": true
+    },
+    "schema": {
+      "missing_columns": [],
+      "pass": true
+    },
+    "status": {
+      "pass_rows": 108,
+      "pass": true
+    },
+    "seed_cells": {
+      "cells": 36,
+      "per_cell": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "unique_global": 108,
+      "pass": true
+    },
+    "bounds_0_1": {
+      "issues": [],
+      "n_issues": 0,
+      "pass": true
+    },
+    "namespace": {
+      "issues": [],
+      "n_issues": 0,
+      "pass": true
+    },
+    "taxonomy_sha256": {
+      "issues": [],
+      "n_issues": 0,
+      "pass": true,
+      "expected_B": "5ba63db7a81c454d",
+      "expected_A_C": "c91fecfeae83d9ed"
+    },
+    "matrix": {
+      "shape": [
+        12,
+        3
+      ],
+      "has_nan": false,
+      "pass": true
+    },
+    "d04_parseability": {
+      "bips_pass": 12,
+      "total": 12,
+      "pass": true
+    }
+  }
+}
