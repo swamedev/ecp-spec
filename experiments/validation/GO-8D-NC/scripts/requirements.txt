@@ -1,0 +1,10 @@
+# GO-8D-NC reproducibility dependencies (pre-registration v1.0 FINAL; D-MV-04)
+# Fixed versions (resolved on the GO-8D environment, Python 3.11.x).
+# NOTE: scikit-posthocs / statsmodels are NOT runtime dependencies (Holm implemented directly).
+
+numpy==1.26.4
+scipy==1.15.3
+pandas==3.0.5
+PyYAML==6.0.2
+jsonschema==4.25.0
+sentence-transformers==3.3.1

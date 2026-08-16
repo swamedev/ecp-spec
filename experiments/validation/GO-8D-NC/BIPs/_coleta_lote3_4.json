@@ -1,0 +1,145 @@
+[
+ {
+  "bip": "BIP-023-mariana",
+  "id": "ibama-portal",
+  "desc": "Ibama - Rompimento da Barragem de Fundao (pagina oficial)",
+  "url": "https://www.gov.br/ibama/pt-br/assuntos/notas/2020/rompimento-da-barragem-de-fundao-documentos-relacionados-ao-desastre-da-samarco-em-mariana-mg",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "ibama-portal.html",
+  "sha256": "9c394e659cd9563767878bdf6a4033f60fff3a6f759eac4981903e0402bafefd",
+  "bytes": 344710
+ },
+ {
+  "bip": "BIP-023-mariana",
+  "id": "ibama-laudo",
+  "desc": "Ibama - Laudo Tecnico Preliminar (Nov/2015) - copy oficial",
+  "url": "https://ambientedomeio.com/wp-content/uploads/2016/01/laudo-preliminar-do-ibama-sobre-mariana.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "ibama-laudo.pdf",
+  "sha256": "2782999d43c8389a5568263a6804b9f62ec9b67b76936ed69df045bec197fc57",
+  "bytes": 17612287
+ },
+ {
+  "bip": "BIP-024-dieselgate",
+  "id": "epa-nov-2015-09-18",
+  "desc": "EPA NOV Volkswagen 18/09/2015",
+  "url": "https://www.epa.gov/sites/default/files/2015-10/documents/vw-nov-caa-09-18-15.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "epa-nov-2015-09-18.pdf",
+  "sha256": "850d8f790d7119f385fdfe11b4defbec2dd0e3d550be83a4c956f48028c1ddb0",
+  "bytes": 2459411
+ },
+ {
+  "bip": "BIP-024-dieselgate",
+  "id": "epa-nov-2015-11-02",
+  "desc": "EPA NOV Volkswagen/Audi/Porsche 02/11/2015",
+  "url": "https://www.epa.gov/sites/default/files/2015-11/documents/vw-nov-2015-11-02.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "epa-nov-2015-11-02.pdf",
+  "sha256": "3ec62b5f09da75acbbf22ed795c8c0f188c1487ee38a085b1d595a985fec9735",
+  "bytes": 1674849
+ },
+ {
+  "bip": "BIP-025-wellsfargo",
+  "id": "cfpb-consent-order",
+  "desc": "CFPB Consent Order Wells Fargo 2016-CFPB-0015",
+  "url": "https://files.consumerfinance.gov/f/documents/092016_cfpb_WFBconsentorder.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "cfpb-consent-order.pdf",
+  "sha256": "5faaae40ee44613a8e446e23852dc57ccfe1f227199b1e8c90f2a6faf1950d0c",
+  "bytes": 690616
+ },
+ {
+  "bip": "BIP-026-theranos",
+  "id": "sec-complaint",
+  "desc": "SEC v. Holmes/Theranos - Complaint (2018)",
+  "url": "https://www.sec.gov/files/litigation/complaints/2018/comp-pr2018-41-theranos-holmes.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "sec-complaint.pdf",
+  "sha256": "3ce565f81f038797a7803cef3f9370019c16676700c551ea31c639f2222e6826",
+  "bytes": 221957
+ },
+ {
+  "bip": "BIP-027-opioids",
+  "id": "doj-purdue-settlement",
+  "desc": "DOJ Purdue Pharma Settlement Agreement (2020)",
+  "url": "https://www.justice.gov/opa/press-release/file/1329571/dl",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "doj-purdue-settlement.pdf",
+  "sha256": "9356a8bd6b4b167ad4d7f561643e84e1a1caadf6c2f39e7e42a5b01b172a7316",
+  "bytes": 1349971
+ },
+ {
+  "bip": "BIP-027-opioids",
+  "id": "doj-purdue-press",
+  "desc": "DOJ Press Release - Purdue global resolution (2020)",
+  "url": "https://www.justice.gov/archives/opa/pr/justice-department-announces-global-resolution-criminal-and-civil-investigations-opioid",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "doj-purdue-press.html",
+  "sha256": "f16181ee61ae46ad37e2f6f6f55f6b432a1a2d78e9c4e6004b93208cc1ef5f38",
+  "bytes": 2566
+ },
+ {
+  "bip": "BIP-028-enron",
+  "id": "senate-psi-enron",
+  "desc": "Senate Committee Print 107-75 Financial Oversight of Enron (2002)",
+  "url": "https://www.govinfo.gov/content/pkg/CPRT-107SPRT82147/pdf/CPRT-107SPRT82147.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "senate-psi-enron.pdf",
+  "sha256": "4bd4087aa84305d96f3a0629a8f796d28fa19df011f6b9e810a730d942c753a1",
+  "bytes": 549511
+ },
+ {
+  "bip": "BIP-029-takata",
+  "id": "doj-takata-press",
+  "desc": "DOJ - Takata guilty plea $1B (2017)",
+  "url": "https://www.justice.gov/archives/opa/pr/takata-corporation-agrees-plead-guilty-and-pay-1-billion-criminal-penalties-airbag-scheme",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "doj-takata-press.html",
+  "sha256": "80d0de671270890dc3beebc469b5c6762f574d75f1a43ed08abfb9750b31682b",
+  "bytes": 2576
+ },
+ {
+  "bip": "BIP-029-takata",
+  "id": "nhtsa-takata-recall",
+  "desc": "NHTSA - Takata Recall Spotlight",
+  "url": "https://www.nhtsa.gov/equipment/takata-recall-spotlight",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "nhtsa-takata-recall.html",
+  "sha256": "b460913241e4b6c1a8d035b084f94ca32c6381f0b403ce486dd36504f93d4c39",
+  "bytes": 252249
+ },
+ {
+  "bip": "BIP-030-concordia",
+  "id": "mit-investigation",
+  "desc": "MIT Marine Casualties Investigative Body - Costa Concordia report (2013)",
+  "url": "https://maritimesafetyinnovationlab.org/wp-content/uploads/2020/11/MIT-Costa-Concordia-Grounding-Sinking-January-2012.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "mit-investigation.pdf",
+  "sha256": "c1279019bba76e1e168e9e5b3c31c53a0e94ceffc3e9fe190ece09472717e96f",
+  "bytes": 7680634
+ },
+ {
+  "bip": "BIP-030-concordia",
+  "id": "protezione-civile",
+  "desc": "Protezione Civile - Costa Concordia Shipwreck: Emergency Response Management (2012)",
+  "url": "https://www.protezionecivile.gov.it/static/76e14a9fc11674a61ca53d088e7ab1d2/Pubblicazione_Concordia_ENG_web.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "protezione-civile.pdf",
+  "sha256": "1101677762f53ccc9d4519ea763840b226e103b4e99a5328e66b6334817bc1a6",
+  "bytes": 1284545
+ }
+]

@@ -1,0 +1,115 @@
+# SX-003 / signals — Etapa 5: Signals suportados pelo Alignment
+
+| Campo | Valor |
+|---|---|
+| **Experimento** | EXP-SX003 |
+| **Etapa** | 5 — Extração de Signals |
+| **Regra** | Somente signals **suportados pelo Alignment** ([04-alignment-analysis.md](../comparison/04-alignment-analysis.md)) |
+| **Schema** | [SIGNAL-SCHEMA](../../../signals/SIGNAL-SCHEMA.yaml) |
+| **Data** | 2026-08-09 |
+
+> **Regra de admissibilidade (RA-SIG-001):** um Signal exige **≥ 2 ocorrências**
+> em origens causalmente independentes (RA-EI-003). O SX-003 é origem causal
+> **independente** das anteriores (Genoma Humano — Pesquisa Científica; público
+> NHGRI/DOE + revisão de pares + Celera).
+>
+> **Alegação de honestidade (como nos anteriores):** não se busca convergência
+> forçada. O SX-003 é o **primeiro caso de sucesso**; a divergência com os casos
+> de crise também é dado. Cada Signal distingue o que é apoiado em ambos os
+> casos do que muda num sucesso.
+>
+> **Nenhum signal promovido a `pattern`** (RA-SIG-005); consolidação v1.1 é
+> fora do escopo congelado. Aqui se registra a ocorrência **adicional** do
+> SX-003, sem alterar schema.
+
+## Signals suportados pelo Alignment
+
+### SIG-003 — Cadeia cognitiva emerge sem o vocabulário ECP (3ª ocorrência independente)
+
+```yaml
+id: SIG-003
+afirmacao: Em um projeto sem qualquer exposição ao ECP, a cadeia
+  Goal -> Knowledge -> Lacuna -> Assumption -> Evidence -> Decision ->
+  Execution -> Validation -> Learning emerge a partir apenas dos fatos
+  observados.
+kind_base: structural
+ocorrencias:
+  - EXP-SX001   # Challenger: cadeia emergente com elo quebrado Evidence->Decision
+  - EXP-SX002   # Ebola: cadeia emergente com defasagem (lag) alerta->coordenação
+  - EXP-SX003   # Genoma Humano: cadeia emergente completa; risco formal ausente (tratado por governança ELSI)
+confianca: 0.70    # 3ª ocorrência; domínio novo (Pesquisa Científica); manifestação distinta
+dominios:
+  - Aeroespacial
+  - Saúde Pública
+  - Pesquisa Científica        # novo domínio
+contraexemplos: 0
+evidencia_base:
+  - SX001-Em — emergência espontânea (§5)
+  - SX002-Em — emergência espontânea (§5)
+  - SX003-Em — emergência espontânea (§5) + Alignment item 19/20 (peer reviewed)
+independente: true
+status: signal
+admissivel_ra_sig_001: true    # >=2 origens causalmente independentes; agora 3
+nota: |
+  No sucesso (HGP) a cadeia emerge COMPLETA, sem ruptura Evidence->Decision e
+  sem lag: as decisões formais antecedem os marcos de evidência. Isto reforça a
+  tese de que a cadeia é ESTRUTURA (o esqueleto emerge) — e a forma (onde ela
+  fratura) varia com o caso. O caso de sucesso torna a promoção a pattern ainda
+  mais plausível, mas a consolidação é da v1.1.
+```
+
+### SIG-005 — Presença ex-ante de Goal/Problem e projeção diferencia o sucesso (candidato novo)
+
+```yaml
+id: SIG-005
+afirmacao: Em casos com desfecho de sucesso, o registro mostra a PRESENÇA explícita
+  de Goal e Problem definidos e de uma projeção de prazo/custo antes da execução;
+  em casos de crise, essas entidades são AUSENTES ou pós-hoc.
+kind_base: comparative
+ocorrencias:
+  - EXP-SX003     # Genoma: Goal/Problem ex-ante (AF-005/006, AF-047), prazo 15 anos (AF-011), custo (AF-012)
+confianca: 0.35    # 1 ocorrência (SX-003); predição inversa — aguarda 2ª ocorrência de sucesso
+dominios:
+  - Pesquisa Científica
+contraexemplos: 0
+evidencia_base:
+  - SX003-Em (§5 Goal/Problem ex-ante) + SX003-ALIGN (MATCH itens 4/6)
+independente: true # origem causal independente (não-EBP); mas único caso de sucesso
+status: candidate
+admissivel_ra_sig_001: false   # apenas 1 ocorrência — não admissível ainda
+nota: |
+  O SX-003 é o PRIMEIRO caso de sucesso. A predição inversa de SIG-002 ("a
+  ausência em crises deve virar presença em sucessos") aparece aqui apoiada.
+  Requer mais um caso de sucesso (OWS apontado no pré-registro) para ser
+  admissível. NÃO é promovido agora.
+```
+
+---
+
+## Resumo da Etapa 5
+
+| Signal | Afirmação | Ocorrências independentes | independente | status |
+|---|---|---|---|---|
+| SIG-003 | Cadeia emerge sem vocabulário ECP | 3 (Challenger, Ebola, Genoma) | true | signal — admissível (RA-SIG-001 satisf.; 3 origens) |
+| SIG-005 | Presença ex-ante em sucesso (candidato) | 1 (Genoma) | true* | candidato — não admissível (RA-SIG-001: 1 ocorrência) |
+| SIG-001 | Decisão justificável requer conhecimento | 2 (não alterado por 003) | true | permanece (neste experimento não adiciona ocorrência) |
+| SIG-002 | Ausência de infraestrutura cognitiva observável em crises | 2 — Ch/EB | true | permanece; **não** contradito; recebe corolário (ver nota) |
+| SIG-004 | Lag alerta→coordenação | 1 (Ebola) | false | candidato (não admissível; intocado pelo 003) |
+
+> *independente: o SX-003 é origem causal distinta, mas o número de casos de
+> sucesso = 1, logo é *independente* mas *insuficiente* (não admissível).
+
+> **IMPORTANTE — estado da RA-SIG-001 após o SX-003:**
+> - **SIG-003** agora tem **3 origens independentes** (Challenger, Ebola,
+>   Genoma — três domínios diferentes). Cada ocorrência independente e com
+>   manifestação própria. Ainda **sem promoção a `pattern`** (RA-SIG-005).
+> - **SIG-002** recebe um **corolário**: a predição **inversa** (casos de
+>   sucesso têm as entidades **presentes**) ganhou apoio no SX-003; mas o candidato
+>   SIG-005 precisa de 2.ª ocorrência de sucesso. Não é conclusão.
+> - **SIG-001/SIG-004** não alterados pelo SX-003.
+
+## Histórico de revisão
+
+| Versão | Data | Mudança |
+|---|---|---|
+| 1.0 | 2026-08-09 | Etapa 5: SIG-003 com 3ª ocorrência independente (Genoma). Candidato novo SIG-005 (presença ex-ante em sucesso) sem promoção. Nada vira `pattern`. Corolário cruzado SIG-002 registrado como dado. |

@@ -1,0 +1,101 @@
+[
+ {
+  "bip": "BIP-017-katrina",
+  "id": "whitehouse-katrina",
+  "desc": "The Federal Response to Hurricane Katrina: Lessons Learned (2006)",
+  "url": "https://www.govinfo.gov/content/pkg/GOVPUB-PREX-PURL-LPS67263/pdf/GOVPUB-PREX-PURL-LPS67263.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "whitehouse-katrina.pdf",
+  "sha256": "83879fed9623206e2da3bbc567763482a866079d582acfbc9ff47d05b8e5e61c",
+  "bytes": 3417406
+ },
+ {
+  "bip": "BIP-018-flint",
+  "id": "mdcr-flint",
+  "desc": "Michigan Civil Rights Commission - Flint Water Crisis Report (2017)",
+  "url": "https://www.michigan.gov/documents/mdcr/VFlintCrisisRep-F-Edited3-13-17_554317_7.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "mdcr-flint.pdf",
+  "sha256": "bc52a295660255f8daad83fb6d8e462cb901687dc333490801c764d07e8927ef",
+  "bytes": 2594247
+ },
+ {
+  "bip": "BIP-019-fukushima",
+  "id": "naiic-report",
+  "desc": "NAIIC - The National Diet of Japan Fukushima Report (2012)",
+  "url": "https://gnssn.iaea.org/actionplan/Shared%20Documents/Action%2001%20-%20Safety%20Assessments/The%20National%20Diet%20of%20Japan.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "naiic-report.pdf",
+  "sha256": "96987f4d9983ddc61f5f44137520d03376c3016c39ef2070c98aaea65f963580",
+  "bytes": 1372500
+ },
+ {
+  "bip": "BIP-019-fukushima",
+  "id": "iaea-dg-report",
+  "desc": "IAEA - The Fukushima Daiichi Accident: Report by the Director General (2015)",
+  "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1710-ReportByTheDG-Web.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "iaea-dg-report.pdf",
+  "sha256": "f55f046ae83d3634f32141fd51f7809c72b43270986a0cefa04d62a2dbbfd33c",
+  "bytes": 15078123
+ },
+ {
+  "bip": "BIP-020-grenfell",
+  "id": "grenfell-phase1-vol1",
+  "desc": "Grenfell Tower Inquiry Phase 1 Report - Volume 1 (2019)",
+  "url": "https://assets.publishing.service.gov.uk/media/66d822a87a73423428aa2ee7/Grenfell_Tower_Inquiry_-_Phase_1_report_-_volume_1.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "grenfell-phase1-vol1.pdf",
+  "sha256": "9f5042005add7226ef208fd666ff7527919478a3c7443b2d1824a3b02f46d82f",
+  "bytes": 3071511
+ },
+ {
+  "bip": "BIP-020-grenfell",
+  "id": "grenfell-phase1-exec",
+  "desc": "Grenfell Tower Inquiry Phase 1 Report - Executive Summary (2019)",
+  "url": "https://assets.publishing.service.gov.uk/media/66d82294a399e0dcf5200b2f/Grenfell_Tower_Inquiry_-_Phase_1_report_Executive_Summary.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "grenfell-phase1-exec.pdf",
+  "sha256": "9a8e5d48eb93620e6b6033c361bbff1c5e8eeae46eb763a23387098867bbde6a",
+  "bytes": 430862
+ },
+ {
+  "bip": "BIP-021-vajont",
+  "id": "parlamento-vajont",
+  "desc": "Senato della Repubblica - Comunicazione sulla catastrofe del Vajont (1963)",
+  "url": "https://www.parlamento.it/service/PDF/PDFServer/DF/320334.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "parlamento-vajont.pdf",
+  "sha256": "3f2e8e096bd062cf6ebd424b378dbc6d9c1d64a6870561736621f31244871dac",
+  "bytes": 2937606
+ },
+ {
+  "bip": "BIP-022-max8",
+  "id": "ntsb-asr1901",
+  "desc": "NTSB Safety Recommendation Report ASR-19-01 MCAS/737 MAX (2019)",
+  "url": "https://www.ntsb.gov/investigations/AccidentReports/Reports/ASR1901.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "ntsb-asr1901.pdf",
+  "sha256": "f232ba85e2b174c9288f3132c502f83d5546364a05de555edc551c44fc4b22be",
+  "bytes": 144862
+ },
+ {
+  "bip": "BIP-022-max8",
+  "id": "house-ti-737max",
+  "desc": "House T&I Final Committee Report Boeing 737 MAX (2020)",
+  "url": "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T68_2-PURL-gpo144993/pdf/GOVPUB-Y4_T68_2-PURL-gpo144993.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "house-ti-737max.pdf",
+  "sha256": "ea7db59be6d3dd98fac89f4de99357eb7581bb6a7dd0f27c72b5dbd10b165915",
+  "bytes": 3629290
+ }
+]

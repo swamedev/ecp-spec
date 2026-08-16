@@ -1,0 +1,21 @@
+# GO-8D-NC LOCK RECORD - freeze authority (two-level structure)
+lock_record_version: 1.0
+lock_generated_at: 2026-08-15
+gate: GO-8D-NC Phase 1 CLEAN (2026-08-15) -> Phase 2 HASH AUTHORIZED -> LOCKED / FROZEN
+lock_status: LOCKED / FROZEN
+normalization:
+  encoding: UTF-8-no-BOM
+  line_endings: LF
+  trailing_newline: true
+manifest:
+  path: experiments/validation/GO-8D-NC/GO-8D-NC-LOCK-MANIFEST.yaml
+  sha256: 9247abcc8234c750ad1aa94ec3230e0cc93192783b9f0466e591f1b84fb2c058
+scope:
+  total_locked_files: 14
+rules:
+  - no in-place modification of any locked artifact after first hash
+  - any divergence -> STOP (no correction, no recompute)
+  - experiment/data collection/analysis NOT executed
+  - commit NOT created
+  - GO-8B and GO-8C remain CLOSED/LOCKED/FROZEN
+  - GO-8D (previous cycle) remains LOCKED/FROZEN

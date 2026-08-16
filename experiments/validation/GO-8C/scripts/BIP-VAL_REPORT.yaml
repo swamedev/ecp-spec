@@ -1,0 +1,60 @@
+bip_id: BIP-VAL
+object: C3_TAXONOMY.yaml
+validation_date: '2026-08-13'
+cycle: GO-8C
+blindness_scope: Validators do not know C2 mapping, SX-001 results, or ECP hypotheses
+nt05_mode: SUBSTITUTED_PARTIAL
+tests:
+  NT-01:
+    status: PASS
+    details: 0 occurrences of compiled ECP vocabulary in labels/definitions/source_refs
+  NT-02:
+    status: PASS
+    details: C3 DAG (12 nodes, 13 edges) not isomorphic to ECP 9-node canonical chain
+  NT-03:
+    status: PASS
+    details: 100% nodes with external source_refs (FRAM/STAMP/ISO-15288/ISO-9001);
+      0 ECP references
+  NT-04:
+    status: PASS
+    details: Deterministic blind generation from external corpus; seed_generation
+      not applied; no ECP access
+  NT-05:
+    status: PASS_AI_PANEL (divergence justified)
+    details: >-
+      Semantic review executed by 2 independent AI panel (GLM 4.5 Flash and
+      Gemini 3.6 Flash). Extended panel (NT-05 extended, BIPs 008-012) returned a
+      divergence - Reviewer 1 (GLM) REJECTED with 2 alleged violations on C3 labels
+      (SYN-001 'Funcao', SYN-012 'Adaptacao'); Reviewer 2 (Gemini) PASS, 0 violations.
+      Governance analysis (D-04-NT05-DIVERGENCE-ANALYSIS.md) classified Reviewer 1 as
+      FALSE POSITIVE - labels are not in the 52-term ECP list, are FRAM/STAMP vocabulary
+      permitted by rule N-3, NT-01 deterministic confirms 0 hits, and D-03.7/D-03.8
+      already resolved definitions/labels. Decision B1 - divergence accepted with formal
+      justification; NT-05 extended consolidated as PASS. Not equivalent to original
+      3-validator human review.
+verdict: PASS
+verdict_note: >-
+  Deterministic components (NT-01..NT-04 and operational suites) are PASS. NT-05
+  partially substituted per GO-8C DECISION D-03 (Alternative B) and executed by a
+  2-independent-AI panel (GLM 4.5 Flash + Gemini 3.6 Flash). NT-05 extended (BIPs
+  008-012) consolidated as PASS after governance accepted the reported divergence with
+  formal justification (false positive by Reviewer 1; see decisions/D-04-NT05-DIVERGENCE-ANALYSIS.md).
+  Verdict is PASS. Limitation: AI panel review, no epistemological equivalence with
+  human review.
+findings:
+- id: FINDING-BIP-VAL-01
+  severity: OBSERVATION
+  text: 03 SS4.2 references a 'fixed list of 47 ECP terms' for NT-01. No such list
+    is registered in any frozen artifact. Operational compilation from ECP-000..010
+    vocabulary yielded 52 terms (see C3_TAXONOMY.yaml ecp_term_list). Reported; not
+    forced to 47. Preserved from GO-8B; harmonized in GO-8C.
+nt05_mode_note: SUBSTITUTED_PARTIAL per DECISION D-03 (2026-08-13). No equivalence
+  between automated audit and human review. Scope limited to NT-05. GO-8B files untouched.
+  Executed 2026-08-14 by 2-independent-AI panel (GLM 4.5 Flash + Gemini 3.6 Flash),
+  unanimous PASS on base taxonomy (see decisions/D-03-NT05-PANEL-RESULT.md); NT-05 extended
+  (BIPs 008-012) PASS with justified divergence (decisions/D-04-NT05-DIVERGENCE-ANALYSIS.md).
+validator_id: null
+reviewers:
+- revisor_1_glm_4.5_flash
+- revisor_2_gemini_3.6_flash
+generated_by: GO-8C DECISION D-03 (harmonized copy of GO-8B BIP-VAL_REPORT.yaml)

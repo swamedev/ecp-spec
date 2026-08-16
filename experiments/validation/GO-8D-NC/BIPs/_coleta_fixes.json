@@ -1,0 +1,23 @@
+[
+ {
+  "bip": "BIP-027-opioids",
+  "id": "doj-purdue-press",
+  "status": "acessivel",
+  "url": "https://web.archive.org/web/2021id_/https://www.justice.gov/archives/opa/pr/justice-department-announces-global-resolution-criminal-and-civil-investigations-opioid",
+  "erro": null
+ },
+ {
+  "bip": "BIP-029-takata",
+  "id": "doj-takata-press",
+  "status": "acessivel",
+  "url": "https://web.archive.org/web/2021id_/https://www.justice.gov/archives/opa/pr/takata-corporation-agrees-plead-guilty-and-pay-1-billion-criminal-penalties-airbag-scheme",
+  "erro": null
+ },
+ {
+  "bip": "BIP-014-tmi",
+  "id": "kemeny-tatf-vol1",
+  "status": "inacessivel",
+  "url": "https://tmi2kml.inl.gov/Documents/2a-Kemeny/Presidents%20Commission,%20Technical%20Assessment%20Task%20Force,%20Vol.%20I%20(1979-10-30).pdf",
+  "erro": "502 Server Error: Bad Gateway for url: https://tmi2kml.inl.gov/Documents/2a-Kemeny/Presidents%20Comm"
+ }
+]

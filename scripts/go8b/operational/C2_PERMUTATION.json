@@ -1,0 +1,96 @@
+{
+  "namespace": "CAT",
+  "namespaces": {
+    "C1": "ECP",
+    "C2": "CAT",
+    "C3": "SYN",
+    "C4": "NULL"
+  },
+  "source": "02-C2-PERMUTATION.md SS6 (frozen, GO-8B lock) - reproduced verbatim",
+  "derived_from": "02-C2-PERMUTATION.md SS6 (frozen)",
+  "mapping_status": "OPERATIONAL-AUTHORITATIVE",
+  "seed_registrada": {
+    "value": 11473621728585666159,
+    "hex": "0x9F3A7E2C1B8D4E6F",
+    "status": "REGISTERED-NON-REPRODUCING",
+    "note": "Under PCG64 SS3.1 this seed does not reproduce SS5/SS6 (P1-C2-01). Mapping used verbatim; no generative claim. Repair deferred to future version/Lock cycle."
+  },
+  "seed_operacional": {
+    "value": 258915,
+    "status": "OPERATIONAL",
+    "note": "P1-C2-01 option A: reproduces frozen SS5 permutation under PCG64."
+  },
+  "algorithm_note": "NOT regenerated from registered seed. Content is a literal reproduction of the frozen mapping SS6; seed_operacional reproduces SS5.",
+  "canonical_order": [
+    "Problem",
+    "Goal",
+    "Claim",
+    "Knowledge",
+    "Assumption",
+    "Evidence",
+    "Decision",
+    "State",
+    "Artifact"
+  ],
+  "opaque_to_canonical": {
+    "CAT-00": "Evidence",
+    "CAT-01": "Problem",
+    "CAT-02": "Artifact",
+    "CAT-03": "Knowledge",
+    "CAT-04": "Decision",
+    "CAT-05": "Goal",
+    "CAT-06": "Claim",
+    "CAT-07": "Assumption",
+    "CAT-08": "State"
+  },
+  "canonical_to_opaque": {
+    "Problem": "CAT-01",
+    "Goal": "CAT-05",
+    "Claim": "CAT-06",
+    "Knowledge": "CAT-03",
+    "Assumption": "CAT-07",
+    "Evidence": "CAT-00",
+    "Decision": "CAT-04",
+    "State": "CAT-08",
+    "Artifact": "CAT-02"
+  },
+  "permutation_ss5_canonical_to_opaque_position": [
+    1,
+    5,
+    6,
+    3,
+    7,
+    0,
+    4,
+    8,
+    2
+  ],
+  "inverse_verdadeira_opaque_to_canonical_index": [
+    5,
+    0,
+    8,
+    3,
+    6,
+    1,
+    2,
+    4,
+    7
+  ],
+  "validation": {
+    "T-C2-03-MAP-BIJECTION": "PASS",
+    "T-C2-04-MAP-COMPLETENESS": "PASS",
+    "T-C2-MAP-01": "PASS",
+    "T-C2-MAP-02": "PASS",
+    "T-C2-MAP-03": "PASS",
+    "T-C2-MAP-04": "PASS",
+    "T-C2-MAP-05-NOTE": "PASS",
+    "T-C2-MAP-06-SEED-OPERATIONAL": "PASS",
+    "T-C2-MAP-07-TRUE-INVERSE": "PASS"
+  },
+  "governance": {
+    "decision": "P1-C2-01 option A (DECIDED 2026-08-12)",
+    "decision_record": "experiments/validation/GO-8B/decisions/P1-C2-01-DECISION.md",
+    "note": "C2 operational = SS6 mapping verbatim; seed_operacional=258915; repair of registered seed->permutation deferred to later governance/version cycle."
+  },
+  "generated_by": "p1_c2_permutation.py"
+}

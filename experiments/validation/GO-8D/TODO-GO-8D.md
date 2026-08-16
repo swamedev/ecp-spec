@@ -167,6 +167,43 @@ margem TOST formal. **D-05 PROPOSED** — protocolo do gate semântico híbrido 
 (B<A em 12/12 BIPs); GO-8D ENCERRADO; recomendação: não usar C3 como intervenção; nenhum GO-8E.
 Relatório final: `FINAL-PROJECT-REPORT-GO-8D.md`; pacote: `GO-8D-CLOSURE-PACKAGE.zip`.**
 
+## PÓS-ESTUDO — AUDITORIA + METRIC VALIDATION + DECISÃO DE DESENHO (sem novo experimento)
+
+- [x] **AUD-01 — Auditoria pós-estudo (decomposição da DV_confirm)** — POST-STUDY AUDIT.
+  - STATUS = **COMPLETE** (2026-08-14) — `ent` domina a queda B<A (72.9%); B<A em 12/12;
+    **assimetrias estruturais** (ent n_slots 9 vs 12; ged ref 9n vs 12n) → **DV_confirm
+    problemática p/ comparação entre condições**.
+  - Artefatos: `POST-STUDY-AUDIT-DECISION.md`, `decisions/POST-STUDY-DV-DECOMPOSITION.md`,
+    `analysis/post_study_dv_audit.json`.
+- [x] **MV — Metric validation/calibration** (M-01 cardinalidade, M-02 referência GED, M-03
+  entropia, M-04 DVs candidatas).
+  - STATUS = **COMPLETE** (2026-08-14) — DV0 rejeitada; **DV3 = (conf + ged_ecp + ent_n12)/3**
+    atende 5/7 critérios; re-derivação reproduz CSV (erro 0.0); sintético perfect>noisy>flat>collapse.
+  - Artefatos: `metric-validation/METRIC-VALIDATION-REPORT.md`, `calibration_cells.json`,
+    `criteria_eval.json`, `calibrate_metrics.py`, `eval_criteria.py`.
+- [x] **D-MV-01 — Aprovação da DV confirmatória** — DV3 aceita como candidata; pesos 1:1:1
+  justificados (robustez 10–11/12 em qualquer ponderação razoável); faixa estreita de ged_ecp
+  aceita com limitação (melhoria antes de uso absoluto).
+  - STATUS = **APPROVED** (2026-08-14) — `decisions/D-MV-01-DV-CONFIRMATORY.md` +
+    `decisions/D-MV-01-APPROVED.md`.
+- [x] **D-MV-02 — Recálculo de potência com DV3** — Monte Carlo calibrado (B=3.000), unit=BIP.
+  - STATUS = **COMPLETE** (2026-08-14) — **N mínimo p/ poder≥0.80: TOST A−C = 30 (S1 observado);
+    S2: 14; S3: 6; Wilcoxon B−A = 10; Friedman = 8.** **N=30 recomendado.**
+  - Artefatos: `decisions/D-MV-02-POWER-RECALC.md`, `metric-validation/power_dv3.py`,
+    `power_summary.json`, `power_dv3_results.npy`.
+- [x] **D-MV-03 — Governance design decision** — decisão formal do desenho do próximo ciclo.
+  - STATUS = **APPROVED** (2026-08-15) — **N=30 BIPs (270 execuções); TOST A−C Δ=0.05
+    confirmatório; DV3; pesos 1:1:1; 18 novos BIPs** (aquisição a planejar, sem coleta).
+  - Artefato: `decisions/D-MV-03-GOVERNANCE-DESIGN-DECISION.md`
+  - **Próximo passo: preparar 08-PRE-REGISTRATION do novo ciclo com DV3, N=30, TOST Δ=0.05 e
+    lista dos 18 novos BIPs para aprovação da governança.**
+- [x] **PR-REG-01 — Pré-registro do novo ciclo** — baseado no desenho D-MV-03.
+  - STATUS = **APPROVED** (2026-08-15) — v1.0 FINAL fechado pela governança; Go/No-Go ≥27/30 GO ·
+    10–26/30 NO-GO exploratório · <10/30 STOP; hierarquia primária B<A (Friedman + Wilcoxon B−A) →
+    secundária TOST A−C Δ=0.05 → complementar B−C; N=30 justificado pela hipótese primária.
+  - Artefato: `08-PRE-REGISTRATION-NEW-CYCLE.md`
+  - **Próximo passo: preparar Lock do novo ciclo, após autorização da governança.**
+
 **Nota:** decisões GO-8D devem seguir o mesmo fluxo de governança
 (proposta → decisão → pré-registro → Lock → execução → análise).
 GO-8B e GO-8C permanecem CLOSED/LOCKED/FROZEN.
@@ -176,7 +213,8 @@ pode ocorrer até autorização formal por etapa.
 
 ---
 
-**Fim do TODO — GO-8D CLOSED (2026-08-14). Dívidas DIAGNOSED/PROPOSED: D-01, D-02, D-03
-(incl. revisão de desenho D-03.REV), D-04 (DIAGNOSED), D-05 (PROPOSED), D-06 (APPROVED),
-D-07 (APPROVED), D-08 (LOCKED), D-09 (APPROVED), EXEC-01 (EXECUTED), EXEC-02 (DONE),
-CLS-01 (CLOSED). Ciclo GO-8D encerrado; nenhum GO-8E aberto.
+**Fim do TODO — GO-8D CLOSED (2026-08-14) + pós-estudo AUD/MV concluído (2026-08-15).
+Dívidas DIAGNOSED/PROPOSED: D-01..D-09, EXEC-01/02, CLS-01 (CLOSED); AUD-01 (COMPLETE),
+MV (COMPLETE), D-MV-01 (APPROVED), D-MV-02 (COMPLETE), D-MV-03 (APPROVED), PR-REG-01 (APPROVED).
+Ciclo GO-8D encerrado; nenhum GO-8E aberto. Próximo gate: preparar Lock do novo ciclo
+(DV3, N=30, TOST Δ=0.05, 18 novos BIPs), após autorização da governança.

@@ -1,0 +1,238 @@
+taxonomy:
+  name: C3_T_SYNTH
+  namespace: SYN
+  type: DAG
+  nodes:
+  - id: SYN-001
+    label: Funcao
+    definition: Procedimento basico que transforma entradas em saidas dentro de um
+      processo sociotecnico, conforme FRAM.
+    parent_ids: []
+    source_refs:
+    - FRAM-Hollnagel-2012
+    - ISO-15288-2015-lifecycle
+  - id: SYN-002
+    label: Entrada
+    definition: Estimulo ou aporte que ativa a execucao de uma funcao, caracterizado
+      por condicoes observaveis.
+    parent_ids:
+    - SYN-001
+    source_refs:
+    - FRAM-Hollnagel-2012
+    - STAMP-Leveson-2011
+  - id: SYN-003
+    label: Saida
+    definition: Produto ou consequencia material da execucao de uma funcao, passivel
+      de observacao posterior.
+    parent_ids:
+    - SYN-001
+    source_refs:
+    - FRAM-Hollnagel-2012
+  - id: SYN-004
+    label: Precondicao
+    definition: Condicao que precisa ser satisfeita para que uma funcao possa ser
+      executada.
+    parent_ids:
+    - SYN-001
+    source_refs:
+    - FRAM-Hollnagel-2012
+    - ISO-15288-2015-lifecycle
+  - id: SYN-005
+    label: Recurso
+    definition: Meio material ou organizacional consumido ou mobilizado para executar
+      uma funcao.
+    parent_ids:
+    - SYN-001
+    source_refs:
+    - FRAM-Hollnagel-2012
+    - ISO-9001-2015-resources
+  - id: SYN-006
+    label: Tempo
+    definition: Dimensao temporal que condiciona a execucao, incluindo duracao, sincronizacao
+      e atrasos.
+    parent_ids:
+    - SYN-001
+    source_refs:
+    - FRAM-Hollnagel-2012
+  - id: SYN-007
+    label: Controle
+    definition: Acao de regulacao que ajusta a execucao de uma funcao com base em
+      leituras do sistema, segundo STAMP.
+    parent_ids:
+    - SYN-001
+    source_refs:
+    - STAMP-Leveson-2011
+    - FRAM-Hollnagel-2012
+  - id: SYN-008
+    label: Restricao-de-Seguranca
+    definition: Condicao imposta que delimita o funcionamento seguro do sistema, no
+      modelo de controle de STAMP.
+    parent_ids:
+    - SYN-007
+    source_refs:
+    - STAMP-Leveson-2011
+  - id: SYN-009
+    label: Realimentacao
+    definition: Canal de retorno de informacao sobre o desempenho do sistema, base
+      das acoes de controle.
+    parent_ids:
+    - SYN-007
+    source_refs:
+    - STAMP-Leveson-2011
+    - FRAM-Hollnagel-2012
+  - id: SYN-010
+    label: Condicao-Externa
+    definition: Circunstancia do entorno que influencia o comportamento do sistema
+      sem ser controlada por ele.
+    parent_ids:
+    - SYN-001
+    - SYN-007
+    source_refs:
+    - STAMP-Leveson-2011
+    - ISO-15288-2015-lifecycle
+  - id: SYN-011
+    label: Acoplamento
+    definition: Grau e modo de interdependencia entre funcoes, incluindo variabilidade
+      e propagacao de efeitos.
+    parent_ids:
+    - SYN-003
+    - SYN-002
+    source_refs:
+    - FRAM-Hollnagel-2012
+    - ISO-15288-2015-interface
+  - id: SYN-012
+    label: Adaptacao
+    definition: Resposta do comportamento das funcoes frente a condicoes variantes,
+      tipico de sistemas resilientes.
+    parent_ids:
+    - SYN-011
+    - SYN-007
+    source_refs:
+    - FRAM-Hollnagel-2012-resilience
+    - STAMP-Leveson-2011
+  edges:
+  - from: SYN-001
+    to: SYN-002
+    relation_type: feeds
+  - from: SYN-001
+    to: SYN-003
+    relation_type: produces
+  - from: SYN-001
+    to: SYN-004
+    relation_type: requires
+  - from: SYN-001
+    to: SYN-005
+    relation_type: consumes
+  - from: SYN-001
+    to: SYN-006
+    relation_type: constrained_by
+  - from: SYN-001
+    to: SYN-007
+    relation_type: subject_to
+  - from: SYN-007
+    to: SYN-008
+    relation_type: enforces
+  - from: SYN-007
+    to: SYN-009
+    relation_type: reads
+  - from: SYN-001
+    to: SYN-010
+    relation_type: exposed_to
+  - from: SYN-002
+    to: SYN-011
+    relation_type: couples_with
+  - from: SYN-003
+    to: SYN-011
+    relation_type: couples_with
+  - from: SYN-011
+    to: SYN-012
+    relation_type: modulates
+  - from: SYN-007
+    to: SYN-012
+    relation_type: enables
+metadata:
+  generator_id: GO-8B-C3-GEN-001
+  generation_procedure: DETERMINISTIC
+  corpus:
+  - FRAM-Hollnagel-2012
+  - STAMP-Leveson-2011
+  - ISO-15288-2015
+  - ISO-9001-2015
+  seed_generation_applied: false
+  seed_generation_value: 12088763053434307680
+  cardinality_notes: 'emergent: 12 nodes, 13 edges'
+  namespace_note: SYN-XXX exclusive; no mapping SYN<->ECP nor CAT<->SYN; comparison
+    only in analysis phase
+ecp_term_list:
+  source: compiled from ECP-000..010 vocabulary (operational artifact)
+  count: 52
+  terms:
+  - afirmacao
+  - aprendizado
+  - artefato
+  - artifact
+  - assumption
+  - cadeia de dependencias
+  - capability
+  - capacidade
+  - claim
+  - conhecimento
+  - contrato
+  - decisao
+  - decisao e causa
+  - decision
+  - entidade
+  - estado
+  - evidence
+  - evidencia
+  - fase pos-artefato
+  - fluxo e consequencia
+  - goal
+  - grafo de conhecimento
+  - knowledge
+  - l-0
+  - l-1
+  - l0
+  - l1
+  - learning
+  - lei um
+  - lei zero
+  - objetivo
+  - p-1
+  - p-10
+  - p-11
+  - p-12
+  - p-2
+  - p-3
+  - p-4
+  - p-5
+  - p-6
+  - p-7
+  - p-8
+  - p-9
+  - problem
+  - problema
+  - rastreabil
+  - risco
+  - risk
+  - state
+  - suposicao
+  - validacao
+  - validation
+  note: 03 SS4.2 references a fixed 47-term list that is NOT registered in any frozen
+    artifact; count reported for governance
+validation:
+  NT-01: PASS
+  NT-03: PASS
+  NT-02: PASS
+  NT-04: PASS
+  NT-05: PENDING
+validation_details:
+  NT-01: 0 matches of 52 ECP terms; hits=[]
+  NT-03: 100% nodes external source_refs; 0 ECP refs
+  NT-02: DAG=True, nodes=12(!=9), edges=13(>12), in_degrees=[0, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 2, 2]
+  NT-04: Deterministic procedure from external corpus (FRAM/STAMP/ISO-15288/ISO-9001);
+    seed_generation not applied; no ECP input
+  NT-05: 3 independent validators required - not automated
+generated_by: p2_c3_taxonomy.py

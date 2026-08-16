@@ -1,0 +1,10 @@
+model: sentence-transformers/all-MiniLM-L6-v2
+dim: 384
+normalized_L2: true
+count: 30
+usage: S_sem only (05 WL-KERNEL SS4.1). S_struct does NOT use embeddings.
+hash_status: PENDING LOCK PROTOCOL
+namespaces:
+- ECP
+- SYN
+- CAT

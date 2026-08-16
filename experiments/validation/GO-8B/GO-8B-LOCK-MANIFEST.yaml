@@ -1,0 +1,70 @@
+# GO-8B LOCK MANIFEST — scope 13 artifacts (R8 spec)
+lock_protocol_version: 1.0
+manifest_generated_at: 2026-08-11T19:09:23
+normalization:
+  encoding: UTF-8-no-BOM
+  line_endings: LF
+  trailing_newline: true
+scope:
+  core_methodological: 10
+  computational_reproducibility: 3
+files:
+  - name: "00-GO-8B-R1-DECISION-RECORD.md"
+    path: "experiments/validation/GO-8B/00-GO-8B-R1-DECISION-RECORD.md"
+    sha256: 89113a0ad9e328f04af6270a8f822d69ecbf29b6f58ff821f299d7e477858950
+    role: decision_record
+  - name: "00-GO-8B-R5-GOVERNANCE-DECISION-RECORD.md"
+    path: "experiments/validation/GO-8B/00-GO-8B-R5-GOVERNANCE-DECISION-RECORD.md"
+    sha256: bca1a9e1f51f6e8f00d9c00ee98c1070aa4e1a8e5e0c42b1fbe1f3fe0c508511
+    role: decision_record
+  - name: "01-CASES-BIPS.md"
+    path: "experiments/validation/GO-8B/01-CASES-BIPS.md"
+    sha256: f0f3647e501142fee64d718e6fc0988385233637219295fafa39f29b969ea549
+    role: deliverable
+  - name: "02-C2-PERMUTATION.md"
+    path: "experiments/validation/GO-8B/02-C2-PERMUTATION.md"
+    sha256: 9f75cf55cce0a6db2d90d9fd0bec168a354d05b77cfef72291441c6d02f440a1
+    role: deliverable
+  - name: "03-SYNTHETIC-TAXONOMY-C3.md"
+    path: "experiments/validation/GO-8B/03-SYNTHETIC-TAXONOMY-C3.md"
+    sha256: 671644b6bffb4315e61493982a57efd1d070277cb875f4a8867b433dc5de7f4a
+    role: deliverable
+  - name: "04-GRAPH-FROM-RECONSTRUCTION.md"
+    path: "experiments/validation/GO-8B/04-GRAPH-FROM-RECONSTRUCTION.md"
+    sha256: b290b755b9877e8e858e8a446c1a0ea7e5d91b8e3ebc68bff98c972105f38609
+    role: deliverable
+  - name: "05-WL-KERNEL.md"
+    path: "experiments/validation/GO-8B/05-WL-KERNEL.md"
+    sha256: 983afe7ef08061e73a7bec03097cbdf1122b3e3361e780dc4a947648d6ff108e
+    role: deliverable
+  - name: "06-STATISTICAL-PROTOCOL.md"
+    path: "experiments/validation/GO-8B/06-STATISTICAL-PROTOCOL.md"
+    sha256: b10fa4fe2844a660e7974edb6ab95b1a2bd00aeafbdcee2cdba907d52e16effa
+    role: deliverable
+  - name: "07-FAILURE-CRITERIA.md"
+    path: "experiments/validation/GO-8B/07-FAILURE-CRITERIA.md"
+    sha256: 0c4ad6f88922968ce228fa1dfc03589b521d81b95e5e46f4bca93370695725d0
+    role: deliverable
+  - name: "08-PRE-REGISTRATION.md"
+    path: "experiments/validation/GO-8B/08-PRE-REGISTRATION.md"
+    sha256: 65a0bd1041c27dbcf75b8b127d54c9ca0fc029ba963489c27717aa5bb5206883
+    role: preregistration
+  - name: "go8b_power_sim.py"
+    path: "scripts/go8b/go8b_power_sim.py"
+    sha256: 8bc764c7c3ba95a0f7de42cd16ae208253a3f88c93f8de66e507dbc79f4fd7c8
+    role: reproducibility_script
+  - name: "go8b_statistical_analysis.py"
+    path: "scripts/go8b/go8b_statistical_analysis.py"
+    sha256: 9bccd6b240f1f627fb2d1f141437242b32795227802eb14218e66acdf1a60379
+    role: reproducibility_script
+  - name: "requirements.txt"
+    path: "scripts/go8b/requirements.txt"
+    sha256: 115f1bbd166684440e64ca24890dba2e5ee13eb3b965924e630b46a4e49f8652
+    role: reproducibility_dependency
+scope_notes:
+  excluded_artifacts_pending_generation:
+    - C2_PERMUTATION.yaml
+    - C3_TAXONOMY.yaml
+    - BIP-VAL_REPORT.yaml
+    - EMBEDDINGS.npy
+  note: scripts are INCLUDED in the lock scope (R8 FINDING-01 = (a), confirmed R9).

@@ -1,0 +1,1901 @@
+The new engl and jour nal of medicine
+n engl j med  nejm.org
+1
+original article
+Ebola Virus Disease in West Africa —  
+The First 9 Months of the Epidemic  
+and Forward Projections
+WHO Ebola Response Team*
+Address reprint requests to Dr. Christl 
+Donnelly at c.donnelly@imperial.ac.uk 
+or Dr. Christopher Dye at dyec@who.int.
+*The authors (members of the World 
+Health Organization [WHO] Ebola Re-
+sponse team who contributed to this ar-
+ticle) are listed in the Appendix. 
+This article was published on September 
+23, 2014, at NEJM.org.
+DOI: 10.1056/NEJMoa1411100
+Copyright © 2014 Massachusetts Medical Society.
+Abstr act
+Background
+On March 23, 2014, the World Health Organization (WHO) was notified of an out-
+break of Ebola virus disease (EVD) in Guinea. On August 8, the WHO declared the 
+epidemic to be a “public health emergency of international concern.”
+Methods
+By September 14, 2014, a total of 4507 probable and confirmed cases, including 
+2296 deaths from EVD (Zaire species) had been reported from five countries in 
+West Africa — Guinea, Liberia, Nigeria, Senegal, and Sierra Leone. We analyzed a 
+detailed subset of data on 3343 confirmed and 667 probable Ebola cases collected 
+in Guinea, Liberia, Nigeria, and Sierra Leone as of September 14.
+Results
+The majority of patients are 15 to 44 years of age (49.9% male), and we estimate that 
+the case fatality rate is 70.8% (95% confidence interval [CI], 69 to 73) among per-
+sons with known clinical outcome of infection. The course of infection, including 
+signs and symptoms, incubation period (11.4 days), and serial interval (15.3 days), 
+is similar to that reported in previous outbreaks of EVD. On the basis of the initial 
+periods of exponential growth, the estimated basic reproduction numbers (R0) are 
+1.71 (95% CI, 1.44 to 2.01) for Guinea, 1.83 (95% CI, 1.72 to 1.94) for Liberia, and 
+2.02 (95% CI, 1.79 to 2.26) for Sierra Leone. The estimated current reproduction 
+numbers (R) are 1.81 (95% CI, 1.60 to 2.03) for Guinea, 1.51 (95% CI, 1.41 to 1.60) 
+for Liberia, and 1.38 (95% CI, 1.27 to 1.51) for Sierra Leone; the corresponding 
+doubling times are 15.7 days (95% CI, 12.9 to 20.3) for Guinea, 23.6 days (95% CI, 
+20.2 to 28.2) for Liberia, and 30.2 days (95% CI, 23.6 to 42.3) for Sierra Leone. As-
+suming no change in the control measures for this epidemic, by November 2, 2014, 
+the cumulative reported numbers of confirmed and probable cases are predicted to 
+be 5740 in Guinea, 9890 in Liberia, and 5000 in Sierra Leone, exceeding 20,000 in 
+total.
+Conclusions
+These data indicate that without drastic improvements in control measures, the 
+numbers of cases of and deaths from EVD are expected to continue increasing from 
+hundreds to thousands per week in the coming months.
+
+The new engl and jour nal of medicine
+n engl j med  nejm.org
+2
+A
+s of September 14, 2014, a total of 
+4507 confirmed and probable cases of 
+Ebola virus disease (EVD), as well as 2296 
+deaths from the virus, had been reported from 
+five countries in West Africa — Guinea, Liberia, 
+Nigeria, Senegal, and Sierra Leone. In terms of 
+reported morbidity and mortality, the current 
+epidemic of EVD is far larger than all previous 
+epidemics combined. The true numbers of cases 
+and deaths are certainly higher. There are nu-
+merous reports of symptomatic persons evading 
+diagnosis and treatment, of laboratory diagnoses 
+that have not been included in national databas-
+es, and of persons with suspected EVD who were 
+buried without a diagnosis having been made.1
+The epidemic began in Guinea during De-
+cember 2013,2 and the World Health Organiza-
+tion (WHO) was officially notified of the rapidly 
+evolving EVD outbreak on March 23, 2014. On 
+August 8, the WHO declared the epidemic to be 
+a “public health emergency of international con-
+cern.”3 By mid-September, 9 months after the 
+first case occurred, the numbers of reported 
+cases and deaths were still growing from week 
+to week despite multinational and multisectoral 
+efforts to control the spread of infection.1 The 
+epidemic has now become so large that the three 
+most-affected countries — Guinea, Liberia, and 
+Sierra Leone — face enormous challenges in im-
+plementing control measures at the scale re-
+quired to stop transmission and to provide clini-
+cal care for all persons with EVD.
+Because Ebola virus is spread mainly through 
+contact with the body fluids of symptomatic 
+patients, transmission can be stopped by a com-
+bination of early diagnosis, contact tracing, pa-
+tient isolation and care, infection control, and 
+safe burial.1 Before the current epidemic in West 
+Africa, outbreaks of EVD in central Africa had 
+been limited in size and geographic spread, 
+typically affecting one to a few hundred persons, 
+mostly in remote forested areas.4 The largest 
+previous outbreak occurred in the districts of 
+Gulu, Masindi, and Mbarara in Uganda.5 This 
+outbreak, which generated 425 cases over the 
+course of 3 months from October 2000 to Janu-
+ary 2001,6 was controlled by rigorous application 
+of interventions to minimize further transmis-
+sion — delivered through the local health care 
+system, with support from international part-
+ners.5,7,8
+We now report on the clinical and epidemio-
+logic characteristics of the epidemic in Guinea, 
+Liberia, Nigeria, and Sierra Leone during the 
+first 9 months of the epidemic (as of September, 
+14, Senegal had reported only a single case). We 
+document trends in the epidemic thus far and 
+project expected case numbers for the coming 
+weeks if control measures are not enhanced.
+Methods
+Surveillance
+Full details of the methods, along with sensitivity 
+and uncertainty analyses, are provided in Supple-
+mentary Appendix 1, available with the full text 
+of this article at NEJM.org; a summary is pro-
+vided here. Case definitions for EVD have been 
+reported previously by the WHO.9 In brief, a sus-
+pected case is illness in any person, alive or dead, 
+who has (or had) sudden onset of high fever and 
+had contact with a person with a suspected, 
+probable, or confirmed Ebola case or with a dead 
+or sick animal; any person with sudden onset of 
+high fever and at least three of the following 
+symptoms: headache, vomiting, anorexia or loss 
+of appetite, diarrhea, lethargy, stomach pain, 
+aching muscles or joints, difficulty swallowing, 
+breathing difficulties, or hiccupping; or any per-
+son who had unexplained bleeding or who died 
+suddenly from an unexplained cause. A probable 
+case is illness in any person suspected to have 
+EVD who was evaluated by a clinician or any per-
+son who died from suspected Ebola and had an 
+epidemiologic link to a person with a confirmed 
+case but was not tested and did not have labora-
+tory confirmation of the disease. A probable or 
+suspected case was classified as confirmed when 
+a sample from the person was positive for Ebola 
+virus in laboratory testing.  
+Clinical and demographic data were collected 
+with the use of a standard case investigation form 
+(see Supplementary Appendix 1) on confirmed, 
+probable, and suspected EVD cases identified 
+through clinical care, including hospitalization, 
+and through contact tracing in Guinea, Liberia, 
+Nigeria, and Sierra Leone. To create the fullest 
+possible picture of the unfolding epidemic, these 
+data were supplemented by information collect-
+ed in informal case reports, by data from diag-
+nostic laboratories, and from burial records. The 
+data recorded for each case included the district 
+of residence, the district in which the disease 
+was reported, the patient’s age, sex, and signs 
+
+Ebola Virus Disease in West Africa
+n engl j med  nejm.org
+3
+and symptoms, the date of symptom onset and 
+of case detection, the name of the hospital, the 
+date of hospitalization, and the date of death or 
+discharge. A subgroup of case patients provided 
+information on potentially infectious contacts 
+with other persons who had Ebola virus disease, 
+including possible exposure at funerals. We 
+present here the results from analyses of de-
+tailed data on individual confirmed and proba-
+ble cases recorded by each country in databases 
+provided to the WHO as of September 14, 2014; 
+analyses of confirmed and probable cases, to-
+gether with suspected cases, are provided in 
+Supplementary Appendix 1.
+Ethical Considerations
+This study is based on data collected during sur-
+veillance and response activities for EVD in 
+Guinea, Liberia, Nigeria, and Sierra Leone. All 
+information on individual patients has been ano-
+nymized for presentation.
+Clinical Manifestations and Case Fatality Rate
+We report on the frequency of symptoms in pa-
+tients with confirmed and probable EVD cases 
+overall and by country. We evaluated potential 
+risk factors for a fatal outcome, including sex, 
+age group (<15 years, 15 to 44 years, and ≥45 
+years), general and hemorrhagic symptoms, and 
+occupation (whether the patient was or was not a 
+health care worker). We performed the analysis 
+using logistic-regression models, with data on 
+patients for whom there was a definitive outcome 
+(death or recovery) by August 17, 2014.
+The case fatality rate was calculated as the 
+percentage of fatal EVD cases among reported 
+cases with a known definitive clinical outcome 
+(see Supplementary Appendix 1). For compari-
+son, we also calculated a case fatality rate that was 
+based only on the ratio of reported deaths to re-
+ported cases, including in the denominator cases 
+for which the clinical outcome is unknown.
+Key Time Periods
+We investigated five key time periods that char-
+acterize the progression of infection, the detec-
+tion, care, and recovery or death of a person with 
+Ebola virus disease, and the transmission of in-
+fection: the incubation period, which is the time 
+between infection and the onset of symptoms 
+(information that is relevant for assessing the 
+length of time that case contacts have to be fol-
+lowed up); the interval from symptom onset to 
+hospitalization (which is indicative of the infec-
+tious period in the community); the interval from 
+hospital admission to death and the interval 
+from hospital admission to discharge (both of 
+which are relevant to assessing the demand for 
+beds in relation to hospital capacity); the serial 
+interval, which is defined as the interval between 
+disease onset in an index case patient and dis-
+ease onset in a person infected by that index case 
+patient; and the generation time, which is the 
+time between infection in an index case patient 
+and infection in a patient infected by that index 
+case patient (required to estimate the reproduc-
+tion number, or R, of the epidemic).
+The incubation period was estimated retro-
+spectively (by having patients with confirmed 
+cases recall the likely source of infection), with 
+a distinction made between persons with single 
+exposures and those with multiple exposures. In 
+the case of multiple exposures, all the times of 
+exposure were used to fit a parametric distribu-
+tion (see Supplementary Appendix 1 for a sensi-
+tivity analysis). The interval from symptom onset 
+to hospitalization is summarized as the mean, 
+rather than the median, number of days to re-
+flect the average person-days of infectiousness 
+in the community. The mean duration of hospi-
+talization was estimated as the average number 
+of days from hospitalization to discharge and 
+the average number of days from hospitalization 
+to death, weighted by the proportion of patients 
+who died. For each statistic we calculated the 
+mean, median, and interquartile range and fit-
+ted a gamma probability distribution to model 
+the variation among persons (see the results in 
+Supplementary Appendix 1). Separate estimates 
+were obtained for health care workers and for all 
+other adults. The serial interval was estimated 
+from a subgroup of patients for whom informa-
+tion was available on the time of symptom onset 
+in known or suspected chains of transmission. 
+For EVD, we expect the generation time distribu-
+tion to be nearly identical to the serial interval 
+distribution (result derived in Supplementary 
+Appendix 1).
+Quantification of the Spread of Infection 
+and Projection of Future Cases
+The basic reproduction number (R0) is the aver-
+age number of secondary cases that arise when 
+one primary case is introduced into an uninfect-
+
+The new engl and jour nal of medicine
+n engl j med  nejm.org
+4
+ed population. These secondary cases arise after 
+a period measured by the serial interval or by the 
+generation time. When R0 is greater than 1, in-
+fection may spread in the population, and the 
+rate of spread is higher with increasingly high 
+values of R0. The doubling time (the time re-
+quired for the incidence to double) was estimated 
+on the basis of the reproduction number and the 
+serial interval.11 After the early phase of expo-
+nential growth in case numbers, once infection 
+has become established, the number of people 
+still at risk declines, so the reproduction number 
+falls from its maximum value of R0 to a smaller, 
+net reproduction number, Rt. When Rt falls below 
+1, infection cannot be sustained. Estimates of R0 
+and Rt help in evaluating the magnitude of the 
+effort required to control the disease, the way in 
+which transmission rates have fluctuated through 
+time, and the effectiveness of control measures 
+as they are implemented.
+We estimated Rt over time from the time 
+series of incidence of cases (i.e., a plot of the 
+number of new cases per week over the course 
+of the epidemic) and from our estimate of the 
+serial interval distribution.12 We then estimated 
+R0 for the early stages of the epidemic, when 
+transmission rates were at their highest, on the 
+basis of the date of symptom onset. As de-
+scribed in Supplementary Appendix 1, average 
+estimates of Rt for the period from July 28 to 
+September 7, 2014, which were made on the 
+basis of the date of report to facilitate com-
+parison with future cases, were used to project 
+future cases, allowing for both uncertainty in 
+the estimates of Rt and stochastic variability in 
+the transmission process.
+Results
+Scale of the Epidemic
+A total of 4507 confirmed and probable EVD 
+cases were reported to the WHO between De-
+cember 30, 2013, and September 14, 2014 — a 
+37-week period. A total of 718 confirmed and 
+probable cases and 289 deaths were reported in 
+the week of September 8 through September 14 
+alone. The numbers of confirmed and probable 
+cases reported by each country over time are 
+shown in Figures 1 and 2. Detailed information 
+was available on 3343 confirmed and 667 prob-
+able cases; these cases were used in all our anal-
+yses, with the exception of projections (results of 
+analyses based on confirmed, probable, and sus-
+pected cases are provided in Supplementary Ap-
+pendix 1). The median age of persons with EVD 
+was 32 years (interquartile range, 21 to 44), and 
+there were no significant differences in the age 
+distribution of persons with EVD among coun-
+tries. The majority of persons with EVD (60.8%) 
+were between 15 and 44 years of age (this age 
+group makes up only 44% of the population) 
+(Table 1). There were also no significant differ-
+ences among countries in the total numbers of 
+male and female persons with EVD reported 
+(49.9% of the total were male patients; within-
+country differences have not yet been fully inves-
+tigated). EVD has taken a heavy toll among 
+health care workers in Guinea, Liberia, and Si-
+erra Leone. By September 14, a total of 318 cases, 
+including 151 deaths, had been reported among 
+health care workers.
+Geographic Origin and the Spread  
+of Infection
+In December 2013, the first cases occurred in 
+Guéckédou and Macenta districts, the focus of 
+the epidemic in Guinea. During March 2014, a 
+rise in the numbers of cases in these two dis-
+tricts, in addition to the first reports from Lofa 
+and other districts in Liberia, was followed by 
+the discovery of cases in the capital, Conakry. A 
+second increase in case incidence in Guinea — 
+first in Guéckédou and Macenta and then in the 
+capital — occurred in May and June.
+During May, the focus of the epidemic in 
+Guinea expanded to the neighboring districts of 
+Kenema and Kailahun in Sierra Leone, and in 
+June further cases were reported in Lofa district 
+in Liberia. These five districts have remained the 
+focus of transmission in the border areas of the 
+three countries. From July onward, there were 
+sharp increases in case numbers at the epidemic 
+foci in all three countries, at other sites away 
+from the epicenter, and in the capital cities of 
+Conakry, Freetown, and Monrovia (Fig. 1, and 
+animated map and timeline at NEJM.org). How-
+ever, although EVD has spread to many parts of 
+Guinea, Liberia, and Sierra Leone, it has not 
+been reported in all districts in the countries: 
+among the total of 67 districts in the three coun-
+tries, only 43 have reported one or more con-
+firmed, probable, or suspected cases, and more 
+than 90% of cases have been reported from just 
+14 districts.
+An animated map 
+with timeline 
+available at 
+NEJM.org 
+
+Ebola Virus Disease in West Africa
+n engl j med  nejm.org
+5
+Clinical Manifestations and Case Fatality Rate
+Table 1 provides information on demographic 
+characteristics and symptom frequency in pa-
+tients with confirmed or probable EVD with a 
+definitive outcome in Guinea, Liberia, Nigeria, 
+and Sierra Leone. The most common symptoms 
+reported between symptom onset and case detec-
+tion included fever (87.1%), fatigue (76.4%), loss 
+of appetite (64.5%), vomiting (67.6%), diarrhea 
+(65.6%), headache (53.4%), and abdominal pain 
+(44.3%). Specific hemorrhagic symptoms were 
+rarely reported (in <1% to 5.7% of patients). “Un-
+explained bleeding,” however, was reported in 
+18.0% of cases. These patterns are similar in 
+each country (see Supplementary Appendix 1).
+Assessing the case fatality rate during this 
+KAILAHUN
+Figure 1. Districts Affected by Ebola Virus Disease in Three Countries in Africa.
+The map shows the districts that have been affected by Ebola virus disease in Guinea, Liberia, and Sierra Leone. 
+Gray circles indicate the total numbers of confirmed and probable Ebola cases reported in each affected district, 
+and red circles the number reported during the 21 days leading up to September 14, 2014.
+© 2014 World Health Organization
+
+The new engl and jour nal of medicine
+n engl j med  nejm.org
+6
+epidemic is complicated by incomplete informa-
+tion on the clinical outcomes of many cases, 
+both detected and undetected. Estimates of the 
+case fatality rate (Table 2) derived by calculating 
+the ratio of all reported deaths to all reported 
+cases to date are low in comparison with his-
+torical outbreaks and are highly variable among 
+the affected countries. However, estimating the 
+case fatality rate using only the 46% of cases 
+with definitive recorded clinical outcomes gives 
+higher estimates that show no significant varia-
+tion among countries (Table 2). This analysis 
+shows that by September 14, a total of 70.8% 
+(95% confidence interval [CI], 68.6 to 72.8) of 
+case patients with definitive outcomes have 
+died, and this rate was consistent among Guin-
+ea, Liberia, and Sierra Leone (Table 2). The case 
+fatality rate in Nigeria was lower (45.5%), though 
+this estimate is based on only 11 recent cases. 
+The case fatality rate among hospitalized case 
+No. of Cases
+800
+700
+600
+400
+300
+100
+500
+200
+0
+Jan. 5
+Jan. 19
+Feb. 2
+Feb. 16
+March 2
+March 16
+March 30
+April 13
+April 27
+May 11
+May 25
+June 8
+June 22
+July 6
+July 20
+Aug. 3
+Aug. 17
+Aug. 31
+Sept. 14
+Jan. 5
+Jan. 19
+Feb. 2
+Feb. 16
+March 2
+March 16
+March 30
+April 13
+April 27
+May 11
+May 25
+June 8
+June 22
+July 6
+July 20
+Aug. 3
+Aug. 17
+Aug. 31
+Sept. 14
+Jan. 5
+Jan. 19
+Feb. 2
+Feb. 16
+March 2
+March 16
+March 30
+April 13
+April 27
+May 11
+May 25
+June 8
+June 22
+July 6
+July 20
+Aug. 3
+Aug. 17
+Aug. 31
+Sept. 14
+Jan. 5
+Jan. 19
+Feb. 2
+Feb. 16
+March 2
+March 16
+March 30
+April 13
+April 27
+May 11
+May 25
+June 8
+June 22
+July 6
+July 20
+Aug. 3
+Aug. 17
+Aug. 31
+Sept. 14
+A West Africa
+No. of Cases
+400
+300
+100
+200
+0
+B Guinea
+No. of Cases
+400
+300
+100
+200
+0
+C Liberia
+No. of Cases
+400
+300
+100
+200
+0
+D Sierra Leone
+Guinea
+Liberia
+Nigeria
+Sierra Leone
+Confirmed case
+Probable case
+Suspected case
+Confirmed case
+Probable case
+Suspected case
+Confirmed case
+Probable case
+Suspected case
+Figure 2. Weekly Incidence of Confirmed, Probable, and Suspected Ebola Virus Disease Cases.
+Shown is the weekly incidence of confirmed, probable, and suspected EVD cases, according to actual or inferred week of symptom on-
+set. A suspected case is illness in any person, alive or dead, who has (or had) sudden onset of high fever and had contact with a person 
+with a suspected, probable, or confirmed Ebola case or with a dead or sick animal; any person with sudden onset of high fever and at 
+least three of the following symptoms: headache, vomiting, anorexia or loss of appetite, diarrhea, lethargy, stomach pain, aching mus-
+cles or joints, difficulty swallowing, breathing difficulties, or hiccupping; or any person who had unexplained bleeding or who died sud-
+denly from an unexplained cause. A probable case is illness in any person suspected to have EVD who was evaluated by a clinician or 
+any person who died from suspected Ebola and had an epidemiologic link to a person with a confirmed case but was not tested and did 
+not have laboratory confirmation of the disease. A probable or suspected case was classified as confirmed when a sample from the per-
+son was positive for Ebola virus in laboratory testing.
+
+Ebola Virus Disease in West Africa
+n engl j med  nejm.org
+7
+patients was 64.3% (95% CI, 61.5 to 67.0) lower 
+than that among all patients with definitive out-
+comes and was consistent among countries. The 
+case fatality rate among health care workers 
+ranged from 56.1% (95% CI, 41.0 to 70.1) in 
+Guinea to 80.0% (95% CI, 68.7 to 87.9) in Liberia 
+(Table 2). Risk factors for a fatal outcome, after 
+adjustment for country, are provided in Table 1. 
+Significant risk factors for death include an age 
+of 45 years or older as compared with 44 years 
+of age or younger (odds ratio, 2.47; 95% CI, 1.79 
+to 3.46) and a number of general symptoms 
+(diarrhea, conjunctivitis, difficulty breathing or 
+swallowing, confusion or disorientation, and 
+coma) and hemorrhagic symptoms (unexplained 
+bleeding, bleeding gums, bloody nose, bleeding 
+at the injection site, and bleeding from the va-
+gina) (odds ratios and 95% confidence intervals 
+for these factors are provided in Table 1).
+Key Time Periods
+The mean incubation period was 11.4 days (Table 
+2 and Fig. 3A), and did not vary by country (Fig. 
+3B, 3C, and 3D). Approximately 95% of the case 
+patients had symptom onset within 21 days after 
+exposure (Fig. 3A), which is the recommended 
+period for follow-up of contacts. The estimated 
+mean (±SD) serial interval was 15.3±9.3 days 
+(Table 2 and Fig. 3E), which is the same as the 
+estimated mean generation time (see Supplemen-
+tary Appendix 1). The mean time from the onset 
+of symptoms to hospitalization, a measure of the 
+period of infectiousness in the community, was 
+5.0±4.7 days (Table 2), and was no shorter for 
+health care workers than for other case patients. 
+The mean time to death after admission to the 
+hospital was 4.2±6.4 days, and the mean time to 
+discharge was 11.8±6.1 days. The mean length of 
+stay in hospital was 6.4 days in Guinea, Liberia, 
+and Sierra Leone (Table 2).
+Quantification of the Spread of Infection 
+and Projection of Future Cases 
+Estimates of the basic reproduction number, R0, 
+were 1.71 (95% CI, 1.44 to 2.01) for Guinea, 1.83 
+(95% CI, 1.72 to 1.94) for Liberia, 1.20 (95% CI, 
+0.67 to 1.96) for Nigeria, and 2.02 (95% CI, 1.79 
+to 2.26) for Sierra Leone (Table 2, and Fig. S7 in 
+Supplementary Appendix 1). Although R0 reflects 
+the maximum potential for growth in case inci-
+dence, Figure S7 in Supplementary Appendix 1 
+shows the variation in the estimated net repro-
+duction number, Rt, during the course of the epi-
+demic. Between March and July 2014, the Rt for 
+Guinea fluctuated around the threshold value of 
+1 but appeared to increase again in August, re-
+flecting the rise in case incidence in Macenta dis-
+trict. In Sierra Leone, the value of Rt dropped be-
+tween June and August as the case incidence 
+stabilized in Kenema and Kailahun. In Liberia, 
+the Rt remained above 1 for most of the period 
+between March and August, reflecting the con-
+sistent increase in case incidence (Fig. S9) in that 
+country.
+The growing numbers of cases reported from 
+Guinea, Liberia, and Sierra Leone in August and 
+early September suggest that the Rt remains 
+above 1 in a still-expanding epidemic (reliable 
+estimates of Rt could be obtained only to early 
+September owing to reporting delays). As of 
+September 14, the doubling time of the epi-
+demic was 15.7 days in Guinea, 23.6 days in Li-
+beria, and 30.2 days in Sierra Leone (Table 2). 
+We estimate that, at the current rate of increase, 
+assuming no changes in control efforts, the cu-
+mulative number of confirmed and probable 
+cases by November 2 (the end of week 44 of the 
+epidemic) will be 5740 in Guinea, 9890 in Libe-
+ria, and 5000 in Sierra Leone, exceeding 20,000 
+cases in total (Fig. 4, and Table S8 in Supple-
+mentary Appendix 2). The true case load, includ-
+ing suspected cases and undetected cases, will 
+be higher still.
+Discussion 
+Although the current epidemic of EVD in West 
+Africa is unprecedented in scale, the clinical 
+course of infection and the transmissibility of 
+the virus are similar to those in previous EVD 
+outbreaks. The incubation period, duration of ill-
+ness, case fatality rate, and R0 are all within the 
+ranges reported for previous EVD epidem-
+ics.7,13-18 Our estimates of R0 are similar to other 
+recent estimates for this West Africa epidem-
+ic.19-23 The combination of signs and symptoms 
+recorded between symptom onset and clinical 
+presentation is also similar to that in other re-
+ports.14,17,24-26 We infer that the present epidemic 
+is exceptionally large, not principally because of 
+the biologic characteristics of the virus, but rath-
+er because of the attributes of the affected popu-
+lations and because control efforts have been 
+insufficient to halt the spread of infection.
+
+The new engl and jour nal of medicine
+n engl j med  nejm.org
+8
+Certain characteristics of the affected popula-
+tions may have led to the rapid geographic dis-
+semination of infection. The populations of 
+Guinea, Liberia, and Sierra Leone are highly in-
+terconnected, with much cross-border traffic at 
+the epicenter and relatively easy connections by 
+road between rural towns and villages and be-
+tween densely populated national capitals. The 
+large intermixing population has facilitated the 
+spread of infection, but a large epidemic was 
+not inevitable. In Nigeria, the number of cases 
+has so far been limited, despite the introduction 
+of infection into the large cities of Lagos (ap-
+proximately 20 million people) and Port Har-
+court (>1 million people). The critical determi-
+nant of epidemic size appears to be the speed of 
+implementation of rigorous control measures.
+Previous experience with EVD outbreaks, 
+though they have been limited in size and geo-
+graphic spread, suggests that transmission can 
+Table 1. Demographic Characteristics and Signs and Symptoms in Confirmed and Probable Ebola Case Patients with a 
+Definitive Clinical Outcome in Guinea, Liberia, Nigeria, and Sierra Leone.*
+Variable
+All Patients
+Patients Who 
+Died
+Patients Who 
+Recovered
+Odds Ratio
+(95% CI)†
+no./total no. (%)
+Demographic characteristics
+Male sex
+685/1415 (48.4)
+515/1056 (48.8)
+170/359 (47.4)
+0.93 (0.73–1.19)
+Age group
+<15 yr
+190/1378 (13.8)
+145/1021 (14.2)
+45/357 (12.6)
+1.18 (0.83–1.71)
+15–44 yr
+838/1378 (60.8)
+577/1021 (56.5)
+261/357 (73.1)
+0.48 (0.36–0.62) 
+≥45 yr
+350/1378 (25.4)
+299/1021 (29.3)
+51/357 (14.3)
+2.47 (1.79–3.46)
+Health care worker
+158/1429 (11.1)
+112/1067 (10.5)
+46/362 (12.7)
+0.86 (0.60–1.27)
+Signs and symptoms
+General symptoms
+Fever‡
+1002/1151 (87.1)
+746/846 (88.2)
+256/305 (83.9)
+1.34 (0.92–1.95)
+Fatigue
+866/1133 (76.4)
+633/829 (76.4)
+233/304 (76.6)
+0.94 (0.68–1.28)
+Loss of appetite
+681/1055 (64.5)
+498/778 (64.0)
+183/277 (66.1)
+0.92 (0.69–1.23)
+Vomiting
+753/1114 (67.6)
+566/816 (69.4)
+187/298 (62.8)
+1.19 (0.89–1.59)
+Diarrhea
+721/1099 (65.6)
+555/813 (68.3)
+166/286 (58.0)
+1.42 (1.06–1.89)
+Headache
+553/1035 (53.4)
+407/757 (53.8)
+146/278 (52.5)
+1.03 (0.78–1.36)
+Abdominal pain
+439/992 (44.3)
+311/715 (43.5)
+128/277 (46.2)
+0.85 (0.64–1.13)
+Muscle pain
+385/990 (38.9)
+293/728 (40.2)
+92/262 (35.1)
+1.24 (0.92–1.67)
+Joint pain
+374/950 (39.4)
+283/695 (40.7)
+91/255 (35.7)
+1.32 (0.98–1.80)
+Chest pain
+254/686 (37.0)
+196/488 (40.2)
+58/198 (29.3)
+1.53 (1.07–2.20)
+Cough
+194/655 (29.6)
+150/462 (32.5)
+44/193 (22.8)
+1.74 (1.18–2.61)
+Difficulty breathing
+155/665 (23.3)
+123/472 (26.1)
+32/193 (16.6)
+1.68 (1.10–2.63)
+Difficulty swallowing
+169/514 (32.9)
+138/375 (36.8)
+31/139 (22.3)
+2.22 (1.41–3.59)
+Conjunctivitis
+137/658 (20.8)
+109/465 (23.4)
+28/193 (14.5)
+2.03 (1.29–3.29)
+Sore throat
+102/467 (21.8)
+82/339 (24.2)
+20/128 (15.6)
+1.94 (1.13–3.46)
+Confusion
+84/631 (13.3)
+68/446 (15.2)
+16/185 (8.6)
+2.00 (1.14–3.71)
+Hiccups
+108/947 (11.4)
+91/699 (13.0)
+17/248 (6.9)
+2.15 (1.27–3.82)
+Jaundice
+65/627 (10.4)
+52/443 (11.7)
+13/184 (7.1)
+1.83 (0.99–3.63)
+Eye pain
+48/622 (7.7)
+39/438 (8.9)
+9/184 (4.9)
+1.95 (0.95–4.40)
+Rash
+37/642 (5.8)
+30/453 (6.6)
+7/189 (3.7)
+1.90 (0.86–4.83)
+Coma or unconsciousness
+37/627 (5.9)
+34/445 (7.6)
+3/182 (1.6)
+4.59 (1.61–19.34)
+
+Ebola Virus Disease in West Africa
+n engl j med  nejm.org
+9
+be interrupted, and case incidence reduced, 
+within 2 to 3 weeks after the introduction of 
+control measures.1,5,7,14-17,24,27-31 This view is re-
+inforced by the estimates of case reproduction 
+number presented in this analysis. We estimate 
+the R0 to have varied between 1.71 (upper bound-
+ary of the 95% confidence interval, 2.01) in 
+Guinea to 2.02 (upper boundary of the 95% 
+confidence interval, 2.26) in Sierra Leone. This 
+means that transmission has to be a little more 
+than halved to achieve control of the epidemic 
+and eventually to eliminate the virus from the 
+human population. Considering the prospects 
+for a novel Ebola vaccine, an immunization cov-
+erage exceeding 50% would have the same ef-
+fect. Greater reductions in transmission would, 
+of course, be desirable, but minimum require-
+ments for the containment of EVD are far less 
+severe than for the containment of more conta-
+gious diseases, such as measles. Between March 
+and July 2014, the reproduction number in 
+Guinea fluctuated around the threshold value of 
+1, suggesting that modest further intervention 
+efforts at that point could have achieved control.
+The analyses in this paper can be used to 
+inform recommendations regarding control 
+measures. The measured duration of the incuba-
+tion period, and its variation, imply that the 
+advice to follow case contacts for 21 days1 is 
+appropriate. To curtail transmission in the com-
+munity, the period from symptom onset to hos-
+pitalization (a mean of 5 days but a maximum of 
+>40 days) clearly needs to be reduced. Surpris-
+ingly, the mean was not shorter among health 
+care workers, who are at risk both of acquiring 
+and transmitting the infection to others. The 
+average length of hospital stay of about 1 week 
+(6.4 days) means that the number of beds re-
+quired to treat EVD patients is roughly equal to 
+the rising weekly case incidence. Even without 
+allowing for underreporting, 995 patients with 
+confirmed, probable, or suspected infection were 
+known to need clinical care in the week of Sep-
+tember 8 through 14 alone, which far exceeds 
+the present bed capacity in Guinea, Liberia, and 
+Sierra Leone (approximately 610 beds in total).
+The data used in these analyses were collect-
+ed in the field by various field teams across 
+Guinea, Liberia, Nigeria, and Sierra Leone. Al-
+though they provide an excellent opportunity to 
+better understand the current EVD epidemic in 
+Africa, they understate the magnitude of the 
+Table 1. (Continued.)
+Variable
+All Patients
+Patients Who 
+Died
+Patients Who 
+Recovered
+Odds Ratio
+(95% CI)†
+no./total no. (%)
+Unexplained bleeding
+168/932 (18.0)
+140/693 (20.2)
+28/239 (11.7)
+1.83 (1.20–2.90)
+Hematemesis
+26/670 (3.9)
+20/503 (4.0)
+6/167 (3.6)
+1.07 (0.44–3.01)
+Blood in stool
+48/843 (5.7)
+35/614 (5.7)
+13/229 (5.7)
+0.98 (0.52–1.96)
+Bleeding gums
+19/837 (2.3)
+18/608 (3.0)
+1/229 (0.4)
+6.69 (1.35–121.32)
+Bloody nose
+16/836 (1.9)
+15/610 (2.5)
+1/226 (0.4)
+8.02 (1.54–148.62)
+Bloody cough
+20/831 (2.4)
+16/605 (2.6)
+4/226 (1.8)
+1.63 (0.58–5.82)
+Other bleeding
+8/657 (1.2)
+5/493 (1.0)
+3/164 (1.8)
+0.45 (0.11–2.23)
+Bleeding at injection site
+20/833 (2.4)
+19/605 (3.1)
+1/228 (0.4)
+6.51 (1.32–118.04)
+Blood from vagina§
+14/431 (3.2)
+13/290 (4.5)
+1/126 (0.8)
+6.0 (1.11–112.4)
+Blood in urine
+10/827 (1.2)
+9/601 (1.5)
+1/226 (0.4)
+5.14 (0.90–98.73)
+Bleeding under skin
+5/827 (0.6)
+5/604 (0.8)
+0/223
+NA
+*	Data are as of September 14, 2014. Patients with date of onset up to August 17, 2014, were included. Total numbers 
+are the numbers of patients with data on the variable in question. NA denotes not applicable.
+†	Odds ratios are adjusted for country. CI denotes confidence interval.
+‡	Fever was defined as a body temperature above 38°C; however, in practice, health care workers at the district level often 
+do not have a medical thermometer and simply ask whether the person’s body temperature is more elevated than usual.
+§	Percentages reflect only female patients.
+
+The new engl and jour nal of medicine
+n engl j med  nejm.org
+10
+Table 2. Estimates of Epidemiologic Variables for Confirmed and Probable Ebola Cases, According to Country, as of September 14, 2014.*
+Variable
+All Countries
+Guinea
+Liberia
+Nigeria
+Sierra Leone
+no. of  
+days
+no. of  
+patients 
+with data 
+no. of  
+days
+no. of  
+patients  
+with data
+no. of  
+days
+no. of  
+patients  
+with data
+no. of  
+days
+no. of  
+patients 
+with data
+no. of  
+days
+no. of  
+patients  
+with data
+Incubation period
+Single-day exposures
+Observed†
+9.4±7.4
+500
+10.7±8.7
+35
+9.5±6.6
+259
+NC
+<10
+9.0±8.1
+201
+Fitted‡
+9.1±7.3
+500
+9.9±9.8
+35
+9.4±6.7
+259
+NC
+<10
+8.5±7.6
+201
+Multi-day exposures
+Observed†
+11.4±NA
+155
+10.9±NA
+20
+11.7±NA
+79
+NC
+<10
+10.8±NA
+48
+Fitted‡
+9.7±5.5
+155
+8.3±4.5
+20
+9.9±5.7
+79
+NC
+<10
+9.9±5.6
+48
+Serial interval§
+Observed
+15.3±9.1
+92
+19.0±11.0
+40
+13.1±6.6
+26
+NC
+<10
+11.6±5.6
+25
+Fitted¶
+15.3±9.3
+92
+19.0±11.2
+40
+13.1±7.8
+26
+NC
+<10
+11.6±6.3
+25
+R0‖
+Mean (95% CI)
+—
+1.71 (1.44–2.01)
+1.83 (1.72–1.94)
+1.2 (0.67–1.96)
+2.02 (1.79–2.26)
+Doubling time — days (95% CI)
+—
+17.53 (13.18–26.64)
+15.78 (14.4–17.37)
+59.75 (13.27–∞)
+12.84 (10.92–15.66)
+R**
+Mean (95% CI)
+—
+1.81 (1.60–2.03)
+1.51 (1.41–1.60)
+1.38 (1.27–1.51)
+Doubling time — days (95% CI)
+—
+15.7 (12.9–20.3)
+23.6 (20.2–28.2)
+NC
+30.2 (23.6–42.3)
+Interval from symptom onset
+To hospitalization
+5.0±4.7
+1135
+5.3±4.3
+484
+4.9±5.1
+245
+4.1±1.4
+11
+4.6±5.1
+395
+To hospital discharge
+16.4±6.5
+267
+16.3±6.1
+152
+15.4±8.2
+41
+NC
+<10
+17.2±6.2
+70
+To death
+7.5±6.8
+594
+6.4±5.3
+248
+7.9±8.0 
+212
+NC
+<10
+8.6±6.9
+128
+To WHO notification
+6.1±8.5
+2185
+7.5±10.4
+743
+6.0±8.7
+797
+3.9±2.3
+11
+4.5±5.0
+634
+Interval from WHO notification
+To hospital discharge
+11.8±7.2
+312
+11.1±5.8
+164
+11±8.0
+41
+NC
+<10
+12.7±8.4
+102
+To death
+−3.0±13.8
+584
+−4.4±14.4
+300
+−1.8±13.6
+221
+NC
+<10
+−1.6±9.2
+58
+Interval from hospitalization
+To hospital discharge
+11.8±6.1
+290
+11±5.4
+159
+12.8±8.1
+40
+NC
+<10
+12.4±5.8
+86
+To death
+4.2±6.4
+121
+2.5±3.4
+36
+4.5±6.0
+63
+NC
+<10
+4.4±6.0
+17
+Duration of hospital stay — 
+days††
+6.42
+4.99
+6.72
+NC
+6.88
+
+Ebola Virus Disease in West Africa
+n engl j med  nejm.org
+11
+rate
+(95% CI)
+no. of  
+patients  
+with data
+rate
+(95% CI)
+no. of  
+patients  
+with data
+rate
+(95% CI)
+no. of  
+patients  
+with data
+rate
+(95% CI)
+no. of  
+patients  
+with data
+rate
+(95% CI)
+no. of  
+patients 
+with data
+Case fatality rate
+All cases, based on current 
+status
+37.7 (36.1–39.2)
+3747
+57.5 (53.7–61.1)
+677
+34.7 (32.4–37.1)
+1616
+40.0 (19.8–64.3)
+15
+31.6 (29.3–34.1)
+1439
+All cases, based on definitive 
+outcome
+70.8 (68.6–72.8)
+1737
+70.7 (66.7–74.3)
+542
+72.3 (68.9–75.4)
+739
+45.5 (21.3–72.0)
+11
+69.0 (64.5–73.1)
+445
+Before August 18
+71.3 (68.7–73.7)
+1244
+68.7 (64.3–72.8)
+454
+79.8 (75.7–83.4)
+416
+50.0 (23.7–76.3)
+10
+65.4 (60.4–70.1)
+364
+August 18–September 14
+59.9 (54.7–64.9)
+354
+80.7 (71.2–87.6)
+88
+41.1 (34.3–48.2)
+190
+NC
+<10
+84.0 (74.1–90.6)
+75
+All hospitalized cases, based 
+on definitive outcome
+64.3 (61.5–67.0)
+1153
+64.7 (60.1–68.9)
+450
+67.0 (62.0–71.7)
+361
+40.0 (16.8–68.7)
+10
+61.4 (56.1–66.5)
+332
+According to sex
+Male
+72.2 (69.1–75.1)
+874
+68.5 (62.6–73.9)
+254
+74.9 (70.4–79.0)
+395
+NC
+<10
+71.9 (65.7–77.5)
+221
+Female
+69.9 (66.7–73.0)
+818
+72.7 (67.3–77.6)
+286
+71.6 (66.4–76.3)
+317
+NC
+<10
+64.4 (57.7–70.6)
+208
+According to age group
+<15 yr
+73.4 (67.2–78.8)
+218
+78.1 (67.3–86.0)
+73
+70.7 (60.1–79.5)
+82
+NC
+<10
+71.4 (59.3–81.1)
+63
+15–44 yr
+66.1 (63.1–69.0)
+1012
+64.9 (59.5–69.9)
+319
+70.6 (66.1–74.8)
+422
+NC
+<10
+61.4 (55.4–67.0)
+264
+≥45 yr
+80.4 (76.2–84.0)
+398
+78.6 (71.1–84.6)
+140
+81.1 (74.4–86.4)
+164
+NC
+<10
+82.2 (73.1–88.8)
+90
+According to occupation
+Health care worker
+69.4 (62.1–75.8)
+170
+56.1 (41.0–70.1)
+41
+80.0 (68.7–87.9)
+65
+NC
+<10
+68.4 (55.5–79.0)
+57
+Non–health care worker
+70.9 (68.6–73.1)
+1567
+71.9 (67.8–75.6)
+501
+71.5 (68.0–74.8)
+674
+NC
+<10
+69.1 (64.3–73.5)
+388
+*	 Plus–minus values are means ±SD. NA denotes not available, NC not calculated, and WHO World Health Organization.
+†	 Contacts on day 0 (i.e., on the day of symptom onset) were excluded.
+‡	 Contacts on day 0 (i.e., on the day of symptom onset) were excluded. Gamma probability distributions were fitted to confirmed and probable cases. 
+§	
+The serial interval is the interval between disease onset in an index case patient and disease onset in a person infected by that index case patient. In this category, the number of pa-
+tients with data is the number of epidemiologically linked pairs in which the later case patient reported only one direct contact. 
+¶	 Gamma probability distributions were fitted to confirmed and probable cases. 
+‖	
+The basic reproduction number (R0) is the average number of secondary cases that arise when one primary case is introduced into an uninfected population. We estimated the R0 
+and associated mean doubling time, using a serial interval of 15.3 days, for the period up to March 30, 2014, for Guinea; up to August 24, 2014, for Liberia and Nigeria; and up to July 
+6, 2014, for Sierra Leone. This number was estimated for individual countries only and not for the combined data.
+**	 We estimated R, the mean value of Rt (the estimated net reproduction number), and associated mean doubling time, using a serial interval of 15.3 days, for the period of July 21 to 
+August 31, 2014. This number was estimated for individual countries only and not for the combined data.
+††	The mean duration of hospital stay was calculated as the weighted average of the observed means from the hospitalization-to-discharge and hospitalization-to-death distributions. 
+This variable was not calculated in Nigeria because there were fewer than 10 case patients with data.
+
+The new engl and jour nal of medicine
+n engl j med  nejm.org
+12
+problem. It is likely that many cases have not 
+been detected, and for those cases that have been 
+reported, case records are often incomplete. 
+Therefore, interpretation of the available case 
+data requires care. We recognize, however, that 
+data are being collected under extreme condi-
+tions, and the top priorities are patient care, 
+contact tracing, and limiting transmission in the 
+community, rather than epidemiologic investiga-
+tions. In addition, in this initial assessment it was 
+not possible to consider all the sources of hetero-
+geneity (e.g., geographic and health care-related) 
+affecting the development of this epidemic. Thus 
+the future projections provided here should be 
+regarded as indicative of likely future trends more 
+than precise predictions. Despite these limita-
+tions and the resulting uncertainties, the results 
+presented here help us to understand the spread 
+of infection and the potential for control.
+Some details of the current analysis remain 
+Frequency
+Probability
+12
+8
+10
+6
+4
+2
+0
+1.0
+0.6
+0.8
+0.4
+0.2
+0.0
+0
+10
+20
+30
+40
+Days
+A All Countries Combined
+Frequency
+Probability
+Probability
+2
+1
+0
+1.0
+0.6
+0.8
+0.4
+0.2
+0.0
+0
+10
+20
+30
+40
+Days
+B Guinea
+Frequency
+Probability
+6
+4
+2
+0
+1.0
+0.6
+0.8
+0.4
+0.2
+0.0
+0
+10
+20
+30
+40
+Days
+C Liberia
+Frequency
+4
+2
+3
+1
+0
+1.0
+0.6
+0.8
+0.4
+0.2
+0.0
+0
+10
+20
+30
+40
+Days
+D Sierra Leone
+Frequency
+Probability
+10
+8
+6
+4
+2
+0
+1.0
+0.6
+0.8
+0.4
+0.2
+0.0
+0
+10
+20
+30
+40
+Days
+E Infecting Case and Case It Infected
+Figure 3. Time between Exposure and Disease Onset.
+Panel A through D show the observed times (>0) between exposure and disease onset for all countries, Guinea,  
+Liberia, and Sierra Leone, respectively, including only cases with multiple exposure days (histograms in gray), best-
+fit (gamma) probability density function (red curves) and cumulative distribution for the incubation period (blue 
+curves). Panel E shows the observed times between disease onset in an index case patient and disease onset in the 
+person infected by the index case patient (histograms in gray) and best-fit (gamma) probability density function 
+(red curve) and cumulative distribution (blue curve) for the serial interval.
+
+Ebola Virus Disease in West Africa
+n engl j med nejm.org
+13
+to be confirmed by further investigation. For 
+example, our estimate of 15.3 days for the serial 
+interval is slightly longer than past estimates.32,33
+This may reflect the difficulties of collecting tem-
+porally unbiased data on exposure through con-
+tact tracing, either in the current outbreak or 
+during previous outbreaks. Alternatively, a longer 
+serial interval may indicate that case isolation has 
+been less effective in the current epidemic, result-
+ing in a higher proportion of transmission events 
+occurring late in the course of illness.
+Case fatality is among the most important 
+topics for further investigation. Our estimates of 
+case fatality are consistent in Guinea (70.7%), 
+Liberia (72.3%), and Sierra Leone (69.0%) when 
+estimates are derived with data only for patients 
+with recorded definitive clinical outcomes (1737 
+patients). Estimates for hospitalized patients 
+with recorded definitive clinical outcomes are 
+also consistent across countries but are lower 
+than those for all patients with definitive clini-
+cal outcomes. In contrast, simply taking the ra-
+tio of reported deaths to reported cases gives 
+estimates that differ among countries (Table 2). 
+These discrepancies perhaps reflect the chal-
+lenges of clinical follow-up and data capture. 
+The lower case fatality rate among hospitalized 
+patients than among all persons with EVD could 
+indicate that hospitalization increased survival, 
+that cases of EVD in nonhospitalized persons 
+were more likely to be detected if they were fatal, 
+or that some persons died before they could be 
+admitted to the hospital. In each of the countries 
+studied, the case fatality rate is lowest among per-
+sons 15 to 44 year of age, and highest among 
+persons 45 years of age or older, and some limited 
+variation in the case fatality rate among health 
+care workers was observed among countries. The 
+reasons for this variation are not yet known. 
+Moreover, the case fatality rate among hospital-
+ized patients may differ from that among patients 
+who are never seen by a physician. Liberia has 
+reported an unusually high proportion of deaths 
+among patients with suspected (but not probable 
+or confirmed) EVD cases (58% [440 of 754 pa-
+tients]), as compared with Guinea (13% [4 of 30 
+patients]) and Sierra Leone (35% [74 of 213 pa-
+tients]). The implication is that many true EVD 
+case patients in Liberia may have died before re-
+ceiving a definitive diagnosis.
+Observed
+Fitted
+95% CI
+Observed
+Fitted
+95% CI
+Observed
+Fitted
+Projected
+Projected
+Projected
+95% CI
+A Guinea
+B Liberia
+C Sierra Leone
+July 28
+Aug. 11
+Aug. 25
+Sept. 8
+Sept. 22
+Oct. 6
+Oct. 20
+Nov. 3
+Nov. 17
+No. of Cases
+4000
+3000
+1000
+2000
+0
+July 28
+Aug. 11
+Aug. 25
+Sept. 8
+Sept. 22
+Oct. 6
+Oct. 20
+Nov. 3
+Nov. 17
+No. of Cases (logn scale)
+104
+103
+101
+102
+100
+July 28
+Aug. 11
+Aug. 25
+Sept. 8
+Sept. 22
+Oct. 6
+Oct. 20
+Nov. 3
+Nov. 17
+No. of Cases
+4000
+3000
+1000
+2000
+0
+July 28
+Aug. 11
+Aug. 25
+Sept. 8
+Sept. 22
+Oct. 6
+Oct. 20
+Nov. 3
+Nov. 17
+No. of Cases (logn scale)
+104
+103
+101
+102
+100
+July 28
+Aug. 11
+Aug. 25
+Sept. 8
+Sept. 22
+Oct. 6
+Oct. 20
+Nov. 3
+Nov. 17
+No. of Cases
+4000
+3000
+1000
+2000
+0
+July 28
+Aug. 11
+Aug. 25
+Sept. 8
+Sept. 22
+Oct. 6
+Oct. 20
+Nov. 3
+Nov. 17
+No. of Cases (logn scale)
+104
+103
+101
+102
+100
+Figure 4. Observed and Projected Case Incidence.
+Observed and projected weekly case incidence in Guinea (Panel A), Liberia (Panel B), and Sierra Leone (Panel C) are shown on linear 
+(upper panels) and logarithmic (lower panels) scales
+
+The new engl and jour nal of medicine
+n engl j med  nejm.org
+14
+Appendix
+The authors (and members of the WHO Ebola Response team who contributed to this article, in alphabetic order) are as follows: Bruce 
+Aylward, Philippe Barboza, Luke Bawo, Eric Bertherat, Pepe Bilivogui, Isobel Blake, Rick Brennan, Sylvie Briand, Jethro Magwati 
+Chakauya, Kennedy Chitala, Roland M. Conteh, Anne Cori, Alice Croisier, Jean-Marie Dangou, Boubacar Diallo, Christl A. Donnelly, 
+Christopher Dye, Tim Eckmanns, Neil M. Ferguson, Pierre Formenty, Caroline Fuhrer, Keiji Fukuda, Tini Garske, Alex Gasasira, Ste-
+phen Gbanyan, Peter Graaff, Emmanuel Heleze, Amara Jambai, Thibaut Jombart, Niluka Wijekoon Kannangarage, Francis Kasolo, Al-
+bert Mbule Kadiobo, Sakoba Keita, Daniel Kertesz, Moussa Koné, Chris Lane, Jered Markoff, Moses Massaquoi, Harriet Mills, John Mike 
+Mulba, Emmanuel Musa, Joel Myhre, Abdusalam Nasidi, Eric Nilles, Pierre Nouvellet, Deo Nshimirimana, Isabelle Nuttall,Tolbert Ny-
+enswah, Olushayo Olu, Scott Pendergast, William Perea, Jonathan Polonsky, Steven Riley, Olivier Ronveaux, Keita Sakoba, Ravi San-
+thana Gopala Krishnan, Mikiko Senga, Faisal Shuaib, Maria D. Van Kerkhove, Rui Vaz, and Zabulon Yoti.
+The authors’ affiliations are as follows: World Health Organization (WHO), Geneva (B.A., P.B., E.B., R.B., S.B., J.M.C., K.C., A. 
+Crosier, J.-M.D., C.D., T.E., P.F., C.F., K.F., A.G., P.G., N.W.K., F.K., A.M.K., D.K., M.K., J. Markoff, E.M., J. Myhre, E.N., D.N., I.N., 
+O.O., S.P., W.P., J.P., O.R., R.S.G.K., M.S., R.V., Z.Y.); Ministry of Health, Liberia (L.B., S.G., S.K., M.K., M.M., J.M.M., T.N.); Minis-
+try of Health, Guinea (P.B., B.D., E.H., K.S.); Ministry of Health, Nigeria (A.N., F.S.); Ministry of Health, Sierra Leone (R.M.C., A.J.); 
+and the Medical Research Council Centre for Outbreak Analysis and Modelling, WHO Collaborating Centre for Infectious Disease 
+Modelling, Department of Infectious Disease Epidemiology, Imperial College London, London (I.B., A. Cori, C.A.D., T.G., H.M., P.N., 
+S.R., M.D.V.K.), and Public Health England (C.L.) — both in the United Kingdom.
+References
+1.	 World Health Organization. Ebola vi-
+rus disease: Cuban medical team heading 
+for Sierra Leone (http://www.who.int/csr/
+disease/ebola/en/).
+2.	 Briand S, Bertherat E, Cox P, et al. The 
+international Ebola emergency. N Engl J 
+Med. DOI: 10.1056/NEJMp1409858.
+3.	 World Health Organization. WHO 
+statement on the meeting of the Interna-
+tional Health Regulations Emergency 
+Committee regarding the 2014 ebola out-
+break in West Africa (http://www.who.int/
+mediacentre/news/statements/2014/ 
+ebola-20140808/en/).
+4.	 Centers for Disease Control and Pre-
+vention. Ebola outbreaks 2000-2014. 2014 
+(http://www.cdc.gov/vhf/ebola/resources/
+outbreaks.html).
+5.	 Okware SI, Omaswa FG, Zaramba S, 
+et al. An outbreak of Ebola in Uganda. 
+Trop Med Int Health 2002;7:1068-75.
+6.	 Malaria risk for travellers to Africa. 
+Wkly Epidemiol Rec 2001;76:25-7.
+7.	 Borchert M, Mutyaba I, Van Kerkhove 
+MD, et al. Ebola haemorrhagic fever out-
+break in Masindi District, Uganda: out-
+break description and lessons learned. 
+BMC Infect Dis 2011;11:357.
+8.	 Raabe VN, Mutyaba I, Roddy P, Lut-
+wama JJ, Geissler W, Borchert M. Infec-
+tion control during filoviral hemorrhagic 
+fever outbreaks: preferences of commu-
+nity members and health workers in Ma-
+sindi, Uganda. Trans R Soc Trop Med Hyg 
+2010;104:48-50.
+9.	 World Health Organization. Case 
+definition recommendations for ebola or 
+Marburg virus diseases (http://www.who 
+.int/csr/resources/publications/ebola/ebola 
+-case-definition-contact-en.pdf?ua=1).
+10.	 Garske T, Legrand J, Donnelly CA, et 
+al. Assessing the severity of the novel in-
+fluenza A/H1N1 pandemic. BMJ 2009;339: 
+b2840.
+11.	 Wallinga J, Teunis P. Different epi-
+demic curves for severe acute respiratory 
+syndrome reveal similar impacts of control 
+measures. Am J Epidemiol 2004;160:509-16.
+12.	 Cori A, Ferguson NM, Fraser C, Cau-
+chemez S. A new framework and software 
+to estimate time-varying reproduction 
+numbers during epidemics. Am J Epide-
+miol 2013;178:1505-12.
+13.	 Breman JG, Piot P, Johnson KM, et al. 
+Notwithstanding the geographic variation in 
+case incidence within and among Guinea, Libe-
+ria, and Sierra Leone, the current epidemiologic 
+outlook is bleak. Forward projections suggest 
+that unless control measures — including im-
+provements in contact tracing, adequate case 
+isolation, increased capacity for clinical manage-
+ment, safe burials, greater community engage-
+ment, and support from international partners 
+— improve quickly, these three countries will 
+soon be reporting thousands of cases and deaths 
+each week, projections that are similar to those 
+of the Centers for Disease Control and Prevention. 
+Experimental therapeutics and vaccines offer 
+promise for the future but are unlikely to be avail-
+able in the quantities needed to make a substan-
+tial difference in control efforts for many months, 
+even if they are proved to be safe and effective. 
+Furthermore, careful assessment of the most 
+effective means of utilizing such interventions 
+(e.g., vaccination or treatment of contacts versus 
+health care workers) will be required while 
+stocks remain limited. For the medium term, at 
+least, we must therefore face the possibility that 
+EVD will become endemic among the human 
+population of West Africa, a prospect that has 
+never previously been contemplated. The risk of 
+continued epidemic expansion and the prospect 
+of endemic EVD in West Africa call for the most 
+forceful implementation of present control mea-
+sures and for the rapid development and deploy-
+ment of new drugs and vaccines.
+Supported by the Medical Research Council, the Bill and Me-
+linda Gates Foundation, the Models of Infectious Disease Agent 
+Study of the National Institute of General Medical Sciences 
+(National Institutes of Health), the Health Protection Research 
+Units of the National Institute for Health Research, European 
+Union PREDEMICS consortium, Wellcome Trust, and Fogarty 
+International Center.
+Disclosure forms provided by the authors are available with 
+the full text of this article at NEJM.org.
+We thank Caitlin Collins for help with data management.
+
+Ebola Virus Disease in West Africa
+n engl j med  nejm.org
+15
+The epidemiology of Ebola hemorrhagic 
+fever in Zaire, 1976. In: Pattyn SR, ed. 
+Ebola virus haemorrhagic fever. Amster-
+dam: Elsevier Science, 1978:85-97.
+14.	 Roddy P, Howard N, Van Kerkhove 
+MD, et al. Clinical manifestations and 
+case management of Ebola haemorrhagic 
+fever caused by a newly identified virus 
+strain, Bundibugyo, Uganda, 2007-2008. 
+PLoS One 2012;7(12):e52986.
+15.	 Bwaka MA, Bonnet MJ, Calain P, et al. 
+Ebola hemorrhagic fever in Kikwit, Dem-
+ocratic Republic of the Congo: clinical 
+observations in 103 patients. J Infect Dis 
+1999;179:Suppl 1:S1-S7.
+16.	 Dowell SF, Mukunu R, Ksiazek TG, 
+Khan AS, Rollin PE, Peters CJ. Transmis-
+sion of Ebola hemorrhagic fever: a study 
+of risk factors in family members, Kikwit, 
+Democratic Republic of the Congo, 1995. 
+J Infect Dis 1999;179:Suppl 1:S87-S91.
+17.	 Ndambi R, Akamituna P, Bonnet MJ, 
+Tukadila AM, Muyembe-Tamfum JJ, Cole-
+bunders R. Epidemiologic and clinical 
+aspects of the Ebola virus epidemic in 
+Mosango, Democratic Republic of the 
+Congo, 1995. J Infect Dis 1999;179:Suppl 
+1:S8-S10.
+18.	 Team RoaWIS. Ebola haemorrhagic 
+fever in Zaire, 1976. Bull World Health 
+Organ 1978;56:271-93.
+19.	 Althaus CL. Estimating the reproduc-
+tion number of Ebola virus (EBOV) during 
+the 2014 outbreak in West Africa. Plos 
+Currents 
+Outbreaks. 
+2014 
+(http:// 
+currents.plos.org/outbreaks/article/ 
+estimating-the-reproduction-number 
+-of-zaire-ebolavirus-ebov-during-the 
+-2014-outbreak-in-west-africa/).
+20.	 Fisman D, Khoo E, Tuite A. Early epi-
+demic dynamics of the West African 2014 
+Ebola outbreak: estimates derived with a 
+simple two-parameter model. Plos Cur-
+rents Outbreaks. 2014 (http://currents 
+.plos.org/outbreaks/article/obk-
+14-0036-early-epidemic-dynamics-of-the 
+-west-african-2014-ebola-outbreak 
+-estimates-derived-with-a-simple-two 
+-parameter-model/).
+21.	 Gire SK, Goba A, Andersen KG, et al. 
+Genomic surveillance elucidates Ebola vi-
+rus origin and transmission during the 
+2014 outbreak. Science 2014;345:1369-72.
+22.	 Gomes MFC, Pastore y Piontti A, Ros-
+si L, et al. Assessing the international 
+spreading risk associated with the 2014 
+West African Ebola outbreak. Plos Cur-
+rents Outbreaks. 2014 (http://currents.
+plos.org/outbreaks/article/assessing-the 
+-international-spreading-risk-associated 
+-with-the-2014-west-african-ebola 
+-outbreak/).
+23.	 Nishiura H, Chowell G. Early trans-
+mission dynamics of Ebola virus disease 
+(EVD), West Africa, March to August 
+2014. Rapid Commun 2014;19:1-6.
+24.	 Sureau PH. Firsthand clinical obser-
+vations of hemorrhagic manifestations in 
+Ebola hemorrhagic fever in Zaire. Rev In-
+fect Dis 1989;11:Suppl 4:S790-S793.
+25.	 Georges A-J, Leroy EM, Renaut AA, et 
+al. Ebola hemorrhagic fever outbreaks in 
+Gabon, 1994-1997: epidemiologic and 
+health control issues. J Infect Dis 
+1999;179:Suppl 1:S65-S75.
+26.	 Bray M, Mahanty S. Ebola hemorrhag-
+ic fever and septic shock. J Infect Dis 
+2003;188:1613-7.
+27.	 Baron RC, McCormick JB, Zubeir OA. 
+Ebola virus disease in southern Sudan: 
+hospital dissemination and intrafamilial 
+spread. Bull World Health Organ 1983; 
+61:997-1003.
+28.	 Branch SP, Division V, Control D, 
+Eradication S. Ebola haemorrhagic fever 
+in Zaire, 1976. Bull World Health Organ 
+1978;56:271-93.
+29.	 Parkes-Ratanshi R, Elbireer A, Mbam-
+bu B, Mayanja F, Coutinho A, Merry C. 
+Ebola outbreak response; experience and 
+development of screening tools for viral 
+haemorrhagic fever (VHF) in a HIV center 
+of excellence near to VHF epicentres. 
+PLoS One 2014;9(7):e100333.
+30.	 Towner JS, Sealy TK, Khristova ML, et 
+al. Newly discovered ebola virus associated 
+with hemorrhagic fever outbreak in Ugan-
+da. PLoS Pathog 2008;4(11):e1000212.
+31.	 Wamala JF, Lukwago L, Malimbo M, 
+et al. Ebola hemorrhagic fever associated 
+with novel virus strain, Uganda, 2007-
+2008. Emerg Infect Dis 2010;16:1087- 
+92.
+32.	 Khan AS, Tshioko FK, Heymann DL, 
+et al. The reemergence of Ebola hemor-
+rhagic fever, Democratic Republic of the 
+Congo, 1995. J Infect Dis 1999;179:Suppl 
+1:S76-S86.
+33.	 Muyembe T, Kipasa M; International 
+Scientific and Technical Committee and 
+WHO Collaborating Centre for Haemor-
+rhagic Fevers. Ebola haemorrhagic fever 
+in Kikwit, Zaire. Lancet 1995;345:1448.
+34.	 Estimating the future number of 
+cases in the Ebola epidemic — Liberia 
+and Sierra Leone, 2014–2015. Morb Mor-
+tal Wkly Rep 2014 September 23 (Epub 
+ahead of print).
+Copyright © 2014 Massachusetts Medical Society.

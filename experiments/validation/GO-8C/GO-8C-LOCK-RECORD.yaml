@@ -1,0 +1,16 @@
+# GO-8C LOCK RECORD - freeze authority (governance authorization 2026-08-14)
+lock_record_version: 1.0
+lock_generated_at: 2026-08-14T02:49:42
+gate: PREREGISTRATION N=12 APPROVED (D-04.9) -> LOCK AUTHORIZED
+lock_status: LOCKED
+manifest:
+  path: experiments/validation/GO-8C/GO-8C-LOCK-MANIFEST.yaml
+  sha256: 8a68a6582e4183018fded19db0a6dfad3b794abf275825f89e061491e64884f2
+scope:
+  total_locked_files: 151
+rules:
+  - no in-place modification of any locked artifact after first hash
+  - any divergence -> STOP (no correction, no recompute)
+  - experiment/data collection/analysis NOT executed
+  - GO-8B files NOT altered
+  - execution (108 reconstructions) blocked until explicit post-lock authorization

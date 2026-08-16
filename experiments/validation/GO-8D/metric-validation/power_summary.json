@@ -1,0 +1,27 @@
+{
+  "method": "Monte Carlo, B=3000, alpha=0.05, Delta=0.05, unit=BIP (cell=median seeds)",
+  "model": "A~N(0.6205,0.0175); dB~N(delta_BA,0.0312); dC~N(delta_CA,0.0288); B=A+dB; C=A+dC",
+  "scenarios": {
+    "S1_observado": {
+      "delta_BA": -0.0374,
+      "delta_CA": -0.0368,
+      "min_N_friedman": 8,
+      "min_N_wilcoxon_BA": 10,
+      "min_N_tost_AC": 30
+    },
+    "S2_conservador": {
+      "delta_BA": -0.028,
+      "delta_CA": -0.028,
+      "min_N_friedman": 12,
+      "min_N_wilcoxon_BA": 14,
+      "min_N_tost_AC": 14
+    },
+    "S3_minimo_interesse": {
+      "delta_BA": -0.05,
+      "delta_CA": 0.0,
+      "min_N_friedman": 8,
+      "min_N_wilcoxon_BA": 8,
+      "min_N_tost_AC": 6
+    }
+  }
+}

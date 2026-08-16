@@ -1,0 +1,140 @@
+=== GO-8B PILOT ENGINE ===
+Start time: 2026-08-12T22:31:06.265046
+
+DEBUG: actual_bip=BIP-001, bip_dir=BIP-001-deepwater
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-001, bip_dir=BIP-001-deepwater
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-001, bip_dir=BIP-001-deepwater
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-002, bip_dir=BIP-002-hyatt
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-002, bip_dir=BIP-002-hyatt
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-002, bip_dir=BIP-002-hyatt
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-003, bip_dir=BIP-003-ows
+  narrative exists: True
+  atomic exists: True
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\atomic-facts\\02-atomic-facts.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\atomic-facts\\02-atomic-facts.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\atomic-facts\\02-atomic-facts.md')
+DEBUG: actual_bip=BIP-003, bip_dir=BIP-003-ows
+  narrative exists: True
+  atomic exists: True
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\atomic-facts\\02-atomic-facts.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\atomic-facts\\02-atomic-facts.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\atomic-facts\\02-atomic-facts.md')
+DEBUG: actual_bip=BIP-003, bip_dir=BIP-003-ows
+  narrative exists: True
+  atomic exists: True
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\narrative\\01-narrativa-original.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\narrative\\01-narrativa-original.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-003\\narrative\\01-narrativa-original.md')
+DEBUG: actual_bip=BIP-004, bip_dir=BIP-004-genoma
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-004, bip_dir=BIP-004-genoma
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-004, bip_dir=BIP-004-genoma
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-005, bip_dir=BIP-005-evergiven
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-005, bip_dir=BIP-005-evergiven
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-005, bip_dir=BIP-005-evergiven
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-006, bip_dir=BIP-006-i35w
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-006, bip_dir=BIP-006-i35w
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-006, bip_dir=BIP-006-i35w
+  narrative exists: True
+  atomic exists: True
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+FAIL (Graph construction failed)
+DEBUG: actual_bip=BIP-007, bip_dir=BIP-007-ebola
+  narrative exists: False
+  atomic exists: False
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\atomic-facts\\02-atomic-facts.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\atomic-facts\\02-atomic-facts.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\atomic-facts\\02-atomic-facts.md')
+DEBUG: actual_bip=BIP-007, bip_dir=BIP-007-ebola
+  narrative exists: False
+  atomic exists: False
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\atomic-facts\\02-atomic-facts.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\atomic-facts\\02-atomic-facts.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\atomic-facts\\02-atomic-facts.md')
+DEBUG: actual_bip=BIP-007, bip_dir=BIP-007-ebola
+  narrative exists: False
+  atomic exists: False
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\narrative\\01-narrativa-original.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\narrative\\01-narrativa-original.md')
+FAIL ([Errno 2] No such file or directory: 'D:\\ecp-spec\\experiments\\validation\\GO-8B\\pilot-input\\BIP-007-ebola\\narrative\\01-narrativa-original.md')
+
+=== PILOT EXECUTION COMPLETE ===
+Total runs: 63
+Passed: 0
+Failed: 63
+CSV file created: D:\ecp-spec\experiments\validation\GO-8B\pilot-output\pilot_results.csv
+End time: 2026-08-12T22:31:06.310481
+Execution log created: D:\ecp-spec\experiments\validation\GO-8B\pilot-output\EXECUTION-LOG.md
+
+Dados derivados dos materiais de entrada reais.
+Aguardando aprovação da governança para análise estatística.

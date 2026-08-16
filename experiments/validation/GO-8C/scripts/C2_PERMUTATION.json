@@ -1,0 +1,102 @@
+{
+  "namespace": "CAT",
+  "namespaces": {
+    "C1": "ECP",
+    "C2": "CAT",
+    "C3": "SYN",
+    "C4": "NULL"
+  },
+  "namespace_operacional": {
+    "A": "CAT",
+    "B": "SYN",
+    "C": "CAT"
+  },
+  "namespace_note": "D-02 (GO-8C): C4/NULL remains non-processable per frozen spec 04 SS1.1. Conditions A/C use CAT as OPERATIONAL namespace (opaque labels preserve blindness); B uses SYN. No equivalence NULL==CAT and no equivalence CAT==SYN/ECP (D-02, Opcao 2).",
+  "source": "02-C2-PERMUTATION.md SS6 (frozen, GO-8B lock) - reproduced verbatim",
+  "derived_from": "GO-8B 02-C2-PERMUTATION.md §6 (frozen), corrected in GO-8C",
+  "mapping_status": "OPERATIONAL-AUTHORITATIVE",
+  "seed_operacional": {
+    "value": 258915,
+    "hex": "0x3f363",
+    "status": "OFFICIAL",
+    "note": "D-01 (GO-8C): reproduces frozen SS5 permutation under PCG64."
+  },
+  "seed_historica": {
+    "value": 11473621728585666159,
+    "hex": "0x9F3A7E2C1B8D4E6F",
+    "status": "HISTORICAL-NON-REPRODUCING",
+    "note": "Registered seed from GO-8B SS4; does NOT reproduce SS5/SS6 under PCG64 (P1-C2-01, D-01). Kept as historical record only; no generative claim in GO-8C."
+  },
+  "algorithm_note": "PCG64 + Fisher-Yates (02-C2-PERMUTATION-CORRECTED.md SS3); seed_operacional=258915 reproduces SS5.",
+  "canonical_order": [
+    "Problem",
+    "Goal",
+    "Claim",
+    "Knowledge",
+    "Assumption",
+    "Evidence",
+    "Decision",
+    "State",
+    "Artifact"
+  ],
+  "opaque_to_canonical": {
+    "CAT-00": "Evidence",
+    "CAT-01": "Problem",
+    "CAT-02": "Artifact",
+    "CAT-03": "Knowledge",
+    "CAT-04": "Decision",
+    "CAT-05": "Goal",
+    "CAT-06": "Claim",
+    "CAT-07": "Assumption",
+    "CAT-08": "State"
+  },
+  "canonical_to_opaque": {
+    "Problem": "CAT-01",
+    "Goal": "CAT-05",
+    "Claim": "CAT-06",
+    "Knowledge": "CAT-03",
+    "Assumption": "CAT-07",
+    "Evidence": "CAT-00",
+    "Decision": "CAT-04",
+    "State": "CAT-08",
+    "Artifact": "CAT-02"
+  },
+  "permutation_ss5_canonical_to_opaque_position": [
+    1,
+    5,
+    6,
+    3,
+    7,
+    0,
+    4,
+    8,
+    2
+  ],
+  "inversa_verdadeira": [
+    5,
+    0,
+    8,
+    3,
+    6,
+    1,
+    2,
+    4,
+    7
+  ],
+  "validation": {
+    "T-C2-01": "PASS",
+    "T-C2-02": "PASS",
+    "T-C2-03": "PASS",
+    "T-C2-04": "PASS",
+    "T-C2-05": "PASS",
+    "T-C2-08": "PASS",
+    "T-C2-09": "PASS"
+  },
+  "governance": {
+    "decision": "D-01 (DECIDED 2026-08-13)",
+    "decision_record": "experiments/validation/GO-8C/decisions/D-01-C2-DECISION.md",
+    "history": "P1-C2-01 option A (DECIDED 2026-08-12, GO-8B) - deferred repair; GO-8C resolves definitively",
+    "note": "C2 operational = SS6 mapping verbatim; seed_operacional=258915; seed_historica marked HISTORICAL-NON-REPRODUCING; inverse_verdadeira=[5,0,8,3,6,1,2,4,7]."
+  },
+  "generated_by": "p1_c2_test.py (GO-8C)"
+}

@@ -1,0 +1,8 @@
+# GO-8B reproducibility dependencies (06-STATISTICAL-PROTOCOL.md, sec. 9)
+# Fixed versions (resolved 2026-08-11, Python 3.11.9).
+# NOTE: scikit-posthocs / statsmodels are NOT runtime dependencies of the GO-8B
+# executor (Holm-Bonferroni is implemented directly per 06 sec. 4.1).
+
+numpy==1.26.4
+scipy==1.15.3
+pandas==3.0.5

@@ -1,0 +1,54 @@
+{
+  "phase": "PHASE_1_VALIDATION",
+  "timestamp": "2026-08-15",
+  "data_source": "GO-8D-NC frozen data (270 executions, 30 BIPs x 3 conditions x 3 seeds)",
+  "conf": {
+    "pearson_dv3": 0.5284,
+    "spearman_dv3": 0.3458,
+    "friedman": {"chi2": 36.6, "p": 1.13e-8},
+    "wilcoxon_A_B": {"stat": 176, "p": 0.8775},
+    "wilcoxon_B_C": {"stat": 446, "p": 0.0},
+    "wilcoxon_A_C": {"stat": 463, "p": 0.0},
+    "sensitivity_noise": [0.8457, 0.3149, 0.1955, -0.0941],
+    "icc_proxy": 0.7885,
+    "validity": {"convergent": false, "discriminant": true, "stability": true, "sensitivity": true, "overall": "CONDITIONAL"}
+  },
+  "ged_ecp": {
+    "medians": {"A": 0.3061, "B": 0.2929, "C": 0.3027},
+    "friedman": {"chi2": 6.07, "p": 0.048},
+    "wilcoxon_A_B": {"stat": 342, "p": 0.0117},
+    "wilcoxon_B_C": {"stat": 234, "p": 0.4919},
+    "cliff_delta_AB": 0.2844,
+    "correlation_dv3": 0.5775,
+    "cat_syn_bias": "ged_ecp usa referencia ECP (CAT); B usa SYN -> vies inerente a favor de A/C",
+    "sensitivity_perturbation": [0.998, 0.9947, 0.9797],
+    "validity": {"reference_bias": true, "discriminant": true, "sensitivity": true, "overall": "CONDITIONAL"}
+  },
+  "ent_n12": {
+    "medians": {"A": 0.83, "B": 0.735, "C": 0.65},
+    "friedman": {"chi2": 35.47, "p": 1.99e-8},
+    "wilcoxon_A_B": {"stat": 455, "p": 0.0},
+    "wilcoxon_B_C": {"stat": 339, "p": 0.0139},
+    "cliff_delta_AB": 0.8311,
+    "cardinality_bias": "log(12) normaliza para 12 slots; CAT max=log(9)/log(12)=0.8842; SYN max=1.0",
+    "max_ent_cat": 0.8842,
+    "correlation_dv3": 0.9545,
+    "validity": {"cardinality_bias": true, "discriminant": true, "sensitivity": true, "overall": "CONDITIONAL"}
+  },
+  "summary": {
+    "conf": {"convergent": false, "discriminant": true, "stability": true, "sensitivity": true, "overall": "CONDITIONAL"},
+    "ged_ecp": {"reference_bias": true, "discriminant": true, "sensitivity": true, "overall": "CONDITIONAL"},
+    "ent_n12": {"cardinality_bias": true, "discriminant": true, "sensitivity": true, "overall": "CONDITIONAL"}
+  },
+  "phase2_recommendation": "PROCEED - Falhas de validade detectadas em ged_ecp (vies referencia) e ent_n12 (vies cardinalidade). Fase 2 (GED + diversidade) recomendada.",
+  "governance_rules_compliance": {
+    "no_power_calculation": true,
+    "no_preregistration": true,
+    "no_new_bips": true,
+    "no_new_seeds": true,
+    "no_experiment": true,
+    "no_lock_changes": true,
+    "no_a_b_for_metric_selection": true,
+    "no_retrospective_weight_selection": true
+  }
+}

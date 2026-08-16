@@ -1,12 +1,37 @@
 # Arquivos temporários
 *.tmp
 *.bak
+*.log
 .DS_Store
 Thumbs.db
 
 # Configuração de sistema do Windows
 desktop.ini
 
+# Ambientes virtuais
+.venv/
+venv/
+
+# Variáveis de ambiente
+.env
+
 # Bytecode Python
 __pycache__/
 *.pyc
+
+# Arquivos temporários específicos do projeto
+full-pilot-output.txt
+temp-pilot-output.txt
+
+# Scripts de teste temporários
+test_parse_atomic_facts.py
+test_parse_simple.py
+test_parse_standalone.py
+
+# Arquivos HTML/texto temporários
+justia_duncan.html
+vlex_duncan.txt
+
+# Diretórios de avaliação
+P0010-B-EVALUATION/
+P0010-C-EVALUATION/

@@ -1,0 +1,84 @@
+# GO-8D-NC LOCK MANIFEST - scope 14 artifacts (governance authorization 2026-08-15)
+lock_protocol_version: 1.0
+manifest_generated_at: 2026-08-15T05:31:54
+normalization:
+  encoding: UTF-8-no-BOM
+  line_endings: LF
+  trailing_newline: true
+  whitespace: preserved
+  binary_files: n/a (no binary artifacts in scope)
+  external_go8b_go8c_artifacts: self-contained copies (C2/C3) hashed as-is - no runtime deps
+total_files: 14
+scope:
+  analysis_script: 1
+  calibration_fixture: 1
+  corrected_taxonomy: 1
+  decision_record: 2
+  engine_graph: 1
+  engine_kernel: 1
+  engine_pilot: 1
+  operational_config: 1
+  preregistration: 1
+  reproducibility_dependency: 1
+  seed_script: 1
+  validation_script: 2
+preregistration:
+  path: D:\ecp-spec\experiments\validation\GO-8D\08-PRE-REGISTRATION-NEW-CYCLE.md
+  sha256: 12fef4f74431b94fa0eacc8a170e2ad16192c871bc524464d5ddf0535fa5fcd1
+files:
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/decisions/D-MV-04-NEW-CYCLE-EXECUTION-PACKAGE.md"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\decisions\\D-MV-04-NEW-CYCLE-EXECUTION-PACKAGE.md"
+  sha256: 4cc8f98dc9d81414539cc375c8d4cd3385f0b2bbb085e1d590a305b5cc16c4a6
+  role: decision_record
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/decisions/SEED-MASTER-DECISION.md"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\decisions\\SEED-MASTER-DECISION.md"
+  sha256: dc187a2cab6f67e6b61fbb8f6b361586e8af7c5ed5989e905c154b53d1646d28
+  role: decision_record
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/C2_PERMUTATION.yaml"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\C2_PERMUTATION.yaml"
+  sha256: c91fecfeae83d9edb88dd16f2d1827283e308b53fdd6bf0a02c4b636a376b2a2
+  role: operational_config
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/C3_TAXONOMY.yaml"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\C3_TAXONOMY.yaml"
+  sha256: 5ba63db7a81c454d7432873c184d2171741f8676e70d94cc538594627819bec8
+  role: corrected_taxonomy
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/analyze.py"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\analyze.py"
+  sha256: 138b28979c57fe5349e87f93cc238661d060615aacc8af6bf7b0f663c97b19a6
+  role: analysis_script
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/calibration_fixture.json"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\calibration_fixture.json"
+  sha256: ed11ab9b65ac60d19d77b6775caa573b5633647765fd1806034140d7213e74eb
+  role: calibration_fixture
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/generate_seeds.py"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\generate_seeds.py"
+  sha256: 36aa66bb349b6994bcf077407458dec5f90b28ec6eb28d4c3b11e3d58442b3fd
+  role: seed_script
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/graph_from_reconstruction.py"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\graph_from_reconstruction.py"
+  sha256: 7f2df2b81ecad6e5175399ad2db847e87541770bb33dcfcf0d7068e043c8a4ca
+  role: engine_graph
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/pilot_engine.py"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\pilot_engine.py"
+  sha256: 3b56e50712fd95375b12c0d2949c4ce1798c461a11dd7c4769e98898959191ac
+  role: engine_pilot
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/requirements.txt"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\requirements.txt"
+  sha256: a5b89472b8ad341bc9308a9dfcd4e7ba3a8dd182dd3e56b6f0a6e4933ef851c5
+  role: reproducibility_dependency
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/test_conformity.py"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\test_conformity.py"
+  sha256: 661032dcf885fc4359081ecdeb1ef4101f17ab644a3612005159719126958602
+  role: validation_script
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/validate_data.py"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\validate_data.py"
+  sha256: 15f9e783d9f55597ba92e60b14f1bed49548884edd070324586134ae7164f4c8
+  role: validation_script
+- name: "D:/ecp-spec/experiments/validation/GO-8D-NC/scripts/wl_kernel.py"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D-NC\\scripts\\wl_kernel.py"
+  sha256: fcec435824da4650c5e9614215c2f2329b7b8e1c7ae4eabc24f23b783601ad40
+  role: engine_kernel
+- name: "D:/ecp-spec/experiments/validation/GO-8D/08-PRE-REGISTRATION-NEW-CYCLE.md"
+  path: "D:\\ecp-spec\\experiments\\validation\\GO-8D\\08-PRE-REGISTRATION-NEW-CYCLE.md"
+  sha256: 12fef4f74431b94fa0eacc8a170e2ad16192c871bc524464d5ddf0535fa5fcd1
+  role: preregistration

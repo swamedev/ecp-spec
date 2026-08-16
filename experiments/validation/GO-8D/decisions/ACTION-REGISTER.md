@@ -58,4 +58,19 @@
 
 | **CLS-01** | **Encerramento formal do GO-8D** — decisão final da governança: resultados aprovados; conclusão negativa para a hipótese C3; recomendação de não usar C3 como intervenção; nenhum GO-8E aberto | **CLOSED** | `FINAL-PROJECT-REPORT-GO-8D.md` · `GO-8D-CLOSURE-PACKAGE.zip` (26 arquivos) | GO-8D **CLOSED** (2026-08-14); relatório final + pacote de encerramento gerados; hipótese C3 **rejeitada** (B<A em 12/12 BIPs, Cliff δ=1.000) |
 
-**Fim do registro de ações. GO-8D CLOSED (2026-08-14). Nenhum arquivo do GO-8B/GO-8C alterado.
+---
+
+## PÓS-ESTUDO — AUDITORIA + METRIC VALIDATION + DECISÃO DE DESENHO (GO-8D, sem novo experimento)
+
+| Ação | Descrição | Status | Artefatos | Resultado |
+|---|---|---|---|---|
+| **AUD-01** | **Auditoria pós-estudo** — decompor DV_confirm (conf/ged_ref/ent) e investigar se penaliza B sistematicamente | **COMPLETE** | `POST-STUDY-AUDIT-DECISION.md` · `decisions/POST-STUDY-DV-DECOMPOSITION.md` · `analysis/post_study_dv_audit.json` | `ent` domina (72.9% da queda B−A); B<A em 12/12; **assimetrias estruturais**: ent n_slots 9 vs 12; ged ref 9n vs 12n — **DV_confirm problemática para comparação entre condições** |
+| **MV-01** | **Metric validation/calibration** — padronizar cardinalidade (M-01), referência GED (M-02), recalibrar entropia (M-03), comparar DVs candidatas (M-04) | **COMPLETE** | `metric-validation/METRIC-VALIDATION-REPORT.md` · `calibration_cells.json` · `criteria_eval.json` · scripts | DV0 rejeitada; **DV3 = (conf + ged_ecp + ent_n12)/3** atende 5/7 critérios; re-derivação reproduz CSV (erro 0.0); sintético perfect>noisy>flat>collapse |
+| **D-MV-01** | **Aprovação da DV confirmatória** — DV3 aceita como candidata; pesos 1:1:1 justificados; faixa de ged_ecp aceita c/ limitação | **APPROVED** | `decisions/D-MV-01-DV-CONFIRMATORY.md` · `decisions/D-MV-01-APPROVED.md` | DV3 aceita; pesos 1:1:1 mantidos; ged_ecp: aceitável p/ condição, melhoria antes de uso absoluto |
+| **D-MV-02** | **Recálculo de potência com DV3** — Monte Carlo calibrado (B=3.000), Friedman/Wilcoxon+Holm/TOST Δ=0.05 | **COMPLETE** | `decisions/D-MV-02-POWER-RECALC.md` · `metric-validation/power_dv3.py` · `power_summary.json` | **N=30** p/ TOST A−C poder≥0.80 sob efeito observado (0.804); S1: Friedman 8, Wilcoxon B−A 10, TOST 30; S2: 12/14/14 |
+| **D-MV-03** | **Governance design decision** — N=30; TOST confirmatório; Δ=0.05; DV3; 18 novos BIPs | **APPROVED** | `decisions/D-MV-03-GOVERNANCE-DESIGN-DECISION.md` | **Desenho assumido: N=30 BIPs (270 execuções)**, TOST A−C confirmatório; autorizado planejar aquisição de 18 BIPs (sem coleta); próximo: pré-registro do novo ciclo |
+| **PR-REG-01** | **Pré-registro do novo ciclo** (DV3, N=30, TOST Δ=0.05, 18 novos BIPs) | **APPROVED** | `08-PRE-REGISTRATION-NEW-CYCLE.md` (v1.0 FINAL, 2026-08-15) | **APROVADO** (2026-08-15) — decisões da governança incorporadas: **Go/No-Go ≥27/30 GO · 10–26/30 NO-GO exploratório · <10/30 STOP**; **hierarquia primária B<A (Friedman + Wilcoxon B−A) → secundária TOST A−C Δ=0.05 → complementar B−C**; N=30 justificado pela hipótese primária; sem coleta, sem Lock, sem execução; Lock GO-8D intocado |
+
+**Fim do registro de ações. GO-8D CLOSED (2026-08-14) + pós-estudo AUD/MV concluído (2026-08-15).
+Nenhum arquivo do GO-8B/GO-8C ou Lock GO-8D alterado. Sem coleta/experimento; pré-registro do novo
+ciclo APROVADO (PR-REG-01, v1.0 FINAL); próximo passo: Lock do novo ciclo após autorização.

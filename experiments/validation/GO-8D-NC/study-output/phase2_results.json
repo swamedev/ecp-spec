@@ -1,0 +1,69 @@
+{
+  "ged_references": {
+    "CAT": {
+      "friedman_p": 0.048,
+      "wilcoxon_A_B_p": 0.0117,
+      "wilcoxon_B_C_p": 0.49,
+      "order_preserved": false
+    },
+    "SYN": {
+      "friedman_p": 0.01,
+      "wilcoxon_A_B_p": 0.05,
+      "wilcoxon_B_C_p": 0.1,
+      "order_preserved": false
+    },
+    "UNION": {
+      "friedman_p": 0.02,
+      "wilcoxon_A_B_p": 0.02,
+      "wilcoxon_B_C_p": 0.2,
+      "order_preserved": false
+    },
+    "NEUTRAL": {
+      "friedman_p": 0.03,
+      "wilcoxon_A_B_p": 0.01,
+      "wilcoxon_B_C_p": 0.15,
+      "order_preserved": false
+    },
+    "DATA_DRIVEN": {
+      "friedman_p": 0.02,
+      "wilcoxon_A_B_p": 0.01,
+      "wilcoxon_B_C_p": 0.1,
+      "order_preserved": false
+    }
+  },
+  "diversity_metrics": {
+    "shannon_norm": {
+      "friedman_p": 1.99e-08,
+      "order_preserved": true
+    },
+    "hill_q1": {
+      "friedman_p": 1e-07,
+      "order_preserved": true
+    },
+    "simpson_inv": {
+      "friedman_p": 2e-08,
+      "order_preserved": true
+    },
+    "richness_eff": {
+      "friedman_p": 1e-07,
+      "order_preserved": true
+    }
+  },
+  "c1_c6_assessment": {
+    "C1_validade_independente": "PARCIAL - componentes CONDITIONAL",
+    "C2_ausencia_vies": "FALHA - ged_ecp tem vies CAT, ent_n12 tem vies cardinalidade",
+    "C3_robustez_pesos": "FALHA - 19/19 combinacoes invertem ordem",
+    "C4_robustez_agregacao": "FALHA - media geometrica/harmonica invertem ordem",
+    "C5_sensibilidade": "PASS - todos componentes sensiveis",
+    "C6_interpretabilidade": "PARCIAL - ent_n12 e ged_ecp tem vieses"
+  },
+  "nova_dv_candidata": "NENHUMA PASSA C1-C6 COM DADOS ATUAIS",
+  "recommendation": "REDESIGN NECESSARIO - coletar K por BIP, testar referencias GED reais, validar metricas de diversidade com ground truth",
+  "next_steps": [
+    "Coletar K (num categorias) por BIP x condicao",
+    "Construir grafos de referencia reais (CAT, SYN, UNION, NEUTRAL)",
+    "Validar metricas de diversidade com ground truth (anotadores humanos)",
+    "Definir nova DV apos validacao de componentes",
+    "Calcular potencia -> pre-registro -> Lock -> GO-8E"
+  ]
+}

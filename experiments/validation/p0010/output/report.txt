@@ -1,0 +1,9 @@
+Relatorio de preparacao — P-0010 comparacao A x B x C
+Gerado por: build_comparison_tables.py (ferramenta deterministica, sem IA)
+
+Evaluator A: 46 Atomic Facts
+Evaluator B: 75 Atomic Facts
+Evaluator C: 73 Atomic Facts
+
+Nenhuma correspondencia foi calculada.
+As tabelas aguardam preenchimento humano.

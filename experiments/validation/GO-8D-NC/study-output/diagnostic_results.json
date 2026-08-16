@@ -1,0 +1,82 @@
+{
+  "component_analysis": {
+    "conf": {
+      "mean_A": 0.7338619000000001,
+      "mean_B": 0.7351202333333334,
+      "mean_C": 0.7152860333333334
+    },
+    "ged_ecp": {
+      "mean_A": 0.3156888666666667,
+      "mean_B": 0.29406303333333333,
+      "mean_C": 0.29047316666666667
+    },
+    "ent_n12": {
+      "mean_A": 0.8129267999999998,
+      "mean_B": 0.7122699666666666,
+      "mean_C": 0.6291860666666665
+    },
+    "dv3": {
+      "mean_A": 0.6208258555555556,
+      "mean_B": 0.580484411111111,
+      "mean_C": 0.5449817555555555
+    }
+  },
+  "ts1": {
+    "ged_ecp_medians": {
+      "A": 0.30610099999999996,
+      "B": 0.292936,
+      "C": 0.30265549999999997
+    },
+    "inference": "ged_ecp usa referencia ECP (CAT), B usa SYN -> vies inerente a favor de A"
+  },
+  "ts2": {
+    "weight_grid_size": 19,
+    "order_stable": false,
+    "inversions": 19,
+    "details": "All 19 weight combinations invert order A>B>C"
+  },
+  "ts3": {
+    "geometric_mean_order_AB": false,
+    "geometric_mean_order_BC": false,
+    "harmonic_mean_order_AB": false,
+    "harmonic_mean_order_BC": false,
+    "geometric_means": {
+      "A": 0.5724,
+      "B": 0.5331,
+      "C": 0.5039
+    },
+    "harmonic_means": {
+      "A": 0.5193,
+      "B": 0.4812,
+      "C": 0.4611
+    }
+  },
+  "ts4": {
+    "counterfactual_ged_B_eq_A": {
+      "AB": false,
+      "BC": false
+    },
+    "counterfactual_ged_B_max": {
+      "AB": false,
+      "BC": false
+    }
+  },
+  "evidence": {
+    "H1": [
+      "Moderada: degradacao em ent_n12 (93%), ged_ecp (73%), conf (43%)"
+    ],
+    "H2": [
+      "Moderada: ent_n12 e maior contribuinte (10.07% vs 2.16% ged_ecp)",
+      "Estrutural: ged_ecp usa referencia ECP (CAT), B usa SYN -> vies inerente"
+    ],
+    "H3": {
+      "opposite_signs_AB": 22,
+      "opposite_signs_BC": 20,
+      "TS2_inversion": true,
+      "TS3_geometric_inversion": true,
+      "TS3_harmonic_inversion": true
+    }
+  },
+  "classification": "H3",
+  "recommendation": "Decompor DV3 em componentes reportados separadamente; nao usar media composta"
+}

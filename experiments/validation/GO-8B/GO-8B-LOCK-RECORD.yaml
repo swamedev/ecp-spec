@@ -1,0 +1,21 @@
+# GO-8B LOCK RECORD — freeze authority (R8 spec, two-level structure)
+lock_record_version: 1.0
+lock_generated_at: 2026-08-11T19:09:23
+gate: R9 PASS/CLEAN -> LOCK AUTHORIZED (FASE 1 CLEAN + FASE 2)
+lock_status: LOCKED / FROZEN
+normalization:
+  encoding: UTF-8-no-BOM
+  line_endings: LF
+  trailing_newline: true
+manifest:
+  path: "experiments/validation/GO-8B/GO-8B-LOCK-MANIFEST.yaml"
+  sha256: c55799d895a4f73888713a8538c6b9a6c5df1d7cde71c88141e16b9e9b216636
+scope:
+  core_methodological_files: 10
+  computational_reproducibility_files: 3
+  total_locked_files: 13
+rules:
+  - no in-place modification of any locked artifact after first hash
+  - any divergence -> STOP (no correction, no recompute)
+  - experiment/data collection/analysis NOT executed
+  - commit NOT created

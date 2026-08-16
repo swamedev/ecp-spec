@@ -1,0 +1,99 @@
+[
+ {
+  "bip": "BIP-013-bhopal",
+  "id": "icmr-bgdrc",
+  "desc": "ICMR BGDRC Technical Report (1985-1994)",
+  "url": "https://www.icmr.gov.in/icmrobject/custom_data/1720338129_bgdrc-technical_report.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "icmr-bgdrc.pdf",
+  "sha256": "6dd9eb54999377e40675f495302d3a1cf5cc35553f2f3cbe7b9d1dc543dee877",
+  "bytes": 3913204
+ },
+ {
+  "bip": "BIP-013-bhopal",
+  "id": "varadarajan-csir",
+  "desc": "Relatorio Varadarajan/CSIR dez-1985 (NTIS PB89115380)",
+  "url": "https://bhopalgasdisaster.files.wordpress.com/2014/12/csir-report-on-scientific-studies-december-1985.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "varadarajan-csir.pdf",
+  "sha256": "2fcd71ebba64394547150ba9f67264fc917289f42200e5e1b3e5b5e4ada8bfd0",
+  "bytes": 2178951
+ },
+ {
+  "bip": "BIP-013-bhopal",
+  "id": "gom-pib",
+  "desc": "PIB - Cabinet aprova recomendacoes GoM Bhopal (2010)",
+  "url": "https://pib.gov.in/newsite/erelcontent.aspx?relid=62802",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "gom-pib.html",
+  "sha256": "5ef96f49c406cf276da921b17276e9f64e394c54c4980c2f87b380332163442e",
+  "bytes": 66348
+ },
+ {
+  "bip": "BIP-014-tmi",
+  "id": "kemeny-report",
+  "desc": "Kemeny Commission Report (NRC ADAMS ML19275A948)",
+  "url": "https://www.nrc.gov/docs/ML1927/ML19275A948.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "kemeny-report.pdf",
+  "sha256": "c03ee2ee3fc19d333d85d3f0cfca490b764827838bc4ac86fc6e313075afda16",
+  "bytes": 45512788
+ },
+ {
+  "bip": "BIP-014-tmi",
+  "id": "kemeny-tatf-vol1",
+  "desc": "Kemeny Technical Assessment Task Force Vol I (INL archive)",
+  "url": "https://tmi2kml.inl.gov/Documents/2a-Kemeny/Presidents%20Commission,%20Technical%20Assessment%20Task%20Force,%20Vol.%20I%20(1979-10-30).pdf",
+  "acesso": "2026-08-15",
+  "status": "inacessivel",
+  "erro": "502 Server Error: Bad Gateway for url: https://tmi2kml.inl.gov/Documents/2a-Kemeny/Presidents%20Commission,%20Technical%"
+ },
+ {
+  "bip": "BIP-015-challenger",
+  "id": "rogers-vol1",
+  "desc": "Rogers Commission Report Vol 1 (NASA NTRS)",
+  "url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19860015255.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "rogers-vol1.pdf",
+  "sha256": "c8e1f0564699e3bd1ad1a733691fdcc3781a3123fd29f937b400ce500af234b3",
+  "bytes": 104933
+ },
+ {
+  "bip": "BIP-016-columbia",
+  "id": "caib-vol1",
+  "desc": "CAIB Report Volume 1 (NASA History)",
+  "url": "https://www.nasa.gov/wp-content/uploads/static/history/columbia/reports/CAIBreportv1.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "caib-vol1.pdf",
+  "sha256": "2f1aca1f35a0c507ac930c5cee6c578fb549372234c700f68ffb64f462cf433b",
+  "bytes": 8229281
+ },
+ {
+  "bip": "BIP-017-katrina",
+  "id": "usace-ipet-vol1",
+  "desc": "USACE IPET Vol I Exec Summary (2006)",
+  "url": "https://www.nytimes.com/packages/pdf/national/20060601_ARMYCORPS_SUMM.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "usace-ipet-vol1.pdf",
+  "sha256": "e447bb66c6e2d70bdad7e5db1ae42e7803ee4d8d22741e61efebd10b1020ab2a",
+  "bytes": 4703734
+ },
+ {
+  "bip": "BIP-017-katrina",
+  "id": "usace-ipet-vol5",
+  "desc": "USACE IPET Vol V Levees/Floodwalls (2006)",
+  "url": "https://biotech.law.lsu.edu/katrina/ipet/gpo/Vol%20V%20The%20Performance%20Levees%20and%20Floodwalls%20-%20maintext.pdf",
+  "acesso": "2026-08-15",
+  "status": "acessivel",
+  "arquivo": "usace-ipet-vol5.pdf",
+  "sha256": "6ef977585fa2d3b49d5596ecb1953dac382abd69b30c55bd1323d02107b8d2c8",
+  "bytes": 3745816
+ }
+]
