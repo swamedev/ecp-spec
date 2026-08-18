@@ -1,0 +1,120 @@
+{
+  "spec_version": "M-REDESIGN-01-SPEC-A",
+  "seed": 42,
+  "synthetic_graphs_count": 1000,
+  "references": {
+    "CAT": {
+      "score": 3.0,
+      "criteria": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 1.877436203060026
+      },
+      "qualifies": true
+    },
+    "SYN": {
+      "score": 3.0,
+      "criteria": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 1.5424832567580822
+      },
+      "qualifies": true
+    },
+    "UNION": {
+      "score": 3.0,
+      "criteria": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 0.0
+      },
+      "qualifies": true
+    },
+    "NEUTRAL": {
+      "score": 3.0,
+      "criteria": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 0.0
+      },
+      "qualifies": true
+    },
+    "DATA-DRIVEN": {
+      "score": 3.0,
+      "criteria": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 0.0
+      },
+      "qualifies": true
+    }
+  },
+  "selection_result": [
+    {
+      "name": "CAT",
+      "total_score": 3.0,
+      "criteria_scores": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 1.877436203060026
+      }
+    },
+    {
+      "name": "SYN",
+      "total_score": 3.0,
+      "criteria_scores": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 1.5424832567580822
+      }
+    },
+    {
+      "name": "UNION",
+      "total_score": 3.0,
+      "criteria_scores": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 0.0
+      }
+    },
+    {
+      "name": "NEUTRAL",
+      "total_score": 3.0,
+      "criteria_scores": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 0.0
+      }
+    },
+    {
+      "name": "DATA-DRIVEN",
+      "total_score": 3.0,
+      "criteria_scores": {
+        "independence_conditional": false,
+        "structural_validity": true,
+        "stability": true,
+        "reproducibility": true,
+        "bias_check": 0.0
+      }
+    }
+  ],
+  "final_decision": "DATA-DRIVEN"
+}

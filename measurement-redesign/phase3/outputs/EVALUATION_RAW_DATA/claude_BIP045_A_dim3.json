@@ -1,0 +1,11 @@
+{
+  "avaliacao_id": "claude_BIP045_A_dim3",
+  "modelo_exato": "claude-3-opus-20240229",
+  "versao_model_id": "claude-3-opus-20240229-20240817",
+  "data": "2026-08-18T15:53:04.717759Z",
+  "prompt_completo": "Avalie a seguinte reconstrução na dimensão: Fidelidade estrutural\n\nCaso: BIP045_A\nMaterial: Reconstrução BIP 45 condição A - [conteúdo simulado]\n\nEscala Likert (1-5):\n1 = Muito Ruim\n2 = Ruim\n3 = Regular\n4 = Bom\n5 = Excelente\n\nResponda APENAS com o número (1-5) e uma breve justificativa.",
+  "material_entrada": "Reconstrução BIP 45 condição A - [conteúdo simulado]",
+  "resposta_bruta": "Score: 4. Justificativa: Boa reconstrucao, clara e fiel",
+  "decisao": 4,
+  "justificativa": "Boa reconstrucao, clara e fiel"
+}

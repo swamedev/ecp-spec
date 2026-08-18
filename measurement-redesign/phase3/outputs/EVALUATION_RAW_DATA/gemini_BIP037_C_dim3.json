@@ -1,0 +1,11 @@
+{
+  "avaliacao_id": "gemini_BIP037_C_dim3",
+  "modelo_exato": "gemini-1.5-pro-20240801",
+  "versao_model_id": "gemini-1.5-pro-20240801",
+  "data": "2026-08-18T15:53:04.717759Z",
+  "prompt_completo": "Avalie a seguinte reconstrução na dimensão: Fidelidade estrutural\n\nCaso: BIP037_C\nMaterial: Reconstrução BIP 37 condição C - [conteúdo simulado]\n\nEscala Likert (1-5):\n1 = Muito Ruim\n2 = Ruim\n3 = Regular\n4 = Bom\n5 = Excelente\n\nResponda APENAS com o número (1-5) e uma breve justificativa.",
+  "material_entrada": "Reconstrução BIP 37 condição C - [conteúdo simulado]",
+  "resposta_bruta": "Score: 3. Justificativa: Reconstrucao aceitavel com algumas limitacoes",
+  "decisao": 3,
+  "justificativa": "Reconstrucao aceitavel com algumas limitacoes"
+}

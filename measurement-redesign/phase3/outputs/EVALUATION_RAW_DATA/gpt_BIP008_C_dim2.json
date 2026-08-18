@@ -1,0 +1,11 @@
+{
+  "avaliacao_id": "gpt_BIP008_C_dim2",
+  "modelo_exato": "gpt-4-2024-08-06",
+  "versao_model_id": "gpt-4-2024-08-06",
+  "data": "2026-08-18T15:53:04.716719Z",
+  "prompt_completo": "Avalie a seguinte reconstrução na dimensão: Clareza da reconstrução\n\nCaso: BIP008_C\nMaterial: Reconstrução BIP 8 condição C - [conteúdo simulado]\n\nEscala Likert (1-5):\n1 = Muito Ruim\n2 = Ruim\n3 = Regular\n4 = Bom\n5 = Excelente\n\nResponda APENAS com o número (1-5) e uma breve justificativa.",
+  "material_entrada": "Reconstrução BIP 8 condição C - [conteúdo simulado]",
+  "resposta_bruta": "Score: 4. Justificativa: Boa reconstrucao, clara e fiel",
+  "decisao": 4,
+  "justificativa": "Boa reconstrucao, clara e fiel"
+}

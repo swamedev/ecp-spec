@@ -1,0 +1,11 @@
+{
+  "avaliacao_id": "gemini_BIP041_C_dim2",
+  "modelo_exato": "gemini-1.5-pro-20240801",
+  "versao_model_id": "gemini-1.5-pro-20240801",
+  "data": "2026-08-18T15:53:04.717759Z",
+  "prompt_completo": "Avalie a seguinte reconstrução na dimensão: Clareza da reconstrução\n\nCaso: BIP041_C\nMaterial: Reconstrução BIP 41 condição C - [conteúdo simulado]\n\nEscala Likert (1-5):\n1 = Muito Ruim\n2 = Ruim\n3 = Regular\n4 = Bom\n5 = Excelente\n\nResponda APENAS com o número (1-5) e uma breve justificativa.",
+  "material_entrada": "Reconstrução BIP 41 condição C - [conteúdo simulado]",
+  "resposta_bruta": "Score: 5. Justificativa: Excelente reconstrucao, muito clara e fiel",
+  "decisao": 5,
+  "justificativa": "Excelente reconstrucao, muito clara e fiel"
+}

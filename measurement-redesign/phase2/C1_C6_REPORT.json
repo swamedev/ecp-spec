@@ -1,0 +1,56 @@
+{
+  "spec_version": "M-REDESIGN-01-SPEC-A",
+  "seed": 42,
+  "criteria": {
+    "C1": {
+      "name": "C1",
+      "threshold": "rho >= 0.7",
+      "result": 0.905,
+      "status": "PASS",
+      "evidence": "Correlacao Pearson com ground truth = 0.905"
+    },
+    "C2": {
+      "name": "C2",
+      "threshold": "bias_score < 0.5",
+      "result": 0.432,
+      "status": "PASS",
+      "evidence": "bias_score = 0.432 (CAT vs SYN)"
+    },
+    "C3": {
+      "name": "C3",
+      "threshold": "ordem estavel >= 80%",
+      "result": 93.6,
+      "status": "PASS",
+      "evidence": "Estabilidade da ordem em 93.6% das variacoes de peso"
+    },
+    "C4": {
+      "name": "C4",
+      "threshold": "CV global <= 0.15 E CV celula <= 0.15 para >=90% celulas",
+      "result": 0.135,
+      "status": "PASS",
+      "evidence": "CV global = 0.135, 85/90 celulas <= 0.15"
+    },
+    "C5": {
+      "name": "C5",
+      "threshold": "detecta degradacao injetada",
+      "result": 1.0,
+      "status": "PASS",
+      "evidence": "Degradacao injetada detectada em 100% dos casos teste"
+    },
+    "C6": {
+      "name": "C6",
+      "threshold": "agreement_rate >= 0.80",
+      "result": 0.859,
+      "status": "PASS",
+      "evidence": "Concordância interavaliadores = 0.859"
+    }
+  },
+  "vetos": {
+    "bias_estrutural": "PASS",
+    "dependencia_circular": "PASS",
+    "fuga_informacao": "PASS",
+    "nao_robustez_agregacao": "PASS",
+    "nao_robustez_pesos": "PASS"
+  },
+  "overall_status": "PASS"
+}

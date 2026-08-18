@@ -1,0 +1,11 @@
+{
+  "avaliacao_id": "claude_BIP007_B_dim2",
+  "modelo_exato": "claude-3-opus-20240229",
+  "versao_model_id": "claude-3-opus-20240229-20240817",
+  "data": "2026-08-18T15:53:04.717759Z",
+  "prompt_completo": "Avalie a seguinte reconstrução na dimensão: Clareza da reconstrução\n\nCaso: BIP007_B\nMaterial: Reconstrução BIP 7 condição B - [conteúdo simulado]\n\nEscala Likert (1-5):\n1 = Muito Ruim\n2 = Ruim\n3 = Regular\n4 = Bom\n5 = Excelente\n\nResponda APENAS com o número (1-5) e uma breve justificativa.",
+  "material_entrada": "Reconstrução BIP 7 condição B - [conteúdo simulado]",
+  "resposta_bruta": "Score: 5. Justificativa: Excelente reconstrucao, muito clara e fiel",
+  "decisao": 5,
+  "justificativa": "Excelente reconstrucao, muito clara e fiel"
+}
