@@ -1,0 +1,5170 @@
+seed_casegen: 20260819
+n_cases: 24
+cases:
+  CASE-001:
+    case_idx: 0
+    seed_casegen: 20260819
+    topic_tokens:
+    - coleta
+    - contrato
+    - relatorio
+    topic_token: coleta
+    base_cats:
+    - MRCAT-03
+    - MRCAT-09
+    - MRCAT-02
+    - MRCAT-05
+    - MRCAT-12
+    - MRCAT-08
+    - MRCAT-07
+    - MRCAT-01
+    - MRCAT-06
+    new_cats:
+    - MRCAT-04
+    - MRCAT-10
+    - MRCAT-11
+    base_facts:
+    - O coleta mede as grandezas com quantificacao e mensuracao de contrato.
+    - O coleta aplica o padrao com requisito e referencia de conformidade de relatorio.
+    - O coleta segue o protocolo com roteiro e sequencia padronizada de contrato.
+    - O coleta controla o estoque e o fornecimento de suprimentos de relatorio.
+    - O coleta verifica a qualidade com avaliacao de aceitacao e aptidao de contrato.
+    - O coleta gera o produto entregavel como resultado final de relatorio.
+    - O coleta executa o fluxo de tarefas e a rotina de operacao de contrato.
+    - O coleta registra as ocorrencias com catalogacao e arquivamento de relatorio.
+    - O coleta coleta dado e informacao bruta do ambiente de contrato.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-07
+      - source: MRCAT-02
+        target: MRCAT-07
+      - source: MRCAT-02
+        target: MRCAT-12
+      - source: MRCAT-03
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-06
+      - source: MRCAT-03
+        target: MRCAT-07
+      - source: MRCAT-03
+        target: MRCAT-09
+      - source: MRCAT-03
+        target: MRCAT-12
+      - source: MRCAT-07
+        target: MRCAT-01
+      - source: MRCAT-07
+        target: MRCAT-01
+      - source: MRCAT-07
+        target: MRCAT-06
+      - source: MRCAT-07
+        target: MRCAT-08
+      - source: MRCAT-07
+        target: MRCAT-12
+      - source: MRCAT-08
+        target: MRCAT-01
+      - source: MRCAT-08
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-01
+      - source: MRCAT-09
+        target: MRCAT-02
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-08
+      - source: MRCAT-12
+        target: MRCAT-06
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-08
+    pools:
+      V1:
+      - candidate_id: CASE-001-V1-MRCAT-04-0
+        text: O coleta reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-001-MRCAT-04-0
+      - candidate_id: CASE-001-V1-MRCAT-04-1
+        text: O coleta reforca as responsabilidades e competencias da unidade de forma
+          uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-001-MRCAT-04-1
+      - candidate_id: CASE-001-V1-MRCAT-10-0
+        text: O coleta conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-001-MRCAT-10-0
+      - candidate_id: CASE-001-V1-MRCAT-10-1
+        text: O coleta conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-001-MRCAT-10-1
+      - candidate_id: CASE-001-V1-MRCAT-11-0
+        text: O coleta enfrenta risco de contingencia com ameaca identificada.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V1
+        pair_id: CASE-001-MRCAT-11-0
+      - candidate_id: CASE-001-V1-MRCAT-11-1
+        text: O coleta enfrenta risco de contingencia com ameaca identificada de forma
+          uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V1
+        pair_id: CASE-001-MRCAT-11-1
+      V2:
+      - candidate_id: CASE-001-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-001-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-001-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-001-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-001-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-001-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-001-V3-MRCAT-04-0
+        text: O coleta nao reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-001-MRCAT-04-0
+      - candidate_id: CASE-001-V3-MRCAT-04-1
+        text: O coleta nao reforca as responsabilidades e competencias da unidade
+          de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-001-MRCAT-04-1
+      - candidate_id: CASE-001-V3-MRCAT-10-0
+        text: O coleta nao conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-001-MRCAT-10-0
+      - candidate_id: CASE-001-V3-MRCAT-10-1
+        text: O coleta nao conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-001-MRCAT-10-1
+      - candidate_id: CASE-001-V3-MRCAT-11-0
+        text: O coleta nao enfrenta risco de contingencia com ameaca identificada.
+        intended_category: MRCAT-11
+        is_true: false
+        pool: V3
+        pair_id: CASE-001-MRCAT-11-0
+      - candidate_id: CASE-001-V3-MRCAT-11-1
+        text: O coleta nao enfrenta risco de contingencia com ameaca identificada
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: false
+        pool: V3
+        pair_id: CASE-001-MRCAT-11-1
+  CASE-002:
+    case_idx: 1
+    seed_casegen: 20260819
+    topic_tokens:
+    - movimentacao
+    - aprovacao
+    - transporte
+    topic_token: movimentacao
+    base_cats:
+    - MRCAT-07
+    - MRCAT-03
+    - MRCAT-04
+    - MRCAT-01
+    - MRCAT-06
+    - MRCAT-11
+    - MRCAT-02
+    - MRCAT-10
+    - MRCAT-12
+    new_cats:
+    - MRCAT-05
+    - MRCAT-08
+    - MRCAT-09
+    base_facts:
+    - O movimentacao executa o fluxo de tarefas e a rotina de operacao de aprovacao.
+    - O movimentacao mede as grandezas com quantificacao e mensuracao de transporte.
+    - O movimentacao organiza as responsabilidades e competencias da unidade de aprovacao.
+    - O movimentacao registra as ocorrencias com catalogacao e arquivamento de transporte.
+    - O movimentacao coleta dado e informacao bruta do ambiente de aprovacao.
+    - O movimentacao aponta o risco com contingencia e ameaca identificada de transporte.
+    - O movimentacao segue o protocolo com roteiro e sequencia padronizada de aprovacao.
+    - O movimentacao estabelece o prazo com cronograma e vencimento previsto de transporte.
+    - O movimentacao verifica a qualidade com avaliacao de aceitacao e aptidao de
+      aprovacao.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-10
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-06
+      - source: MRCAT-01
+        target: MRCAT-10
+      - source: MRCAT-01
+        target: MRCAT-11
+      - source: MRCAT-02
+        target: MRCAT-10
+      - source: MRCAT-02
+        target: MRCAT-12
+      - source: MRCAT-03
+        target: MRCAT-01
+      - source: MRCAT-03
+        target: MRCAT-04
+      - source: MRCAT-03
+        target: MRCAT-10
+      - source: MRCAT-03
+        target: MRCAT-11
+      - source: MRCAT-04
+        target: MRCAT-01
+      - source: MRCAT-04
+        target: MRCAT-02
+      - source: MRCAT-04
+        target: MRCAT-06
+      - source: MRCAT-04
+        target: MRCAT-12
+      - source: MRCAT-06
+        target: MRCAT-02
+      - source: MRCAT-06
+        target: MRCAT-11
+      - source: MRCAT-06
+        target: MRCAT-12
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-03
+      - source: MRCAT-07
+        target: MRCAT-04
+      - source: MRCAT-07
+        target: MRCAT-06
+      - source: MRCAT-07
+        target: MRCAT-12
+      - source: MRCAT-10
+        target: MRCAT-12
+      - source: MRCAT-11
+        target: MRCAT-02
+      - source: MRCAT-11
+        target: MRCAT-10
+    pools:
+      V1:
+      - candidate_id: CASE-002-V1-MRCAT-05-0
+        text: O movimentacao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-002-MRCAT-05-0
+      - candidate_id: CASE-002-V1-MRCAT-05-1
+        text: O movimentacao reposiciona o estoque e o fornecimento de suprimentos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-002-MRCAT-05-1
+      - candidate_id: CASE-002-V1-MRCAT-08-0
+        text: O movimentacao entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-002-MRCAT-08-0
+      - candidate_id: CASE-002-V1-MRCAT-08-1
+        text: O movimentacao entrega o produto entregavel como resultado final de
+          forma uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-002-MRCAT-08-1
+      - candidate_id: CASE-002-V1-MRCAT-09-0
+        text: O movimentacao atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-002-MRCAT-09-0
+      - candidate_id: CASE-002-V1-MRCAT-09-1
+        text: O movimentacao atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-002-MRCAT-09-1
+      V2:
+      - candidate_id: CASE-002-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-002-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-002-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-002-V2-MRCAT-01
+        text: Para o caso, arquivamento, catalogacao, ocorrencias, registra sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-002-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-002-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-002-V3-MRCAT-05-0
+        text: O movimentacao nao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-002-MRCAT-05-0
+      - candidate_id: CASE-002-V3-MRCAT-05-1
+        text: O movimentacao nao reposiciona o estoque e o fornecimento de suprimentos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-002-MRCAT-05-1
+      - candidate_id: CASE-002-V3-MRCAT-08-0
+        text: O movimentacao nao entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-002-MRCAT-08-0
+      - candidate_id: CASE-002-V3-MRCAT-08-1
+        text: O movimentacao nao entrega o produto entregavel como resultado final
+          de forma uniforme.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-002-MRCAT-08-1
+      - candidate_id: CASE-002-V3-MRCAT-09-0
+        text: O movimentacao nao atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-002-MRCAT-09-0
+      - candidate_id: CASE-002-V3-MRCAT-09-1
+        text: O movimentacao nao atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-002-MRCAT-09-1
+  CASE-003:
+    case_idx: 2
+    seed_casegen: 20260819
+    topic_tokens:
+    - equipe
+    - armazem
+    - lote
+    topic_token: equipe
+    base_cats:
+    - MRCAT-09
+    - MRCAT-11
+    - MRCAT-06
+    - MRCAT-08
+    - MRCAT-05
+    - MRCAT-07
+    - MRCAT-02
+    - MRCAT-01
+    - MRCAT-10
+    new_cats:
+    - MRCAT-03
+    - MRCAT-04
+    - MRCAT-12
+    base_facts:
+    - O equipe aplica o padrao com requisito e referencia de conformidade de armazem.
+    - O equipe aponta o risco com contingencia e ameaca identificada de lote.
+    - O equipe coleta dado e informacao bruta do ambiente de armazem.
+    - O equipe gera o produto entregavel como resultado final de lote.
+    - O equipe controla o estoque e o fornecimento de suprimentos de armazem.
+    - O equipe executa o fluxo de tarefas e a rotina de operacao de lote.
+    - O equipe segue o protocolo com roteiro e sequencia padronizada de armazem.
+    - O equipe registra as ocorrencias com catalogacao e arquivamento de lote.
+    - O equipe estabelece o prazo com cronograma e vencimento previsto de armazem.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-10
+      - source: MRCAT-02
+        target: MRCAT-01
+      - source: MRCAT-02
+        target: MRCAT-10
+      - source: MRCAT-06
+        target: MRCAT-02
+      - source: MRCAT-06
+        target: MRCAT-07
+      - source: MRCAT-06
+        target: MRCAT-08
+      - source: MRCAT-06
+        target: MRCAT-10
+      - source: MRCAT-07
+        target: MRCAT-01
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-07
+      - source: MRCAT-07
+        target: MRCAT-10
+      - source: MRCAT-08
+        target: MRCAT-01
+      - source: MRCAT-08
+        target: MRCAT-07
+      - source: MRCAT-08
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-02
+      - source: MRCAT-09
+        target: MRCAT-06
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-10
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-11
+        target: MRCAT-01
+      - source: MRCAT-11
+        target: MRCAT-06
+      - source: MRCAT-11
+        target: MRCAT-07
+      - source: MRCAT-11
+        target: MRCAT-08
+    pools:
+      V1:
+      - candidate_id: CASE-003-V1-MRCAT-03-0
+        text: O equipe confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-003-MRCAT-03-0
+      - candidate_id: CASE-003-V1-MRCAT-03-1
+        text: O equipe confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-003-MRCAT-03-1
+      - candidate_id: CASE-003-V1-MRCAT-04-0
+        text: O equipe reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-003-MRCAT-04-0
+      - candidate_id: CASE-003-V1-MRCAT-04-1
+        text: O equipe reforca as responsabilidades e competencias da unidade de forma
+          uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-003-MRCAT-04-1
+      - candidate_id: CASE-003-V1-MRCAT-12-0
+        text: O equipe confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-003-MRCAT-12-0
+      - candidate_id: CASE-003-V1-MRCAT-12-1
+        text: O equipe confere qualidade com avaliacao de aceitacao e aptidao de forma
+          uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-003-MRCAT-12-1
+      V2:
+      - candidate_id: CASE-003-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-003-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-003-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-003-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-003-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-003-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-003-V3-MRCAT-03-0
+        text: O equipe nao confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-003-MRCAT-03-0
+      - candidate_id: CASE-003-V3-MRCAT-03-1
+        text: O equipe nao confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-003-MRCAT-03-1
+      - candidate_id: CASE-003-V3-MRCAT-04-0
+        text: O equipe nao reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-003-MRCAT-04-0
+      - candidate_id: CASE-003-V3-MRCAT-04-1
+        text: O equipe nao reforca as responsabilidades e competencias da unidade
+          de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-003-MRCAT-04-1
+      - candidate_id: CASE-003-V3-MRCAT-12-0
+        text: O equipe nao confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-003-MRCAT-12-0
+      - candidate_id: CASE-003-V3-MRCAT-12-1
+        text: O equipe nao confere qualidade com avaliacao de aceitacao e aptidao
+          de forma uniforme.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-003-MRCAT-12-1
+  CASE-004:
+    case_idx: 3
+    seed_casegen: 20260819
+    topic_tokens:
+    - trajeto
+    - turno
+    - equipe
+    topic_token: trajeto
+    base_cats:
+    - MRCAT-03
+    - MRCAT-11
+    - MRCAT-04
+    - MRCAT-01
+    - MRCAT-06
+    - MRCAT-10
+    - MRCAT-09
+    - MRCAT-07
+    - MRCAT-08
+    new_cats:
+    - MRCAT-02
+    - MRCAT-05
+    - MRCAT-12
+    base_facts:
+    - O trajeto mede as grandezas com quantificacao e mensuracao de turno.
+    - O trajeto aponta o risco com contingencia e ameaca identificada de equipe.
+    - O trajeto organiza as responsabilidades e competencias da unidade de turno.
+    - O trajeto registra as ocorrencias com catalogacao e arquivamento de equipe.
+    - O trajeto coleta dado e informacao bruta do ambiente de turno.
+    - O trajeto estabelece o prazo com cronograma e vencimento previsto de equipe.
+    - O trajeto aplica o padrao com requisito e referencia de conformidade de turno.
+    - O trajeto executa o fluxo de tarefas e a rotina de operacao de equipe.
+    - O trajeto gera o produto entregavel como resultado final de turno.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-04
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-06
+      - source: MRCAT-01
+        target: MRCAT-07
+      - source: MRCAT-01
+        target: MRCAT-10
+      - source: MRCAT-02
+        target: MRCAT-04
+      - source: MRCAT-02
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-08
+      - source: MRCAT-02
+        target: MRCAT-09
+      - source: MRCAT-02
+        target: MRCAT-11
+      - source: MRCAT-04
+        target: MRCAT-01
+      - source: MRCAT-04
+        target: MRCAT-06
+      - source: MRCAT-04
+        target: MRCAT-08
+      - source: MRCAT-04
+        target: MRCAT-09
+      - source: MRCAT-06
+        target: MRCAT-08
+      - source: MRCAT-06
+        target: MRCAT-09
+      - source: MRCAT-06
+        target: MRCAT-10
+      - source: MRCAT-07
+        target: MRCAT-08
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-08
+      - source: MRCAT-10
+        target: MRCAT-07
+      - source: MRCAT-10
+        target: MRCAT-09
+      - source: MRCAT-11
+        target: MRCAT-01
+      - source: MRCAT-11
+        target: MRCAT-04
+      - source: MRCAT-11
+        target: MRCAT-07
+      - source: MRCAT-11
+        target: MRCAT-10
+    pools:
+      V1:
+      - candidate_id: CASE-004-V1-MRCAT-02-0
+        text: O trajeto adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-004-MRCAT-02-0
+      - candidate_id: CASE-004-V1-MRCAT-02-1
+        text: O trajeto adota o protocolo com roteiro e sequencia padronizada de forma
+          uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-004-MRCAT-02-1
+      - candidate_id: CASE-004-V1-MRCAT-05-0
+        text: O trajeto reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-004-MRCAT-05-0
+      - candidate_id: CASE-004-V1-MRCAT-05-1
+        text: O trajeto reposiciona o estoque e o fornecimento de suprimentos de forma
+          uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-004-MRCAT-05-1
+      - candidate_id: CASE-004-V1-MRCAT-12-0
+        text: O trajeto confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-004-MRCAT-12-0
+      - candidate_id: CASE-004-V1-MRCAT-12-1
+        text: O trajeto confere qualidade com avaliacao de aceitacao e aptidao de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-004-MRCAT-12-1
+      V2:
+      - candidate_id: CASE-004-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-004-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-004-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-004-V2-MRCAT-01
+        text: Para o caso, arquivamento, catalogacao, ocorrencias, registra sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-004-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-004-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-004-V3-MRCAT-02-0
+        text: O trajeto nao adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-004-MRCAT-02-0
+      - candidate_id: CASE-004-V3-MRCAT-02-1
+        text: O trajeto nao adota o protocolo com roteiro e sequencia padronizada
+          de forma uniforme.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-004-MRCAT-02-1
+      - candidate_id: CASE-004-V3-MRCAT-05-0
+        text: O trajeto nao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-004-MRCAT-05-0
+      - candidate_id: CASE-004-V3-MRCAT-05-1
+        text: O trajeto nao reposiciona o estoque e o fornecimento de suprimentos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-004-MRCAT-05-1
+      - candidate_id: CASE-004-V3-MRCAT-12-0
+        text: O trajeto nao confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-004-MRCAT-12-0
+      - candidate_id: CASE-004-V3-MRCAT-12-1
+        text: O trajeto nao confere qualidade com avaliacao de aceitacao e aptidao
+          de forma uniforme.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-004-MRCAT-12-1
+  CASE-005:
+    case_idx: 4
+    seed_casegen: 20260819
+    topic_tokens:
+    - destino
+    - origem
+    - vistoria
+    topic_token: destino
+    base_cats:
+    - MRCAT-10
+    - MRCAT-09
+    - MRCAT-11
+    - MRCAT-02
+    - MRCAT-08
+    - MRCAT-06
+    - MRCAT-12
+    - MRCAT-03
+    - MRCAT-04
+    new_cats:
+    - MRCAT-01
+    - MRCAT-05
+    - MRCAT-07
+    base_facts:
+    - O destino estabelece o prazo com cronograma e vencimento previsto de origem.
+    - O destino aplica o padrao com requisito e referencia de conformidade de vistoria.
+    - O destino aponta o risco com contingencia e ameaca identificada de origem.
+    - O destino segue o protocolo com roteiro e sequencia padronizada de vistoria.
+    - O destino gera o produto entregavel como resultado final de origem.
+    - O destino coleta dado e informacao bruta do ambiente de vistoria.
+    - O destino verifica a qualidade com avaliacao de aceitacao e aptidao de origem.
+    - O destino mede as grandezas com quantificacao e mensuracao de vistoria.
+    - O destino organiza as responsabilidades e competencias da unidade de origem.
+    g0:
+      nodes:
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-06
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-02
+        target: MRCAT-03
+      - source: MRCAT-02
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-08
+      - source: MRCAT-03
+        target: MRCAT-04
+      - source: MRCAT-06
+        target: MRCAT-03
+      - source: MRCAT-06
+        target: MRCAT-12
+      - source: MRCAT-08
+        target: MRCAT-04
+      - source: MRCAT-08
+        target: MRCAT-06
+      - source: MRCAT-08
+        target: MRCAT-12
+      - source: MRCAT-09
+        target: MRCAT-02
+      - source: MRCAT-09
+        target: MRCAT-03
+      - source: MRCAT-09
+        target: MRCAT-06
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-10
+        target: MRCAT-04
+      - source: MRCAT-10
+        target: MRCAT-08
+      - source: MRCAT-10
+        target: MRCAT-09
+      - source: MRCAT-10
+        target: MRCAT-11
+      - source: MRCAT-10
+        target: MRCAT-12
+      - source: MRCAT-11
+        target: MRCAT-02
+      - source: MRCAT-11
+        target: MRCAT-04
+      - source: MRCAT-11
+        target: MRCAT-08
+      - source: MRCAT-11
+        target: MRCAT-12
+      - source: MRCAT-12
+        target: MRCAT-03
+      - source: MRCAT-12
+        target: MRCAT-04
+    pools:
+      V1:
+      - candidate_id: CASE-005-V1-MRCAT-01-0
+        text: O destino amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-005-MRCAT-01-0
+      - candidate_id: CASE-005-V1-MRCAT-01-1
+        text: O destino amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-005-MRCAT-01-1
+      - candidate_id: CASE-005-V1-MRCAT-05-0
+        text: O destino reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-005-MRCAT-05-0
+      - candidate_id: CASE-005-V1-MRCAT-05-1
+        text: O destino reposiciona o estoque e o fornecimento de suprimentos de forma
+          uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-005-MRCAT-05-1
+      - candidate_id: CASE-005-V1-MRCAT-07-0
+        text: O destino organiza o fluxo de tarefas e a rotina de operacao.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V1
+        pair_id: CASE-005-MRCAT-07-0
+      - candidate_id: CASE-005-V1-MRCAT-07-1
+        text: O destino organiza o fluxo de tarefas e a rotina de operacao de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V1
+        pair_id: CASE-005-MRCAT-07-1
+      V2:
+      - candidate_id: CASE-005-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-005-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-005-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-005-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-005-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-005-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-005-V3-MRCAT-01-0
+        text: O destino nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-005-MRCAT-01-0
+      - candidate_id: CASE-005-V3-MRCAT-01-1
+        text: O destino nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-005-MRCAT-01-1
+      - candidate_id: CASE-005-V3-MRCAT-05-0
+        text: O destino nao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-005-MRCAT-05-0
+      - candidate_id: CASE-005-V3-MRCAT-05-1
+        text: O destino nao reposiciona o estoque e o fornecimento de suprimentos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-005-MRCAT-05-1
+      - candidate_id: CASE-005-V3-MRCAT-07-0
+        text: O destino nao organiza o fluxo de tarefas e a rotina de operacao.
+        intended_category: MRCAT-07
+        is_true: false
+        pool: V3
+        pair_id: CASE-005-MRCAT-07-0
+      - candidate_id: CASE-005-V3-MRCAT-07-1
+        text: O destino nao organiza o fluxo de tarefas e a rotina de operacao de
+          forma uniforme.
+        intended_category: MRCAT-07
+        is_true: false
+        pool: V3
+        pair_id: CASE-005-MRCAT-07-1
+  CASE-006:
+    case_idx: 5
+    seed_casegen: 20260819
+    topic_tokens:
+    - destino
+    - carga
+    - frota
+    topic_token: destino
+    base_cats:
+    - MRCAT-02
+    - MRCAT-05
+    - MRCAT-09
+    - MRCAT-10
+    - MRCAT-06
+    - MRCAT-01
+    - MRCAT-03
+    - MRCAT-11
+    - MRCAT-07
+    new_cats:
+    - MRCAT-04
+    - MRCAT-08
+    - MRCAT-12
+    base_facts:
+    - O destino segue o protocolo com roteiro e sequencia padronizada de carga.
+    - O destino controla o estoque e o fornecimento de suprimentos de frota.
+    - O destino aplica o padrao com requisito e referencia de conformidade de carga.
+    - O destino estabelece o prazo com cronograma e vencimento previsto de frota.
+    - O destino coleta dado e informacao bruta do ambiente de carga.
+    - O destino registra as ocorrencias com catalogacao e arquivamento de frota.
+    - O destino mede as grandezas com quantificacao e mensuracao de carga.
+    - O destino aponta o risco com contingencia e ameaca identificada de frota.
+    - O destino executa o fluxo de tarefas e a rotina de operacao de carga.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-05
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-03
+      - source: MRCAT-01
+        target: MRCAT-11
+      - source: MRCAT-02
+        target: MRCAT-03
+      - source: MRCAT-02
+        target: MRCAT-05
+      - source: MRCAT-02
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-07
+      - source: MRCAT-02
+        target: MRCAT-09
+      - source: MRCAT-03
+        target: MRCAT-07
+      - source: MRCAT-03
+        target: MRCAT-11
+      - source: MRCAT-05
+        target: MRCAT-01
+      - source: MRCAT-05
+        target: MRCAT-09
+      - source: MRCAT-05
+        target: MRCAT-10
+      - source: MRCAT-05
+        target: MRCAT-11
+      - source: MRCAT-06
+        target: MRCAT-01
+      - source: MRCAT-06
+        target: MRCAT-03
+      - source: MRCAT-06
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-03
+      - source: MRCAT-09
+        target: MRCAT-06
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-10
+      - source: MRCAT-10
+        target: MRCAT-01
+      - source: MRCAT-10
+        target: MRCAT-06
+      - source: MRCAT-10
+        target: MRCAT-11
+      - source: MRCAT-11
+        target: MRCAT-07
+    pools:
+      V1:
+      - candidate_id: CASE-006-V1-MRCAT-04-0
+        text: O destino reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-006-MRCAT-04-0
+      - candidate_id: CASE-006-V1-MRCAT-04-1
+        text: O destino reforca as responsabilidades e competencias da unidade de
+          forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-006-MRCAT-04-1
+      - candidate_id: CASE-006-V1-MRCAT-08-0
+        text: O destino entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-006-MRCAT-08-0
+      - candidate_id: CASE-006-V1-MRCAT-08-1
+        text: O destino entrega o produto entregavel como resultado final de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-006-MRCAT-08-1
+      - candidate_id: CASE-006-V1-MRCAT-12-0
+        text: O destino confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-006-MRCAT-12-0
+      - candidate_id: CASE-006-V1-MRCAT-12-1
+        text: O destino confere qualidade com avaliacao de aceitacao e aptidao de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-006-MRCAT-12-1
+      V2:
+      - candidate_id: CASE-006-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-006-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-006-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-006-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-006-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-006-V2-MRCAT-01
+        text: Para o caso, arquivamento, catalogacao, ocorrencias, registra sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-006-V3-MRCAT-04-0
+        text: O destino nao reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-006-MRCAT-04-0
+      - candidate_id: CASE-006-V3-MRCAT-04-1
+        text: O destino nao reforca as responsabilidades e competencias da unidade
+          de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-006-MRCAT-04-1
+      - candidate_id: CASE-006-V3-MRCAT-08-0
+        text: O destino nao entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-006-MRCAT-08-0
+      - candidate_id: CASE-006-V3-MRCAT-08-1
+        text: O destino nao entrega o produto entregavel como resultado final de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-006-MRCAT-08-1
+      - candidate_id: CASE-006-V3-MRCAT-12-0
+        text: O destino nao confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-006-MRCAT-12-0
+      - candidate_id: CASE-006-V3-MRCAT-12-1
+        text: O destino nao confere qualidade com avaliacao de aceitacao e aptidao
+          de forma uniforme.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-006-MRCAT-12-1
+  CASE-007:
+    case_idx: 6
+    seed_casegen: 20260819
+    topic_tokens:
+    - fornecedor
+    - movimentacao
+    - equipe
+    topic_token: fornecedor
+    base_cats:
+    - MRCAT-10
+    - MRCAT-04
+    - MRCAT-02
+    - MRCAT-06
+    - MRCAT-08
+    - MRCAT-03
+    - MRCAT-12
+    - MRCAT-09
+    - MRCAT-11
+    new_cats:
+    - MRCAT-01
+    - MRCAT-05
+    - MRCAT-07
+    base_facts:
+    - O fornecedor estabelece o prazo com cronograma e vencimento previsto de movimentacao.
+    - O fornecedor organiza as responsabilidades e competencias da unidade de equipe.
+    - O fornecedor segue o protocolo com roteiro e sequencia padronizada de movimentacao.
+    - O fornecedor coleta dado e informacao bruta do ambiente de equipe.
+    - O fornecedor gera o produto entregavel como resultado final de movimentacao.
+    - O fornecedor mede as grandezas com quantificacao e mensuracao de equipe.
+    - O fornecedor verifica a qualidade com avaliacao de aceitacao e aptidao de movimentacao.
+    - O fornecedor aplica o padrao com requisito e referencia de conformidade de equipe.
+    - O fornecedor aponta o risco com contingencia e ameaca identificada de movimentacao.
+    g0:
+      nodes:
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-06
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-02
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-08
+      - source: MRCAT-02
+        target: MRCAT-11
+      - source: MRCAT-02
+        target: MRCAT-12
+      - source: MRCAT-03
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-03
+      - source: MRCAT-03
+        target: MRCAT-06
+      - source: MRCAT-03
+        target: MRCAT-09
+      - source: MRCAT-03
+        target: MRCAT-12
+      - source: MRCAT-06
+        target: MRCAT-03
+      - source: MRCAT-06
+        target: MRCAT-08
+      - source: MRCAT-06
+        target: MRCAT-09
+      - source: MRCAT-08
+        target: MRCAT-03
+      - source: MRCAT-08
+        target: MRCAT-11
+      - source: MRCAT-08
+        target: MRCAT-12
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-10
+        target: MRCAT-02
+      - source: MRCAT-10
+        target: MRCAT-03
+      - source: MRCAT-10
+        target: MRCAT-08
+      - source: MRCAT-10
+        target: MRCAT-11
+      - source: MRCAT-10
+        target: MRCAT-12
+      - source: MRCAT-12
+        target: MRCAT-09
+      - source: MRCAT-12
+        target: MRCAT-11
+    pools:
+      V1:
+      - candidate_id: CASE-007-V1-MRCAT-01-0
+        text: O fornecedor amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-007-MRCAT-01-0
+      - candidate_id: CASE-007-V1-MRCAT-01-1
+        text: O fornecedor amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-007-MRCAT-01-1
+      - candidate_id: CASE-007-V1-MRCAT-05-0
+        text: O fornecedor reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-007-MRCAT-05-0
+      - candidate_id: CASE-007-V1-MRCAT-05-1
+        text: O fornecedor reposiciona o estoque e o fornecimento de suprimentos de
+          forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-007-MRCAT-05-1
+      - candidate_id: CASE-007-V1-MRCAT-07-0
+        text: O fornecedor organiza o fluxo de tarefas e a rotina de operacao.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V1
+        pair_id: CASE-007-MRCAT-07-0
+      - candidate_id: CASE-007-V1-MRCAT-07-1
+        text: O fornecedor organiza o fluxo de tarefas e a rotina de operacao de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V1
+        pair_id: CASE-007-MRCAT-07-1
+      V2:
+      - candidate_id: CASE-007-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-007-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-007-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-007-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-007-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-007-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-007-V3-MRCAT-01-0
+        text: O fornecedor nao amplia o registro das ocorrencias com catalogacao e
+          arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-007-MRCAT-01-0
+      - candidate_id: CASE-007-V3-MRCAT-01-1
+        text: O fornecedor nao amplia o registro das ocorrencias com catalogacao e
+          arquivamento de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-007-MRCAT-01-1
+      - candidate_id: CASE-007-V3-MRCAT-05-0
+        text: O fornecedor nao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-007-MRCAT-05-0
+      - candidate_id: CASE-007-V3-MRCAT-05-1
+        text: O fornecedor nao reposiciona o estoque e o fornecimento de suprimentos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-007-MRCAT-05-1
+      - candidate_id: CASE-007-V3-MRCAT-07-0
+        text: O fornecedor nao organiza o fluxo de tarefas e a rotina de operacao.
+        intended_category: MRCAT-07
+        is_true: false
+        pool: V3
+        pair_id: CASE-007-MRCAT-07-0
+      - candidate_id: CASE-007-V3-MRCAT-07-1
+        text: O fornecedor nao organiza o fluxo de tarefas e a rotina de operacao
+          de forma uniforme.
+        intended_category: MRCAT-07
+        is_true: false
+        pool: V3
+        pair_id: CASE-007-MRCAT-07-1
+  CASE-008:
+    case_idx: 7
+    seed_casegen: 20260819
+    topic_tokens:
+    - custeio
+    - destino
+    - relatorio
+    topic_token: custeio
+    base_cats:
+    - MRCAT-12
+    - MRCAT-07
+    - MRCAT-10
+    - MRCAT-04
+    - MRCAT-09
+    - MRCAT-06
+    - MRCAT-03
+    - MRCAT-11
+    - MRCAT-08
+    new_cats:
+    - MRCAT-01
+    - MRCAT-02
+    - MRCAT-05
+    base_facts:
+    - O custeio verifica a qualidade com avaliacao de aceitacao e aptidao de destino.
+    - O custeio executa o fluxo de tarefas e a rotina de operacao de relatorio.
+    - O custeio estabelece o prazo com cronograma e vencimento previsto de destino.
+    - O custeio organiza as responsabilidades e competencias da unidade de relatorio.
+    - O custeio aplica o padrao com requisito e referencia de conformidade de destino.
+    - O custeio coleta dado e informacao bruta do ambiente de relatorio.
+    - O custeio mede as grandezas com quantificacao e mensuracao de destino.
+    - O custeio aponta o risco com contingencia e ameaca identificada de relatorio.
+    - O custeio gera o produto entregavel como resultado final de destino.
+    g0:
+      nodes:
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-03
+        target: MRCAT-08
+      - source: MRCAT-03
+        target: MRCAT-11
+      - source: MRCAT-04
+        target: MRCAT-06
+      - source: MRCAT-04
+        target: MRCAT-09
+      - source: MRCAT-04
+        target: MRCAT-11
+      - source: MRCAT-06
+        target: MRCAT-03
+      - source: MRCAT-06
+        target: MRCAT-11
+      - source: MRCAT-07
+        target: MRCAT-04
+      - source: MRCAT-07
+        target: MRCAT-06
+      - source: MRCAT-07
+        target: MRCAT-10
+      - source: MRCAT-07
+        target: MRCAT-11
+      - source: MRCAT-09
+        target: MRCAT-03
+      - source: MRCAT-09
+        target: MRCAT-06
+      - source: MRCAT-09
+        target: MRCAT-08
+      - source: MRCAT-10
+        target: MRCAT-03
+      - source: MRCAT-10
+        target: MRCAT-04
+      - source: MRCAT-10
+        target: MRCAT-08
+      - source: MRCAT-10
+        target: MRCAT-09
+      - source: MRCAT-11
+        target: MRCAT-08
+      - source: MRCAT-12
+        target: MRCAT-03
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-08
+      - source: MRCAT-12
+        target: MRCAT-09
+      - source: MRCAT-12
+        target: MRCAT-10
+    pools:
+      V1:
+      - candidate_id: CASE-008-V1-MRCAT-01-0
+        text: O custeio amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-008-MRCAT-01-0
+      - candidate_id: CASE-008-V1-MRCAT-01-1
+        text: O custeio amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-008-MRCAT-01-1
+      - candidate_id: CASE-008-V1-MRCAT-02-0
+        text: O custeio adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-008-MRCAT-02-0
+      - candidate_id: CASE-008-V1-MRCAT-02-1
+        text: O custeio adota o protocolo com roteiro e sequencia padronizada de forma
+          uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-008-MRCAT-02-1
+      - candidate_id: CASE-008-V1-MRCAT-05-0
+        text: O custeio reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-008-MRCAT-05-0
+      - candidate_id: CASE-008-V1-MRCAT-05-1
+        text: O custeio reposiciona o estoque e o fornecimento de suprimentos de forma
+          uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-008-MRCAT-05-1
+      V2:
+      - candidate_id: CASE-008-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-008-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-008-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-008-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-008-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-008-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-008-V3-MRCAT-01-0
+        text: O custeio nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-008-MRCAT-01-0
+      - candidate_id: CASE-008-V3-MRCAT-01-1
+        text: O custeio nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-008-MRCAT-01-1
+      - candidate_id: CASE-008-V3-MRCAT-02-0
+        text: O custeio nao adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-008-MRCAT-02-0
+      - candidate_id: CASE-008-V3-MRCAT-02-1
+        text: O custeio nao adota o protocolo com roteiro e sequencia padronizada
+          de forma uniforme.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-008-MRCAT-02-1
+      - candidate_id: CASE-008-V3-MRCAT-05-0
+        text: O custeio nao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-008-MRCAT-05-0
+      - candidate_id: CASE-008-V3-MRCAT-05-1
+        text: O custeio nao reposiciona o estoque e o fornecimento de suprimentos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-008-MRCAT-05-1
+  CASE-009:
+    case_idx: 8
+    seed_casegen: 20260819
+    topic_tokens:
+    - pedido
+    - conferencia
+    - armazem
+    topic_token: pedido
+    base_cats:
+    - MRCAT-04
+    - MRCAT-12
+    - MRCAT-08
+    - MRCAT-10
+    - MRCAT-07
+    - MRCAT-05
+    - MRCAT-03
+    - MRCAT-09
+    - MRCAT-11
+    new_cats:
+    - MRCAT-01
+    - MRCAT-02
+    - MRCAT-06
+    base_facts:
+    - O pedido organiza as responsabilidades e competencias da unidade de conferencia.
+    - O pedido verifica a qualidade com avaliacao de aceitacao e aptidao de armazem.
+    - O pedido gera o produto entregavel como resultado final de conferencia.
+    - O pedido estabelece o prazo com cronograma e vencimento previsto de armazem.
+    - O pedido executa o fluxo de tarefas e a rotina de operacao de conferencia.
+    - O pedido controla o estoque e o fornecimento de suprimentos de armazem.
+    - O pedido mede as grandezas com quantificacao e mensuracao de conferencia.
+    - O pedido aplica o padrao com requisito e referencia de conformidade de armazem.
+    - O pedido aponta o risco com contingencia e ameaca identificada de conferencia.
+    g0:
+      nodes:
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-05
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-03
+        target: MRCAT-09
+      - source: MRCAT-03
+        target: MRCAT-11
+      - source: MRCAT-04
+        target: MRCAT-03
+      - source: MRCAT-04
+        target: MRCAT-07
+      - source: MRCAT-04
+        target: MRCAT-08
+      - source: MRCAT-04
+        target: MRCAT-11
+      - source: MRCAT-04
+        target: MRCAT-12
+      - source: MRCAT-05
+        target: MRCAT-03
+      - source: MRCAT-05
+        target: MRCAT-09
+      - source: MRCAT-07
+        target: MRCAT-03
+      - source: MRCAT-07
+        target: MRCAT-05
+      - source: MRCAT-07
+        target: MRCAT-11
+      - source: MRCAT-08
+        target: MRCAT-03
+      - source: MRCAT-08
+        target: MRCAT-07
+      - source: MRCAT-08
+        target: MRCAT-10
+      - source: MRCAT-08
+        target: MRCAT-11
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-10
+        target: MRCAT-05
+      - source: MRCAT-10
+        target: MRCAT-07
+      - source: MRCAT-10
+        target: MRCAT-09
+      - source: MRCAT-12
+        target: MRCAT-05
+      - source: MRCAT-12
+        target: MRCAT-08
+      - source: MRCAT-12
+        target: MRCAT-09
+      - source: MRCAT-12
+        target: MRCAT-10
+    pools:
+      V1:
+      - candidate_id: CASE-009-V1-MRCAT-01-0
+        text: O pedido amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-009-MRCAT-01-0
+      - candidate_id: CASE-009-V1-MRCAT-01-1
+        text: O pedido amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-009-MRCAT-01-1
+      - candidate_id: CASE-009-V1-MRCAT-02-0
+        text: O pedido adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-009-MRCAT-02-0
+      - candidate_id: CASE-009-V1-MRCAT-02-1
+        text: O pedido adota o protocolo com roteiro e sequencia padronizada de forma
+          uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-009-MRCAT-02-1
+      - candidate_id: CASE-009-V1-MRCAT-06-0
+        text: O pedido complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-009-MRCAT-06-0
+      - candidate_id: CASE-009-V1-MRCAT-06-1
+        text: O pedido complementa o dado e a informacao bruta coletada de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-009-MRCAT-06-1
+      V2:
+      - candidate_id: CASE-009-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-009-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-009-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-009-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-009-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-009-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-009-V3-MRCAT-01-0
+        text: O pedido nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-009-MRCAT-01-0
+      - candidate_id: CASE-009-V3-MRCAT-01-1
+        text: O pedido nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-009-MRCAT-01-1
+      - candidate_id: CASE-009-V3-MRCAT-02-0
+        text: O pedido nao adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-009-MRCAT-02-0
+      - candidate_id: CASE-009-V3-MRCAT-02-1
+        text: O pedido nao adota o protocolo com roteiro e sequencia padronizada de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-009-MRCAT-02-1
+      - candidate_id: CASE-009-V3-MRCAT-06-0
+        text: O pedido nao complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-009-MRCAT-06-0
+      - candidate_id: CASE-009-V3-MRCAT-06-1
+        text: O pedido nao complementa o dado e a informacao bruta coletada de forma
+          uniforme.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-009-MRCAT-06-1
+  CASE-010:
+    case_idx: 9
+    seed_casegen: 20260819
+    topic_tokens:
+    - turno
+    - frota
+    - motorista
+    topic_token: turno
+    base_cats:
+    - MRCAT-07
+    - MRCAT-02
+    - MRCAT-01
+    - MRCAT-10
+    - MRCAT-04
+    - MRCAT-05
+    - MRCAT-09
+    - MRCAT-11
+    - MRCAT-06
+    new_cats:
+    - MRCAT-03
+    - MRCAT-08
+    - MRCAT-12
+    base_facts:
+    - O turno executa o fluxo de tarefas e a rotina de operacao de frota.
+    - O turno segue o protocolo com roteiro e sequencia padronizada de motorista.
+    - O turno registra as ocorrencias com catalogacao e arquivamento de frota.
+    - O turno estabelece o prazo com cronograma e vencimento previsto de motorista.
+    - O turno organiza as responsabilidades e competencias da unidade de frota.
+    - O turno controla o estoque e o fornecimento de suprimentos de motorista.
+    - O turno aplica o padrao com requisito e referencia de conformidade de frota.
+    - O turno aponta o risco com contingencia e ameaca identificada de motorista.
+    - O turno coleta dado e informacao bruta do ambiente de frota.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-04
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-04
+      - source: MRCAT-01
+        target: MRCAT-06
+      - source: MRCAT-01
+        target: MRCAT-09
+      - source: MRCAT-01
+        target: MRCAT-10
+      - source: MRCAT-02
+        target: MRCAT-01
+      - source: MRCAT-02
+        target: MRCAT-07
+      - source: MRCAT-02
+        target: MRCAT-10
+      - source: MRCAT-02
+        target: MRCAT-11
+      - source: MRCAT-04
+        target: MRCAT-06
+      - source: MRCAT-04
+        target: MRCAT-07
+      - source: MRCAT-04
+        target: MRCAT-09
+      - source: MRCAT-07
+        target: MRCAT-01
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-04
+      - source: MRCAT-07
+        target: MRCAT-06
+      - source: MRCAT-07
+        target: MRCAT-09
+      - source: MRCAT-07
+        target: MRCAT-09
+      - source: MRCAT-07
+        target: MRCAT-11
+      - source: MRCAT-09
+        target: MRCAT-06
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-10
+        target: MRCAT-04
+      - source: MRCAT-10
+        target: MRCAT-07
+      - source: MRCAT-10
+        target: MRCAT-11
+      - source: MRCAT-11
+        target: MRCAT-06
+    pools:
+      V1:
+      - candidate_id: CASE-010-V1-MRCAT-03-0
+        text: O turno confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-010-MRCAT-03-0
+      - candidate_id: CASE-010-V1-MRCAT-03-1
+        text: O turno confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-010-MRCAT-03-1
+      - candidate_id: CASE-010-V1-MRCAT-08-0
+        text: O turno entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-010-MRCAT-08-0
+      - candidate_id: CASE-010-V1-MRCAT-08-1
+        text: O turno entrega o produto entregavel como resultado final de forma uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-010-MRCAT-08-1
+      - candidate_id: CASE-010-V1-MRCAT-12-0
+        text: O turno confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-010-MRCAT-12-0
+      - candidate_id: CASE-010-V1-MRCAT-12-1
+        text: O turno confere qualidade com avaliacao de aceitacao e aptidao de forma
+          uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-010-MRCAT-12-1
+      V2:
+      - candidate_id: CASE-010-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-010-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-010-V2-MRCAT-01
+        text: Para o caso, arquivamento, catalogacao, ocorrencias, registra sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-010-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-010-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-010-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-010-V3-MRCAT-03-0
+        text: O turno nao confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-010-MRCAT-03-0
+      - candidate_id: CASE-010-V3-MRCAT-03-1
+        text: O turno nao confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-010-MRCAT-03-1
+      - candidate_id: CASE-010-V3-MRCAT-08-0
+        text: O turno nao entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-010-MRCAT-08-0
+      - candidate_id: CASE-010-V3-MRCAT-08-1
+        text: O turno nao entrega o produto entregavel como resultado final de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-010-MRCAT-08-1
+      - candidate_id: CASE-010-V3-MRCAT-12-0
+        text: O turno nao confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-010-MRCAT-12-0
+      - candidate_id: CASE-010-V3-MRCAT-12-1
+        text: O turno nao confere qualidade com avaliacao de aceitacao e aptidao de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-010-MRCAT-12-1
+  CASE-011:
+    case_idx: 10
+    seed_casegen: 20260819
+    topic_tokens:
+    - escala
+    - motorista
+    - transporte
+    topic_token: escala
+    base_cats:
+    - MRCAT-01
+    - MRCAT-11
+    - MRCAT-09
+    - MRCAT-03
+    - MRCAT-12
+    - MRCAT-08
+    - MRCAT-07
+    - MRCAT-04
+    - MRCAT-02
+    new_cats:
+    - MRCAT-05
+    - MRCAT-06
+    - MRCAT-10
+    base_facts:
+    - O escala registra as ocorrencias com catalogacao e arquivamento de motorista.
+    - O escala aponta o risco com contingencia e ameaca identificada de transporte.
+    - O escala aplica o padrao com requisito e referencia de conformidade de motorista.
+    - O escala mede as grandezas com quantificacao e mensuracao de transporte.
+    - O escala verifica a qualidade com avaliacao de aceitacao e aptidao de motorista.
+    - O escala gera o produto entregavel como resultado final de transporte.
+    - O escala executa o fluxo de tarefas e a rotina de operacao de motorista.
+    - O escala organiza as responsabilidades e competencias da unidade de transporte.
+    - O escala segue o protocolo com roteiro e sequencia padronizada de motorista.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-02
+      - source: MRCAT-01
+        target: MRCAT-07
+      - source: MRCAT-01
+        target: MRCAT-09
+      - source: MRCAT-01
+        target: MRCAT-11
+      - source: MRCAT-01
+        target: MRCAT-12
+      - source: MRCAT-03
+        target: MRCAT-04
+      - source: MRCAT-03
+        target: MRCAT-08
+      - source: MRCAT-03
+        target: MRCAT-12
+      - source: MRCAT-04
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-04
+      - source: MRCAT-08
+        target: MRCAT-04
+      - source: MRCAT-08
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-02
+      - source: MRCAT-09
+        target: MRCAT-03
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-12
+      - source: MRCAT-11
+        target: MRCAT-03
+      - source: MRCAT-11
+        target: MRCAT-04
+      - source: MRCAT-11
+        target: MRCAT-08
+      - source: MRCAT-11
+        target: MRCAT-09
+      - source: MRCAT-12
+        target: MRCAT-02
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-08
+    pools:
+      V1:
+      - candidate_id: CASE-011-V1-MRCAT-05-0
+        text: O escala reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-011-MRCAT-05-0
+      - candidate_id: CASE-011-V1-MRCAT-05-1
+        text: O escala reposiciona o estoque e o fornecimento de suprimentos de forma
+          uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-011-MRCAT-05-1
+      - candidate_id: CASE-011-V1-MRCAT-06-0
+        text: O escala complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-011-MRCAT-06-0
+      - candidate_id: CASE-011-V1-MRCAT-06-1
+        text: O escala complementa o dado e a informacao bruta coletada de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-011-MRCAT-06-1
+      - candidate_id: CASE-011-V1-MRCAT-10-0
+        text: O escala conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-011-MRCAT-10-0
+      - candidate_id: CASE-011-V1-MRCAT-10-1
+        text: O escala conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-011-MRCAT-10-1
+      V2:
+      - candidate_id: CASE-011-V2-MRCAT-01
+        text: Para o caso, arquivamento, catalogacao, ocorrencias, registra sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-011-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-011-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-011-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-011-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-011-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-011-V3-MRCAT-05-0
+        text: O escala nao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-011-MRCAT-05-0
+      - candidate_id: CASE-011-V3-MRCAT-05-1
+        text: O escala nao reposiciona o estoque e o fornecimento de suprimentos de
+          forma uniforme.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-011-MRCAT-05-1
+      - candidate_id: CASE-011-V3-MRCAT-06-0
+        text: O escala nao complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-011-MRCAT-06-0
+      - candidate_id: CASE-011-V3-MRCAT-06-1
+        text: O escala nao complementa o dado e a informacao bruta coletada de forma
+          uniforme.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-011-MRCAT-06-1
+      - candidate_id: CASE-011-V3-MRCAT-10-0
+        text: O escala nao conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-011-MRCAT-10-0
+      - candidate_id: CASE-011-V3-MRCAT-10-1
+        text: O escala nao conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-011-MRCAT-10-1
+  CASE-012:
+    case_idx: 11
+    seed_casegen: 20260819
+    topic_tokens:
+    - cliente
+    - fornecedor
+    - veiculo
+    topic_token: cliente
+    base_cats:
+    - MRCAT-08
+    - MRCAT-11
+    - MRCAT-12
+    - MRCAT-10
+    - MRCAT-03
+    - MRCAT-04
+    - MRCAT-02
+    - MRCAT-07
+    - MRCAT-09
+    new_cats:
+    - MRCAT-01
+    - MRCAT-05
+    - MRCAT-06
+    base_facts:
+    - O cliente gera o produto entregavel como resultado final de fornecedor.
+    - O cliente aponta o risco com contingencia e ameaca identificada de veiculo.
+    - O cliente verifica a qualidade com avaliacao de aceitacao e aptidao de fornecedor.
+    - O cliente estabelece o prazo com cronograma e vencimento previsto de veiculo.
+    - O cliente mede as grandezas com quantificacao e mensuracao de fornecedor.
+    - O cliente organiza as responsabilidades e competencias da unidade de veiculo.
+    - O cliente segue o protocolo com roteiro e sequencia padronizada de fornecedor.
+    - O cliente executa o fluxo de tarefas e a rotina de operacao de veiculo.
+    - O cliente aplica o padrao com requisito e referencia de conformidade de fornecedor.
+    g0:
+      nodes:
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-02
+        target: MRCAT-07
+      - source: MRCAT-02
+        target: MRCAT-09
+      - source: MRCAT-03
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-04
+      - source: MRCAT-03
+        target: MRCAT-09
+      - source: MRCAT-04
+        target: MRCAT-02
+      - source: MRCAT-04
+        target: MRCAT-07
+      - source: MRCAT-07
+        target: MRCAT-09
+      - source: MRCAT-08
+        target: MRCAT-02
+      - source: MRCAT-08
+        target: MRCAT-03
+      - source: MRCAT-08
+        target: MRCAT-09
+      - source: MRCAT-08
+        target: MRCAT-11
+      - source: MRCAT-08
+        target: MRCAT-12
+      - source: MRCAT-10
+        target: MRCAT-03
+      - source: MRCAT-10
+        target: MRCAT-04
+      - source: MRCAT-10
+        target: MRCAT-07
+      - source: MRCAT-11
+        target: MRCAT-04
+      - source: MRCAT-11
+        target: MRCAT-07
+      - source: MRCAT-11
+        target: MRCAT-10
+      - source: MRCAT-11
+        target: MRCAT-12
+      - source: MRCAT-12
+        target: MRCAT-02
+      - source: MRCAT-12
+        target: MRCAT-03
+      - source: MRCAT-12
+        target: MRCAT-09
+      - source: MRCAT-12
+        target: MRCAT-10
+    pools:
+      V1:
+      - candidate_id: CASE-012-V1-MRCAT-01-0
+        text: O cliente amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-012-MRCAT-01-0
+      - candidate_id: CASE-012-V1-MRCAT-01-1
+        text: O cliente amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-012-MRCAT-01-1
+      - candidate_id: CASE-012-V1-MRCAT-05-0
+        text: O cliente reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-012-MRCAT-05-0
+      - candidate_id: CASE-012-V1-MRCAT-05-1
+        text: O cliente reposiciona o estoque e o fornecimento de suprimentos de forma
+          uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-012-MRCAT-05-1
+      - candidate_id: CASE-012-V1-MRCAT-06-0
+        text: O cliente complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-012-MRCAT-06-0
+      - candidate_id: CASE-012-V1-MRCAT-06-1
+        text: O cliente complementa o dado e a informacao bruta coletada de forma
+          uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-012-MRCAT-06-1
+      V2:
+      - candidate_id: CASE-012-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-012-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-012-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-012-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-012-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-012-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-012-V3-MRCAT-01-0
+        text: O cliente nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-012-MRCAT-01-0
+      - candidate_id: CASE-012-V3-MRCAT-01-1
+        text: O cliente nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-012-MRCAT-01-1
+      - candidate_id: CASE-012-V3-MRCAT-05-0
+        text: O cliente nao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-012-MRCAT-05-0
+      - candidate_id: CASE-012-V3-MRCAT-05-1
+        text: O cliente nao reposiciona o estoque e o fornecimento de suprimentos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-012-MRCAT-05-1
+      - candidate_id: CASE-012-V3-MRCAT-06-0
+        text: O cliente nao complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-012-MRCAT-06-0
+      - candidate_id: CASE-012-V3-MRCAT-06-1
+        text: O cliente nao complementa o dado e a informacao bruta coletada de forma
+          uniforme.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-012-MRCAT-06-1
+  CASE-013:
+    case_idx: 12
+    seed_casegen: 20260819
+    topic_tokens:
+    - escala
+    - motorista
+    - movimentacao
+    topic_token: escala
+    base_cats:
+    - MRCAT-05
+    - MRCAT-02
+    - MRCAT-12
+    - MRCAT-07
+    - MRCAT-09
+    - MRCAT-11
+    - MRCAT-08
+    - MRCAT-04
+    - MRCAT-01
+    new_cats:
+    - MRCAT-03
+    - MRCAT-06
+    - MRCAT-10
+    base_facts:
+    - O escala controla o estoque e o fornecimento de suprimentos de motorista.
+    - O escala segue o protocolo com roteiro e sequencia padronizada de movimentacao.
+    - O escala verifica a qualidade com avaliacao de aceitacao e aptidao de motorista.
+    - O escala executa o fluxo de tarefas e a rotina de operacao de movimentacao.
+    - O escala aplica o padrao com requisito e referencia de conformidade de motorista.
+    - O escala aponta o risco com contingencia e ameaca identificada de movimentacao.
+    - O escala gera o produto entregavel como resultado final de motorista.
+    - O escala organiza as responsabilidades e competencias da unidade de movimentacao.
+    - O escala registra as ocorrencias com catalogacao e arquivamento de motorista.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-04
+      - id: MRCAT-05
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-02
+        target: MRCAT-04
+      - source: MRCAT-02
+        target: MRCAT-07
+      - source: MRCAT-02
+        target: MRCAT-11
+      - source: MRCAT-02
+        target: MRCAT-12
+      - source: MRCAT-04
+        target: MRCAT-01
+      - source: MRCAT-05
+        target: MRCAT-01
+      - source: MRCAT-05
+        target: MRCAT-02
+      - source: MRCAT-05
+        target: MRCAT-08
+      - source: MRCAT-05
+        target: MRCAT-09
+      - source: MRCAT-05
+        target: MRCAT-12
+      - source: MRCAT-07
+        target: MRCAT-04
+      - source: MRCAT-07
+        target: MRCAT-09
+      - source: MRCAT-07
+        target: MRCAT-11
+      - source: MRCAT-08
+        target: MRCAT-01
+      - source: MRCAT-08
+        target: MRCAT-04
+      - source: MRCAT-09
+        target: MRCAT-01
+      - source: MRCAT-09
+        target: MRCAT-08
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-11
+        target: MRCAT-04
+      - source: MRCAT-11
+        target: MRCAT-08
+      - source: MRCAT-12
+        target: MRCAT-01
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-08
+      - source: MRCAT-12
+        target: MRCAT-09
+    pools:
+      V1:
+      - candidate_id: CASE-013-V1-MRCAT-03-0
+        text: O escala confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-013-MRCAT-03-0
+      - candidate_id: CASE-013-V1-MRCAT-03-1
+        text: O escala confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-013-MRCAT-03-1
+      - candidate_id: CASE-013-V1-MRCAT-06-0
+        text: O escala complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-013-MRCAT-06-0
+      - candidate_id: CASE-013-V1-MRCAT-06-1
+        text: O escala complementa o dado e a informacao bruta coletada de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-013-MRCAT-06-1
+      - candidate_id: CASE-013-V1-MRCAT-10-0
+        text: O escala conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-013-MRCAT-10-0
+      - candidate_id: CASE-013-V1-MRCAT-10-1
+        text: O escala conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-013-MRCAT-10-1
+      V2:
+      - candidate_id: CASE-013-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-013-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-013-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-013-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-013-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-013-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-013-V3-MRCAT-03-0
+        text: O escala nao confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-013-MRCAT-03-0
+      - candidate_id: CASE-013-V3-MRCAT-03-1
+        text: O escala nao confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-013-MRCAT-03-1
+      - candidate_id: CASE-013-V3-MRCAT-06-0
+        text: O escala nao complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-013-MRCAT-06-0
+      - candidate_id: CASE-013-V3-MRCAT-06-1
+        text: O escala nao complementa o dado e a informacao bruta coletada de forma
+          uniforme.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-013-MRCAT-06-1
+      - candidate_id: CASE-013-V3-MRCAT-10-0
+        text: O escala nao conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-013-MRCAT-10-0
+      - candidate_id: CASE-013-V3-MRCAT-10-1
+        text: O escala nao conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-013-MRCAT-10-1
+  CASE-014:
+    case_idx: 13
+    seed_casegen: 20260819
+    topic_tokens:
+    - frota
+    - armazem
+    - turno
+    topic_token: frota
+    base_cats:
+    - MRCAT-05
+    - MRCAT-08
+    - MRCAT-06
+    - MRCAT-10
+    - MRCAT-03
+    - MRCAT-01
+    - MRCAT-07
+    - MRCAT-12
+    - MRCAT-02
+    new_cats:
+    - MRCAT-04
+    - MRCAT-09
+    - MRCAT-11
+    base_facts:
+    - O frota controla o estoque e o fornecimento de suprimentos de armazem.
+    - O frota gera o produto entregavel como resultado final de turno.
+    - O frota coleta dado e informacao bruta do ambiente de armazem.
+    - O frota estabelece o prazo com cronograma e vencimento previsto de turno.
+    - O frota mede as grandezas com quantificacao e mensuracao de armazem.
+    - O frota registra as ocorrencias com catalogacao e arquivamento de turno.
+    - O frota executa o fluxo de tarefas e a rotina de operacao de armazem.
+    - O frota verifica a qualidade com avaliacao de aceitacao e aptidao de turno.
+    - O frota segue o protocolo com roteiro e sequencia padronizada de armazem.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-05
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-10
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-07
+      - source: MRCAT-01
+        target: MRCAT-12
+      - source: MRCAT-03
+        target: MRCAT-01
+      - source: MRCAT-03
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-07
+      - source: MRCAT-05
+        target: MRCAT-02
+      - source: MRCAT-05
+        target: MRCAT-03
+      - source: MRCAT-05
+        target: MRCAT-06
+      - source: MRCAT-05
+        target: MRCAT-07
+      - source: MRCAT-05
+        target: MRCAT-08
+      - source: MRCAT-06
+        target: MRCAT-02
+      - source: MRCAT-06
+        target: MRCAT-03
+      - source: MRCAT-06
+        target: MRCAT-07
+      - source: MRCAT-06
+        target: MRCAT-10
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-12
+      - source: MRCAT-08
+        target: MRCAT-01
+      - source: MRCAT-08
+        target: MRCAT-06
+      - source: MRCAT-08
+        target: MRCAT-10
+      - source: MRCAT-08
+        target: MRCAT-12
+      - source: MRCAT-10
+        target: MRCAT-01
+      - source: MRCAT-10
+        target: MRCAT-03
+      - source: MRCAT-10
+        target: MRCAT-12
+      - source: MRCAT-12
+        target: MRCAT-02
+    pools:
+      V1:
+      - candidate_id: CASE-014-V1-MRCAT-04-0
+        text: O frota reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-014-MRCAT-04-0
+      - candidate_id: CASE-014-V1-MRCAT-04-1
+        text: O frota reforca as responsabilidades e competencias da unidade de forma
+          uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-014-MRCAT-04-1
+      - candidate_id: CASE-014-V1-MRCAT-09-0
+        text: O frota atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-014-MRCAT-09-0
+      - candidate_id: CASE-014-V1-MRCAT-09-1
+        text: O frota atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-014-MRCAT-09-1
+      - candidate_id: CASE-014-V1-MRCAT-11-0
+        text: O frota enfrenta risco de contingencia com ameaca identificada.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V1
+        pair_id: CASE-014-MRCAT-11-0
+      - candidate_id: CASE-014-V1-MRCAT-11-1
+        text: O frota enfrenta risco de contingencia com ameaca identificada de forma
+          uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V1
+        pair_id: CASE-014-MRCAT-11-1
+      V2:
+      - candidate_id: CASE-014-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-014-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-014-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-014-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-014-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-014-V2-MRCAT-01
+        text: Para o caso, arquivamento, catalogacao, ocorrencias, registra sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-014-V3-MRCAT-04-0
+        text: O frota nao reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-014-MRCAT-04-0
+      - candidate_id: CASE-014-V3-MRCAT-04-1
+        text: O frota nao reforca as responsabilidades e competencias da unidade de
+          forma uniforme.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-014-MRCAT-04-1
+      - candidate_id: CASE-014-V3-MRCAT-09-0
+        text: O frota nao atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-014-MRCAT-09-0
+      - candidate_id: CASE-014-V3-MRCAT-09-1
+        text: O frota nao atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-014-MRCAT-09-1
+      - candidate_id: CASE-014-V3-MRCAT-11-0
+        text: O frota nao enfrenta risco de contingencia com ameaca identificada.
+        intended_category: MRCAT-11
+        is_true: false
+        pool: V3
+        pair_id: CASE-014-MRCAT-11-0
+      - candidate_id: CASE-014-V3-MRCAT-11-1
+        text: O frota nao enfrenta risco de contingencia com ameaca identificada de
+          forma uniforme.
+        intended_category: MRCAT-11
+        is_true: false
+        pool: V3
+        pair_id: CASE-014-MRCAT-11-1
+  CASE-015:
+    case_idx: 14
+    seed_casegen: 20260819
+    topic_tokens:
+    - escala
+    - coleta
+    - lote
+    topic_token: escala
+    base_cats:
+    - MRCAT-12
+    - MRCAT-07
+    - MRCAT-03
+    - MRCAT-06
+    - MRCAT-11
+    - MRCAT-05
+    - MRCAT-04
+    - MRCAT-01
+    - MRCAT-02
+    new_cats:
+    - MRCAT-08
+    - MRCAT-09
+    - MRCAT-10
+    base_facts:
+    - O escala verifica a qualidade com avaliacao de aceitacao e aptidao de coleta.
+    - O escala executa o fluxo de tarefas e a rotina de operacao de lote.
+    - O escala mede as grandezas com quantificacao e mensuracao de coleta.
+    - O escala coleta dado e informacao bruta do ambiente de lote.
+    - O escala aponta o risco com contingencia e ameaca identificada de coleta.
+    - O escala controla o estoque e o fornecimento de suprimentos de lote.
+    - O escala organiza as responsabilidades e competencias da unidade de coleta.
+    - O escala registra as ocorrencias com catalogacao e arquivamento de lote.
+    - O escala segue o protocolo com roteiro e sequencia padronizada de coleta.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-05
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-04
+      - source: MRCAT-03
+        target: MRCAT-06
+      - source: MRCAT-03
+        target: MRCAT-11
+      - source: MRCAT-04
+        target: MRCAT-01
+      - source: MRCAT-04
+        target: MRCAT-02
+      - source: MRCAT-05
+        target: MRCAT-01
+      - source: MRCAT-05
+        target: MRCAT-04
+      - source: MRCAT-06
+        target: MRCAT-01
+      - source: MRCAT-06
+        target: MRCAT-02
+      - source: MRCAT-06
+        target: MRCAT-04
+      - source: MRCAT-06
+        target: MRCAT-05
+      - source: MRCAT-06
+        target: MRCAT-11
+      - source: MRCAT-07
+        target: MRCAT-01
+      - source: MRCAT-07
+        target: MRCAT-03
+      - source: MRCAT-07
+        target: MRCAT-05
+      - source: MRCAT-07
+        target: MRCAT-06
+      - source: MRCAT-11
+        target: MRCAT-02
+      - source: MRCAT-11
+        target: MRCAT-04
+      - source: MRCAT-11
+        target: MRCAT-05
+      - source: MRCAT-12
+        target: MRCAT-02
+      - source: MRCAT-12
+        target: MRCAT-03
+      - source: MRCAT-12
+        target: MRCAT-04
+      - source: MRCAT-12
+        target: MRCAT-06
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-11
+    pools:
+      V1:
+      - candidate_id: CASE-015-V1-MRCAT-08-0
+        text: O escala entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-015-MRCAT-08-0
+      - candidate_id: CASE-015-V1-MRCAT-08-1
+        text: O escala entrega o produto entregavel como resultado final de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-015-MRCAT-08-1
+      - candidate_id: CASE-015-V1-MRCAT-09-0
+        text: O escala atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-015-MRCAT-09-0
+      - candidate_id: CASE-015-V1-MRCAT-09-1
+        text: O escala atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-015-MRCAT-09-1
+      - candidate_id: CASE-015-V1-MRCAT-10-0
+        text: O escala conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-015-MRCAT-10-0
+      - candidate_id: CASE-015-V1-MRCAT-10-1
+        text: O escala conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-015-MRCAT-10-1
+      V2:
+      - candidate_id: CASE-015-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-015-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-015-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-015-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-015-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-015-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-015-V3-MRCAT-08-0
+        text: O escala nao entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-015-MRCAT-08-0
+      - candidate_id: CASE-015-V3-MRCAT-08-1
+        text: O escala nao entrega o produto entregavel como resultado final de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-015-MRCAT-08-1
+      - candidate_id: CASE-015-V3-MRCAT-09-0
+        text: O escala nao atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-015-MRCAT-09-0
+      - candidate_id: CASE-015-V3-MRCAT-09-1
+        text: O escala nao atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-015-MRCAT-09-1
+      - candidate_id: CASE-015-V3-MRCAT-10-0
+        text: O escala nao conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-015-MRCAT-10-0
+      - candidate_id: CASE-015-V3-MRCAT-10-1
+        text: O escala nao conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-015-MRCAT-10-1
+  CASE-016:
+    case_idx: 15
+    seed_casegen: 20260819
+    topic_tokens:
+    - custeio
+    - pedido
+    - entrega
+    topic_token: custeio
+    base_cats:
+    - MRCAT-05
+    - MRCAT-10
+    - MRCAT-03
+    - MRCAT-06
+    - MRCAT-02
+    - MRCAT-01
+    - MRCAT-08
+    - MRCAT-09
+    - MRCAT-11
+    new_cats:
+    - MRCAT-04
+    - MRCAT-07
+    - MRCAT-12
+    base_facts:
+    - O custeio controla o estoque e o fornecimento de suprimentos de pedido.
+    - O custeio estabelece o prazo com cronograma e vencimento previsto de entrega.
+    - O custeio mede as grandezas com quantificacao e mensuracao de pedido.
+    - O custeio coleta dado e informacao bruta do ambiente de entrega.
+    - O custeio segue o protocolo com roteiro e sequencia padronizada de pedido.
+    - O custeio registra as ocorrencias com catalogacao e arquivamento de entrega.
+    - O custeio gera o produto entregavel como resultado final de pedido.
+    - O custeio aplica o padrao com requisito e referencia de conformidade de entrega.
+    - O custeio aponta o risco com contingencia e ameaca identificada de pedido.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-05
+      - id: MRCAT-06
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-08
+      - source: MRCAT-01
+        target: MRCAT-09
+      - source: MRCAT-02
+        target: MRCAT-01
+      - source: MRCAT-02
+        target: MRCAT-08
+      - source: MRCAT-02
+        target: MRCAT-11
+      - source: MRCAT-03
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-06
+      - source: MRCAT-03
+        target: MRCAT-08
+      - source: MRCAT-03
+        target: MRCAT-11
+      - source: MRCAT-05
+        target: MRCAT-02
+      - source: MRCAT-05
+        target: MRCAT-03
+      - source: MRCAT-05
+        target: MRCAT-08
+      - source: MRCAT-05
+        target: MRCAT-10
+      - source: MRCAT-05
+        target: MRCAT-11
+      - source: MRCAT-06
+        target: MRCAT-01
+      - source: MRCAT-06
+        target: MRCAT-02
+      - source: MRCAT-06
+        target: MRCAT-09
+      - source: MRCAT-08
+        target: MRCAT-09
+      - source: MRCAT-08
+        target: MRCAT-11
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-10
+        target: MRCAT-01
+      - source: MRCAT-10
+        target: MRCAT-03
+      - source: MRCAT-10
+        target: MRCAT-06
+      - source: MRCAT-10
+        target: MRCAT-09
+    pools:
+      V1:
+      - candidate_id: CASE-016-V1-MRCAT-04-0
+        text: O custeio reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-016-MRCAT-04-0
+      - candidate_id: CASE-016-V1-MRCAT-04-1
+        text: O custeio reforca as responsabilidades e competencias da unidade de
+          forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-016-MRCAT-04-1
+      - candidate_id: CASE-016-V1-MRCAT-07-0
+        text: O custeio organiza o fluxo de tarefas e a rotina de operacao.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V1
+        pair_id: CASE-016-MRCAT-07-0
+      - candidate_id: CASE-016-V1-MRCAT-07-1
+        text: O custeio organiza o fluxo de tarefas e a rotina de operacao de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V1
+        pair_id: CASE-016-MRCAT-07-1
+      - candidate_id: CASE-016-V1-MRCAT-12-0
+        text: O custeio confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-016-MRCAT-12-0
+      - candidate_id: CASE-016-V1-MRCAT-12-1
+        text: O custeio confere qualidade com avaliacao de aceitacao e aptidao de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-016-MRCAT-12-1
+      V2:
+      - candidate_id: CASE-016-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-016-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-016-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-016-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-016-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-016-V2-MRCAT-01
+        text: Para o caso, arquivamento, catalogacao, ocorrencias, registra sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-016-V3-MRCAT-04-0
+        text: O custeio nao reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-016-MRCAT-04-0
+      - candidate_id: CASE-016-V3-MRCAT-04-1
+        text: O custeio nao reforca as responsabilidades e competencias da unidade
+          de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-016-MRCAT-04-1
+      - candidate_id: CASE-016-V3-MRCAT-07-0
+        text: O custeio nao organiza o fluxo de tarefas e a rotina de operacao.
+        intended_category: MRCAT-07
+        is_true: false
+        pool: V3
+        pair_id: CASE-016-MRCAT-07-0
+      - candidate_id: CASE-016-V3-MRCAT-07-1
+        text: O custeio nao organiza o fluxo de tarefas e a rotina de operacao de
+          forma uniforme.
+        intended_category: MRCAT-07
+        is_true: false
+        pool: V3
+        pair_id: CASE-016-MRCAT-07-1
+      - candidate_id: CASE-016-V3-MRCAT-12-0
+        text: O custeio nao confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-016-MRCAT-12-0
+      - candidate_id: CASE-016-V3-MRCAT-12-1
+        text: O custeio nao confere qualidade com avaliacao de aceitacao e aptidao
+          de forma uniforme.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-016-MRCAT-12-1
+  CASE-017:
+    case_idx: 16
+    seed_casegen: 20260819
+    topic_tokens:
+    - entrega
+    - conferencia
+    - fornecedor
+    topic_token: entrega
+    base_cats:
+    - MRCAT-12
+    - MRCAT-08
+    - MRCAT-04
+    - MRCAT-05
+    - MRCAT-11
+    - MRCAT-10
+    - MRCAT-09
+    - MRCAT-03
+    - MRCAT-07
+    new_cats:
+    - MRCAT-01
+    - MRCAT-02
+    - MRCAT-06
+    base_facts:
+    - O entrega verifica a qualidade com avaliacao de aceitacao e aptidao de conferencia.
+    - O entrega gera o produto entregavel como resultado final de fornecedor.
+    - O entrega organiza as responsabilidades e competencias da unidade de conferencia.
+    - O entrega controla o estoque e o fornecimento de suprimentos de fornecedor.
+    - O entrega aponta o risco com contingencia e ameaca identificada de conferencia.
+    - O entrega estabelece o prazo com cronograma e vencimento previsto de fornecedor.
+    - O entrega aplica o padrao com requisito e referencia de conformidade de conferencia.
+    - O entrega mede as grandezas com quantificacao e mensuracao de fornecedor.
+    - O entrega executa o fluxo de tarefas e a rotina de operacao de conferencia.
+    g0:
+      nodes:
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-05
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-03
+        target: MRCAT-07
+      - source: MRCAT-04
+        target: MRCAT-05
+      - source: MRCAT-04
+        target: MRCAT-07
+      - source: MRCAT-04
+        target: MRCAT-09
+      - source: MRCAT-04
+        target: MRCAT-11
+      - source: MRCAT-05
+        target: MRCAT-03
+      - source: MRCAT-05
+        target: MRCAT-10
+      - source: MRCAT-05
+        target: MRCAT-11
+      - source: MRCAT-08
+        target: MRCAT-03
+      - source: MRCAT-08
+        target: MRCAT-04
+      - source: MRCAT-08
+        target: MRCAT-05
+      - source: MRCAT-08
+        target: MRCAT-10
+      - source: MRCAT-09
+        target: MRCAT-03
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-10
+        target: MRCAT-03
+      - source: MRCAT-10
+        target: MRCAT-09
+      - source: MRCAT-11
+        target: MRCAT-07
+      - source: MRCAT-11
+        target: MRCAT-09
+      - source: MRCAT-11
+        target: MRCAT-10
+      - source: MRCAT-12
+        target: MRCAT-04
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-08
+      - source: MRCAT-12
+        target: MRCAT-09
+      - source: MRCAT-12
+        target: MRCAT-11
+    pools:
+      V1:
+      - candidate_id: CASE-017-V1-MRCAT-01-0
+        text: O entrega amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-017-MRCAT-01-0
+      - candidate_id: CASE-017-V1-MRCAT-01-1
+        text: O entrega amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-017-MRCAT-01-1
+      - candidate_id: CASE-017-V1-MRCAT-02-0
+        text: O entrega adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-017-MRCAT-02-0
+      - candidate_id: CASE-017-V1-MRCAT-02-1
+        text: O entrega adota o protocolo com roteiro e sequencia padronizada de forma
+          uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-017-MRCAT-02-1
+      - candidate_id: CASE-017-V1-MRCAT-06-0
+        text: O entrega complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-017-MRCAT-06-0
+      - candidate_id: CASE-017-V1-MRCAT-06-1
+        text: O entrega complementa o dado e a informacao bruta coletada de forma
+          uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-017-MRCAT-06-1
+      V2:
+      - candidate_id: CASE-017-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-017-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-017-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-017-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-017-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-017-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-017-V3-MRCAT-01-0
+        text: O entrega nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-017-MRCAT-01-0
+      - candidate_id: CASE-017-V3-MRCAT-01-1
+        text: O entrega nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-017-MRCAT-01-1
+      - candidate_id: CASE-017-V3-MRCAT-02-0
+        text: O entrega nao adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-017-MRCAT-02-0
+      - candidate_id: CASE-017-V3-MRCAT-02-1
+        text: O entrega nao adota o protocolo com roteiro e sequencia padronizada
+          de forma uniforme.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-017-MRCAT-02-1
+      - candidate_id: CASE-017-V3-MRCAT-06-0
+        text: O entrega nao complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-017-MRCAT-06-0
+      - candidate_id: CASE-017-V3-MRCAT-06-1
+        text: O entrega nao complementa o dado e a informacao bruta coletada de forma
+          uniforme.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-017-MRCAT-06-1
+  CASE-018:
+    case_idx: 17
+    seed_casegen: 20260819
+    topic_tokens:
+    - origem
+    - conferencia
+    - aprovacao
+    topic_token: origem
+    base_cats:
+    - MRCAT-09
+    - MRCAT-07
+    - MRCAT-10
+    - MRCAT-11
+    - MRCAT-04
+    - MRCAT-02
+    - MRCAT-08
+    - MRCAT-12
+    - MRCAT-05
+    new_cats:
+    - MRCAT-01
+    - MRCAT-03
+    - MRCAT-06
+    base_facts:
+    - O origem aplica o padrao com requisito e referencia de conformidade de conferencia.
+    - O origem executa o fluxo de tarefas e a rotina de operacao de aprovacao.
+    - O origem estabelece o prazo com cronograma e vencimento previsto de conferencia.
+    - O origem aponta o risco com contingencia e ameaca identificada de aprovacao.
+    - O origem organiza as responsabilidades e competencias da unidade de conferencia.
+    - O origem segue o protocolo com roteiro e sequencia padronizada de aprovacao.
+    - O origem gera o produto entregavel como resultado final de conferencia.
+    - O origem verifica a qualidade com avaliacao de aceitacao e aptidao de aprovacao.
+    - O origem controla o estoque e o fornecimento de suprimentos de conferencia.
+    g0:
+      nodes:
+      - id: MRCAT-02
+      - id: MRCAT-04
+      - id: MRCAT-05
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-02
+        target: MRCAT-08
+      - source: MRCAT-02
+        target: MRCAT-12
+      - source: MRCAT-04
+        target: MRCAT-02
+      - source: MRCAT-04
+        target: MRCAT-05
+      - source: MRCAT-04
+        target: MRCAT-08
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-10
+      - source: MRCAT-07
+        target: MRCAT-11
+      - source: MRCAT-07
+        target: MRCAT-12
+      - source: MRCAT-08
+        target: MRCAT-05
+      - source: MRCAT-08
+        target: MRCAT-12
+      - source: MRCAT-09
+        target: MRCAT-04
+      - source: MRCAT-09
+        target: MRCAT-05
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-08
+      - source: MRCAT-09
+        target: MRCAT-10
+      - source: MRCAT-10
+        target: MRCAT-04
+      - source: MRCAT-10
+        target: MRCAT-05
+      - source: MRCAT-10
+        target: MRCAT-08
+      - source: MRCAT-10
+        target: MRCAT-11
+      - source: MRCAT-11
+        target: MRCAT-02
+      - source: MRCAT-11
+        target: MRCAT-04
+      - source: MRCAT-11
+        target: MRCAT-12
+      - source: MRCAT-12
+        target: MRCAT-05
+    pools:
+      V1:
+      - candidate_id: CASE-018-V1-MRCAT-01-0
+        text: O origem amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-018-MRCAT-01-0
+      - candidate_id: CASE-018-V1-MRCAT-01-1
+        text: O origem amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-018-MRCAT-01-1
+      - candidate_id: CASE-018-V1-MRCAT-03-0
+        text: O origem confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-018-MRCAT-03-0
+      - candidate_id: CASE-018-V1-MRCAT-03-1
+        text: O origem confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-018-MRCAT-03-1
+      - candidate_id: CASE-018-V1-MRCAT-06-0
+        text: O origem complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-018-MRCAT-06-0
+      - candidate_id: CASE-018-V1-MRCAT-06-1
+        text: O origem complementa o dado e a informacao bruta coletada de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V1
+        pair_id: CASE-018-MRCAT-06-1
+      V2:
+      - candidate_id: CASE-018-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-018-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-018-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-018-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-018-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-018-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-018-V3-MRCAT-01-0
+        text: O origem nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-018-MRCAT-01-0
+      - candidate_id: CASE-018-V3-MRCAT-01-1
+        text: O origem nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-018-MRCAT-01-1
+      - candidate_id: CASE-018-V3-MRCAT-03-0
+        text: O origem nao confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-018-MRCAT-03-0
+      - candidate_id: CASE-018-V3-MRCAT-03-1
+        text: O origem nao confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-018-MRCAT-03-1
+      - candidate_id: CASE-018-V3-MRCAT-06-0
+        text: O origem nao complementa o dado e a informacao bruta coletada.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-018-MRCAT-06-0
+      - candidate_id: CASE-018-V3-MRCAT-06-1
+        text: O origem nao complementa o dado e a informacao bruta coletada de forma
+          uniforme.
+        intended_category: MRCAT-06
+        is_true: false
+        pool: V3
+        pair_id: CASE-018-MRCAT-06-1
+  CASE-019:
+    case_idx: 18
+    seed_casegen: 20260819
+    topic_tokens:
+    - turno
+    - frota
+    - fornecedor
+    topic_token: turno
+    base_cats:
+    - MRCAT-04
+    - MRCAT-02
+    - MRCAT-06
+    - MRCAT-10
+    - MRCAT-12
+    - MRCAT-09
+    - MRCAT-07
+    - MRCAT-05
+    - MRCAT-01
+    new_cats:
+    - MRCAT-03
+    - MRCAT-08
+    - MRCAT-11
+    base_facts:
+    - O turno organiza as responsabilidades e competencias da unidade de frota.
+    - O turno segue o protocolo com roteiro e sequencia padronizada de fornecedor.
+    - O turno coleta dado e informacao bruta do ambiente de frota.
+    - O turno estabelece o prazo com cronograma e vencimento previsto de fornecedor.
+    - O turno verifica a qualidade com avaliacao de aceitacao e aptidao de frota.
+    - O turno aplica o padrao com requisito e referencia de conformidade de fornecedor.
+    - O turno executa o fluxo de tarefas e a rotina de operacao de frota.
+    - O turno controla o estoque e o fornecimento de suprimentos de fornecedor.
+    - O turno registra as ocorrencias com catalogacao e arquivamento de frota.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-04
+      - id: MRCAT-05
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-02
+        target: MRCAT-05
+      - source: MRCAT-02
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-09
+      - source: MRCAT-02
+        target: MRCAT-10
+      - source: MRCAT-04
+        target: MRCAT-01
+      - source: MRCAT-04
+        target: MRCAT-02
+      - source: MRCAT-04
+        target: MRCAT-06
+      - source: MRCAT-04
+        target: MRCAT-07
+      - source: MRCAT-04
+        target: MRCAT-12
+      - source: MRCAT-05
+        target: MRCAT-01
+      - source: MRCAT-06
+        target: MRCAT-01
+      - source: MRCAT-06
+        target: MRCAT-07
+      - source: MRCAT-06
+        target: MRCAT-10
+      - source: MRCAT-06
+        target: MRCAT-12
+      - source: MRCAT-07
+        target: MRCAT-01
+      - source: MRCAT-07
+        target: MRCAT-05
+      - source: MRCAT-09
+        target: MRCAT-05
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-10
+        target: MRCAT-05
+      - source: MRCAT-10
+        target: MRCAT-09
+      - source: MRCAT-10
+        target: MRCAT-12
+      - source: MRCAT-12
+        target: MRCAT-01
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-09
+    pools:
+      V1:
+      - candidate_id: CASE-019-V1-MRCAT-03-0
+        text: O turno confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-019-MRCAT-03-0
+      - candidate_id: CASE-019-V1-MRCAT-03-1
+        text: O turno confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V1
+        pair_id: CASE-019-MRCAT-03-1
+      - candidate_id: CASE-019-V1-MRCAT-08-0
+        text: O turno entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-019-MRCAT-08-0
+      - candidate_id: CASE-019-V1-MRCAT-08-1
+        text: O turno entrega o produto entregavel como resultado final de forma uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-019-MRCAT-08-1
+      - candidate_id: CASE-019-V1-MRCAT-11-0
+        text: O turno enfrenta risco de contingencia com ameaca identificada.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V1
+        pair_id: CASE-019-MRCAT-11-0
+      - candidate_id: CASE-019-V1-MRCAT-11-1
+        text: O turno enfrenta risco de contingencia com ameaca identificada de forma
+          uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V1
+        pair_id: CASE-019-MRCAT-11-1
+      V2:
+      - candidate_id: CASE-019-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-019-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-019-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-019-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-019-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-019-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-019-V3-MRCAT-03-0
+        text: O turno nao confirma a medida com quantificacao e mensuracao das grandezas.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-019-MRCAT-03-0
+      - candidate_id: CASE-019-V3-MRCAT-03-1
+        text: O turno nao confirma a medida com quantificacao e mensuracao das grandezas
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: false
+        pool: V3
+        pair_id: CASE-019-MRCAT-03-1
+      - candidate_id: CASE-019-V3-MRCAT-08-0
+        text: O turno nao entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-019-MRCAT-08-0
+      - candidate_id: CASE-019-V3-MRCAT-08-1
+        text: O turno nao entrega o produto entregavel como resultado final de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-019-MRCAT-08-1
+      - candidate_id: CASE-019-V3-MRCAT-11-0
+        text: O turno nao enfrenta risco de contingencia com ameaca identificada.
+        intended_category: MRCAT-11
+        is_true: false
+        pool: V3
+        pair_id: CASE-019-MRCAT-11-0
+      - candidate_id: CASE-019-V3-MRCAT-11-1
+        text: O turno nao enfrenta risco de contingencia com ameaca identificada de
+          forma uniforme.
+        intended_category: MRCAT-11
+        is_true: false
+        pool: V3
+        pair_id: CASE-019-MRCAT-11-1
+  CASE-020:
+    case_idx: 19
+    seed_casegen: 20260819
+    topic_tokens:
+    - armazem
+    - trajeto
+    - transporte
+    topic_token: armazem
+    base_cats:
+    - MRCAT-09
+    - MRCAT-02
+    - MRCAT-04
+    - MRCAT-06
+    - MRCAT-10
+    - MRCAT-11
+    - MRCAT-07
+    - MRCAT-08
+    - MRCAT-03
+    new_cats:
+    - MRCAT-01
+    - MRCAT-05
+    - MRCAT-12
+    base_facts:
+    - O armazem aplica o padrao com requisito e referencia de conformidade de trajeto.
+    - O armazem segue o protocolo com roteiro e sequencia padronizada de transporte.
+    - O armazem organiza as responsabilidades e competencias da unidade de trajeto.
+    - O armazem coleta dado e informacao bruta do ambiente de transporte.
+    - O armazem estabelece o prazo com cronograma e vencimento previsto de trajeto.
+    - O armazem aponta o risco com contingencia e ameaca identificada de transporte.
+    - O armazem executa o fluxo de tarefas e a rotina de operacao de trajeto.
+    - O armazem gera o produto entregavel como resultado final de transporte.
+    - O armazem mede as grandezas com quantificacao e mensuracao de trajeto.
+    g0:
+      nodes:
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-10
+      - id: MRCAT-11
+      edges:
+      - source: MRCAT-02
+        target: MRCAT-04
+      - source: MRCAT-02
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-08
+      - source: MRCAT-02
+        target: MRCAT-11
+      - source: MRCAT-04
+        target: MRCAT-03
+      - source: MRCAT-04
+        target: MRCAT-06
+      - source: MRCAT-04
+        target: MRCAT-07
+      - source: MRCAT-04
+        target: MRCAT-10
+      - source: MRCAT-06
+        target: MRCAT-08
+      - source: MRCAT-06
+        target: MRCAT-10
+      - source: MRCAT-06
+        target: MRCAT-11
+      - source: MRCAT-07
+        target: MRCAT-03
+      - source: MRCAT-07
+        target: MRCAT-08
+      - source: MRCAT-08
+        target: MRCAT-03
+      - source: MRCAT-09
+        target: MRCAT-02
+      - source: MRCAT-09
+        target: MRCAT-03
+      - source: MRCAT-09
+        target: MRCAT-04
+      - source: MRCAT-09
+        target: MRCAT-07
+      - source: MRCAT-09
+        target: MRCAT-10
+      - source: MRCAT-10
+        target: MRCAT-03
+      - source: MRCAT-10
+        target: MRCAT-07
+      - source: MRCAT-10
+        target: MRCAT-11
+      - source: MRCAT-11
+        target: MRCAT-07
+      - source: MRCAT-11
+        target: MRCAT-08
+    pools:
+      V1:
+      - candidate_id: CASE-020-V1-MRCAT-01-0
+        text: O armazem amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-020-MRCAT-01-0
+      - candidate_id: CASE-020-V1-MRCAT-01-1
+        text: O armazem amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-020-MRCAT-01-1
+      - candidate_id: CASE-020-V1-MRCAT-05-0
+        text: O armazem reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-020-MRCAT-05-0
+      - candidate_id: CASE-020-V1-MRCAT-05-1
+        text: O armazem reposiciona o estoque e o fornecimento de suprimentos de forma
+          uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V1
+        pair_id: CASE-020-MRCAT-05-1
+      - candidate_id: CASE-020-V1-MRCAT-12-0
+        text: O armazem confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-020-MRCAT-12-0
+      - candidate_id: CASE-020-V1-MRCAT-12-1
+        text: O armazem confere qualidade com avaliacao de aceitacao e aptidao de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-020-MRCAT-12-1
+      V2:
+      - candidate_id: CASE-020-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-020-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-020-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-020-V2-MRCAT-06
+        text: Para o caso, ambiente, bruta, coleta, dado sao mantidos de forma uniforme.
+        intended_category: MRCAT-06
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-020-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-020-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-020-V3-MRCAT-01-0
+        text: O armazem nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-020-MRCAT-01-0
+      - candidate_id: CASE-020-V3-MRCAT-01-1
+        text: O armazem nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-020-MRCAT-01-1
+      - candidate_id: CASE-020-V3-MRCAT-05-0
+        text: O armazem nao reposiciona o estoque e o fornecimento de suprimentos.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-020-MRCAT-05-0
+      - candidate_id: CASE-020-V3-MRCAT-05-1
+        text: O armazem nao reposiciona o estoque e o fornecimento de suprimentos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: false
+        pool: V3
+        pair_id: CASE-020-MRCAT-05-1
+      - candidate_id: CASE-020-V3-MRCAT-12-0
+        text: O armazem nao confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-020-MRCAT-12-0
+      - candidate_id: CASE-020-V3-MRCAT-12-1
+        text: O armazem nao confere qualidade com avaliacao de aceitacao e aptidao
+          de forma uniforme.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-020-MRCAT-12-1
+  CASE-021:
+    case_idx: 20
+    seed_casegen: 20260819
+    topic_tokens:
+    - equipe
+    - destino
+    - pedido
+    topic_token: equipe
+    base_cats:
+    - MRCAT-01
+    - MRCAT-07
+    - MRCAT-03
+    - MRCAT-02
+    - MRCAT-12
+    - MRCAT-09
+    - MRCAT-06
+    - MRCAT-11
+    - MRCAT-05
+    new_cats:
+    - MRCAT-04
+    - MRCAT-08
+    - MRCAT-10
+    base_facts:
+    - O equipe registra as ocorrencias com catalogacao e arquivamento de destino.
+    - O equipe executa o fluxo de tarefas e a rotina de operacao de pedido.
+    - O equipe mede as grandezas com quantificacao e mensuracao de destino.
+    - O equipe segue o protocolo com roteiro e sequencia padronizada de pedido.
+    - O equipe verifica a qualidade com avaliacao de aceitacao e aptidao de destino.
+    - O equipe aplica o padrao com requisito e referencia de conformidade de pedido.
+    - O equipe coleta dado e informacao bruta do ambiente de destino.
+    - O equipe aponta o risco com contingencia e ameaca identificada de pedido.
+    - O equipe controla o estoque e o fornecimento de suprimentos de destino.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-09
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-03
+      - source: MRCAT-01
+        target: MRCAT-06
+      - source: MRCAT-01
+        target: MRCAT-07
+      - source: MRCAT-01
+        target: MRCAT-07
+      - source: MRCAT-01
+        target: MRCAT-12
+      - source: MRCAT-02
+        target: MRCAT-09
+      - source: MRCAT-02
+        target: MRCAT-11
+      - source: MRCAT-02
+        target: MRCAT-12
+      - source: MRCAT-03
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-06
+      - source: MRCAT-03
+        target: MRCAT-07
+      - source: MRCAT-03
+        target: MRCAT-12
+      - source: MRCAT-06
+        target: MRCAT-07
+      - source: MRCAT-06
+        target: MRCAT-11
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-03
+      - source: MRCAT-07
+        target: MRCAT-09
+      - source: MRCAT-07
+        target: MRCAT-11
+      - source: MRCAT-09
+        target: MRCAT-06
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-11
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-06
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-09
+    pools:
+      V1:
+      - candidate_id: CASE-021-V1-MRCAT-04-0
+        text: O equipe reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-021-MRCAT-04-0
+      - candidate_id: CASE-021-V1-MRCAT-04-1
+        text: O equipe reforca as responsabilidades e competencias da unidade de forma
+          uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-021-MRCAT-04-1
+      - candidate_id: CASE-021-V1-MRCAT-08-0
+        text: O equipe entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-021-MRCAT-08-0
+      - candidate_id: CASE-021-V1-MRCAT-08-1
+        text: O equipe entrega o produto entregavel como resultado final de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V1
+        pair_id: CASE-021-MRCAT-08-1
+      - candidate_id: CASE-021-V1-MRCAT-10-0
+        text: O equipe conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-021-MRCAT-10-0
+      - candidate_id: CASE-021-V1-MRCAT-10-1
+        text: O equipe conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-021-MRCAT-10-1
+      V2:
+      - candidate_id: CASE-021-V2-MRCAT-01
+        text: Para o caso, arquivamento, catalogacao, ocorrencias, registra sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-021-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-021-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-021-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-021-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-021-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-021-V3-MRCAT-04-0
+        text: O equipe nao reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-021-MRCAT-04-0
+      - candidate_id: CASE-021-V3-MRCAT-04-1
+        text: O equipe nao reforca as responsabilidades e competencias da unidade
+          de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-021-MRCAT-04-1
+      - candidate_id: CASE-021-V3-MRCAT-08-0
+        text: O equipe nao entrega o produto entregavel como resultado final.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-021-MRCAT-08-0
+      - candidate_id: CASE-021-V3-MRCAT-08-1
+        text: O equipe nao entrega o produto entregavel como resultado final de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: false
+        pool: V3
+        pair_id: CASE-021-MRCAT-08-1
+      - candidate_id: CASE-021-V3-MRCAT-10-0
+        text: O equipe nao conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-021-MRCAT-10-0
+      - candidate_id: CASE-021-V3-MRCAT-10-1
+        text: O equipe nao conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-021-MRCAT-10-1
+  CASE-022:
+    case_idx: 21
+    seed_casegen: 20260819
+    topic_tokens:
+    - pedido
+    - vistoria
+    - frota
+    topic_token: pedido
+    base_cats:
+    - MRCAT-05
+    - MRCAT-11
+    - MRCAT-07
+    - MRCAT-10
+    - MRCAT-02
+    - MRCAT-08
+    - MRCAT-01
+    - MRCAT-06
+    - MRCAT-03
+    new_cats:
+    - MRCAT-04
+    - MRCAT-09
+    - MRCAT-12
+    base_facts:
+    - O pedido controla o estoque e o fornecimento de suprimentos de vistoria.
+    - O pedido aponta o risco com contingencia e ameaca identificada de frota.
+    - O pedido executa o fluxo de tarefas e a rotina de operacao de vistoria.
+    - O pedido estabelece o prazo com cronograma e vencimento previsto de frota.
+    - O pedido segue o protocolo com roteiro e sequencia padronizada de vistoria.
+    - O pedido gera o produto entregavel como resultado final de frota.
+    - O pedido registra as ocorrencias com catalogacao e arquivamento de vistoria.
+    - O pedido coleta dado e informacao bruta do ambiente de frota.
+    - O pedido mede as grandezas com quantificacao e mensuracao de vistoria.
+    g0:
+      nodes:
+      - id: MRCAT-01
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-05
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-10
+      - id: MRCAT-11
+      edges:
+      - source: MRCAT-01
+        target: MRCAT-03
+      - source: MRCAT-01
+        target: MRCAT-06
+      - source: MRCAT-02
+        target: MRCAT-01
+      - source: MRCAT-02
+        target: MRCAT-03
+      - source: MRCAT-02
+        target: MRCAT-08
+      - source: MRCAT-05
+        target: MRCAT-01
+      - source: MRCAT-05
+        target: MRCAT-02
+      - source: MRCAT-05
+        target: MRCAT-03
+      - source: MRCAT-05
+        target: MRCAT-07
+      - source: MRCAT-05
+        target: MRCAT-11
+      - source: MRCAT-06
+        target: MRCAT-03
+      - source: MRCAT-07
+        target: MRCAT-01
+      - source: MRCAT-07
+        target: MRCAT-02
+      - source: MRCAT-07
+        target: MRCAT-03
+      - source: MRCAT-07
+        target: MRCAT-10
+      - source: MRCAT-08
+        target: MRCAT-01
+      - source: MRCAT-08
+        target: MRCAT-06
+      - source: MRCAT-10
+        target: MRCAT-02
+      - source: MRCAT-10
+        target: MRCAT-06
+      - source: MRCAT-10
+        target: MRCAT-08
+      - source: MRCAT-11
+        target: MRCAT-06
+      - source: MRCAT-11
+        target: MRCAT-07
+      - source: MRCAT-11
+        target: MRCAT-08
+      - source: MRCAT-11
+        target: MRCAT-10
+    pools:
+      V1:
+      - candidate_id: CASE-022-V1-MRCAT-04-0
+        text: O pedido reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-022-MRCAT-04-0
+      - candidate_id: CASE-022-V1-MRCAT-04-1
+        text: O pedido reforca as responsabilidades e competencias da unidade de forma
+          uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V1
+        pair_id: CASE-022-MRCAT-04-1
+      - candidate_id: CASE-022-V1-MRCAT-09-0
+        text: O pedido atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-022-MRCAT-09-0
+      - candidate_id: CASE-022-V1-MRCAT-09-1
+        text: O pedido atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-022-MRCAT-09-1
+      - candidate_id: CASE-022-V1-MRCAT-12-0
+        text: O pedido confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-022-MRCAT-12-0
+      - candidate_id: CASE-022-V1-MRCAT-12-1
+        text: O pedido confere qualidade com avaliacao de aceitacao e aptidao de forma
+          uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V1
+        pair_id: CASE-022-MRCAT-12-1
+      V2:
+      - candidate_id: CASE-022-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-022-V2-MRCAT-11
+        text: Para o caso, ameaca, aponta, contingencia, identificada sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-022-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-022-V2-MRCAT-10
+        text: Para o caso, cronograma, estabelece, prazo, previsto sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-022-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-022-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-022-V3-MRCAT-04-0
+        text: O pedido nao reforca as responsabilidades e competencias da unidade.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-022-MRCAT-04-0
+      - candidate_id: CASE-022-V3-MRCAT-04-1
+        text: O pedido nao reforca as responsabilidades e competencias da unidade
+          de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: false
+        pool: V3
+        pair_id: CASE-022-MRCAT-04-1
+      - candidate_id: CASE-022-V3-MRCAT-09-0
+        text: O pedido nao atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-022-MRCAT-09-0
+      - candidate_id: CASE-022-V3-MRCAT-09-1
+        text: O pedido nao atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-022-MRCAT-09-1
+      - candidate_id: CASE-022-V3-MRCAT-12-0
+        text: O pedido nao confere qualidade com avaliacao de aceitacao e aptidao.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-022-MRCAT-12-0
+      - candidate_id: CASE-022-V3-MRCAT-12-1
+        text: O pedido nao confere qualidade com avaliacao de aceitacao e aptidao
+          de forma uniforme.
+        intended_category: MRCAT-12
+        is_true: false
+        pool: V3
+        pair_id: CASE-022-MRCAT-12-1
+  CASE-023:
+    case_idx: 22
+    seed_casegen: 20260819
+    topic_tokens:
+    - veiculo
+    - armazem
+    - carga
+    topic_token: veiculo
+    base_cats:
+    - MRCAT-05
+    - MRCAT-12
+    - MRCAT-07
+    - MRCAT-04
+    - MRCAT-08
+    - MRCAT-09
+    - MRCAT-11
+    - MRCAT-03
+    - MRCAT-06
+    new_cats:
+    - MRCAT-01
+    - MRCAT-02
+    - MRCAT-10
+    base_facts:
+    - O veiculo controla o estoque e o fornecimento de suprimentos de armazem.
+    - O veiculo verifica a qualidade com avaliacao de aceitacao e aptidao de carga.
+    - O veiculo executa o fluxo de tarefas e a rotina de operacao de armazem.
+    - O veiculo organiza as responsabilidades e competencias da unidade de carga.
+    - O veiculo gera o produto entregavel como resultado final de armazem.
+    - O veiculo aplica o padrao com requisito e referencia de conformidade de carga.
+    - O veiculo aponta o risco com contingencia e ameaca identificada de armazem.
+    - O veiculo mede as grandezas com quantificacao e mensuracao de carga.
+    - O veiculo coleta dado e informacao bruta do ambiente de armazem.
+    g0:
+      nodes:
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-05
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-09
+      - id: MRCAT-11
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-03
+        target: MRCAT-06
+      - source: MRCAT-04
+        target: MRCAT-03
+      - source: MRCAT-04
+        target: MRCAT-08
+      - source: MRCAT-04
+        target: MRCAT-09
+      - source: MRCAT-05
+        target: MRCAT-06
+      - source: MRCAT-05
+        target: MRCAT-07
+      - source: MRCAT-05
+        target: MRCAT-08
+      - source: MRCAT-05
+        target: MRCAT-11
+      - source: MRCAT-05
+        target: MRCAT-12
+      - source: MRCAT-07
+        target: MRCAT-04
+      - source: MRCAT-07
+        target: MRCAT-06
+      - source: MRCAT-07
+        target: MRCAT-08
+      - source: MRCAT-07
+        target: MRCAT-11
+      - source: MRCAT-08
+        target: MRCAT-06
+      - source: MRCAT-08
+        target: MRCAT-09
+      - source: MRCAT-08
+        target: MRCAT-11
+      - source: MRCAT-09
+        target: MRCAT-03
+      - source: MRCAT-09
+        target: MRCAT-11
+      - source: MRCAT-11
+        target: MRCAT-03
+      - source: MRCAT-11
+        target: MRCAT-06
+      - source: MRCAT-12
+        target: MRCAT-03
+      - source: MRCAT-12
+        target: MRCAT-04
+      - source: MRCAT-12
+        target: MRCAT-07
+      - source: MRCAT-12
+        target: MRCAT-09
+    pools:
+      V1:
+      - candidate_id: CASE-023-V1-MRCAT-01-0
+        text: O veiculo amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-023-MRCAT-01-0
+      - candidate_id: CASE-023-V1-MRCAT-01-1
+        text: O veiculo amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-023-MRCAT-01-1
+      - candidate_id: CASE-023-V1-MRCAT-02-0
+        text: O veiculo adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-023-MRCAT-02-0
+      - candidate_id: CASE-023-V1-MRCAT-02-1
+        text: O veiculo adota o protocolo com roteiro e sequencia padronizada de forma
+          uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V1
+        pair_id: CASE-023-MRCAT-02-1
+      - candidate_id: CASE-023-V1-MRCAT-10-0
+        text: O veiculo conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-023-MRCAT-10-0
+      - candidate_id: CASE-023-V1-MRCAT-10-1
+        text: O veiculo conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: true
+        pool: V1
+        pair_id: CASE-023-MRCAT-10-1
+      V2:
+      - candidate_id: CASE-023-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-023-V2-MRCAT-12
+        text: Para o caso, aceitacao, aptidao, avaliacao, qualidade sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-12
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-023-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-023-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-023-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-023-V2-MRCAT-09
+        text: Para o caso, aplica, conformidade, padrao, referencia sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-023-V3-MRCAT-01-0
+        text: O veiculo nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-023-MRCAT-01-0
+      - candidate_id: CASE-023-V3-MRCAT-01-1
+        text: O veiculo nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-023-MRCAT-01-1
+      - candidate_id: CASE-023-V3-MRCAT-02-0
+        text: O veiculo nao adota o protocolo com roteiro e sequencia padronizada.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-023-MRCAT-02-0
+      - candidate_id: CASE-023-V3-MRCAT-02-1
+        text: O veiculo nao adota o protocolo com roteiro e sequencia padronizada
+          de forma uniforme.
+        intended_category: MRCAT-02
+        is_true: false
+        pool: V3
+        pair_id: CASE-023-MRCAT-02-1
+      - candidate_id: CASE-023-V3-MRCAT-10-0
+        text: O veiculo nao conclui dentro do prazo com cronograma e vencimento previsto.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-023-MRCAT-10-0
+      - candidate_id: CASE-023-V3-MRCAT-10-1
+        text: O veiculo nao conclui dentro do prazo com cronograma e vencimento previsto
+          de forma uniforme.
+        intended_category: MRCAT-10
+        is_true: false
+        pool: V3
+        pair_id: CASE-023-MRCAT-10-1
+  CASE-024:
+    case_idx: 23
+    seed_casegen: 20260819
+    topic_tokens:
+    - equipe
+    - aprovacao
+    - despacho
+    topic_token: equipe
+    base_cats:
+    - MRCAT-03
+    - MRCAT-04
+    - MRCAT-05
+    - MRCAT-08
+    - MRCAT-02
+    - MRCAT-07
+    - MRCAT-10
+    - MRCAT-06
+    - MRCAT-12
+    new_cats:
+    - MRCAT-01
+    - MRCAT-09
+    - MRCAT-11
+    base_facts:
+    - O equipe mede as grandezas com quantificacao e mensuracao de aprovacao.
+    - O equipe organiza as responsabilidades e competencias da unidade de despacho.
+    - O equipe controla o estoque e o fornecimento de suprimentos de aprovacao.
+    - O equipe gera o produto entregavel como resultado final de despacho.
+    - O equipe segue o protocolo com roteiro e sequencia padronizada de aprovacao.
+    - O equipe executa o fluxo de tarefas e a rotina de operacao de despacho.
+    - O equipe estabelece o prazo com cronograma e vencimento previsto de aprovacao.
+    - O equipe coleta dado e informacao bruta do ambiente de despacho.
+    - O equipe verifica a qualidade com avaliacao de aceitacao e aptidao de aprovacao.
+    g0:
+      nodes:
+      - id: MRCAT-02
+      - id: MRCAT-03
+      - id: MRCAT-04
+      - id: MRCAT-05
+      - id: MRCAT-06
+      - id: MRCAT-07
+      - id: MRCAT-08
+      - id: MRCAT-10
+      - id: MRCAT-12
+      edges:
+      - source: MRCAT-02
+        target: MRCAT-07
+      - source: MRCAT-02
+        target: MRCAT-10
+      - source: MRCAT-02
+        target: MRCAT-12
+      - source: MRCAT-03
+        target: MRCAT-02
+      - source: MRCAT-03
+        target: MRCAT-04
+      - source: MRCAT-03
+        target: MRCAT-05
+      - source: MRCAT-03
+        target: MRCAT-10
+      - source: MRCAT-03
+        target: MRCAT-12
+      - source: MRCAT-04
+        target: MRCAT-05
+      - source: MRCAT-04
+        target: MRCAT-06
+      - source: MRCAT-04
+        target: MRCAT-07
+      - source: MRCAT-04
+        target: MRCAT-08
+      - source: MRCAT-05
+        target: MRCAT-02
+      - source: MRCAT-05
+        target: MRCAT-08
+      - source: MRCAT-05
+        target: MRCAT-10
+      - source: MRCAT-05
+        target: MRCAT-12
+      - source: MRCAT-06
+        target: MRCAT-12
+      - source: MRCAT-07
+        target: MRCAT-06
+      - source: MRCAT-07
+        target: MRCAT-10
+      - source: MRCAT-08
+        target: MRCAT-02
+      - source: MRCAT-08
+        target: MRCAT-06
+      - source: MRCAT-08
+        target: MRCAT-07
+      - source: MRCAT-10
+        target: MRCAT-06
+      - source: MRCAT-10
+        target: MRCAT-12
+    pools:
+      V1:
+      - candidate_id: CASE-024-V1-MRCAT-01-0
+        text: O equipe amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-024-MRCAT-01-0
+      - candidate_id: CASE-024-V1-MRCAT-01-1
+        text: O equipe amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: true
+        pool: V1
+        pair_id: CASE-024-MRCAT-01-1
+      - candidate_id: CASE-024-V1-MRCAT-09-0
+        text: O equipe atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-024-MRCAT-09-0
+      - candidate_id: CASE-024-V1-MRCAT-09-1
+        text: O equipe atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: true
+        pool: V1
+        pair_id: CASE-024-MRCAT-09-1
+      - candidate_id: CASE-024-V1-MRCAT-11-0
+        text: O equipe enfrenta risco de contingencia com ameaca identificada.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V1
+        pair_id: CASE-024-MRCAT-11-0
+      - candidate_id: CASE-024-V1-MRCAT-11-1
+        text: O equipe enfrenta risco de contingencia com ameaca identificada de forma
+          uniforme.
+        intended_category: MRCAT-11
+        is_true: true
+        pool: V1
+        pair_id: CASE-024-MRCAT-11-1
+      V2:
+      - candidate_id: CASE-024-V2-MRCAT-03
+        text: Para o caso, grandezas, mede, mensuracao, quantificacao sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-03
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-024-V2-MRCAT-04
+        text: Para o caso, competencias, organiza, responsabilidades, unidade sao
+          mantidos de forma uniforme.
+        intended_category: MRCAT-04
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-024-V2-MRCAT-05
+        text: Para o caso, controla, estoque, fornecimento, suprimentos sao mantidos
+          de forma uniforme.
+        intended_category: MRCAT-05
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-024-V2-MRCAT-08
+        text: Para o caso, entregavel, final, gera, produto sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-08
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-024-V2-MRCAT-02
+        text: Para o caso, padronizada, protocolo, roteiro, segue sao mantidos de
+          forma uniforme.
+        intended_category: MRCAT-02
+        is_true: true
+        pool: V2
+        pair_id: null
+      - candidate_id: CASE-024-V2-MRCAT-07
+        text: Para o caso, executa, fluxo, operacao, rotina sao mantidos de forma
+          uniforme.
+        intended_category: MRCAT-07
+        is_true: true
+        pool: V2
+        pair_id: null
+      V3:
+      - candidate_id: CASE-024-V3-MRCAT-01-0
+        text: O equipe nao amplia o registro das ocorrencias com catalogacao e arquivamento.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-024-MRCAT-01-0
+      - candidate_id: CASE-024-V3-MRCAT-01-1
+        text: O equipe nao amplia o registro das ocorrencias com catalogacao e arquivamento
+          de forma uniforme.
+        intended_category: MRCAT-01
+        is_true: false
+        pool: V3
+        pair_id: CASE-024-MRCAT-01-1
+      - candidate_id: CASE-024-V3-MRCAT-09-0
+        text: O equipe nao atualiza o padrao com requisito e referencia de conformidade.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-024-MRCAT-09-0
+      - candidate_id: CASE-024-V3-MRCAT-09-1
+        text: O equipe nao atualiza o padrao com requisito e referencia de conformidade
+          de forma uniforme.
+        intended_category: MRCAT-09
+        is_true: false
+        pool: V3
+        pair_id: CASE-024-MRCAT-09-1
+      - candidate_id: CASE-024-V3-MRCAT-11-0
+        text: O equipe nao enfrenta risco de contingencia com ameaca identificada.
+        intended_category: MRCAT-11
+        is_true: false
+        pool: V3
+        pair_id: CASE-024-MRCAT-11-0
+      - candidate_id: CASE-024-V3-MRCAT-11-1
+        text: O equipe nao enfrenta risco de contingencia com ameaca identificada
+          de forma uniforme.
+        intended_category: MRCAT-11
+        is_true: false
+        pool: V3
+        pair_id: CASE-024-MRCAT-11-1
