@@ -108,11 +108,20 @@ Símbolos compartilhados labelers×metric: **nenhum**
 
 ### Diagnóstico de causa (§7.5.1)
 
-> Causa declarada: **(b)** — FAIL por diluição de agregação
+> Causa raiz primária (documentada por investigação de causa após execução; substitui a causa (b) declarada no primeiro run): **(a2) — referência de verdade incorreta para conf(V2).** `conf` é computado contra o grafo de verdade **não-estendido G0** (`metric.py:133`, verdade = `G0` para V0/V2/V3), mas a reconstrução de V2 legítima e sistematicamente contém estrutura adicional correspondente aos fatos redundantes (corretos, porém redundantes). Essa estrutura **verdadeira-mas-redundante** é contabilizada como falso positivo no F1(nós, arestas), colapsando `conf(V2)` para o mesmo nível de `conf(V3)` — estrutura genuinamente falsa — e quebrando P3 (V2≈V0), P5 (V2>V3) e as condições c/e de compliance.
 >
-> Suporte numérico: mediana(conf(V1)−conf(V3)) = 0.100840; mediana(DV(V1)−DV(V3)) = 0.033801 (piso δ_eq = 0.05).
+> Suporte numérico (investigação nos 24 casos, a partir de `reconstruction_graphs.json`, hashes inalterados):
+> - Estrutura extra vs G0 presente em **24/24 casos** para V2: média **+12.54 arestas** (min 6, max 18) e +0.21 nós;
+> - Estrutura extra vs G0 presente em **24/24 casos** para V3: média **+3.46 arestas** e +2.75 nós (estrutura falsa — penalização correta);
+> - `conf_vsG0`: V2=0.8909, V3=0.8988, V0=1.0000, V1(vs G1)=1.0000; `|conf(V2)−conf(V3)|` ≤ 0.05 em **22/24 casos** (média |Δ|=0.0205).
 >
-> Recomendação: revisar o esquema de agregação/pesos (§7.5.1), não os componentes. GO-8E permanece NÃO AUTORIZADO.
+> Efeitos observados no gate: P3 TOST FAIL (DV(V2)=0.842 < DV(V0)=0.893, fora da banda δ_eq); P5 FAIL (DV(V2)=0.842 < DV(V3)=0.868); compliance 0.0 (condições c e e falham por construção). A causa (b) antes declarada (diluição de agregação; mediana(conf(V1)−conf(V3))=0.100840; mediana(DV(V1)−DV(V3))=0.033801) é superada por esta investigação: o mecanismo falho é a referência de verdade de `conf` por estado, não o esquema de pesos.
+>
+> Nota de rastreabilidade: diagnóstico registrado pós-execução via investigação de causa; **nenhum limiar, teste estatístico ou artefato hash-locked foi alterado**; o `MR-C7-REPORT.json` automatizado (hash `044197ee...`) retém o campo de causa (b) gerado pelo script.
+>
+> Recomendação (proposta de redesenho **pendente de nova instrução**): avaliar `conf(V2)` contra verdade estendida com os fatos redundantes (ou garantir que fatos redundantes não gerem estrutura nova), mediante novo pré-registro. GO-8E permanece NÃO AUTORIZADO.
+
+> **Mecanismo exato (investigação 2026-08-19, sem alteração de código):** decomposição por tipo mostra que a assimetria ΔV2 vs ΔV3 vem de `relates`, não de `follows` — extra total 24 casos: V2 = 64 `follows` + **237 `relates`** (12.54/caso); V3 = 72 `follows` + **11 `relates`** (3.46/caso). Causa: `make_v2_paraphrase` (`generate_cases.py:115`) monta cada fato redundante com 4 tokens do fato-base que ele parafraseia (2 palavras-chave da própria categoria + 2 "outros" — que incluem o token temático do caso e o filler compartilhado). Como todos os fatos do caso compartilham o token temático e há apenas 2 fillers para 9 fatos-base, cada fato V2 tem sobreposição ≥ 2 tokens com ~4–6 fatos-base (ex. CASE-001: AF-010 `{entrega, expedicao}` casa com AF-001/003/005/007). A regra `relates iff |overlap| ≥ 2` (`reconstruction.py:139-151`, cópia fiel do engine congelado) então gera 1 aresta `relates` por par — 3 fatos V2 → ~14 `relates` + 3 `follows` por caso. Como os fatos V2 classificam em categorias-base **pré-existentes** (vocabulário vindo dos fatos-base; nós extras só 0.21/caso), quase todas as arestas novas são entre categorias já presentes em G0: **reforço relacional** (comportamento esperado da regra do engine), amplificado pelo template V2 que reusa o vocabulário compartilhado do caso — não é bug de lógica do grafo. V3 é só 3.46/caso porque seus fatos (negações de fatos de categorias novas MRCAT-10..12) compartilham apenas o token temático com os fatos-base (overlap = 1 < 2 → praticamente sem `relates`; só `follows` para categorias novas).
 
 ## 11. Hashes (SHA-256)
 
