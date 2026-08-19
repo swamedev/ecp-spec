@@ -22,6 +22,7 @@ nenhuma métrica nem nenhum sinal de rotulação.
 """
 import os
 import re
+import sys
 
 import numpy as np
 import yaml
@@ -113,15 +114,31 @@ def verify_classification(text, clf, intended):
 
 
 def make_v2_paraphrase(topic_token, cat, base_fact):
+    """Paráfrase redundante (V2) SEM o token temático do caso nem os fillers
+    compartilhados (C-GENERATOR-FIX-V2-PARAPHRASE.md, Opção A).
+
+    Antes, o fato V2 incluía o token temático e os fillers (compartilhados por
+    4–6 fatos-base), fazendo a regra `relates` (|overlap| ≥ 2) disparar arestas
+    com fatos-base NÃO relacionados. Agora o fato V2 carrega apenas os tokens
+    específicos da categoria/conteúdo do fato-pai — a relação forte só ocorre com
+    o fato-base efetivamente parafraseado. reconstruction.py fica intacto.
+    """
     base_tok = sorted(fact_tokens(base_fact))
     cat_kws = sorted(fact_tokens(DEF_CLAUSE[cat]) & set(base_tok))
-    others = [t for t in base_tok if t not in cat_kws]
-    picks = (cat_kws[:2] + others[:2])[:4]
+    picks = cat_kws[:4]
+    if len(picks) < 4:
+        picks += [t for t in base_tok if t not in picks and t != topic_token][:4 - len(picks)]
     body = ", ".join(picks)
-    return "Para o caso, %s sao mantidos no %s de forma uniforme." % (body, topic_token)
+    return "Para o caso, %s sao mantidos de forma uniforme." % body
 
 
 def main():
+    # Saída parametrizada: se o 1º argumento for passado, escreve o YAML lá
+    # (permite rodar a v2 sem sobrescrever inputs/cases.yaml da v1 — histórico).
+    out_path = os.path.join(INPUTS, "cases.yaml")
+    if len(sys.argv) > 1:
+        out_path = os.path.abspath(sys.argv[1])
+
     rng = np.random.default_rng(SEED_CASEGEN)
     clf = make_classifier()
 
@@ -207,8 +224,7 @@ def main():
             "pools": {"V1": v1_pool, "V2": v2_pool, "V3": v3_pool},
         }
 
-    os.makedirs(INPUTS, exist_ok=True)
-    out_path = os.path.join(INPUTS, "cases.yaml")
+    os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         yaml.safe_dump({"seed_casegen": SEED_CASEGEN, "n_cases": N_CASES,
                         "cases": cases}, f, allow_unicode=True, sort_keys=False)
