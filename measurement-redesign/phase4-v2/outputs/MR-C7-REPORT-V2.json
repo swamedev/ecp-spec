@@ -1,0 +1,1879 @@
+{
+  "gate": "MR-C7-V2",
+  "protocolo_hash": "5a926b77c8baaf722a8eea1eccba43320ce00b676306f3d0042f4b7c1bb2627f",
+  "addendum_hash": "4ce9fa87f0cd4fa6c0b33ffe2cc4ee5d27e3d998c142fce1c5ac60a9f13b4dc5",
+  "generator_fix_hash": "d4a5b1b361137b42a7037ec885e8a217da99fd8bf8ef41cf767b9333ae8efa7b",
+  "generator_hash": "1340e462520ef73d1765cec34d7ad3b109b8876cc41a9459d7d2e68f0c108c9d",
+  "cases_v2_hash": "479692d5d4a20a010fe0ac71e238c39f40ef990aa881b3e02555c80269ba7184",
+  "n_cases": 24,
+  "delta_eq": 0.05,
+  "alpha": 0.05,
+  "por_caso": {
+    "CASE-001": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.907489,
+        "V2": 0.873361,
+        "V3": 0.870858
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.981481,
+        "V3": 0.89011
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.722466,
+        "V2": 0.685248,
+        "V3": 0.722466
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.953352,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 28,
+        "V2": 28,
+        "V3": 28
+      }
+    },
+    "CASE-002": {
+      "dv": {
+        "V0": 0.885784,
+        "V1": 0.89851,
+        "V2": 0.853794,
+        "V3": 0.861556
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.969388,
+        "V3": 0.889138
+      },
+      "ged_ref": {
+        "V0": 0.674786,
+        "V1": 0.707422,
+        "V2": 0.674786,
+        "V3": 0.707422
+      },
+      "div_metric": {
+        "V0": 0.982568,
+        "V1": 0.988109,
+        "V2": 0.91721,
+        "V3": 0.988109
+      },
+      "nodes": {
+        "V0": 8,
+        "V1": 11,
+        "V2": 8,
+        "V3": 11
+      },
+      "edges": {
+        "V0": 22,
+        "V1": 25,
+        "V2": 26,
+        "V3": 25
+      }
+    },
+    "CASE-003": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.877377,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973684,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.685248,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 30,
+        "V3": 27
+      }
+    },
+    "CASE-004": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.872568,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.67899,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 31,
+        "V3": 27
+      }
+    },
+    "CASE-005": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.902903,
+        "V2": 0.8833,
+        "V3": 0.869532
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.89011
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.70871,
+        "V2": 0.705544,
+        "V3": 0.718485
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.978838,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 10,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 29,
+        "V2": 31,
+        "V3": 28
+      }
+    },
+    "CASE-006": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.881032,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.990909,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.67899,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 28,
+        "V3": 27
+      }
+    },
+    "CASE-007": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.874654,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.685248,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 31,
+        "V3": 27
+      }
+    },
+    "CASE-008": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.872568,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.67899,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 31,
+        "V3": 27
+      }
+    },
+    "CASE-009": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904212,
+        "V2": 0.881032,
+        "V3": 0.871795
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.990909,
+        "V3": 0.920588
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.712636,
+        "V2": 0.67899,
+        "V3": 0.706687
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 0.988109
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 11
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 28,
+        "V2": 28,
+        "V3": 27
+      }
+    },
+    "CASE-010": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.877377,
+        "V3": 0.867007
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973684,
+        "V3": 0.911538
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.685248,
+        "V3": 0.701374
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 0.988109
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 11
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 30,
+        "V3": 28
+      }
+    },
+    "CASE-011": {
+      "dv": {
+        "V0": 0.892997,
+        "V1": 0.904532,
+        "V2": 0.873836,
+        "V3": 0.866103
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.97541,
+        "V3": 0.884712
+      },
+      "ged_ref": {
+        "V0": 0.67899,
+        "V1": 0.713597,
+        "V2": 0.6729,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 26,
+        "V1": 31,
+        "V2": 32,
+        "V3": 31
+      }
+    },
+    "CASE-012": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.872568,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.67899,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 31,
+        "V3": 27
+      }
+    },
+    "CASE-013": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.874972,
+        "V3": 0.867582
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.972727,
+        "V3": 0.89011
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.67899,
+        "V3": 0.712636
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 29,
+        "V3": 28
+      }
+    },
+    "CASE-014": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.907489,
+        "V2": 0.874654,
+        "V3": 0.870858
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.89011
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.722466,
+        "V2": 0.685248,
+        "V3": 0.722466
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 28,
+        "V2": 31,
+        "V3": 28
+      }
+    },
+    "CASE-015": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.8833,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.705544,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.978838,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 10,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 31,
+        "V3": 27
+      }
+    },
+    "CASE-016": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.877377,
+        "V3": 0.868778
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973684,
+        "V3": 0.911538
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.685248,
+        "V3": 0.706687
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 0.988109
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 11
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 30,
+        "V3": 28
+      }
+    },
+    "CASE-017": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.880196,
+        "V3": 0.871795
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.982143,
+        "V3": 0.920588
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.685248,
+        "V3": 0.706687
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 0.988109
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 11
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 29,
+        "V3": 27
+      }
+    },
+    "CASE-018": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904212,
+        "V2": 0.874654,
+        "V3": 0.867007
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.911538
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.712636,
+        "V2": 0.685248,
+        "V3": 0.701374
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 0.988109
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 11
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 28,
+        "V2": 31,
+        "V3": 28
+      }
+    },
+    "CASE-019": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.873581,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.982143,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.685248,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.953352,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 29,
+        "V3": 27
+      }
+    },
+    "CASE-020": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.874654,
+        "V3": 0.870543
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.920588
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.685248,
+        "V3": 0.70293
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 0.988109
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 11
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 31,
+        "V3": 27
+      }
+    },
+    "CASE-021": {
+      "dv": {
+        "V0": 0.860668,
+        "V1": 0.881639,
+        "V2": 0.851128,
+        "V3": 0.837667
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.970588,
+        "V3": 0.868085
+      },
+      "ged_ref": {
+        "V0": 0.646058,
+        "V1": 0.691564,
+        "V2": 0.662013,
+        "V3": 0.691564
+      },
+      "div_metric": {
+        "V0": 0.935945,
+        "V1": 0.953352,
+        "V2": 0.920782,
+        "V3": 0.953352
+      },
+      "nodes": {
+        "V0": 6,
+        "V1": 9,
+        "V2": 7,
+        "V3": 9
+      },
+      "edges": {
+        "V0": 22,
+        "V1": 25,
+        "V2": 27,
+        "V3": 25
+      }
+    },
+    "CASE-022": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.872568,
+        "V3": 0.870919
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.965517,
+        "V3": 0.89916
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.67899,
+        "V3": 0.713597
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 31,
+        "V3": 27
+      }
+    },
+    "CASE-023": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.877377,
+        "V3": 0.867582
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973684,
+        "V3": 0.89011
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.685248,
+        "V3": 0.712636
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 30,
+        "V3": 28
+      }
+    },
+    "CASE-024": {
+      "dv": {
+        "V0": 0.895083,
+        "V1": 0.904532,
+        "V2": 0.873261,
+        "V3": 0.867582
+      },
+      "conf": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973684,
+        "V3": 0.89011
+      },
+      "ged_ref": {
+        "V0": 0.685248,
+        "V1": 0.713597,
+        "V2": 0.6729,
+        "V3": 0.712636
+      },
+      "div_metric": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 0.973197,
+        "V3": 1.0
+      },
+      "nodes": {
+        "V0": 9,
+        "V1": 12,
+        "V2": 9,
+        "V3": 12
+      },
+      "edges": {
+        "V0": 24,
+        "V1": 27,
+        "V2": 30,
+        "V3": 28
+      }
+    }
+  },
+  "estatisticas_por_par": {
+    "P1": {
+      "hi": "V1",
+      "lo": "V0",
+      "alternative": "greater",
+      "label": "V1 > V0",
+      "statistic": 300.0,
+      "pvalue": 4.433518188834988e-06,
+      "n_effective": 24,
+      "n_pass": true,
+      "holm_pass": true
+    },
+    "P2": {
+      "hi": "V1",
+      "lo": "V2",
+      "alternative": "greater",
+      "label": "V1 > V2",
+      "statistic": 300.0,
+      "pvalue": 8.92105281349697e-06,
+      "n_effective": 24,
+      "n_pass": true,
+      "holm_pass": true
+    },
+    "P4": {
+      "hi": "V0",
+      "lo": "V3",
+      "alternative": "greater",
+      "label": "V3 < V0",
+      "statistic": 300.0,
+      "pvalue": 8.025174638174338e-06,
+      "n_effective": 24,
+      "n_pass": true,
+      "holm_pass": true
+    },
+    "P5": {
+      "hi": "V2",
+      "lo": "V3",
+      "alternative": "greater",
+      "label": "V3 < V2",
+      "statistic": 285.0,
+      "pvalue": 5.689982057460058e-05,
+      "n_effective": 24,
+      "n_pass": true,
+      "holm_pass": true
+    }
+  },
+  "P3_TOST": {
+    "statistic_lo": 0.0,
+    "p_lo": 8.824536251744306e-06,
+    "statistic_hi": 300.0,
+    "p_hi": 8.824536251744306e-06,
+    "tost_pass": true
+  },
+  "compliance": {
+    "rate": 0.0,
+    "floor": 0.8,
+    "per_case": [
+      {
+        "case": "CASE-001",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-002",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-003",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-004",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-005",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-006",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-007",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-008",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-009",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-010",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-011",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-012",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-013",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-014",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-015",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-016",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-017",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-018",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-019",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-020",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-021",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-022",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-023",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      },
+      {
+        "case": "CASE-024",
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false,
+        "e": false,
+        "ord": 0
+      }
+    ]
+  },
+  "pisos_de_efeito": {
+    "mediana(DV(V1)-DV(V0))": 0.009449,
+    "mediana(DV(V1)-DV(V2))": 0.029878,
+    "mediana(DV(V0)-DV(V3))": 0.024194,
+    "mediana(DV(V2)-DV(V3))": 0.006924
+  },
+  "fidelidade_6.2": {
+    "mean_abs_nodes": 0.25,
+    "mean_abs_edges": 0.291667,
+    "limit_nodes": 1.5,
+    "limit_edges": 3.0,
+    "per_case_node_limit": 3,
+    "per_case_ok": true,
+    "passed": true
+  },
+  "seed_invariance": true,
+  "vetos": {
+    "V-A": {
+      "acionado": true,
+      "n_cases": 24,
+      "proporcao": 1.0
+    },
+    "V-B": {
+      "acionado": false,
+      "inspecao": true
+    },
+    "V-C": {
+      "acionado": false,
+      "fidelidade": true
+    }
+  },
+  "decisao": {
+    "P1-P5_Holm": true,
+    "P3_TOST": true,
+    "N_efetivo_ge_15": true,
+    "compliance_ge_0.80": false,
+    "pisos_de_efeito": false,
+    "fidelidade_6.2": true,
+    "sem_veto": false,
+    "sem_violacao_procedimento": true,
+    "PASS": false
+  },
+  "diagnostico_causa": [
+    "(b)",
+    "FAIL-tipo-B — diluição de agregação",
+    0.10084000000000004,
+    0.033801000000000025
+  ],
+  "penalidade_follows_conf_v2": {
+    "mean_follows_extra_por_caso": 2.4583,
+    "mean_penalidade_follows_conf": 0.0219,
+    "mean_conf_v2_as_is": 0.97247,
+    "mean_conf_v2_sem_penalidade_follows": 0.994371,
+    "conf_v0_mean": 1.0,
+    "delta_conf_v2_v0": 0.02753,
+    "delta_dentro_banda_eq": true,
+    "per_caso": [
+      {
+        "caso": "CASE-001",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.981481,
+        "conf_v2_sem_penalidade_follows": 1.0,
+        "penalidade_follows": 0.018519
+      },
+      {
+        "caso": "CASE-002",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.969388,
+        "conf_v2_sem_penalidade_follows": 0.990196,
+        "penalidade_follows": 0.020808
+      },
+      {
+        "caso": "CASE-003",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.973684,
+        "conf_v2_sem_penalidade_follows": 0.991525,
+        "penalidade_follows": 0.017841
+      },
+      {
+        "caso": "CASE-004",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-005",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-006",
+        "n_follows_extra": 1,
+        "conf_v2_as_is": 0.990909,
+        "conf_v2_sem_penalidade_follows": 1.0,
+        "penalidade_follows": 0.009091
+      },
+      {
+        "caso": "CASE-007",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-008",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-009",
+        "n_follows_extra": 1,
+        "conf_v2_as_is": 0.990909,
+        "conf_v2_sem_penalidade_follows": 1.0,
+        "penalidade_follows": 0.009091
+      },
+      {
+        "caso": "CASE-010",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.973684,
+        "conf_v2_sem_penalidade_follows": 1.0,
+        "penalidade_follows": 0.026316
+      },
+      {
+        "caso": "CASE-011",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.97541,
+        "conf_v2_sem_penalidade_follows": 1.0,
+        "penalidade_follows": 0.02459
+      },
+      {
+        "caso": "CASE-012",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-013",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.972727,
+        "conf_v2_sem_penalidade_follows": 1.0,
+        "penalidade_follows": 0.027273
+      },
+      {
+        "caso": "CASE-014",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-015",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-016",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.973684,
+        "conf_v2_sem_penalidade_follows": 0.991525,
+        "penalidade_follows": 0.017841
+      },
+      {
+        "caso": "CASE-017",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.982143,
+        "conf_v2_sem_penalidade_follows": 1.0,
+        "penalidade_follows": 0.017857
+      },
+      {
+        "caso": "CASE-018",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-019",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.982143,
+        "conf_v2_sem_penalidade_follows": 1.0,
+        "penalidade_follows": 0.017857
+      },
+      {
+        "caso": "CASE-020",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-021",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.970588,
+        "conf_v2_sem_penalidade_follows": 0.990566,
+        "penalidade_follows": 0.019978
+      },
+      {
+        "caso": "CASE-022",
+        "n_follows_extra": 3,
+        "conf_v2_as_is": 0.965517,
+        "conf_v2_sem_penalidade_follows": 0.991803,
+        "penalidade_follows": 0.026286
+      },
+      {
+        "caso": "CASE-023",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.973684,
+        "conf_v2_sem_penalidade_follows": 0.991525,
+        "penalidade_follows": 0.017841
+      },
+      {
+        "caso": "CASE-024",
+        "n_follows_extra": 2,
+        "conf_v2_as_is": 0.973684,
+        "conf_v2_sem_penalidade_follows": 0.991525,
+        "penalidade_follows": 0.017841
+      }
+    ]
+  },
+  "sinal_residual_tipo_c": {
+    "n_fatos_v2_verificados": 72,
+    "n_com_overlap_espurio": 0,
+    "sinal_residual_tipo_c": false,
+    "per_caso": [
+      {
+        "caso": "CASE-001",
+        "candidate": "CASE-001-V2-MRCAT-08",
+        "parent_cat": "MRCAT-08",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-001",
+        "candidate": "CASE-001-V2-MRCAT-01",
+        "parent_cat": "MRCAT-01",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-001",
+        "candidate": "CASE-001-V2-MRCAT-09",
+        "parent_cat": "MRCAT-09",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-002",
+        "candidate": "CASE-002-V2-MRCAT-05",
+        "parent_cat": "MRCAT-05",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-002",
+        "candidate": "CASE-002-V2-MRCAT-07",
+        "parent_cat": "MRCAT-07",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-002",
+        "candidate": "CASE-002-V2-MRCAT-09",
+        "parent_cat": "MRCAT-09",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-003",
+        "candidate": "CASE-003-V2-MRCAT-12",
+        "parent_cat": "MRCAT-12",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-003",
+        "candidate": "CASE-003-V2-MRCAT-07",
+        "parent_cat": "MRCAT-07",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-003",
+        "candidate": "CASE-003-V2-MRCAT-11",
+        "parent_cat": "MRCAT-11",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-004",
+        "candidate": "CASE-004-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-004",
+        "candidate": "CASE-004-V2-MRCAT-02",
+        "parent_cat": "MRCAT-02",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-004",
+        "candidate": "CASE-004-V2-MRCAT-07",
+        "parent_cat": "MRCAT-07",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-005",
+        "candidate": "CASE-005-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-005",
+        "candidate": "CASE-005-V2-MRCAT-02",
+        "parent_cat": "MRCAT-02",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-005",
+        "candidate": "CASE-005-V2-MRCAT-05",
+        "parent_cat": "MRCAT-05",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-006",
+        "candidate": "CASE-006-V2-MRCAT-02",
+        "parent_cat": "MRCAT-02",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-006",
+        "candidate": "CASE-006-V2-MRCAT-08",
+        "parent_cat": "MRCAT-08",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-006",
+        "candidate": "CASE-006-V2-MRCAT-01",
+        "parent_cat": "MRCAT-01",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-007",
+        "candidate": "CASE-007-V2-MRCAT-10",
+        "parent_cat": "MRCAT-10",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-007",
+        "candidate": "CASE-007-V2-MRCAT-02",
+        "parent_cat": "MRCAT-02",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-007",
+        "candidate": "CASE-007-V2-MRCAT-08",
+        "parent_cat": "MRCAT-08",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-008",
+        "candidate": "CASE-008-V2-MRCAT-09",
+        "parent_cat": "MRCAT-09",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-008",
+        "candidate": "CASE-008-V2-MRCAT-04",
+        "parent_cat": "MRCAT-04",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-008",
+        "candidate": "CASE-008-V2-MRCAT-11",
+        "parent_cat": "MRCAT-11",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-009",
+        "candidate": "CASE-009-V2-MRCAT-08",
+        "parent_cat": "MRCAT-08",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-009",
+        "candidate": "CASE-009-V2-MRCAT-01",
+        "parent_cat": "MRCAT-01",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-009",
+        "candidate": "CASE-009-V2-MRCAT-03",
+        "parent_cat": "MRCAT-03",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-010",
+        "candidate": "CASE-010-V2-MRCAT-07",
+        "parent_cat": "MRCAT-07",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-010",
+        "candidate": "CASE-010-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-010",
+        "candidate": "CASE-010-V2-MRCAT-12",
+        "parent_cat": "MRCAT-12",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-011",
+        "candidate": "CASE-011-V2-MRCAT-10",
+        "parent_cat": "MRCAT-10",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-011",
+        "candidate": "CASE-011-V2-MRCAT-11",
+        "parent_cat": "MRCAT-11",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-011",
+        "candidate": "CASE-011-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-012",
+        "candidate": "CASE-012-V2-MRCAT-08",
+        "parent_cat": "MRCAT-08",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-012",
+        "candidate": "CASE-012-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-012",
+        "candidate": "CASE-012-V2-MRCAT-02",
+        "parent_cat": "MRCAT-02",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-013",
+        "candidate": "CASE-013-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-013",
+        "candidate": "CASE-013-V2-MRCAT-12",
+        "parent_cat": "MRCAT-12",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-013",
+        "candidate": "CASE-013-V2-MRCAT-05",
+        "parent_cat": "MRCAT-05",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-014",
+        "candidate": "CASE-014-V2-MRCAT-01",
+        "parent_cat": "MRCAT-01",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-014",
+        "candidate": "CASE-014-V2-MRCAT-02",
+        "parent_cat": "MRCAT-02",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-014",
+        "candidate": "CASE-014-V2-MRCAT-03",
+        "parent_cat": "MRCAT-03",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-015",
+        "candidate": "CASE-015-V2-MRCAT-12",
+        "parent_cat": "MRCAT-12",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-015",
+        "candidate": "CASE-015-V2-MRCAT-05",
+        "parent_cat": "MRCAT-05",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-015",
+        "candidate": "CASE-015-V2-MRCAT-01",
+        "parent_cat": "MRCAT-01",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-016",
+        "candidate": "CASE-016-V2-MRCAT-07",
+        "parent_cat": "MRCAT-07",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-016",
+        "candidate": "CASE-016-V2-MRCAT-10",
+        "parent_cat": "MRCAT-10",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-016",
+        "candidate": "CASE-016-V2-MRCAT-11",
+        "parent_cat": "MRCAT-11",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-017",
+        "candidate": "CASE-017-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-017",
+        "candidate": "CASE-017-V2-MRCAT-02",
+        "parent_cat": "MRCAT-02",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-017",
+        "candidate": "CASE-017-V2-MRCAT-09",
+        "parent_cat": "MRCAT-09",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-018",
+        "candidate": "CASE-018-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-018",
+        "candidate": "CASE-018-V2-MRCAT-08",
+        "parent_cat": "MRCAT-08",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-018",
+        "candidate": "CASE-018-V2-MRCAT-10",
+        "parent_cat": "MRCAT-10",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-019",
+        "candidate": "CASE-019-V2-MRCAT-07",
+        "parent_cat": "MRCAT-07",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-019",
+        "candidate": "CASE-019-V2-MRCAT-01",
+        "parent_cat": "MRCAT-01",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-019",
+        "candidate": "CASE-019-V2-MRCAT-05",
+        "parent_cat": "MRCAT-05",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-020",
+        "candidate": "CASE-020-V2-MRCAT-07",
+        "parent_cat": "MRCAT-07",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-020",
+        "candidate": "CASE-020-V2-MRCAT-06",
+        "parent_cat": "MRCAT-06",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-020",
+        "candidate": "CASE-020-V2-MRCAT-08",
+        "parent_cat": "MRCAT-08",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-021",
+        "candidate": "CASE-021-V2-MRCAT-09",
+        "parent_cat": "MRCAT-09",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-021",
+        "candidate": "CASE-021-V2-MRCAT-11",
+        "parent_cat": "MRCAT-11",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-021",
+        "candidate": "CASE-021-V2-MRCAT-02",
+        "parent_cat": "MRCAT-02",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-022",
+        "candidate": "CASE-022-V2-MRCAT-10",
+        "parent_cat": "MRCAT-10",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-022",
+        "candidate": "CASE-022-V2-MRCAT-11",
+        "parent_cat": "MRCAT-11",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-022",
+        "candidate": "CASE-022-V2-MRCAT-07",
+        "parent_cat": "MRCAT-07",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-023",
+        "candidate": "CASE-023-V2-MRCAT-12",
+        "parent_cat": "MRCAT-12",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-023",
+        "candidate": "CASE-023-V2-MRCAT-10",
+        "parent_cat": "MRCAT-10",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-023",
+        "candidate": "CASE-023-V2-MRCAT-08",
+        "parent_cat": "MRCAT-08",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-024",
+        "candidate": "CASE-024-V2-MRCAT-09",
+        "parent_cat": "MRCAT-09",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-024",
+        "candidate": "CASE-024-V2-MRCAT-05",
+        "parent_cat": "MRCAT-05",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      },
+      {
+        "caso": "CASE-024",
+        "candidate": "CASE-024-V2-MRCAT-01",
+        "parent_cat": "MRCAT-01",
+        "n_fatos_base_nao_pai_overlap_ge_2": 0
+      }
+    ]
+  },
+  "nota_interpretativa": "ged_ref tem limitação conhecida: a referência DATA-DRIVEN é construída só a partir de V0, então tende a não discriminar bem V1 de V3 — achado da v1, não corrigido nesta v2 (fora de escopo). Reportado por componente; não é sinal novo.",
+  "hashes": {
+    "generate_cases.py": "1340e462520ef73d1765cec34d7ad3b109b8876cc41a9459d7d2e68f0c108c9d",
+    "labelers.py": "4664c0e693be33c9d09836cd986605c6345cab9aaac7ee9171ac15dd06825dfa",
+    "reconstruction.py": "e337ce0b4bb8a25e7070889650541546a0c04f2cb77c356d0e07fcb677e7314e",
+    "metric.py": "b2742d63e585bfc349a3e6cc3f14108de82c39badb4d6a2b33a788ac918829b4",
+    "analysis.py": "c0bd7e13ac704fe1f1a6f73f99212f8c7100e17dfb2a1d75923562dc15762ca2",
+    "cases.yaml": "479692d5d4a20a010fe0ac71e238c39f40ef990aa881b3e02555c80269ba7184",
+    "states.yaml": "b63c07e83adee6a1a9fc4546f7a4f58ab7a08d58dd773babd5cde2d60a77c985",
+    "consensus_registry.yaml": "17d3a463e55cc5493e491978bc9100d1fcf8f16ee9b9a5d27837c09df86433b3",
+    "reconstruction_graphs.json": "32998b993fdf00295df76cb6034db827de85aa820c701118e1b2fb61f8e80385",
+    "dv_values.json": "fd9adbc7cf0287954422a711ac5d7beff6c9555771a013c10b2120496a934f99"
+  }
+}

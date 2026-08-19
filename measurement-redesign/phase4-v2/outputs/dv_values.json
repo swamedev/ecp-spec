@@ -1,0 +1,1010 @@
+{
+  "wl_h": 3,
+  "dd_reference": {
+    "metadata": {
+      "num_nodes": 12,
+      "num_mst_edges": 11,
+      "num_edge_instances": 68
+    },
+    "graph": {
+      "nodes": [
+        {
+          "id": "MRCAT-01"
+        },
+        {
+          "id": "MRCAT-02"
+        },
+        {
+          "id": "MRCAT-03"
+        },
+        {
+          "id": "MRCAT-04"
+        },
+        {
+          "id": "MRCAT-05"
+        },
+        {
+          "id": "MRCAT-06"
+        },
+        {
+          "id": "MRCAT-07"
+        },
+        {
+          "id": "MRCAT-08"
+        },
+        {
+          "id": "MRCAT-09"
+        },
+        {
+          "id": "MRCAT-10"
+        },
+        {
+          "id": "MRCAT-11"
+        },
+        {
+          "id": "MRCAT-12"
+        }
+      ],
+      "edges": [
+        {
+          "source": "MRCAT-08",
+          "target": "MRCAT-09"
+        },
+        {
+          "source": "MRCAT-11",
+          "target": "MRCAT-12"
+        },
+        {
+          "source": "MRCAT-10",
+          "target": "MRCAT-11"
+        },
+        {
+          "source": "MRCAT-02",
+          "target": "MRCAT-07"
+        },
+        {
+          "source": "MRCAT-02",
+          "target": "MRCAT-12"
+        },
+        {
+          "source": "MRCAT-07",
+          "target": "MRCAT-08"
+        },
+        {
+          "source": "MRCAT-06",
+          "target": "MRCAT-09"
+        },
+        {
+          "source": "MRCAT-03",
+          "target": "MRCAT-07"
+        },
+        {
+          "source": "MRCAT-01",
+          "target": "MRCAT-11"
+        },
+        {
+          "source": "MRCAT-04",
+          "target": "MRCAT-09"
+        },
+        {
+          "source": "MRCAT-05",
+          "target": "MRCAT-12"
+        }
+      ]
+    }
+  },
+  "values": {
+    "CASE-001": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.722466,
+        "div_metric": 1.0,
+        "dv": 0.907489,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      },
+      "V2": {
+        "conf": 0.981481,
+        "ged_ref": 0.685248,
+        "div_metric": 0.953352,
+        "dv": 0.873361,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 28
+      },
+      "V3": {
+        "conf": 0.89011,
+        "ged_ref": 0.722466,
+        "div_metric": 1.0,
+        "dv": 0.870858,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      }
+    },
+    "CASE-002": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.674786,
+        "div_metric": 0.982568,
+        "dv": 0.885784,
+        "k_obs": 8,
+        "nodes": 8,
+        "edges": 22
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.707422,
+        "div_metric": 0.988109,
+        "dv": 0.89851,
+        "k_obs": 11,
+        "nodes": 11,
+        "edges": 25
+      },
+      "V2": {
+        "conf": 0.969388,
+        "ged_ref": 0.674786,
+        "div_metric": 0.91721,
+        "dv": 0.853794,
+        "k_obs": 8,
+        "nodes": 8,
+        "edges": 26
+      },
+      "V3": {
+        "conf": 0.889138,
+        "ged_ref": 0.707422,
+        "div_metric": 0.988109,
+        "dv": 0.861556,
+        "k_obs": 11,
+        "nodes": 11,
+        "edges": 25
+      }
+    },
+    "CASE-003": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.973684,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.877377,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 30
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-004": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.67899,
+        "div_metric": 0.973197,
+        "dv": 0.872568,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-005": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.70871,
+        "div_metric": 1.0,
+        "dv": 0.902903,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 29
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.705544,
+        "div_metric": 0.978838,
+        "dv": 0.8833,
+        "k_obs": 10,
+        "nodes": 10,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.89011,
+        "ged_ref": 0.718485,
+        "div_metric": 1.0,
+        "dv": 0.869532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      }
+    },
+    "CASE-006": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.990909,
+        "ged_ref": 0.67899,
+        "div_metric": 0.973197,
+        "dv": 0.881032,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 28
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-007": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.874654,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-008": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.67899,
+        "div_metric": 0.973197,
+        "dv": 0.872568,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-009": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.712636,
+        "div_metric": 1.0,
+        "dv": 0.904212,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      },
+      "V2": {
+        "conf": 0.990909,
+        "ged_ref": 0.67899,
+        "div_metric": 0.973197,
+        "dv": 0.881032,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 28
+      },
+      "V3": {
+        "conf": 0.920588,
+        "ged_ref": 0.706687,
+        "div_metric": 0.988109,
+        "dv": 0.871795,
+        "k_obs": 11,
+        "nodes": 11,
+        "edges": 27
+      }
+    },
+    "CASE-010": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.973684,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.877377,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 30
+      },
+      "V3": {
+        "conf": 0.911538,
+        "ged_ref": 0.701374,
+        "div_metric": 0.988109,
+        "dv": 0.867007,
+        "k_obs": 11,
+        "nodes": 11,
+        "edges": 28
+      }
+    },
+    "CASE-011": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.67899,
+        "div_metric": 1.0,
+        "dv": 0.892997,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 26
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 31
+      },
+      "V2": {
+        "conf": 0.97541,
+        "ged_ref": 0.6729,
+        "div_metric": 0.973197,
+        "dv": 0.873836,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 32
+      },
+      "V3": {
+        "conf": 0.884712,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.866103,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 31
+      }
+    },
+    "CASE-012": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.67899,
+        "div_metric": 0.973197,
+        "dv": 0.872568,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-013": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.972727,
+        "ged_ref": 0.67899,
+        "div_metric": 0.973197,
+        "dv": 0.874972,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 29
+      },
+      "V3": {
+        "conf": 0.89011,
+        "ged_ref": 0.712636,
+        "div_metric": 1.0,
+        "dv": 0.867582,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      }
+    },
+    "CASE-014": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.722466,
+        "div_metric": 1.0,
+        "dv": 0.907489,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.874654,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.89011,
+        "ged_ref": 0.722466,
+        "div_metric": 1.0,
+        "dv": 0.870858,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      }
+    },
+    "CASE-015": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.705544,
+        "div_metric": 0.978838,
+        "dv": 0.8833,
+        "k_obs": 10,
+        "nodes": 10,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-016": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.973684,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.877377,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 30
+      },
+      "V3": {
+        "conf": 0.911538,
+        "ged_ref": 0.706687,
+        "div_metric": 0.988109,
+        "dv": 0.868778,
+        "k_obs": 11,
+        "nodes": 11,
+        "edges": 28
+      }
+    },
+    "CASE-017": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.982143,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.880196,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 29
+      },
+      "V3": {
+        "conf": 0.920588,
+        "ged_ref": 0.706687,
+        "div_metric": 0.988109,
+        "dv": 0.871795,
+        "k_obs": 11,
+        "nodes": 11,
+        "edges": 27
+      }
+    },
+    "CASE-018": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.712636,
+        "div_metric": 1.0,
+        "dv": 0.904212,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.874654,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.911538,
+        "ged_ref": 0.701374,
+        "div_metric": 0.988109,
+        "dv": 0.867007,
+        "k_obs": 11,
+        "nodes": 11,
+        "edges": 28
+      }
+    },
+    "CASE-019": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.982143,
+        "ged_ref": 0.685248,
+        "div_metric": 0.953352,
+        "dv": 0.873581,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 29
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-020": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.874654,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.920588,
+        "ged_ref": 0.70293,
+        "div_metric": 0.988109,
+        "dv": 0.870543,
+        "k_obs": 11,
+        "nodes": 11,
+        "edges": 27
+      }
+    },
+    "CASE-021": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.646058,
+        "div_metric": 0.935945,
+        "dv": 0.860668,
+        "k_obs": 6,
+        "nodes": 6,
+        "edges": 22
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.691564,
+        "div_metric": 0.953352,
+        "dv": 0.881639,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 25
+      },
+      "V2": {
+        "conf": 0.970588,
+        "ged_ref": 0.662013,
+        "div_metric": 0.920782,
+        "dv": 0.851128,
+        "k_obs": 7,
+        "nodes": 7,
+        "edges": 27
+      },
+      "V3": {
+        "conf": 0.868085,
+        "ged_ref": 0.691564,
+        "div_metric": 0.953352,
+        "dv": 0.837667,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 25
+      }
+    },
+    "CASE-022": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.965517,
+        "ged_ref": 0.67899,
+        "div_metric": 0.973197,
+        "dv": 0.872568,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 31
+      },
+      "V3": {
+        "conf": 0.89916,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.870919,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      }
+    },
+    "CASE-023": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.973684,
+        "ged_ref": 0.685248,
+        "div_metric": 0.973197,
+        "dv": 0.877377,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 30
+      },
+      "V3": {
+        "conf": 0.89011,
+        "ged_ref": 0.712636,
+        "div_metric": 1.0,
+        "dv": 0.867582,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      }
+    },
+    "CASE-024": {
+      "V0": {
+        "conf": 1.0,
+        "ged_ref": 0.685248,
+        "div_metric": 1.0,
+        "dv": 0.895083,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 24
+      },
+      "V1": {
+        "conf": 1.0,
+        "ged_ref": 0.713597,
+        "div_metric": 1.0,
+        "dv": 0.904532,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 27
+      },
+      "V2": {
+        "conf": 0.973684,
+        "ged_ref": 0.6729,
+        "div_metric": 0.973197,
+        "dv": 0.873261,
+        "k_obs": 9,
+        "nodes": 9,
+        "edges": 30
+      },
+      "V3": {
+        "conf": 0.89011,
+        "ged_ref": 0.712636,
+        "div_metric": 1.0,
+        "dv": 0.867582,
+        "k_obs": 12,
+        "nodes": 12,
+        "edges": 28
+      }
+    }
+  }
+}
