@@ -5,6 +5,9 @@ MR-C7 phase4 — metric.py (componentes DV-REDESIGN; protocolo §7, M-REDESIGN-0
 Lê outputs/reconstruction_graphs.json e computa, por caso × estado:
   conf      = F1(nós, arestas) entre o grafo da reconstrução e o grafo de verdade do
               estado (§7.2/§7.4) — média(F1 nós, F1 arestas), média de 3 seeds (§7.1).
+  conf_v2   = F1(nós, arestas) contra G1 fixo (truth_graphs[case_id]['V1'] = teto
+              máximo de verdade = G0 + 3 fatos verdadeiros ΔV1). Componente diagnóstico
+              (C-CONF-REDESIGN-PROPOSAL.md); NÃO usado em DV_P/DV_Q do pré-registro v3.
   ged_ref   = s_struct (WL-kernel do engine congelado, hashing de estrutura, numpy
               puro, SEM rótulos de categoria) contra a referência DATA-DRIVEN (§7.3),
               construída pelo método da Fase B (consenso MST ponderado por confiança)
@@ -63,6 +66,13 @@ def f1_edges_m(rec, truth):
 
 def conf_m(rec, truth):
     return (f1_nodes_m(rec, truth) + f1_edges_m(rec, truth)) / 2.0
+
+
+def conf_v2_m(rec, g1_truth):
+    """conf_v2: F1 contra G1 fixo (teto máximo = truth_graphs[case_id]['V1']).
+    Mede quantidade de valor recuperado contra padrão fixo, não contra próprio teto.
+    """
+    return (f1_nodes_m(rec, g1_truth) + f1_edges_m(rec, g1_truth)) / 2.0
 
 
 def div_m(cat_counts):
@@ -129,6 +139,7 @@ def main():
     out = {}
     for case_id in case_ids:
         r = {}
+        g1_truth = truth_graphs[case_id]["V1"]
         for state in ("V0", "V1", "V2", "V3"):
             rec = results[case_id][state]["graph"]
             # §7.4 v2: V1 usa G1 (estendida com ΔV1); V2 usa a verdade estendida
@@ -138,6 +149,7 @@ def main():
             cat_counts = results[case_id][state]["cat_counts"]
 
             c = conf_m(rec, truth)
+            c_v2 = conf_v2_m(rec, g1_truth)
             g = wl.s_struct(view(rec), dd_view)
             d = div_m(cat_counts)
             # §7.1 v3: DV_P decisório (0.6/0.2/0.2); DV_Q diagnóstico (0.7/0.3).
@@ -145,6 +157,7 @@ def main():
             dv_q = 0.7 * c + 0.3 * d
             r[state] = {
                 "conf": round(c, 6),
+                "conf_v2": round(c_v2, 6),
                 "ged_ref": round(g, 6),
                 "div_metric": round(d, 6),
                 "dv_p": round(dv_p, 6),
@@ -164,8 +177,12 @@ def main():
 
     print("Referência DATA-DRIVEN: %d nós, %d arestas MST (de %d instâncias de aresta)"
           % (dd_meta["num_nodes"], dd_meta["num_mst_edges"], dd_meta["num_edge_instances"]))
-    print("DV_P por estado (média sobre casos):")
+    print("conf_v2 por estado (média sobre casos):")
     states = ("V0", "V1", "V2", "V3")
+    for st in states:
+        vals = [out[c][st]["conf_v2"] for c in case_ids]
+        print("  %s: mean=%.6f min=%.6f max=%.6f" % (st, sum(vals) / len(vals), min(vals), max(vals)))
+    print("DV_P por estado (média sobre casos):")
     for st in states:
         vals = [out[c][st]["dv_p"] for c in case_ids]
         print("  %s: mean=%.6f min=%.6f max=%.6f" % (st, sum(vals) / len(vals), min(vals), max(vals)))
